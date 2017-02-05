@@ -1,0 +1,3165 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<resources>
+  <language>en-US</language>
+  <displayName>American English</displayName>
+  <version>1.0</version>
+  <author>JiRiGaLa</author>
+  <description>American English Language Package</description>
+  <items>
+    <!-- Global Language Resources Begin JiRiGaLa -->
+    <item key="MSG0000">Notice Messsage</item>
+    <item key="MSG0001">Unknown error occured.</item>
+    <item key="MSG0002">Database connection exception.</item>
+    <item key="MSG0003">WebService connection exception.</item>
+    <item key="MSG0004">No data modified.</item>
+    <item key="MSG0005">Record did not found, may be deleted by other users.</item>
+    <item key="MSG0006">Data has been modified by other users, press F5 to refresh.</item>
+    <item key="MSG0007">Can not be empty, please enter {0}.</item>
+    <item key="MSG0008">{0} already exist.</item>
+    <item key="MSG0009">Added successfully.</item>
+    <item key="MSG0010">Updated successfully.</item>
+    <item key="MSG0011">Saved successfully.</item>
+    <item key="MSG0012">Batch data saved successfully.</item>
+    <item key="MSG0013">Deleted successfully.</item>
+    <item key="MSG0014">Batch deleted successfully.</item>
+    <item key="MSG0015">Are you sure to delete it?</item>
+    <item key="MSG0016">Are you sure to delete {0}?</item>
+    <item key="MSG0017">Current data is not allowed to delete.</item>
+    <item key="MSG0018">{0} can not be deleted.</item>
+    <item key="MSG0019">Data can not be modefied, press F5 to refresh.</item>
+    <item key="MSG0020">current data {0}can not be modefied, press F5 to refresh.</item>
+    <item key="MSG0021">This is the first record.</item>
+    <item key="MSG0022">This is the last record.</item>
+    <item key="MSGC023">Please choose more than one item.</item>
+    <item key="MSG0024">Please choose more than one {0}.</item>
+    <item key="MSGC024">Please choose only one item.</item>
+    <item key="MSG0025">{0} must less than or equal to {1}.</item>
+    <item key="MSG0026">{0} must more than or equal to {1}.</item>
+    <item key="MSG0027">{0} must not equal to {1}.</item>
+    <item key="MSG0028">{0} invalid date.</item>
+    <item key="MSG0029">{0} invalid character.</item>
+    <item key="MSG0030">{0} invalid number.</item>
+    <item key="MSG0031">{0} is invalid amount.</item>
+    <item key="MSG0032">{0} contains illegal character.</item>
+    <item key="MSG0033">The data is already quoted, it has related data! </item>
+    <item key="MSG0034">The data is already quoted, it has related data! Do you want to delete it?</item>
+    <item key="MSG0035">{0} has some child nodes, you can not delete it.</item>
+    <item key="MSG0036">{0} can not move to {1}.</item>
+    <item key="MSG0037">{0} can not move its child nodes to {1}.</item>
+    <item key="MSG0038">Are you sure to move {0} to {1}?</item>
+    <item key="MSG0039">{0} does not equal {1}.</item>
+    <item key="MSG0040">{0} error.</item>
+    <item key="MSG0041">Are you sure to approve the review?</item>
+    <item key="MSG0042">Are you sure to reject the review?</item>
+    <item key="MSG0043">Can't lock data.</item>
+    <item key="MSG0044">Lock success.</item>
+    <item key="MSG0045">The data has changed, do you want to save it?</item>
+    <item key="MSG0046">You can't has same password at {0} times.</item>
+    <item key="MSG0047">The password has expired,the account has been locked,please contact the system anministrator.</item>
+    <item key="MSG0048">Refuse to login, the user currently logged on!</item>
+    <item key="MSG0049">Refuse to login, the MAC Address is not in accord with conditions.</item>
+    <item key="MSG0050">Refuse to login, IP Address is not in accord with conditions.</item>
+    <item key="MSG0051">The maximum limit for user connections has been reached.</item>
+    <item key="MSG0052">The IP address is invalid.</item>
+    <item key="MSG0053">The MAC address is invalid.</item>
+    <item key="MSG0054">Please key in IP address or MAC address.</item>
+    <item key="MSG0055">There is IP address conflict.</item>
+    <item key="MSG0056">IP address is added successfully.</item>
+    <item key="MSG0057">IP address is added unsuccessfully.</item>
+    <item key="MSG0058">There is MAC address conflict.</item>
+    <item key="MSG0059">MAC address is added successfully.</item>
+    <item key="MSG0060">Please create user account for this employee.</item>
+    <item key="MSG0061">MAC address is added unsuccessfully.</item>
+    <item key="MSG0062">Please change your password on first login.</item>
+    <item key="MSG0063">Please change your password due to it hasn't been changed in last 30 days.</item>
+    <item key="MSG0064">The input minute is not in a correct format, please check again.</item>
+    <item key="MSG0065">The data has been changed, discard the changes?</item>
+    <item key="MSG0075">Are you sure to move it?</item>
+    <item key="MSG0076">Are you sure to move {0}?</item>
+    <item key="MSG0077">Remove {0} records successful.</item>
+    <item key="MSG0078">Login rejected, your account is in audit.</item>
+    <item key="MSG0079">Your account is locked, please contact the system administrator.</item>
+    <item key="MSG0080">Your account has not been activated, please promptly active it.</item>
+    <item key="MSG0081">Your account has been locked，the login date should be not earlier than: </item>
+    <item key="MSG0082">Your account has been locked, the login date should be not later than:</item>
+    <item key="MSG0083">Your account has been locked from：</item>
+    <item key="MSG0084">Your account has been locked until: </item>
+    <item key="MSG0085">IP Address is incorrect!</item>
+    <item key="MSG0086">MAC Address is incorrect!</item>
+    <item key="MSG0087">Your account is alreadly logged in!</item>
+    <item key="MSG0088">Login rejected: Incorrect password!</item>
+    <item key="MSG0089">The maximum limit for user connections has been reached:</item>
+    <item key="MSG0090">Login rejected!</item>
+    <item key="MSG0091">Add new operating authority item.</item>
+    <item key="MSG0092">Login start date</item>
+    <item key="MSG0093">Login end date</item>
+    <item key="MSG0094">Suspended the begin date</item>
+    <item key="MSG0095">Suspended the end date</item>
+    <item key="MSG0700">Data linked successful.</item>
+    <item key="MSG0800">The call is rejected, unauthorized access.</item>
+    <item key="MSG0900">Service call is rejected, the user is not logged.</item>
+    <item key="MSG1000">System setup message in error, please contact the software developer.</item>
+    <item key="MSG1001">Reset the menus. Are you sure?</item>
+    <item key="MSG2000">{0} Incorrect, please re-enter.</item>
+    <item key="MSG3000">Are you sure to initialize the system?</item>
+    <item key="MSG3010">Operate successful.</item>
+    <item key="MSG3020">Operate failed.</item>
+    <item key="MSG9800">Value</item>
+    <item key="MSG9900">Company</item>
+    <item key="MSG9901">Department</item>
+    <item key="MSG9910">The user didn't set email.</item>
+    <item key="MSG9911">The user was locked.</item>
+    <item key="MSG9912">The user hasn't been activated.</item>
+    <item key="MSG9913">The user hasn been activated.</item>
+    <item key="MSG9914">User Association</item>
+    <item key="MSG9915">Please set Constraint.</item>
+    <item key="MSG9916">Show   ▽</item>
+    <item key="MSG9917">Hidden   △</item>
+    <item key="MSG9918">Test constraints Success.</item>
+    <item key="MSG9919">Please set constraints.</item>
+    <item key="MSG9920">Please set contects.</item>
+    <item key="MSG9921">Lost（ Symbol。</item>
+    <item key="MSG9922">Lost ）Symbol。</item>
+    <item key="MSGS857">Signature private key.</item>
+    <item key="MSGS864">Signature password.</item>
+    <item key="MSGS957">Communication Username.</item>
+    <item key="MSGS964">Communication Password.</item>
+    <item key="MSG8000">Password strength does not meet the requirements of at least 6-digit password, and is a combination of letters plus numbers.</item>
+    <item key="MSG8900">Employee No</item>
+    <item key="MSG9000">ID or Password Error.</item>
+    <item key="MSG9955">Data.</item>
+    <item key="MSG9956">Can't find the qualified records.</item>
+    <item key="MSG9957">UserName</item>
+    <item key="MSG9958">Validation error.</item>
+    <item key="MSG9959">New Password</item>
+    <item key="MSG9960">Confirm Password</item>
+    <item key="MSG9961">Old Password</item>
+    <item key="MSG9962">{0} was modified successful.</item>
+    <item key="MSG9963">{0} was setted successful.</item>
+    <item key="MSG9964">Password</item>
+    <item key="MSG9965">Login successful.</item>
+    <item key="MSG9966">Can't find the user,note that the userName is case sensitive.</item>
+    <item key="MSG9967">The password is wrong，attention to the case.</item>
+    <item key="MSG9968">Login is refused,please contact the system anministrator.</item>
+    <item key="MSG9969">Basecode</item>
+    <item key="MSG9970">Staff</item>
+    <item key="MSG9971">Organize</item>
+    <item key="MSG9972">Role</item>
+    <item key="MSG9973">Module</item>
+    <item key="MSG9974">Folder</item>
+    <item key="MSG9975">Permission</item>
+    <item key="MSG9976">Primary Key</item>
+    <item key="MSG9977">No.</item>
+    <item key="MSG9978">Name</item>
+    <item key="MSG9979">Parent ID</item>
+    <item key="MSG9980">Parent Name</item>
+    <item key="MSG9981">Functional classification ID</item>
+    <item key="MSG9982">Unique identification ID</item>
+    <item key="MSG9983">Subject</item>
+    <item key="MSG9984">Contents</item>
+    <item key="MSG9985">StateCode</item>
+    <item key="MSG9986">Times</item>
+    <item key="MSG9987">Effective</item>
+    <item key="MSG9988">Description</item>
+    <item key="MSG9989">SortCode</item>
+    <item key="MSG9990">CreateUserID</item>
+    <item key="MSG9991">CreateOn</item>
+    <item key="MSG9992">LastModifiedUserID</item>
+    <item key="MSG9993">LastModifiedOn</item>
+    <item key="MSG9994">Sort</item>
+    <item key="MSG9995">Primary key</item>
+    <item key="MSG9996">Index</item>
+    <item key="MSG9997">Field</item>
+    <item key="MSG9998">Table</item>
+    <item key="MSG9999">DataBase</item>
+    <!-- Global Language Resources End -->
+
+    <!-- HanFeng Edited 20101106 -->
+    <item key="MSG0201">The file is not exists,please make a new choice.</item>
+    <item key="MSG0202">Prompt message</item>
+    <item key="MSG0203">Are you sure  to move \" {0} \" to \" {1} \" ?</item>
+    <item key="MSG0204">Are you sure to exit?</item>
+    <item key="MSG0205">The file {0} already exists，overwrite files?</item>
+    <item key="MSG0206">Have exceeded the limits，check the size please!</item>
+    <item key="MSG0207">Are you sure to delete the picture?</item>
+    <item key="MSG0208">The end time should not be greater of start time!</item>
+    <item key="MSG0209">Clear up!</item>
+    <item key="MSG0210">Reset successful!</item>
+    <item key="MSG0211">Enter the wrong password must not exceed {0} times，not allowed to continue logging，please restart the application.</item>
+    <item key="MSG0212">Search Contents</item>
+    <item key="MSG0213">The length of the number can not exceed 40.</item>
+    <item key="MSG0214">Build No. Successful!</item>
+    <item key="MSG0215">Increased sequence</item>
+    <item key="MSG0216">Reduction sequence</item>
+    <item key="MSG0217">Step</item>
+    <item key="MSG0218">Reset the sequence successful!</item>
+    <item key="MSG0219">Are you sure to reset the sequence?</item>
+    <item key="MSG0223">The username can not be blank.</item>
+    <item key="MSG0225">There has no data of this node.</item>
+    <item key="MSG0226">Can't delete itself!</item>
+    <item key="MSG0228">Set the relations of user successful!</item>
+    <item key="MSG0229">The company can not be blank.</item>
+    <item key="MSG0230">"Account Sign Up" is successful,please wait for audit result.</item>
+    <item key="MSG0231">The "password" is not equal to the "confirm password".</item>
+    <item key="MSG0232">UserName</item>
+    <item key="MSG0233">Full name</item>
+    <item key="MSG0234">E-Mail is not in the correct format,please enter again.</item>
+    <item key="MSG0235">"Account Sign Up" is successful,please wait for audit result.</item>
+    <item key="MSG0236">Object file \"{0}\" already exists,overwrite files?</item>
+    <item key="MSG0237">Delivery successful!</item>
+    <item key="MSG0238">Clear the exception successful!</item>
+    <item key="MSG0239">Are you want to clear  exception messages?</item>
+    <item key="MSG0240">The contents can not be blank.</item>
+    <item key="MSG0241">Delivery failed!</item>
+    <item key="MSG0242">Move successful!</item>
+    <item key="MSG0243">Program error report</item>
+    <item key="MSG0244">File is not exist.Choose the file again, please.</item>
+    <item key="MSG0245">Role and User are blank.You must select at least one of them.</item>
+    <item key="MSG0246">No data need to copy!</item>
+    <item key="MSG0247">{0} components of permission are already passed.</item>
+    <item key="MSG0248">pass failed.</item>
+    <item key="MSG0249">Please select data to be processed.</item>
+    <item key="MSG0250">Are you sure you want to approve this document?</item>
+    <item key="MSG0251">Rejected successful!</item>
+    <item key="MSG0252">Please select data to be processed.</item>
+    <item key="MSG0253">Are you sure you don't need to enter rejected reasons?</item>
+    <item key="MSG0255">Are you sure  to reject the document?</item>
+    <item key="MSG0256">WorkFlow send successful!</item>
+    <item key="MSG0257">WorkFlow send failed!</item>
+    <item key="MSG0258">The document passed.</item>
+    <item key="MSG0259">Please select data to be processed.</item>
+    <item key="MSG0260">Please select the user who you want to submit.</item>
+    <item key="MSG0261">{0} items are passed finally.</item>
+    <item key="MSG0262">Finally permission failed!</item>
+    <item key="MSG0263">Please select data to be processed.</item>
+    <item key="MSG0264">Rejected successful!</item>
+    <item key="MSG0265">Please select data to be processed.</item>
+    <item key="MSG0266">Are you sure don't need to enter rejected reasons?</item>
+    <item key="MSG0267">Are you sure to reject the document?</item>
+    <item key="MSG0268">Approval Process send successful.</item>
+    <item key="MSG0269">Please select data to be processed.</item>
+    <item key="MSG0270">Please select the user you want to submit.</item>
+    <item key="MSG0271">Are you sure to sumbit to {0}?</item>
+    <item key="MSG0272">{0} items of the revocation of approval process .</item>
+    <item key="MSG0273">The revocation of approval process failed.</item>
+    <item key="MSG0274">Please select data to be processed.</item>
+    <item key="MSG0275">Are you sure don't need to enter rejected reasons?</item>
+    <item key="MSG0276">Are you sure to revocate the document of approval process?</item>
+    <item key="MSG0277">Please select the user who you want to submit?</item>
+    <item key="MSG0278">Are you sure sumbit to the user {0}</item>
+    <item key="MSG0279">Workflow send successful!</item>
+    <item key="MSG0280">Workflow send failed!</item>
+    <item key="MSG0281">Confirm replace the file {0}?</item>
+    <item key="MSG0282">The higher organization</item>
+    <item key="MSG0283">Build Code Successful!</item>
+    <item key="MSG0284">You have changed config info, do you need to save the info ?</item>
+    <item key="MSG0285">No data need to save!</item>
+    <item key="MSG0286">Company Name</item>
+    <item key="MSG0287">Please choose to submit to what the department for audit.</item>
+    <item key="MSG0288">Submitted to the department {0} audit. Are you sure?</item>
+    <item key="MSG0289">Please choose to submit to what the role of audit.</item>
+    <item key="MSG0290">Submitted to the role {0} audit. Are you sure?</item>
+    <item key="MSG0291">Please choose to submit to what role, department or staff review.</item>
+    <item key="MSG0292">Successfully returned to {0} items.</item>
+    <item key="MSG0293">Returned failure.</item>
+    <item key="MSG0294">Are you sure that you want forwarded to {0} audit?</item>
+    <item key="MSG0295">Successfully forwarded to {0} items.</item>
+    <item key="MSG0296">Forwarding failure.</item>
+    <item key="MSG0300">You already logon from other PC. Logout the system.</item>
+    <item key="MSG0301">Are you sure to save it?</item>
+    <item key="MSG0302">Category.</item>
+    <item key="MSG0303">Please select {0}。</item>
+    <item key="MSG0304">User, Organization, Role must select one.</item>
+    <item key="MSG0400">Your account to log exceptions, has been locked by the system {0} minutes, if in doubt contact your system administrator.</item>
+    <item key="MSGReLogOn">LogOn Again</item>
+
+    <!-- FrmBusinessCardAdd Begin -->
+    <item key="FrmBusinessCardAdd">Add Card</item>
+    <item key="FrmBusinessCardAdd_grpBusinessCard">Add Card</item>
+    <item key="FrmBusinessCardAdd_lblFullName">&amp;Name:</item>
+    <item key="FrmBusinessCardAdd_lblPhone">Personal Phone:</item>
+    <item key="FrmBusinessCardAdd_lblQQ">QQ:</item>
+    <item key="FrmBusinessCardAdd_lblCompany">&amp;Company:</item>
+    <item key="FrmBusinessCardAdd_lblAddress">Address:</item>
+    <item key="FrmBusinessCardAdd_lblOuterPhone">Office Phone:</item>
+    <item key="FrmBusinessCardAdd_lblMobile">Mobile Phone:</item>
+    <item key="FrmBusinessCardAdd_lblMail">EMail:</item>
+    <item key="FrmBusinessCardAdd_lblBank">Account Bank:</item>
+    <item key="FrmBusinessCardAdd_lblBankAccount">Account:</item>
+    <item key="FrmBusinessCardAdd_lblTaxAccount">Tax ID:</item>
+    <item key="FrmBusinessCardAdd_chkPersonal">Personal Card:</item>
+    <item key="FrmBusinessCardAdd_lblTitle">Position:</item>
+    <item key="FrmBusinessCardAdd_lblPostalcode">Zip Code:</item>
+    <item key="FrmBusinessCardAdd_lblFax">&amp;Fax:</item>
+    <item key="FrmBusinessCardAdd_lblWeb">Website:</item>
+    <item key="FrmBusinessCardAdd_lblDescription">Description:</item>
+    <item key="FrmBusinessCardAdd_btnAdd">&amp;Add</item>
+    <item key="FrmBusinessCardAdd_btnDelete">&amp;Delete</item>
+    <item key="FrmBusinessCardAdd_btnClose">Close</item>
+    <item key="FrmBusinessCardAdd_btnSave">&amp;Save</item>
+    <item key="FrmBusinessCardAdd_btnCancel">Cancel</item>
+    <!-- FrmBusinessCardAdd End -->
+
+    <!-- FrmBusinessCardAdmin Begin -->
+    <item key="FrmBusinessCardAdmin">Card Management</item>
+    <item key="FrmBusinessCardAdmin_lblSearch">&amp;Contents:</item>
+    <item key="FrmBusinessCardAdmin_btnSearch">&amp;Query</item>
+    <item key="FrmBusinessCardAdmin_rbtnAll">All</item>
+    <item key="FrmBusinessCardAdmin_rbtnPublic">Public</item>
+    <item key="FrmBusinessCardAdmin_rbtnPersonal">Personal</item>
+    <item key="FrmBusinessCardAdmin_colSelected">Select</item>
+    <item key="FrmBusinessCardAdmin_colStaffFullName">Name</item>
+    <item key="FrmBusinessCardAdmin_colCompany">Company Name</item>
+    <item key="FrmBusinessCardAdmin_colTitle">Position</item>
+    <item key="FrmBusinessCardAdmin_chkPersonal">Personal</item>
+    <item key="FrmBusinessCardAdmin_colOfficePhone">Office Phone</item>
+    <item key="FrmBusinessCardAdmin_colMobile">Mobile Phone</item>
+    <item key="FrmBusinessCardAdmin_colEmail">Email</item>
+    <item key="FrmBusinessCardAdmin_colQQ">QQ</item>
+    <item key="FrmBusinessCardAdmin_colDescription">Description</item>
+    <item key="FrmBusinessCardAdmin_colCreateBy">CreateUserName</item>
+    <item key="FrmBusinessCardAdmin_btnAdd">&amp;Add</item>
+    <item key="FrmBusinessCardAdmin_btnEdit">&amp;Edit</item>
+    <item key="FrmBusinessCardAdmin_btnExport">Export Excel</item>
+    <item key="FrmBusinessCardAdmin_btnBatchDelete">&amp;Delete</item>
+    <item key="FrmBusinessCardAdmin_btnBatchSave">&amp;Save</item>
+    <item key="FrmBusinessCardAdmin_btnClose">Close</item>
+    <!-- FrmBusinessCardAdmin End -->
+
+    <!-- FrmBusinessCardEdit Begin -->
+    <item key="FrmBusinessCardEdit">Edit Card</item>
+    <item key="FrmBusinessCardEdit_grpBusinessCard">Edit Card</item>
+    <item key="FrmBusinessCardEdit_lblFullName">&amp;Name:</item>
+    <item key="FrmBusinessCardEdit_lblPhone">Personal Phone:</item>
+    <item key="FrmBusinessCardEdit_lblQQ">QQ:</item>
+    <item key="FrmBusinessCardEdit_lblCompany">&amp;Company:</item>
+    <item key="FrmBusinessCardEdit_lblAddress">Address:</item>
+    <item key="FrmBusinessCardEdit_lblOuterPhone">Outer Phone:</item>
+    <item key="FrmBusinessCardEdit_lblMobile">Mobile Phone:</item>
+    <item key="FrmBusinessCardEdit_lblMail">EMail:</item>
+    <item key="FrmBusinessCardEdit_lblBank">Account Bank:</item>
+    <item key="FrmBusinessCardEdit_lblBankAccount">Account:</item>
+    <item key="FrmBusinessCardEdit_lblTaxAccount">Tax ID:</item>
+    <item key="FrmBusinessCardEdit_chkPersonal">Personal Card</item>
+    <item key="FrmBusinessCardEdit_lblTitle">Position:</item>
+    <item key="FrmBusinessCardEdit_lblPostalcode">Zip Code:</item>
+    <item key="FrmBusinessCardEdit_lblFax">&amp;Fax:</item>
+    <item key="FrmBusinessCardEdit_lblWeb">Website:</item>
+    <item key="FrmBusinessCardEdit_lblDescription">Description:</item>
+    <item key="FrmBusinessCardEdit_btnLikeAdd">Like &amp;Add</item>
+    <item key="FrmBusinessCardEdit_btnPrint">&amp;Print</item>
+    <item key="FrmBusinessCardEdit_btnSave">&amp;Save</item>
+    <item key="FrmBusinessCardEdit_btnCancel">Cancel</item>
+    <!-- FrmBusinessCardEdit End -->
+
+    <!-- FrmCodeGenerator Begin -->
+    <item key="FrmCodeGenerator">C# CodeGenerator V3.7</item>
+    <item key="FrmCodeGenerator_lblDesign">Design:</item>
+    <item key="FrmCodeGenerator_lblOutput">Output:</item>
+    <item key="FrmCodeGenerator_rbtnUserCenter">UserCenter DB</item>
+    <item key="FrmCodeGenerator_rbtnBusiness">Business DB</item>
+    <item key="FrmCodeGenerator_rbtnWorkFlow">WorkFlow DB</item>
+    <item key="FrmCodeGenerator_chkTwoTier">Only create two tier Code</item>
+    <item key="FrmCodeGenerator_chkWCF">WCF</item>
+    <item key="FrmCodeGenerator_lblCompany">Company:</item>
+    <item key="FrmCodeGenerator_lblYearCreated">Created Year:</item>
+    <item key="FrmCodeGenerator_lblTables">Tables:</item>
+    <item key="FrmCodeGenerator_lblProject">Project:</item>
+    <item key="FrmCodeGenerator_lblAuthor">Author:</item>
+    <item key="FrmCodeGenerator_lblDateCreated">Created Date:</item>
+    <item key="FrmCodeGenerator_lblClassName">Class:</item>
+    <item key="FrmCodeGenerator_lblFileName">File Name:</item>
+    <item key="FrmCodeGenerator_btnBuilderTable">&amp;Table</item>
+    <item key="FrmCodeGenerator_btnBuilderEntity">&amp;Entity</item>
+    <item key="FrmCodeGenerator_btnBuilderManager">&amp;Manager</item>
+    <item key="FrmCodeGenerator_btnService">&amp;Service</item>
+    <item key="FrmCodeGenerator_btnIService">&amp;IService</item>
+    <item key="FrmCodeGenerator_btnTableColumns">&amp;Data Control</item>
+    <item key="FrmCodeGenerator_btnAddPage">Add Page</item>
+    <item key="FrmCodeGenerator_btnEditPage">Edit Page</item>
+    <item key="FrmCodeGenerator_btnShowPage">Show Page</item>
+    <item key="FrmCodeGenerator_btnListPage">List Page</item>
+    <item key="FrmCodeGenerator_btnSearchPage">Search Page</item>
+    <item key="FrmCodeGenerator_btnAdminPage">Admin Page</item>
+    <item key="FrmCodeGenerator_btnAddCode">Add Code</item>
+    <item key="FrmCodeGenerator_btnEditCode">Edit Code</item>
+    <item key="FrmCodeGenerator_btnShowCode">Show Code</item>
+    <item key="FrmCodeGenerator_btnListCode">List Code</item>
+    <item key="FrmCodeGenerator_btnSearchCode">Search Code</item>
+    <item key="FrmCodeGenerator_btnAdminCode">Admin Code</item>
+    <item key="FrmCodeGenerator_chkOverwrite">Overwrite</item>
+    <item key="FrmCodeGenerator_btnCopyCode">&amp;Copy</item>
+    <item key="FrmCodeGenerator_btnPdmDD">&amp;Data Dictionary</item>
+    <item key="FrmCodeGenerator_btnBuilder">Builder</item>
+    <item key="FrmCodeGenerator_btnBuilderAll">Builder All</item>
+    <item key="FrmCodeGenerator_btnSaveCode">Save</item>
+    <item key="FrmCodeGenerator_btnClose">Close</item>
+    <item key="FrmCodeGenerator_btnApply">Apply</item>
+    <!-- FrmCodeGenerator End -->
+
+    <!-- FrmException Begin -->
+    <item key="FrmException">System Exceptions Info:</item>
+    <item key="FrmException_grbException">System Exceptions Info:</item>
+    <item key="FrmException_lblCustomer">Customer Name:</item>
+    <item key="FrmException_lblSoftFullName">SoftWare:</item>
+    <item key="FrmException_lblOperator">Operator:</item>
+    <item key="FrmException_lblOccurTime">OccurTime:</item>
+    <item key="FrmException_lblExceptionInfo">Exception Info:</item>
+    <item key="FrmException_btnPrintScreen">&amp;Screen Printing</item>
+    <item key="FrmException_btnPrint">&amp;Print</item>
+    <item key="FrmException_btnReport">&amp;Report Error</item>
+    <item key="FrmException_btnClose">Close</item>
+    <!-- FrmException End -->
+
+    <!-- FrmExceptionAdmin Begin -->
+    <item key="FrmExceptionAdmin">System Exceptions Log</item>
+    <item key="FrmExceptionAdmin_colSelected">Select</item>
+    <item key="FrmExceptionAdmin_colMessage">Exception Information</item>
+    <item key="FrmExceptionAdmin_colThreadName">Exception Source</item>
+    <item key="FrmExceptionAdmin_colFormattedMessage">Exception Description</item>
+    <item key="FrmExceptionAdmin_colCreateBy">Creator</item>
+    <item key="FrmExceptionAdmin_colCreateOn">Time</item>
+    <item key="FrmExceptionAdmin_btnSelectAll">Select All</item>
+    <item key="FrmExceptionAdmin_btnInvertSelect">Select Invert</item>
+    <item key="FrmExceptionAdmin_btnClearException">&amp;Clear All</item>
+    <item key="FrmExceptionAdmin_btnExport">Export Excel...</item>
+    <item key="FrmExceptionAdmin_btnBatchDelete">&amp;Delete</item>
+    <item key="FrmExceptionAdmin_btnClose">Close</item>
+    <!-- FrmExceptionAdmin End -->
+
+    <!-- FrmOnlineEmailSupport Begin -->
+    <item key="FrmOnlineEmailSupport">Online Email Support</item>
+    <item key="FrmOnlineEmailSupport_grbOnlineEmailSupport">Online Email Support</item>
+    <item key="FrmOnlineEmailSupport_lblSendTo">Send To:</item>
+    <item key="FrmOnlineEmailSupport_lblExceptionInfo">ExceptionInfo:</item>
+    <item key="FrmOnlineEmailSupport_btnSendEmail">&amp;Send Email</item>
+    <item key="FrmOnlineEmailSupport_btnClose">Close</item>
+    <!-- FrmOnlineEmailSupport End -->
+
+    <!-- FrmFileAdmin Begin -->
+    <item key="FrmFileAdmin">File Management</item>
+    <item key="FrmFileAdmin_colSelected">Select</item>
+    <item key="FrmFileAdmin_colFileName">File Name</item>
+    <item key="FrmFileAdmin_colFileSize">Size</item>
+    <item key="FrmFileAdmin_ColReadCount">Download Times</item>
+    <item key="FrmFileAdmin_colModifiedBy">Modifier</item>
+    <item key="FrmFileAdmin_colModifiedOn">Modified Date</item>
+    <item key="FrmFileAdmin_colDescription">Description</item>
+    <item key="FrmFileAdmin_colCreateStaffID">Create Staff</item>
+    <item key="FrmFileAdmin_colCreateOn">Create Date</item>
+    <item key="FrmFileAdmin_btnAdd">&amp;Add</item>
+    <item key="FrmFileAdmin_btnEdit">&amp;Edit</item>
+    <item key="FrmFileAdmin_btnMove">&amp;Move</item>
+    <item key="FrmFileAdmin_btnBatchDelete">&amp;Delete</item>
+    <item key="FrmFileAdmin_btnBatchSave">&amp;Save</item>
+    <item key="FrmFileAdmin_btnClose">Close</item>
+    <item key="FrmFileAdmin_btnSelectAll">Select All</item>
+    <item key="FrmFileAdmin_btnInvertSelect">Select Invert</item>
+    <item key="FrmFileAdmin_btnFolderAdmin">&amp;Folder...</item>
+    <item key="FrmFileAdmin_btnExport">Export to Excel</item>
+    <item key="FrmFileAdmin_mItmAddUrl">Add...</item>
+    <item key="FrmFileAdmin_mItmAddFile">Add File...</item>
+    <item key="FrmFileAdmin_mItmAddFolder">Add Folder..</item>
+    <item key="FrmFileAdmin_mItmEditFolder">Edit Folder..</item>
+    <item key="FrmFileAdmin_mItmMoveFolder">Move Folder..</item>
+    <!--<item key="FrmFileAdmin_mItmDeleteFolder">Delete Folder..</item>-->
+    <item key="FrmFileAdmin_mItmAddRootFolder">Add Root Folder..</item>
+    <item key="FrmFileAdmin_mItmFrmFolderAdmin">Folder Management..</item>
+    <!-- FrmFileAdmin End -->
+
+    <!-- FrmFolderAdmin Begin -->
+    <item key="FrmFolderAdmin">Floder Management</item>
+    <item key="FrmFolderAdmin_colSelected">Select</item>
+    <item key="FrmFolderAdmin_colFolderName">Name</item>
+    <item key="FrmFolderAdmin_colDescription">Description</item>
+    <item key="FrmFolderAdmin_btnAdd">&amp;Add</item>
+    <item key="FrmFolderAdmin_btnEdit">&amp;Edit</item>
+    <item key="FrmFolderAdmin_btnSelectAll">Select All</item>
+    <item key="FrmFolderAdmin_btnInvertSelect">Select Invert</item>
+    <item key="FrmFolderAdmin_btnMove">&amp;Move</item>
+    <item key="FrmFolderAdmin_btnBatchDelete">&amp;Delete</item>
+    <item key="FrmFolderAdmin_btnExport">Export to Excel</item>
+    <item key="FrmFolderAdmin_btnBatchSave">&amp;Save</item>
+    <item key="FrmFolderAdmin_btnClose">Close</item>
+    <item key="FrmFolderAdmin_mItmAdd">&amp;Add Folder..</item>
+    <item key="FrmFolderAdmin_mItmEdit">&amp;Edit Folder..</item>
+    <item key="FrmFolderAdmin_mItmMove">&amp;Move Folder..</item>
+    <item key="FrmFolderAdmin_mItmDelete">&amp;Delete Folder..</item>
+    <item key="FrmFolderAdmin_mItmAddRootFolder">Add Root Folder..</item>
+    <!-- FrmFolderAdmin End -->
+
+    <!-- FrmFolderMultiSelect Begin -->
+    <item key="FrmFolderMultiSelect">Select Folder</item>
+    <item key="FrmFolderMultiSelect_btnSelectAll">Select All</item>
+    <item key="FrmFolderMultiSelect_btnInvertSelect">Select Invert</item>
+    <item key="FrmFolderMultiSelect_btnConfirm">OK</item>
+    <item key="FrmFolderMultiSelect_btnCancel">Cancel</item>
+    <!-- FrmFolderMultiSelect End -->
+
+    <!-- FrmFolderSelectOne Begin -->
+    <item key="FrmFolderSelectOne">Select Folder</item>
+    <item key="FrmFolderSelectOne_btnConfirm">OK</item>
+    <item key="FrmFolderSelectOne_btnCancel">Cancel</item>
+    <!-- FrmFolderSelectOne End -->
+
+    <!-- FrmPicture Begin -->
+    <item key="FrmPicture">View Picture</item>
+    <item key="FrmPicture_btnDownLoad">&amp;Download</item>
+    <item key="FrmPicture_btnClose">Close</item>
+    <!-- FrmPicture End -->
+
+    <!-- FrmResourcePermission Begin -->
+    <item key="FrmResourcePermission">Resource Permission Settings</item>
+    <item key="FrmResourcePermission_lblResource">Object:</item>
+    <item key="FrmResourcePermission_lblPermissionItem">Operation Permission:</item>
+    <item key="FrmResourcePermission_tpTargetResource">Target Resource</item>
+    <item key="FrmResourcePermission_colSelected">Select</item>
+    <item key="FrmResourcePermission_colRealName">Name</item>
+    <item key="FrmResourcePermission_colDescription">Description</item>
+    <item key="FrmResourcePermission_btnSelectAll">Select All</item>
+    <item key="FrmResourcePermission_btnInvertSelect">Select Invert</item>
+    <item key="FrmResourcePermission_btnConfirm">&amp;Save</item>
+    <item key="FrmResourcePermission_btnCancel">Cancel</item>
+    <!-- FrmResourcePermission End -->
+
+    <!-- FrmResourceSetPermission Begin -->
+    <item key="FrmResourceSetPermission">Resource Permission Settings</item>
+    <item key="FrmResourceSetPermission_lblTargetResource">Resource:</item>
+    <item key="FrmResourceSetPermission_tpUser">User(Account)</item>
+    <item key="FrmResourceSetPermission_tpRole">Role(UserGroup)</item>
+    <item key="FrmResourceSetPermission_lblPermissionItem">Operation Permission:</item>
+    <item key="FrmResourceSetPermission_colRoleSelected">Select</item>
+    <item key="FrmResourceSetPermission_colUserSelected">Select</item>
+    <item key="FrmResourceSetPermission_colUserName">User Name</item>
+    <item key="FrmResourceSetPermission_colRealName">Real Name</item>
+    <item key="FrmResourceSetPermission_colDescription">Description</item>
+    <item key="FrmResourceSetPermission_dataGridViewCheckBoxColumn1">Select</item>
+    <item key="FrmResourceSetPermission_dataGridViewTextBoxColumn1">Name</item>
+    <item key="FrmResourceSetPermission_dataGridViewTextBoxColumn2">Description</item>
+    <item key="FrmResourceSetPermission_btnSelectAll">Select All</item>
+    <item key="FrmResourceSetPermission_btnInvertSelect">Select Invert</item>
+    <item key="FrmResourceSetPermission_btnConfirm">&amp;Save</item>
+    <item key="FrmResourceSetPermission_btnCancel">Cancel</item>
+    <!-- FrmResourceSetPermission End -->
+
+    <!-- FrmTreeResourcePermission Begin -->
+    <item key="FrmTreeResourcePermission">Resource Permission settings(Tree)</item>
+    <item key="FrmTreeResourcePermission_lblResource">Object:</item>
+    <item key="FrmTreeResourcePermission_lblPermissionItem">Operation Permission:</item>
+    <item key="FrmTreeResourcePermission_tpTargetResource">Target Resource</item>
+    <item key="FrmTreeResourcePermission_colSelected">Select</item>
+    <item key="FrmTreeResourcePermission_colRealName">Name</item>
+    <item key="FrmTreeResourcePermission_colDescription">Description</item>
+    <item key="FrmTreeResourcePermission_btnSelectAll">Select All</item>
+    <item key="FrmTreeResourcePermission_btnInvertSelect">Select Invert</item>
+    <item key="FrmTreeResourcePermission_btnBatchSave">&amp;Save</item>
+    <item key="FrmTreeResourcePermission_btnClose">Close</item>
+    <!-- FrmTreeResourcePermission End -->
+
+    <!-- FrmFolderSelect Begin -->
+    <item key="FrmFolderSelect">Select Folder</item>
+    <item key="FrmFolderSelect_btnConfirm">&amp;Confirm</item>
+    <item key="FrmFolderSelect_btnCancel">Cancel</item>
+    <item key="FrmFolderSelect_btnSetNull">Blank</item>
+    <!-- FrmFolderSelect End -->
+
+    <!-- FrmFolderPermission Begin -->
+    <item key="FrmFolderPermission">Folder Permission</item>
+    <item key="FrmFolderPermission_grpFolderPermission">Folder Permission</item>
+    <item key="FrmFolderPermission_checkBox1">View</item>
+    <item key="FrmFolderPermission_checkBox3">Create Subdirectory</item>
+    <item key="FrmFolderPermission_checkBox5">Delete Subdirectory</item>
+    <item key="FrmFolderPermission_checkBox2">Create File</item>
+    <item key="FrmFolderPermission_checkBox4">Delete File</item>
+    <item key="FrmFolderPermission_checkBox7">Update Others' File</item>
+    <item key="FrmFolderPermission_checkBox6">Delete Others' File</item>
+    <item key="FrmFolderPermission_checkBox8">Download Others' File</item>
+    <!-- FrmFolderPermission End -->
+
+    <!-- FrmItemDetailsAdd Begin -->
+    <item key="FrmItemDetailsAdd">Add Data Dictionary(Item)</item>
+    <item key="FrmItemDetailsAdd_grbItemDetails">Item Detail</item>
+    <item key="FrmItemDetailsAdd_lblCode">&amp;Code:</item>
+    <item key="FrmItemDetailsAdd_lblFullName">&amp;Name:</item>
+    <item key="FrmItemDetailsAdd_lblValue">&amp;Value:</item>
+    <item key="FrmItemDetailsAdd_chkEnabled">&amp;Enabled</item>
+    <item key="FrmItemDetailsAdd_lblDescription">&amp;Description:</item>
+    <item key="FrmItemDetailsAdd_btnAdd">&amp;Add</item>
+    <item key="FrmItemDetailsAdd_btnSave">&amp;Save</item>
+    <item key="FrmItemDetailsAdd_btnCancel">Cancel</item>
+    <!-- FrmItemDetailsAdd End -->
+
+    <!-- FrmItemDetailsEdit Begin -->
+    <item key="FrmItemDetailsEdit">Edit Data Dictionary(Item)</item>
+    <item key="FrmItemDetailsEdit_grbItemDetails">Item Detail</item>
+    <item key="FrmItemDetailsEdit_lblId">ID:</item>
+    <item key="FrmItemDetailsEdit_lblCode">&amp;Code:</item>
+    <item key="FrmItemDetailsEdit_lblFullName">&amp;Name:</item>
+    <item key="FrmItemDetailsEdit_lblValue">&amp;Value:</item>
+    <item key="FrmItemDetailsEdit_chkEnabled">&amp;Enabled</item>
+    <item key="FrmItemDetailsEdit_lblDescription">&amp;Description:</item>
+    <item key="FrmItemDetailsEdit_btnLikeAdd">Like &amp;Add</item>
+    <item key="FrmItemDetailsEdit_btnSave">&amp;Save</item>
+    <item key="FrmItemDetailsEdit_btnCancel">Cancel</item>
+    <!-- FrmItemDetailsEdit End -->
+
+    <!-- FrmItemDetailsAdmin Begin -->
+    <item key="FrmItemDetailsAdmin">Data Dictionary(Item) Detail Management</item>
+    <item key="FrmItemDetailsAdmin_btnUserResourcePermission">User Permission...</item>
+    <item key="FrmItemDetailsAdmin_btnRoleResourcePermission">Role Permission...</item>
+    <item key="FrmItemDetailsAdmin_lblContents">&amp;Contents:</item>
+    <item key="FrmItemDetailsAdmin_labelTarget">&amp;Target：</item>
+    <item key="FrmItemDetailsAdmin_colSelected">Select</item>
+    <item key="FrmItemDetailsAdmin_colItemCode">Code</item>
+    <item key="FrmItemDetailsAdmin_colItemName">Name</item>
+    <item key="FrmItemDetailsAdmin_colItemValue">Value</item>
+    <item key="FrmItemDetailsAdmin_colDescription">Description</item>
+    <item key="FrmItemDetailsAdmin_colEnabled">Enabled</item>
+    <item key="FrmItemDetailsAdmin_btnSelectAll">Select All</item>
+    <item key="FrmItemDetailsAdmin_btnInvertSelect">Invert Select</item>
+    <item key="FrmItemDetailsAdmin_btnAdd">&amp;Add...</item>
+    <item key="FrmItemDetailsAdmin_btnEdit">&amp;Edit...</item>
+    <item key="FrmItemDetailsAdmin_btnExport">Export Excel...</item>
+    <item key="FrmItemDetailsAdmin_btnBatchDelete">&amp;Delete</item>
+    <item key="FrmItemDetailsAdmin_btnBatchSave">&amp;Save</item>
+    <item key="FrmItemDetailsAdmin_btnClose">Close</item>
+    <!-- FrmItemDetailsAdmin End -->
+
+    <!-- FrmItemsAdd Begin -->
+    <item key="FrmItemsAdd">Add Data Dictionary(Item)</item>
+    <item key="FrmItemsAdd_grbItemDetails">Item</item>
+    <item key="FrmItemsAdd_lblCode">&amp;Code:</item>
+    <item key="FrmItemsAdd_lblFullName">&amp;Name:</item>
+    <item key="FrmItemsAdd_lblTargetTable">&amp;Target Table:</item>
+    <item key="FrmItemsAdd_lblUseItemCode">Code Field:</item>
+    <item key="FrmItemsAdd_lblUseItemName">Name Field:</item>
+    <item key="FrmItemsAdd_chkIsTree">Tree</item>
+    <item key="FrmItemsAdd_lblUseItemValue">Value Field:</item>
+    <item key="FrmItemsAdd_chkEnabled">Enabled</item>
+    <item key="FrmItemsAdd_chkCreateTable">Create Table</item>
+    <item key="FrmItemsAdd_lblDescription">&amp;Description:</item>
+    <item key="FrmItemsAdd_btnAdd">&amp;Add</item>
+    <item key="FrmItemsAdd_btnSave">&amp;Save</item>
+    <item key="FrmItemsAdd_btnCancel">Cancel</item>
+    <!-- FrmItemsAdd End -->
+
+    <!-- FrmItemsEdit Begin -->
+    <item key="FrmItemsEdit">Edit Data Dictionary(Item)</item>
+    <item key="FrmItemsEdit_grbItemDetails">Item</item>
+    <item key="FrmItemsEdit_btnCreateTable">Create Item Table</item>
+    <item key="FrmItemsEdit_lblCode">&amp;Code:</item>
+    <item key="FrmItemsEdit_lblFullName">&amp;Name:</item>
+    <item key="FrmItemsEdit_lblTargetTable">&amp;Target Table:</item>
+    <item key="FrmItemsEdit_lblUseItemCode">Code Column:</item>
+    <item key="FrmItemsEdit_lblUseItemName">Name Column:</item>
+    <item key="FrmItemsEdit_chkIsTree">Tree</item>
+    <item key="FrmItemsEdit_lblUseItemValue">Value Column:</item>
+    <item key="FrmItemsEdit_chkEnabled">Enabled</item>
+    <item key="FrmItemsEdit_lblDescription">&amp;Description:</item>
+    <item key="FrmItemsEdit_btnAccessPermission">Access &amp;Permission</item>
+    <item key="FrmItemsEdit_btnLikeAdd">Like &amp;Add</item>
+    <item key="FrmItemsEdit_btnSave">&amp;Save</item>
+    <item key="FrmItemsEdit_btnCancel">Cancel</item>
+    <!-- FrmItemsEdit End -->
+
+    <!-- FrmItemsAdmin Begin -->
+    <item key="FrmItemsAdmin">Data Dictionary(Item) Management</item>
+    <item key="FrmItemsAdmin_lblSearch">&amp;Contents:</item>
+    <item key="FrmItemsAdmin_chkEnabled">Enabled Only</item>
+    <item key="FrmItemsAdmin_btnUserResourcePermission">User Permission</item>
+    <item key="FrmItemsAdmin_btnRoleResourcePermission">Role Permission</item>
+    <item key="FrmItemsAdmin_colSelected">Select</item>
+    <item key="FrmItemsAdmin_colCode">Code</item>
+    <item key="FrmItemsAdmin_colFullName">Name</item>
+    <item key="FrmItemsAdmin_colTargetTable">Target Table</item>
+    <item key="FrmItemsAdmin_colDescription">Description</item>
+    <item key="FrmItemsAdmin_colEnabled">Enabled</item>
+    <item key="FrmItemsAdmin_colUseItemCode">UseItem Code</item>
+    <item key="FrmItemsAdmin_colUseItemName">UserItem Name</item>
+    <item key="FrmItemsAdmin_colUseItemValue">UserItem Value</item>
+    <item key="FrmItemsAdmin_btnDetails">Data Dictionary Details</item>
+    <item key="FrmItemsAdmin_btnSelectAll">Select All</item>
+    <item key="FrmItemsAdmin_btnInvertSelect">Invert Select</item>
+    <item key="FrmItemsAdmin_btnAdd">&amp;Add...</item>
+    <item key="FrmItemsAdmin_btnEdit">&amp;Edit...</item>
+    <item key="FrmItemsAdmin_btnPermission">&amp;Permission...</item>
+    <item key="FrmItemsAdmin_btnExport">Export Excel...</item>
+    <item key="FrmItemsAdmin_btnBatchDelete">&amp;Delete</item>
+    <item key="FrmItemsAdmin_btnBatchSave">&amp;Save</item>
+    <item key="FrmItemsAdmin_btnClose">Close</item>
+    <!-- FrmItemsAdmin End -->
+
+    <!-- FrmUserResourcePermission Begin -->
+    <item key="FrmUserResourcePermission">User Resource Permission</item>
+    <item key="FrmUserResourcePermission_btnClearPermission">Clear Permission</item>
+    <item key="FrmUserResourcePermission_btnCopy">Copy Permission</item>
+    <item key="FrmUserResourcePermission_btnPaste">Paste Permission</item>
+    <item key="FrmUserResourcePermission_tpUser">User</item>
+    <item key="FrmUserResourcePermission_lblPermissionItem">Permission Item:</item>
+    <item key="FrmUserResourcePermission_tpTargetResource">Target Resource</item>
+    <item key="FrmUserResourcePermission_colSelected">Selected</item>
+    <item key="FrmUserResourcePermission_colRealName">RealName</item>
+    <item key="FrmUserResourcePermission_colDescription">Description</item>
+    <item key="FrmUserResourcePermission_btnSelectAll">Select All</item>
+    <item key="FrmUserResourcePermission_btnInvertSelect">Invert Select</item>
+    <item key="FrmUserResourcePermission_btnConfirm">&amp;Save</item>
+    <item key="FrmUserResourcePermission_btnCancel">Cancel</item>
+    <!-- FrmUserResourcePermission End -->
+
+    <!-- FrmRoleResourcePermission Begin -->
+    <item key="FrmRoleResourcePermission">Role Resource Permission</item>
+    <item key="FrmRoleResourcePermission_btnClearPermission">Clear Permission</item>
+    <item key="FrmRoleResourcePermission_btnCopy">Copy Permission</item>
+    <item key="FrmRoleResourcePermission_btnPaste">Paste Permission</item>
+    <item key="FrmRoleResourcePermission_tpRole">Role</item>
+    <item key="FrmRoleResourcePermission_lblPermissionItem">Permission Item:</item>
+    <item key="FrmRoleResourcePermission_tpTargetResource">Target Resource</item>
+    <item key="FrmRoleResourcePermission_colSelected">Selected</item>
+    <item key="FrmRoleResourcePermission_colRealName">RealName</item>
+    <item key="FrmRoleResourcePermission_colDescription">Description</item>
+    <item key="FrmRoleResourcePermission_btnSelectAll">Select All</item>
+    <item key="FrmRoleResourcePermission_btnInvertSelect">Invert Select</item>
+    <item key="FrmRoleResourcePermission_btnConfirm">&amp;Save</item>
+    <item key="FrmRoleResourcePermission_btnCancel">Cancel</item>
+    <!-- FrmRoleResourcePermission End -->
+
+    <!-- FrmItemDetailsMultiSelect Begin -->
+    <item key="FrmItemDetailsMultiSelect">Select Data Dictionary(Item)</item>
+    <item key="FrmItemDetailsMultiSelect_colSelected">Select</item>
+    <item key="FrmItemDetailsMultiSelect_colCode">Code</item>
+    <item key="FrmItemDetailsMultiSelect_colItemName">Name</item>
+    <item key="FrmItemDetailsMultiSelect_colDescription">Description</item>
+    <item key="FrmItemDetailsMultiSelect_btnSelectAll">Select All</item>
+    <item key="FrmItemDetailsMultiSelect_btnInvertSelect">Select Invert</item>
+    <item key="FrmItemDetailsMultiSelect_btnSetNull">&amp;Null</item>
+    <item key="FrmItemDetailsMultiSelect_btnConfirm">Confirm</item>
+    <item key="FrmItemDetailsMultiSelect_btnCancel">Cancel</item>
+    <!-- FrmItemDetailsMultiSelect End -->
+
+    <!-- FrmItemDetailsSelect Begin -->
+    <item key="FrmItemDetailsSelect">Select Data Dictionary(Item)</item>
+    <item key="FrmItemDetailsSelect_colSelected">Select</item>
+    <item key="FrmItemDetailsSelect_colCode">Code</item>
+    <item key="FrmItemDetailsSelect_colItemName">Name</item>
+    <item key="FrmItemDetailsSelect_colDescription">Description</item>
+    <item key="FrmItemDetailsSelect_btnSetNull">&amp;Null</item>
+    <item key="FrmItemDetailsSelect_btnConfirm">Confirm</item>
+    <item key="FrmItemDetailsSelect_btnCancel">Cancel</item>
+    <!-- FrmItemDetailsSelect End -->
+
+    <!-- FrmItemDetailsTreeSelect Begin -->
+    <item key="FrmItemDetailsTreeSelect">Select Data Dictionary(Item)</item>
+    <item key="FrmItemDetailsTreeSelect_btnSetNull">&amp;Null</item>
+    <item key="FrmItemDetailsTreeSelect_btnConfirm">Confirm</item>
+    <item key="FrmItemDetailsTreeSelect_btnCancel">Cancel</item>
+    <!-- FrmItemDetailsTreeSelect End -->
+
+    <!-- FrmItemDetailsSelectOne Begin -->
+    <item key="FrmItemDetailsSelectOne">Select ItemDetail</item>
+    <item key="FrmItemDetailsSelectOne_btnOk">Ok</item>
+    <item key="FrmItemDetailsSelectOne_btnCancel">Cancel</item>
+    <!-- FrmItemDetailsSelectOne End -->
+
+    <!-- FrmSystemLogByDate Begin -->
+    <item key="FrmSystemLogByDate">Query by Date</item>
+    <item key="FrmSystemLogByDate_lblStartDate">StartDate:</item>
+    <item key="FrmSystemLogByDate_lblEndDate">EndDate:</item>
+    <item key="FrmSystemLogByDate_lblUser">User:</item>
+    <item key="FrmSystemLogByDate_lblModule">Module:</item>
+    <item key="FrmSystemLogByDate_btnQuery">&amp;Search</item>
+    <item key="FrmSystemLogByDate_colProcessName">Module</item>
+    <item key="FrmSystemLogByDate_colUserRealName">Name</item>
+    <item key="FrmSystemLogByDate_colSelected">Select</item>
+    <item key="FrmSystemLogByDate_colCreateOn">Access Time</item>
+    <item key="FrmSystemLogByDate_colDescription">Description</item>
+    <item key="FrmSystemLogByDate_colIPAddress">IPAddress</item>
+    <item key="FrmSystemLogByDate_colMethodName">Operation</item>
+    <item key="FrmSystemLogByDate_btnBatchDelete">&amp;Delete</item>
+    <item key="FrmSystemLogByDate_btnSelectAll">Select All</item>
+    <item key="FrmSystemLogByDate_btnInvertSelect">Select Invert</item>
+    <item key="FrmSystemLogByDate_btnClear">&amp;Clear All</item>
+    <item key="FrmSystemLogByDate_btnExport">Export Excel...</item>
+    <item key="FrmSystemLogByDate_btnClose">Close</item>
+    <!-- FrmLogByDate End -->
+
+    <!-- FrmLogByModule Begin -->
+    <item key="FrmLogByModule">Query By Module(Menu)</item>
+    <item key="FrmLogByModule_lblModule">Module:</item>
+    <item key="FrmLogByModule_btnQuery">&amp;Search</item>
+    <item key="FrmLogByModule_colProcessName">Module</item>
+    <item key="FrmLogByModule_colUserRealName">Name</item>
+    <item key="FrmLogByModule_colSelected">Select</item>
+    <item key="FrmLogByModule_colUserName">UserName</item>
+    <item key="FrmLogByModule_colCreateOn">Access Time</item>
+    <item key="FrmLogByModule_colDescription">Description</item>
+    <item key="FrmLogByModule_colIPAddress">IPAddress</item>
+    <item key="FrmLogByModule_colMethodName">Operation</item>
+    <item key="FrmLogByModule_lblStartDate">StartDate:</item>
+    <item key="FrmLogByModule_lblEndDate">EndDate:</item>
+    <item key="FrmLogByModule_btnBatchDelete">&amp;Delete</item>
+    <item key="FrmLogByModule_btnSelectAll">Select All</item>
+    <item key="FrmLogByModule_btnInvertSelect">Select Invert</item>
+    <item key="FrmLogByModule_btnClear">Clear All</item>
+    <item key="FrmLogByModule_btnExport">Export &amp;Excel...</item>
+    <item key="FrmLogByModule_btnDelete">&amp;Delete</item>
+    <item key="FrmLogByModule_btnClose">Close</item>
+    <!-- FrmLogByModule End -->
+
+
+    <!-- FrmLogGeneral Begin -->
+    <item key="FrmLogGeneral">User(Account) Visits</item>
+    <item key="FrmLogGeneral_lblContents">&amp;Contents:</item>
+    <item key="FrmLogGeneral_btnSearch">&amp;Search</item>
+    <item key="FrmLogGeneral_chkOnlyOnLine">Show Online User</item>
+    <item key="FrmLogGeneral_colSelected">Select</item>
+    <item key="FrmLogGeneral_colCode">Code</item>
+    <item key="FrmLogGeneral_colUserName">User Name</item>
+    <item key="FrmLogGeneral_colUserRealName">Name</item>
+    <item key="FrmLogGeneral_colIsStaff">Is Staff</item>
+    <item key="FrmLogGeneral_colIsVisible">Is Visible</item>
+    <item key="FrmLogGeneral_colEnabled">Enabled</item>
+    <item key="FrmLogGeneral_colFirstVisit">First LogOn</item>
+    <item key="FrmLogGeneral_colLatestVisit">Latest LogOn</item>
+    <item key="FrmLogGeneral_colLastVisit">Last LogOn</item>
+    <item key="FrmLogGeneral_colLogCount">LogOn Count</item>
+    <item key="FrmLogGeneral_colUserOnLine">Now Online</item>
+    <item key="FrmLogGeneral_colIPAddress">IP</item>
+    <item key="FrmLogGeneral_colMACAddress">MAC</item>
+    <item key="FrmLogGeneral_btnSelectAll">Select All</item>
+    <item key="FrmLogGeneral_btnInvertSelect">Select Invert</item>
+    <item key="FrmLogGeneral_btnVisitDetail">&amp;Visit Detail...</item>
+    <item key="FrmLogGeneral_btnExport">Export Excel...</item>
+    <item key="FrmLogGeneral_btnReset">&amp;Reset</item>
+    <item key="FrmLogGeneral_btnClose">Close</item>
+    <!-- FrmLogGeneral End -->
+
+    <!-- FrmLogOn Begin -->
+    <item key="FrmLogOn">LogOn</item>
+    <item key="FrmLogOn_grpLogOn">LogOn</item>
+    <item key="FrmLogOn_lblUser">&amp;User Name:</item>
+    <item key="FrmLogOn_lblPassword">&amp;Password:</item>
+    <item key="FrmLogOn_btnConfirm">&amp;LogOn</item>
+    <item key="FrmLogOn_chkRememberPassword">Remember Password</item>
+    <item key="FrmLogOn_btnExit">&amp;Exit</item>
+    <item key="FrmLogOn_btnCancel">Cancel</item>
+    <!-- FrmLogOn End -->
+
+    <!-- FrmLogOnSelect Begin -->
+    <item key="FrmLogOnSelect">LogOn</item>
+    <item key="FrmLogOnSelect_grpLogOn">LogOn</item>
+    <item key="FrmLogOnSelect_lblUser">&amp;User Name:</item>
+    <item key="FrmLogOnSelect_lblPassword">&amp;Password:</item>
+    <item key="FrmLogOnSelect_lblLogOnTo">LogOn &amp;To:</item>
+    <item key="FrmLogOnSelect_btnConfirm">&amp;LogOn</item>
+    <item key="FrmLogOnSelect_btnCancel">Cancel</item>
+    <!-- FrmLogOnSelect End -->
+
+    <!-- FrmSelectNetwork Begin -->
+    <item key="FrmSelectNetwork">Select Network</item>
+    <item key="FrmSelectNetwork_btnInnern">Inner Visit</item>
+    <item key="FrmSelectNetwork_btnOuter">Outer Visit</item>
+    <item key="FrmSelectNetwork_btnExit">Exit</item>
+    <!-- FrmSelectNetwork End -->
+
+    <!-- FrmModuleAdd Begin -->
+    <item key="FrmModuleAdd">Add Module(Menu)</item>
+    <item key="FrmModuleAdd_grbModule">Module(Menu)</item>
+    <item key="FrmModuleAdd_lblParent">Parent Node:</item>
+    <item key="FrmModuleAdd_lblFullName">Name:</item>
+    <item key="FrmModuleAdd_lblCode">Code:</item>
+    <item key="FrmModuleAdd_lblNavigateUrl">NavigateUrl:</item>
+    <item key="FrmModuleAdd_lblTarget">Target:</item>
+    <item key="FrmModuleAdd_lblFormName">Form Name:</item>
+    <item key="FrmModuleAdd_lblAssembly">Assembly DLL:</item>
+    <item key="FrmModuleAdd_chkEnabled">Enabled</item>
+    <item key="FrmModuleAdd_chkExpand">Expand</item>
+    <item key="FrmModuleAdd_chkIsPublic">Public</item>
+    <item key="FrmModuleAdd_lblDescription">Description:</item>
+    <item key="FrmModuleAdd_btnAdd">Add</item>
+    <item key="FrmModuleAdd_btnConfirm">Confirm</item>
+    <item key="FrmModuleAdd_btnCancel">Cancel</item>
+    <!-- FrmModuleAdd End -->
+
+    <!-- FrmModuleEdit Begin -->
+    <item key="FrmModuleEdit">Edit Module(Menu)</item>
+    <item key="FrmModuleEdit_grbModule">Module Menu</item>
+    <item key="FrmModuleEdit_lblParent">Parent Node:</item>
+    <item key="FrmModuleEdit_lblCode">Code:</item>
+    <item key="FrmModuleEdit_lblFullName">Name:</item>
+    <item key="FrmModuleEdit_lblTarget">Target:</item>
+    <item key="FrmModuleEdit_lblFormName">Form Name:</item>
+    <item key="FrmModuleEdit_lblAssembly">Assembly DLL:</item>
+    <item key="FrmModuleEdit_lblId">Primary key:</item>
+    <item key="FrmModuleEdit_lblNavigateUrl">NavigateUrl:</item>
+    <item key="FrmModuleEdit_chkEnabled">Enabled</item>
+    <item key="FrmModuleEdit_chkExpand">Expand</item>
+    <item key="FrmModuleEdit_chkIsPublic">IsPublic</item>
+    <item key="FrmModuleEdit_lblDescription">Description:</item>
+    <item key="FrmModuleEdit_btnAccessPermission">Access Permission...</item>
+    <item key="FrmModuleEdit_btnLikeAdd">Like Add</item>
+    <item key="FrmModuleEdit_btnSave">Save</item>
+    <item key="FrmModuleEdit_btnCancel">Cancel</item>
+    <!-- FrmModuleEdit End -->
+
+    <!-- FrmModuleAdmin Begin -->
+    <item key="FrmModuleAdmin">Module(Menu) Management</item>
+    <item key="FrmModuleAdmin_lblSystem">Bussiness System:</item>
+    <item key="FrmModuleAdmin_btnRoleModulePermission">Role Module Permission...</item>
+    <item key="FrmModuleAdmin_btnUserModulePermission">User Module Permission...</item>
+    <item key="FrmModuleAdmin_btnModuleConfig">Module(Menu) Config</item>
+    <item key="FrmModuleAdmin_btnModulePermissionRelation">Relation Permission...</item>
+    <item key="FrmModuleAdmin_btnExport">Export Excel...</item>
+    <item key="FrmModuleAdmin_colSelected">Select</item>
+    <item key="FrmModuleAdmin_colCode">Code</item>
+    <item key="FrmModuleAdmin_colFullName">Name</item>
+    <item key="FrmModuleAdmin_colNavigateUrl">Web site</item>
+    <item key="FrmModuleAdmin_colDescription">Description</item>
+    <item key="FrmModuleAdmin_colIsPublic">Public</item>
+    <item key="FrmModuleAdmin_colExpand">Expand</item>
+    <item key="FrmModuleAdmin_colEnabled">Enabled</item>
+    <item key="FrmModuleAdmin_btnSelectAll">Select All</item>
+    <item key="FrmModuleAdmin_btnInvertSelect">Invert Select</item>
+    <item key="FrmModuleAdmin_btnAdd">&amp;Add...</item>
+    <item key="FrmModuleAdmin_btnEdit">&amp;Edit...</item>
+    <item key="FrmModuleAdmin_btnMove">&amp;Move...</item>
+    <item key="FrmModuleAdmin_btnBatchSave">&amp;Save</item>
+    <item key="FrmModuleAdmin_btnBatchDelete">&amp;Delete</item>
+    <item key="FrmModuleAdmin_btnClose">Close</item>
+    <item key="FrmModuleAdmin_mItmAdd">Add...</item>
+    <item key="FrmModuleAdmin_mItmEdit">Edit...</item>
+    <item key="FrmModuleAdmin_mItmMove">Move...</item>
+    <item key="FrmModuleAdmin_mItmDelete">Delete</item>
+    <item key="FrmModuleAdmin_mItmAddRoot">Add Root Module(Menu)...</item>
+    <item key="FrmModuleAdmin_mItmModuleSetPermission">Set Module &amp;Permission</item>
+    <item key="FrmModuleAdmin_mItmModulePermissionRelation">Related Modules(Menu)...</item>
+    <item key="FrmModuleAdmin_mItmSetSortCode">Save Sort Order</item>
+    <!-- FrmModuleAdmin End -->
+
+    <!-- FrmModulePermissionItemBatchSet Begin -->
+    <item key="FrmModulePermissionItemBatchSet">Module(Menu) Relation Permission</item>
+    <item key="FrmModulePermissionItemBatchSet_tpModule">Module(Menu)</item>
+    <item key="FrmModulePermissionItemBatchSet_tpPermissionItem">Permission</item>
+    <!-- FrmModulePermissionItemBatchSet End -->
+
+    <!-- FrmModuleConfig Begin -->
+    <item key="FrmModuleConfig">Module(Menu) Config</item>
+    <item key="FrmModuleConfig_btnSelectAll">Select All</item>
+    <item key="FrmModuleConfig_btnInvertSelect">Select Invert</item>
+    <item key="FrmModuleConfig_btnConfirm">&amp;Cofirm</item>
+    <item key="FrmModuleConfig_btnClose">Close</item>
+    <item key="FrmModuleConfig_btnCancel">Cancel</item>
+    <!-- FrmModuleConfig End -->
+
+    <!-- FrmModuleMultiSelect Begin -->
+    <item key="FrmModuleMultiSelect">Module(Menu) Config</item>
+    <item key="FrmModuleMultiSelect_btnSelectAll">Select All</item>
+    <item key="FrmModuleMultiSelect_btnInvertSelect">Select Invert</item>
+    <item key="FrmModuleMultiSelect_btnConfirm">&amp;Confirm</item>
+    <item key="FrmModuleMultiSelect_btnCancel">Cancel</item>
+    <!-- FrmModuleMultiSelect End -->
+
+    <!-- FrmModuleSelect Begin -->
+    <item key="FrmModuleSelect">Select Module(Menu)</item>
+    <item key="FrmModuleSelect_btnConfirm">Confirm</item>
+    <item key="FrmModuleSelect_btnSetNull">&amp;Null</item>
+    <item key="FrmModuleSelect_btnCancel">Cancel</item>
+    <!-- FrmModuleSelect End -->
+
+    <!-- FrmModulePermissionAdmin Begin -->
+    <item key="FrmModulePermissionAdmin">Module(Menu) Operation Permission</item>
+    <item key="FrmModulePermissionAdmin_colSelected">Select</item>
+    <item key="FrmModulePermissionAdmin_colCode">Code</item>
+    <item key="FrmModulePermissionAdmin_colFullName">Name</item>
+    <item key="FrmModulePermissionAdmin_colDescription">Description</item>
+    <item key="FrmModulePermissionAdmin_lblModule">Module(Menu):</item>
+    <item key="FrmModulePermissionAdmin_btnSelectAll">Select All</item>
+    <item key="FrmModulePermissionAdmin_btnInvertSelect">Select Invert</item>
+    <item key="FrmModulePermissionAdmin_btnAddPermission">&amp;Select Permission...</item>
+    <item key="FrmModulePermissionAdmin_btnMove">&amp;Remove</item>
+    <item key="FrmModulePermissionAdmin_btnClose">Close</item>
+    <!-- FrmModulePermissionAdmin End -->
+
+    <!-- FrmIPLimitr Begin -->
+    <item key="FrmIPLimitr">IP Access Restrictions</item>
+    <item key="FrmIPLimitr_colSelected">Select</item>
+    <item key="FrmIPLimitr_lblUser">&amp;User(Account):</item>
+    <item key="FrmIPLimitr_btnAdd">&amp;Add</item>
+    <item key="FrmIPLimitr_btnSelectAll">Select All</item>
+    <item key="FrmIPLimitr_btnInvertSelect">Select Invert</item>
+    <item key="FrmIPLimitr_btnClose">Close</item>
+    <item key="FrmIPLimitr_btnDelete">&amp;Delete</item>
+    <!-- FrmIPLimitr End -->
+
+    <!-- FrmOrganizeCodeBuilder Begin -->
+    <item key="FrmOrganizeCodeBuilder">Code Builder Settings</item>
+    <item key="FrmOrganizeCodeBuilder_lblCodeLength">Code Length:</item>
+    <item key="FrmOrganizeCodeBuilder_btnAdvice">Advice</item>
+    <item key="FrmOrganizeCodeBuilder_btnCodeBuilder">Generate Code</item>
+    <item key="FrmOrganizeCodeBuilder_btnConfirm">Confirm</item>
+    <item key="FrmOrganizeCodeBuilder_btnCancel">Cancel</item>
+    <!-- FrmOrganizeCodeBuilder End -->
+
+    <!-- FrmOrganizeAdd Begin -->
+    <item key="FrmOrganizeAdd">Add Organization(Department)</item>
+    <item key="FrmOrganizeAdd_grbOrganize">Organization(Department)</item>
+    <item key="FrmOrganizeAdd_lblParentOrganize">&amp;Parent Node:</item>
+    <item key="FrmOrganizeAdd_lblFullName">&amp;Name:</item>
+    <item key="FrmOrganizeAdd_lblCode">Code:</item>
+    <item key="FrmOrganizeAdd_lblShortName">&amp;Short Name:</item>
+    <item key="FrmOrganizeAdd_lblCategory">Cate&amp;gory:</item>
+    <item key="FrmOrganizeAdd_lblManager">Manager:</item>
+    <item key="FrmOrganizeAdd_lblAssistantManager">Assistant Manager:</item>
+    <item key="FrmOrganizeAdd_lblOuterPhone">&amp;Outer Phone:</item>
+    <item key="FrmOrganizeAdd_lblInnerPhone">&amp;Inner Phone:</item>
+    <item key="FrmOrganizeAdd_lblFax">&amp;Fax:</item>
+    <item key="FrmOrganizeAdd_lblPostalcode">Zip Code:</item>
+    <item key="FrmOrganizeAdd_lblAddress">Address:</item>
+    <item key="FrmOrganizeAdd_lblWeb">Website:</item>
+    <item key="FrmOrganizeAdd_lblDescription">&amp;Description:</item>
+    <item key="FrmOrganizeAdd_chkEnabled">&amp;Enabled</item>
+    <item key="FrmOrganizeAdd_chkIsInnerOrganize">Internal Organization</item>
+    <item key="FrmOrganizeAdd_btnAdd">&amp;Add</item>
+    <item key="FrmOrganizeAdd_btnConfirm">&amp;Confirm</item>
+    <item key="FrmOrganizeAdd_btnCancel">Cancel</item>
+    <!-- FrmOrganizeAdd End -->
+
+    <!-- FrmOrganizeAdmin Begin -->
+    <item key="FrmOrganizeAdmin">Organization(Department) Management</item>
+    <item key="FrmOrganizeAdmin_lblContents">&amp;Contents:</item>
+    <item key="FrmOrganizeAdmin_btnSearch">&amp;Search</item>
+    <item key="FrmOrganizeAdmin_btnUserResourcePermission">User Permission...</item>
+    <item key="FrmOrganizeAdmin_btnRoleResourcePermission">Role Permission...</item>
+    <item key="FrmOrganizeAdmin_btnExport">Export Excel...</item>
+    <item key="FrmOrganizeAdmin_chkInnerOrganize">Inner Organize</item>
+    <item key="FrmOrganizeAdmin_chkRefresh">Instant Refresh</item>
+    <item key="FrmOrganizeAdmin_colSelected">Select</item>
+    <item key="FrmOrganizeAdmin_colCode">Code</item>
+    <item key="FrmOrganizeAdmin_colFullName">Name</item>
+    <item key="FrmOrganizeAdmin_colIsInnerOrganize">Internal Organization</item>
+    <item key="FrmOrganizeAdmin_colDescription">Description</item>
+    <item key="FrmOrganizeAdmin_btnSelectAll">Select All</item>
+    <item key="FrmOrganizeAdmin_btnInvertSelect">Invert Select</item>
+    <item key="FrmOrganizeAdmin_btnAdd">&amp;Add...</item>
+    <item key="FrmOrganizeAdmin_btnEdit">&amp;Edit...</item>
+    <item key="FrmOrganizeAdmin_btnMove">&amp;Move...</item>
+    <item key="FrmOrganizeAdmin_btnBatchSave">&amp;Save</item>
+    <item key="FrmOrganizeAdmin_btnBatchDelete">&amp;Delete</item>
+    <item key="FrmOrganizeAdmin_btnClose">Close</item>
+    <item key="FrmOrganizeAdmin_mItmAdd">Add...</item>
+    <item key="FrmOrganizeAdmin_mItmEdit">Edit...</item>
+    <item key="FrmOrganizeAdmin_mItmMove">Move..</item>
+    <item key="FrmOrganizeAdmin_mItmDelete">Delete....</item>
+    <item key="FrmOrganizeAdmin_mItmAddRoot">Add Root Organization...</item>
+    <item key="FrmOrganizeAdmin_mItmUserAdd">Add User...</item>
+    <item key="FrmOrganizeAdmin_mItmStaffAdd">Add Staff...</item>
+    <item key="FrmOrganizeAdmin_mItemRoleAdd">Add Role...</item>
+    <item key="FrmOrganizeAdmin_mItmOrganizeCategory">Organization Category...</item>
+    <item key="FrmOrganizeAdmin_mItmFrmUserPermissionReport">User Permission Report...</item>
+    <item key="FrmOrganizeAdmin_mItmFrmCodeGenerator">Code Builder...</item>
+    <item key="FrmOrganizeAdmin_mItmSetSortCode">Save Sort Order</item>
+    <!-- FrmOrganizeAdmin End -->
+
+    <!-- FrmOrganizeEdit Begin -->
+    <item key="FrmOrganizeEdit">Edit Organization</item>
+    <item key="FrmOrganizeEdit_grbOrganize">Organization</item>
+    <item key="FrmOrganizeEdit_lblId">ID:</item>
+    <item key="FrmOrganizeEdit_lblParentOrganize">&amp;Parent Node:</item>
+    <item key="FrmOrganizeEdit_lblFullName">&amp;Name:</item>
+    <item key="FrmOrganizeEdit_lblCode">Code:</item>
+    <item key="FrmOrganizeEdit_lblShortName">(&amp;ShortName:</item>
+    <item key="FrmOrganizeEdit_lblCategory">Cate&amp;gory:</item>
+    <item key="FrmOrganizeEdit_lblManager">Manager:</item>
+    <item key="FrmOrganizeEdit_lblAssistantManager">Assistant Manager:</item>
+    <item key="FrmOrganizeEdit_lblOuterPhone">&amp;Outer Phone:</item>
+    <item key="FrmOrganizeEdit_lblInnerPhone">&amp;Inner Phone:</item>
+    <item key="FrmOrganizeEdit_lblFax">&amp;Fax:</item>
+    <item key="FrmOrganizeEdit_lblPostalcode">Zip Code:</item>
+    <item key="FrmOrganizeEdit_lblAddress">Address:</item>
+    <item key="FrmOrganizeEdit_lblWeb">Website:</item>
+    <item key="FrmOrganizeEdit_chkEnabled">Enabled</item>
+    <item key="FrmOrganizeEdit_chkIsInnerOrganize">Internal Organization</item>
+    <item key="FrmOrganizeEdit_lblDescription">Description:</item>
+    <item key="FrmOrganizeEdit_grbDuty">Duty</item>
+    <item key="FrmOrganizeEdit_btnLeadership">Leadership</item>
+    <item key="FrmOrganizeEdit_btnBusinessLeadership">Business Leadership</item>
+    <item key="FrmOrganizeEdit_btnFinancialLeadership">Financial Leadership</item>
+    <item key="FrmOrganizeEdit_btnPersonnelLeadership">HR Leadership</item>
+    <item key="FrmOrganizeEdit_btnAssistantLeadership">Branch Leadership</item>
+    <item key="FrmOrganizeEdit_btnManager">Manager</item>
+    <item key="FrmOrganizeEdit_btnAssistantManager">Assistant Manager</item>
+    <item key="FrmOrganizeEdit_btnAssistant">Assistant</item>
+    <item key="FrmOrganizeEdit_btnFinancial">Financial</item>
+    <item key="FrmOrganizeEdit_btnAccounting">Accounting</item>
+    <item key="FrmOrganizeEdit_btnCashier">Cashier</item>
+    <item key="FrmOrganizeEdit_btnSystemManager">System Manager</item>
+    <item key="FrmOrganizeEdit_btnPermission">&amp;Permission...</item>
+    <item key="FrmOrganizeEdit_btnLikeAdd">Like &amp;Add</item>
+    <item key="FrmOrganizeEdit_btnSave">&amp;Save</item>
+    <item key="FrmOrganizeEdit_btnCancel">Cancel</item>
+    <!-- FrmOrganizeEdit End -->
+
+    <!-- FrmOrganizeSelect Begin -->
+    <item key="FrmOrganizeSelect">Select Organization(Department)</item>
+    <item key="FrmOrganizeSelect_tpOrganizeTree">Organization</item>
+    <item key="FrmOrganizeSelect_tpOrganizeList">Search</item>
+    <item key="FrmOrganizeSelect_chkInnerOrganize">Inner Organization Only</item>
+    <item key="FrmOrganizeSelect_btnConfirm">Confirm</item>
+    <item key="FrmOrganizeSelect_btnSetNull">&amp;Null</item>
+    <item key="FrmOrganizeSelect_btnCancel">Cancel</item>
+    <item key="FrmOrganizeSelect_lblContents">&amp;Contents:</item>
+    <item key="FrmOrganizeSelect_btnSearch">&amp;Search</item>
+    <item key="FrmOrganizeSelect_colSelected">Select</item>
+    <item key="FrmOrganizeSelect_colCode">Code</item>
+    <item key="FrmOrganizeSelect_colFullName">Name</item>
+    <item key="FrmOrganizeSelect_colIsInnerOrganize">Inner Organization</item>
+    <item key="FrmOrganizeSelect_colDescription">Description</item>
+    <!-- FrmOrganizeSelect End -->
+
+    <!-- FrmOrganizeMultiSelect Begin -->
+    <item key="FrmOrganizeMultiSelect">Select Organization(Department)</item>
+    <item key="FrmOrganizeMultiSelect_btnSelectAll">Select All</item>
+    <item key="FrmOrganizeMultiSelect_btnInvertSelect">Select Invert</item>
+    <item key="FrmOrganizeMultiSelect_btnConfirm">Confirm</item>
+    <item key="FrmOrganizeMultiSelect_btnCancel">Cancel</item>
+    <!-- FrmOrganizeMultiSelect End -->
+
+    <!-- FrmOrganizeSelectOne Begin -->
+    <item key="FrmOrganizeSelectOne">Select Organization</item>
+    <item key="FrmOrganizeSelectOne_btnSetNull">Set &amp;Null</item>
+    <item key="FrmOrganizeSelectOne_btnConfirm">OK</item>
+    <item key="FrmOrganizeSelectOne_btnCancel">Cancel</item>
+    <!-- FrmOrganizeSelectOne End -->
+
+    <!-- FrmOrganizePermission Begin -->
+    <item key="FrmOrganizePermission">Organize Permission Setup</item>
+    <item key="FrmOrganizePermission_lblParent">&amp;Organize:</item>
+    <item key="FrmOrganizePermission_btnClearPermission">Clear Permission</item>
+    <item key="FrmOrganizePermission_btnCopy">Copy Permission</item>
+    <item key="FrmOrganizePermission_btnPaste">Paste Permission</item>
+    <item key="FrmOrganizePermission_tpModule">Module Permission</item>
+    <item key="FrmOrganizePermission_tpPermissionItem">Permission Item</item>
+    <item key="FrmOrganizePermission_btnBatchSave">&amp;Save</item>
+    <!-- FrmOrganizePermission End -->
+
+    <!-- FrmOrganizePermissionAdmin Begin -->
+    <item key="FrmOrganizePermissionAdmin">Organize Permission Admin</item>
+    <item key="FrmOrganizePermissionAdmin_lblContents">&amp;Contents:</item>
+    <item key="FrmOrganizePermissionAdmin_btnSearch">&amp;Search</item>
+    <item key="FrmOrganizePermissionAdmin_btnUserResourcePermission">User Permission"</item>
+    <item key="FrmOrganizePermissionAdmin_btnRoleResourcePermission">Role Permission"</item>
+    <item key="FrmOrganizePermissionAdmin_btnExport">Export Excel</item>
+    <item key="FrmOrganizePermissionAdmin_chkInnerOrganize">Inner Organize</item>
+    <item key="FrmOrganizePermissionAdmin_chkRefresh">Refresh</item>
+    <item key="FrmOrganizePermissionAdmin_mItmAdd">&amp;Add...</item>
+    <item key="FrmOrganizePermissionAdmin_mItmEdit">&amp;Edit...</item>
+    <item key="FrmOrganizePermissionAdmin_mItmMove">&amp;Move...</item>
+    <item key="FrmOrganizePermissionAdmin_mItmDelete">&amp;Delete...</item>
+    <item key="FrmOrganizePermissionAdmin_mItmAddRoot">Add Root Organize...</item>
+    <item key="FrmOrganizePermissionAdmin_mItmUserAdd">Add &amp;User...</item>
+    <item key="FrmOrganizePermissionAdmin_mItmStaffAdd">Add &amp;Staff...</item>
+    <item key="FrmOrganizePermissionAdmin_mItemRoleAdd">Add &amp;Role...</item>
+    <item key="FrmOrganizePermissionAdmin_mItmOrganizeCategory">Organize Category...</item>
+    <item key="FrmOrganizePermissionAdmin_mItmFrmCodeBuilder">CodeBuilder...</item>
+    <item key="FrmOrganizePermissionAdmin_mItmSetSortCode">Set Sort Code...</item>
+    <item key="FrmOrganizePermissionAdmin_colSelected">Selected</item>
+    <item key="FrmOrganizePermissionAdmin_colCode">Code</item>
+    <item key="FrmOrganizePermissionAdmin_colFullName">Full Name</item>
+    <item key="FrmOrganizePermissionAdmin_colIsInnerOrganize">Inner Organize</item>
+    <item key="FrmOrganizePermissionAdmin_colDescription">Description</item>
+    <item key="FrmOrganizePermissionAdmin_btnSelectAll">Select All</item>
+    <item key="FrmOrganizePermissionAdmin_btnInvertSelect">Invert Select</item>
+    <item key="FrmOrganizePermissionAdmin_btnPermission">&amp;Permission...</item>
+    <item key="FrmOrganizePermissionAdmin_btnAdd">&amp;Add...</item>
+    <item key="FrmOrganizePermissionAdmin_btnEdit">&amp;Edit...</item>
+    <item key="FrmOrganizePermissionAdmin_btnMove">&amp;Move...</item>
+    <item key="FrmOrganizePermissionAdmin_btnBatchDelete">&amp;Delete</item>
+    <item key="FrmOrganizePermissionAdmin_btnBatchSave">&amp;Save</item>
+    <item key="FrmOrganizePermissionAdmin_btnClose">Close</item>
+    <!-- FrmOrganizePermissionAdmin End -->
+
+    <!-- FrmPermissionItemAdd Begin -->
+    <item key="FrmPermissionItemAdd">Add Permission Item</item>
+    <item key="FrmPermissionItemAdd_grbPermissinonItem">Add Permission Item</item>
+    <item key="FrmPermissionItemAdd_lblParent">&amp;Parent Node:</item>
+    <item key="FrmPermissionItemAdd_lblFullName">&amp;Name:</item>
+    <item key="FrmPermissionItemAdd_lblCode">&amp;Code:</item>
+    <item key="FrmPermissionItemAdd_chkIsScope">IsScope</item>
+    <item key="FrmPermissionItemAdd_chkEnabled">&amp;Enabled</item>
+    <item key="FrmPermissionItemAdd_lblDescription">&amp;Description:</item>
+    <item key="FrmPermissionItemAdd_btnAdd">&amp;Add</item>
+    <item key="FrmPermissionItemAdd_btnConfirm">Confirm</item>
+    <item key="FrmPermissionItemAdd_btnCancel">Cancel</item>
+    <!-- FrmPermissionItemAdd End -->
+
+    <!-- FrmPermissionItemEdit Begin -->
+    <item key="FrmPermissionItemEdit">Edit Permission Item</item>
+    <item key="FrmPermissionItemEdit_grbPermissionItem">Edit Permission Item</item>
+    <item key="FrmPermissionItemEdit_lblParent">&amp;Parent Node:</item>
+    <item key="FrmPermissionItemEdit_lblCode">&amp;Code:</item>
+    <item key="FrmPermissionItemEdit_lblFullName">&amp;Name:</item>
+    <item key="FrmPermissionItemEdit_chkIsScope">IsScope</item>
+    <item key="FrmPermissionItemEdit_chkEnabled">&amp;Enabled</item>
+    <item key="FrmPermissionItemEdit_lblDescription">&amp;Description:</item>
+    <item key="FrmPermissionItemEdit_btnLikeAdd">Like &amp;Add</item>
+    <item key="FrmPermissionItemEdit_btnSave">Confirm</item>
+    <item key="FrmPermissionItemEdit_btnCancel">Cancel</item>
+    <!-- FrmPermissionItemEdit End -->
+
+    <!-- FrmPermissionItemModuleBatchSet Begin -->
+    <item key="FrmPermissionItemModuleBatchSet">PermissionItem Module Batch Set</item>
+    <item key="FrmPermissionItemModuleBatchSet_tpPermissionItem">Permission Item</item>
+    <item key="FrmPermissionItemModuleBatchSet_tpModule">Module</item>
+    <!-- FrmPermissionItemModuleBatchSet End -->
+
+    <!-- FrmPermissionModule Begin -->
+    <item key="FrmPermissionModule">Operation Permission Item Related Modules(Menu)</item>
+    <item key="FrmPermissionModule_lblPermission">&amp;Permission Item:</item>
+    <item key="FrmPermissionModule_btnAdd">Related &amp;Modules</item>
+    <item key="FrmPermissionModule_btnRemove">&amp;Remove</item>
+    <item key="FrmPermissionModule_btnCancel">Close</item>
+    <item key="FrmPermissionModule_btnSelectAll">Select All</item>
+    <item key="FrmPermissionModule_btnInvertSelect">Select Invert</item>
+    <item key="FrmPermissionModule_colSelected">Select</item>
+    <item key="FrmPermissionModule_colCode">Code</item>
+    <item key="FrmPermissionModule_colFullName">Name</item>
+    <item key="FrmPermissionModule_colDescription">Description</item>
+    <!-- FrmPermissionModule End -->
+
+    <!-- FrmPermissionSelect Begin -->
+    <item key="FrmPermissionSelect">Select Operation Permission</item>
+    <item key="FrmPermissionSelect_btnSelectAll">Select All</item>
+    <item key="FrmPermissionSelect_btnInvertSelect">Select Invert</item>
+    <item key="FrmPermissionSelect_btnSetNull">Null</item>
+    <item key="FrmPermissionSelect_btnConfirm">Confirm</item>
+    <item key="FrmPermissionSelect_btnCancel">Cancel</item>
+    <!-- FrmPermissionSelect End -->
+
+    <!-- FrmRoleModulePermission Begin  -->
+    <item key="FrmRoleModulePermission">Role(UserGroup)-Module(Menu) Visit Permission</item>
+    <item key="FrmRoleModulePermission_lblUser">&amp;Role(UserGroup):</item>
+    <item key="FrmRoleModulePermission_tbpModule">Module(Menu)</item>
+    <item key="FrmRoleModulePermission_btnSelectAll">Select All</item>
+    <item key="FrmRoleModulePermission_btnInvertSelect">Select Invert</item>
+    <item key="FrmRoleModulePermission_btnBatchSave">&amp;Save</item>
+    <item key="FrmRoleModulePermission_btnClose">Close</item>
+    <!-- FrmRoleModulePermission End-->
+
+    <!-- FrmRoleModulePermissionBatchSet Begin -->
+    <item key="FrmRoleModulePermissionBatchSet">Role Module Permission Batch Set</item>
+    <item key="FrmRoleModulePermissionBatchSet_btnClearPermission">Clear Permission</item>
+    <item key="FrmRoleModulePermissionBatchSet_btnCopy">Copy Permission</item>
+    <item key="FrmRoleModulePermissionBatchSet_btnPaste">Paste Permission</item>
+    <item key="FrmRoleModulePermissionBatchSet_tpRole">Role</item>
+    <item key="FrmRoleModulePermissionBatchSet_tpModule">Module(Menu)</item>
+    <item key="FrmRoleModulePermissionBatchSet_btnBatchSave">&amp;Save</item>
+    <item key="FrmRoleModulePermissionBatchSet_btnClose">Close</item>
+    <!-- FrmRoleModulePermissionBatchSet End -->
+
+    <!-- FrmRolePermission Begin -->
+    <item key="FrmRolePermission">Role(UserGroup) Permission</item>
+    <item key="FrmRolePermission_lblParent">&amp;Role(UserGroup):</item>
+    <item key="FrmRolePermission_btnClearPermission">Clear Permission</item>
+    <item key="FrmRolePermission_btnCopy">Copy Permission</item>
+    <item key="FrmRolePermission_btnPaste">Paste Permission</item>
+    <item key="FrmRolePermission_tpModule">Module Permission</item>
+    <item key="FrmRolePermission_tpPermissionItem">Owned Permissions</item>
+    <item key="FrmRolePermission_btnLicensed">Scope Of Authority...</item>
+    <item key="FrmRolePermission_btnRoleModulePermission">Module(Menu) Visit Permission...</item>
+    <item key="FrmRolePermission_btnScope">&amp;Permission Scope...</item>
+    <item key="FrmRolePermission_btnTableColumnsPermission">Table Columns Permission...</item>
+    <item key="FrmRolePermission_tpRolePermission">Operation Permision</item>
+    <item key="FrmRolePermission_btnSelectAll">Select All</item>
+    <item key="FrmRolePermission_btnInvertSelect">Select Invert</item>
+    <item key="FrmRolePermission_btnBatchSave">&amp;Save</item>
+    <item key="FrmRolePermission_btnCancel">Cancel</item>
+    <!-- FrmRolePermission End -->
+
+    <!-- FrmScopePermissionSelect Begin -->
+    <item key="FrmScopePermissionSelect">Select Scope Permission</item>
+    <item key="FrmScopePermissionSelect_colSelected">Select</item>
+    <item key="FrmScopePermissionSelect_colCode">Code</item>
+    <item key="FrmScopePermissionSelect_colFullName">Name</item>
+    <item key="FrmScopePermissionSelect_colDescription">Description</item>
+    <item key="FrmScopePermissionSelect_btnConfirm">Confirm</item>
+    <item key="FrmScopePermissionSelect_btnCancel">Cancel</item>
+    <item key="FrmScopePermissionSelect_btnSetNull">&amp;Null</item>
+    <!-- FrmScopePermissionSelect End -->
+
+    <!-- FrmRolePermissionScope Begin -->
+    <item key="FrmRolePermissionScope">Role(UserGroup) Data Set Permission Set</item>
+    <item key="FrmRolePermissionScope_chkInnerOrganize">Show Inner Organize Only</item>
+    <item key="FrmRolePermissionScope_lblRole">Role(UserGroup):</item>
+    <item key="FrmRolePermissionScope_lblPermissionScope">Data Set Permission:</item>
+    <item key="FrmRolePermissionScope_grbPermissionScope">Scope Of Authority</item>
+    <item key="FrmRolePermissionScope_rdbAll">All Data</item>
+    <item key="FrmRolePermissionScope_rdbUserCompany">Company</item>
+    <item key="FrmRolePermissionScope_rdbUserSubCompany">SubCompany</item>
+    <item key="FrmRolePermissionScope_rdbUserDepartment">Department</item>
+    <item key="FrmRolePermissionScope_rdbUserWorkgroup">WorkGroup</item>
+    <item key="FrmRolePermissionScope_rdbUser">Only User</item>
+    <item key="FrmRolePermissionScope_rdbDetail">ByDetail</item>
+    <item key="FrmRolePermissionScope_rdbNone">None</item>
+    <item key="FrmRolePermissionScope_btnSelectAll">Select All</item>
+    <item key="FrmRolePermissionScope_btnInvertSelect">Select Invert</item>
+    <item key="FrmRolePermissionScope_btnBatchSave">&amp;Save</item>
+    <item key="FrmRolePermissionScope_btnCancel">Cancel</item>
+    <!-- FrmRolePermissionScope End -->
+
+    <!-- FrmRoleAuthorizationScope Begin -->
+    <item key="FrmRoleAuthorizationScope">Role Permission Scopes Settings</item>
+    <item key="FrmRoleAuthorizationScope_btnClearPermission">Clear Permission</item>
+    <item key="FrmRoleAuthorizationScope_btnCopy">Copy Permission</item>
+    <item key="FrmRoleAuthorizationScope_btnPaste">Paste Permission</item>
+    <item key="FrmRoleAuthorizationScope_lblParent">&amp;Role:</item>
+    <item key="FrmRoleAuthorizationScope_lblPermissionScope">Permission Scope:</item>
+    <item key="FrmRoleAuthorizationScope_tpUser">User</item>
+    <item key="FrmRoleAuthorizationScope_tpRole">Role</item>
+    <item key="FrmRoleAuthorizationScope_tpOrganize">Organize</item>
+    <item key="FrmRoleAuthorizationScope_tpModule">Module(Menu)</item>
+    <item key="FrmRoleAuthorizationScope_tpPermissionItem">Permission Item</item>
+    <!-- FrmRoleAuthorizationScope End -->
+
+    <!-- FrmTableScope Begin -->
+    <item key="FrmTableScope">Table Scope Settings</item>
+    <item key="FrmTableScope_lblUserOrRole">User/Role:</item>
+    <item key="FrmTableScope_colSelected">Selected</item>
+    <item key="FrmTableScope_colTableCode">Table Code</item>
+    <item key="FrmTableScope_colTableName">Table Name</item>
+    <item key="FrmTableScope_colPermissionConstraint">Permission Constraint</item>
+    <item key="FrmTableScope_btnSelectAll">Select All</item>
+    <item key="FrmTableScope_btnInvertSelect">Select Invert</item>
+    <item key="FrmTableScope_btnExport">Export to Excel</item>
+    <item key="FrmTableScope_btnDeleteCondition">Delete Condition</item>
+    <item key="FrmTableScope_btnSetCondition">Set Condition</item>
+    <item key="FrmTableScope_btnCancel">Cancel</item>
+    <!-- FrmTableScope End -->
+
+    <!-- FrmTableColumnPermission Begin -->
+    <item key="FrmTableColumnPermission">Column Scope Settings</item>
+    <item key="FrmTableColumnPermission_lblUserOrRole">User/Role:</item>
+    <item key="FrmTableColumnPermission_colTableCode">Column</item>
+    <item key="FrmTableColumnPermission_colPublic">Public</item>
+    <item key="FrmTableColumnPermission_colAccess">Access</item>
+    <item key="FrmTableColumnPermission_ColEdit">Edit</item>
+    <item key="FrmTableColumnPermission_colDeney">Deney</item>
+    <item key="FrmTableColumnPermission_btnExport">Export to Excel</item>
+    <item key="FrmTableColumnPermission_btnSave">Save</item>
+    <item key="FrmTableColumnPermission_btnCancel">Cancel</item>
+    <!-- FrmTableColumnPermission End -->
+
+    <!-- FrmTableScopeConstraint Begin -->
+    <item key="FrmTableScopeConstraint">Table Scope Constraint Desige Tool</item>
+    <item key="FrmTableScopeConstraint_grbConstraint">Table Scope Constraint Desige Tool</item>
+    <item key="FrmTableScopeConstraint_lblUserOrRole">User/Role:</item>
+    <item key="FrmTableScopeConstraint_chkEnabled">Limit</item>
+    <item key="FrmTableScopeConstraint_btnShowConstraint">Show Constraint Result...</item>
+    <item key="FrmTableScopeConstraint_lblConstraint">Constraint:</item>
+    <item key="FrmTableScopeConstraint_lblSetConstraint">Set Constraint:</item>
+    <item key="FrmTableScopeConstraint_lblParameterReference">Parameter Reference:</item>
+    <item key="FrmTableScopeConstraint_btnShowHide">Show   ▽</item>
+    <item key="FrmTableScopeConstraint_btnDelete">Delete Constraint</item>
+    <item key="FrmTableScopeConstraint_btnTestConstraint">Test Constraint</item>
+    <item key="FrmTableScopeConstraint_btnSave">&amp;Save</item>
+    <item key="FrmTableScopeConstraint_btnCancel">Cancel</item>
+    <!-- FrmTableScopeConstraint End -->
+
+    <!-- FrmShowConstraintTable Begin -->
+    <item key="FrmShowConstraintTable">Show Constraint Result</item>
+    <item key="FrmShowConstraintTable_labelTarget">Target Table(&amp;T)：</item>
+    <item key="FrmShowConstraintTable_btnExport">Export Excel...</item>
+    <item key="FrmShowConstraintTable_btnCancel">Cancel</item>
+    <!-- FrmShowConstraintTable End -->
+
+    <!-- FrmRolePermissionItemScope Begin -->
+    <item key="FrmRolePermissionItemScope">Role(UserGroup) Scope Of Authority Settings</item>
+    <item key="FrmRolePermissionItemScope_lblParent">&amp;Role(UserGroup):</item>
+    <item key="FrmRolePermissionItemScope_tpPermission">Operation Permision</item>
+    <item key="FrmRolePermissionItemScope_btnSelectAll">Select All</item>
+    <item key="FrmRolePermissionItemScope_btnInvertSelect">Select Invert</item>
+    <item key="FrmRolePermissionItemScope_btnBatchSave">&amp;Save</item>
+    <item key="FrmRolePermissionItemScope_btnCancel">Cancel</item>
+    <!-- FrmRolePermissionItemScope End -->
+
+    <!-- FrmUserSetPassword Begin -->
+    <item key="FrmUserSetPassword">Reset Password</item>
+    <item key="FrmUserSetPassword_btnSetAsUserCode">Set User Code</item>
+    <item key="FrmUserSetPassword_btnSetAsUserName">Set User Name</item>
+    <item key="FrmUserSetPassword_btnSetDefaultPassword">Set Default Password</item>
+    <item key="FrmUserSetPassword_grpSetPassword">Set Password</item>
+    <item key="FrmUserSetPassword_lblNewPassword">&amp;New Password:</item>
+    <item key="FrmUserSetPassword_lblConfirmPassword">&amp;Confirm Password:</item>
+    <item key="FrmUserSetPassword_btnDeletePassword">Delete Password</item>
+    <item key="FrmUserSetPassword_btnConfirm">Confirm</item>
+    <item key="FrmUserSetPassword_btnCancel">Cancel</item>
+    <!-- FrmUserSetPassword End -->
+
+    <!-- FrmUserModulePermission Begin -->
+    <item key="FrmUserModulePermission">User-Module Visit Permission</item>
+    <item key="FrmUserModulePermission_lblUser">&amp;User:</item>
+    <item key="FrmUserModulePermission_tpModule">Module(Menu)</item>
+    <item key="FrmUserModulePermission_btnSelectAll">Select All</item>
+    <item key="FrmUserModulePermission_btnInvertSelect">Select Invert</item>
+    <item key="FrmUserModulePermission_btnBatchSave">&amp;Save</item>
+    <item key="FrmUserModulePermission_btnClose">Close</item>
+    <!-- FrmUserModulePermission End -->
+
+    <!-- FrmUserModulePermissionItem Begin -->
+    <item key="FrmUserModulePermissionItem">User Permission</item>
+    <item key="FrmUserModulePermissionItem_lblUser">&amp;User:</item>
+    <item key="FrmUserModulePermissionItem_tpModule">User Permission</item>
+    <item key="FrmUserModulePermissionItem_btnSelectAll">Select All</item>
+    <item key="FrmUserModulePermissionItem_btnInvertSelect">Select Invert</item>
+    <item key="FrmUserModulePermissionItem_btnBatchSave">&amp;Save</item>
+    <item key="FrmUserModulePermissionItem_btnClose">Close</item>
+    <!-- FrmUserModulePermissionItem End -->
+
+    <!-- FrmUserModulePermissionBatchSet Begin -->
+    <item key="FrmUserModulePermissionBatchSet">User(Account)-Module(Menu) Visit Permission</item>
+    <item key="FrmUserModulePermissionBatchSet_btnClearPermission">Clear Permission</item>
+    <item key="FrmUserModulePermissionBatchSet_btnCopy">Copy Permission</item>
+    <item key="FrmUserModulePermissionBatchSet_btnPaste">Paste Permission</item>
+    <item key="FrmUserModulePermissionBatchSet_tpUser">User</item>
+    <item key="FrmUserModulePermissionBatchSet_tpModule">Module(Menu)</item>
+    <item key="FrmUserModulePermissionBatchSet_lblUser">User(&amp;U)：</item>
+    <item key="FrmUserModulePermissionBatchSet_btnSelectAll">Select All</item>
+    <item key="FrmUserModulePermissionBatchSet_btnInvertSelect">Select Invert</item>
+    <item key="FrmUserModulePermissionBatchSet_btnBatchSave">&amp;Save</item>
+    <item key="FrmUserModulePermissionBatchSet_btnClose">Close</item>
+    <!-- FrmUserModulePermissionBatchSet End -->
+
+    <!-- FrmUserRoleAdmin Begin -->
+    <item key="FrmUserRoleAdmin">User(Account)-Role(WorkGroup) Management</item>
+    <item key="FrmUserRoleAdmin_btnCopy">Copy Role</item>
+    <item key="FrmUserRoleAdmin_btnPaste">Paste Role</item>
+    <item key="FrmUserRoleAdmin_lblUser">&amp;User(Account):</item>
+    <item key="FrmUserRoleAdmin_lblRole">Default &amp;Role:</item>
+    <item key="FrmUserRoleAdmin_colSelected">Select</item>
+    <item key="FrmUserRoleAdmin_colRealName">Name</item>
+    <item key="FrmUserRoleAdmin_colDescription">Description</item>
+    <item key="FrmUserRoleAdmin_btnAddToRole">Add To Role</item>
+    <item key="FrmUserRoleAdmin_btnRemove">Remove</item>
+    <item key="FrmUserRoleAdmin_btnSelectAll">Select All</item>
+    <item key="FrmUserRoleAdmin_btnInvertSelect">Select Invert</item>
+    <item key="FrmUserRoleAdmin_btnRolePermission">Role &amp;Permission</item>
+    <item key="FrmUserRoleAdmin_butSave">&amp;Save</item>
+    <item key="FrmUserRoleAdmin_btnClose">Close</item>
+    <!-- FrmUserRoleAdmin End -->
+
+    <!-- FrmUserTreeResourcePermission Begin -->
+    <item key="FrmUserTreeResourcePermission">User Permission Batch Set</item>
+    <item key="FrmUserTreeResourcePermission_btnCopy">Copy Permission</item>
+    <item key="FrmUserTreeResourcePermission_btnPaste">Paste Permission</item>
+    <item key="FrmUserTreeResourcePermission_btnClearPermission">Clear Permission</item>
+    <item key="FrmUserTreeResourcePermission_tpUser">User</item>
+    <item key="FrmUserTreeResourcePermission_lblContents">&amp;Search:</item>
+    <item key="FrmUserTreeResourcePermission_tpTargetTreeResource">Target Resource</item>
+    <!-- FrmUserTreeResourcePermission End -->
+
+    <!-- FrmRoleTreeResourcePermission Begin -->
+    <item key="FrmRoleTreeResourcePermission">Role Permission Batch Set</item>
+    <item key="FrmRoleTreeResourcePermission_btnCopy">Copy Permission</item>
+    <item key="FrmRoleTreeResourcePermission_btnPaste">Paste Permission</item>
+    <item key="FrmRoleTreeResourcePermission_btnClearPermission">Clear Permission</item>
+    <item key="FrmRoleTreeResourcePermission_tpRole">Role</item>
+    <item key="FrmRoleTreeResourcePermission_lblContents">&amp;Search:</item>
+    <item key="FrmRoleTreeResourcePermission_tpTargetTreeResource">Target Resource</item>
+    <!-- FrmRoleTreeResourcePermission End -->
+
+    <!-- FrmUserRoleBatchSet Begin -->
+    <item key="FrmUserRoleBatchSet">User Role Batch Set</item>
+    <item key="FrmUserRoleBatchSet_btnClearPermission">Clear Role</item>
+    <item key="FrmUserRoleBatchSet_btnCopy">Copy Role</item>
+    <item key="FrmUserRoleBatchSet_btnPaste">Paste Role</item>
+    <item key="FrmUserRoleBatchSet_tpUser">User</item>
+    <item key="FrmUserRoleBatchSet_tpRole">Role(UserGroup)</item>
+    <item key="FrmUserRoleBatchSet_btnOK">Confirm</item>
+    <item key="FrmUserRoleBatchSet_btnCancel">Cancel</item>
+    <!-- FrmUserRoleBatchSet End -->
+
+    <!-- FrmUserSelect Begin -->
+    <item key="FrmUserSelect">Select User(Account)</item>
+    <item key="FrmUserSelect_lblContents">Contents(&amp;C):</item>
+    <item key="FrmUserSelect_lblSearch">&amp;Contents:</item>
+    <item key="FrmUserSelect_btnSearch">&amp;Search</item>
+    <item key="FrmUserSelect_lblRoleCategories">Default Role:</item>
+    <item key="FrmUserSelect_colSelected">Select</item>
+    <item key="FrmUserSelect_colRealName">Name</item>
+    <item key="FrmUserSelect_colDescription">Description</item>
+    <item key="FrmUserSelect_colUserName">UserName</item>
+    <item key="FrmUserSelect_colDepartment">Department</item>
+    <item key="FrmUserSelect_btnSelectAll">Select All</item>
+    <item key="FrmUserSelect_btnInvertSelect">Select Invert</item>
+    <item key="FrmUserSelect_btnSetNull">&amp;Null</item>
+    <item key="FrmUserSelect_btnSelect">Select</item>
+    <item key="FrmUserSelect_btnConfirm">Confirm</item>
+    <item key="FrmUserSelect_btnCancel">Cancel</item>
+    <!-- FrmUserSelect End -->
+
+    <!-- FrmUserPermission Begin -->
+    <item key="FrmUserPermission">User(Account) Permission Set</item>
+    <item key="FrmUserPermission_lblParent">&amp;User(Account):</item>
+    <item key="FrmUserPermission_btnClearPermission">Clear Permission</item>
+    <item key="FrmUserPermission_btnCopy">Copy Permission</item>
+    <item key="FrmUserPermission_btnPaste">Paste Permission</item>
+    <item key="FrmUserPermission_tpUser">Role(UserGroup)</item>
+    <item key="FrmUserPermission_tpModule">Module Permission</item>
+    <item key="FrmUserPermission_tpPermissionItem">Permission</item>
+    <item key="FrmUserPermission_lblUser">&amp;User(Account):</item>
+    <item key="FrmUserPermission_lblRole">Default &amp;Role:</item>
+    <item key="FrmUserPermission_btnLicensed">Scope Of Authority</item>
+    <item key="FrmUserPermission_btnUserModulePermission">Module(Menu) Visit Permission</item>
+    <item key="FrmUserPermission_btnPermissionScope">Data Set &amp;Permission</item>
+    <item key="FrmUserPermission_btnTableColumnsPermission">Table Columns Permission</item>
+    <item key="FrmUserPermission_btnIPLimitr">IP Visit Permission</item>
+    <item key="FrmUserPermission_colSelected">Select</item>
+    <item key="FrmUserPermission_colRealName">Name</item>
+    <item key="FrmUserPermission_colDescription">Description</item>
+    <item key="FrmUserPermission_tpUserPermission">Operation Permision</item>
+    <item key="FrmUserPermission_tpUserRole">Role</item>
+    <item key="FrmUserPermission_btnSelectAll">Select All</item>
+    <item key="FrmUserPermission_btnInvertSelect">Select Invert</item>
+    <item key="FrmUserPermission_btnAddToRole">Add To Role</item>
+    <item key="FrmUserPermission_btnRemove">Remove</item>
+    <item key="FrmUserPermission_btnPermission">Permission</item>
+    <item key="FrmUserPermission_btnBatchSave">&amp;Save</item>
+    <item key="FrmUserPermission_btnClose">Close</item>
+    <!-- FrmUserPermission End -->
+
+    <!-- FrmUserPermissionView Begin -->
+    <item key="FrmUserPermissionView">User Permission</item>
+    <item key="FrmUserPermissionView_tpUserInfo">User Info</item>
+    <item key="FrmUserPermissionView_tpModule">Menu Permission</item>
+    <item key="FrmUserPermissionView_tpPermission">Action Permission</item>
+    <item key="FrmUserPermissionView_tpColumnScope">Data Permission</item>
+    <item key="FrmUserPermissionView_tpTableScope">Constraint Condition</item>
+    <item key="FrmUserPermissionView_lblUserName">User Name:</item>
+    <item key="FrmUserPermissionView_lblFullName">Full Name:</item>
+    <item key="FrmUserPermissionView_lblRole">Default Role:</item>
+    <item key="FrmUserPermissionView_grpRole">Role</item>
+    <item key="FrmUserPermissionView_colRealName">Role Name</item>
+    <item key="FrmUserPermissionView_colDescription">Role Description</item>
+    <item key="FrmUserPermissionView_btnExport">Export to Excel</item>
+    <item key="FrmUserPermissionView_btnShowRolePermission">Display Permission</item>
+    <item key="FrmUserPermissionView_grpModule">Menu Permission</item>
+    <item key="FrmUserPermissionView_grpPermission">Constraint Condition</item>
+    <item key="FrmUserPermissionView_colTableCode">Table</item>
+    <item key="FrmUserPermissionView_colTableName">Name</item>
+    <item key="FrmUserPermissionView_colPermissionConstraint">Constraint Condition</item>
+    <item key="FrmUserPermissionView_btnClose">Close</item>
+    <!-- FrmUserPermissionView End -->
+
+    <!-- FrmUserPermissionItemScope Begin -->
+    <item key="FrmUserPermissionItemScope">User(Account) Scope Of Authority Set</item>
+    <item key="FrmUserPermissionItemScope_lblUser">&amp;User(Account):</item>
+    <item key="FrmUserPermissionItemScope_btnSelectAll">Select All</item>
+    <item key="FrmUserPermissionItemScope_btnInvertSelect">Select Invert</item>
+    <item key="FrmUserPermissionItemScope_btnBatchSave">&amp;Save</item>
+    <item key="FrmUserPermissionItemScope_btnClose">Close</item>
+    <!-- FrmUserPermissionItemScope End -->
+
+    <!-- FrmUserPermissionScope Begin -->
+    <item key="FrmUserPermissionScope">User(Account) Data Set Permission Settings</item>
+    <item key="FrmUserPermissionScope_lblUser">User(Account):</item>
+    <item key="FrmUserPermissionScope_lblPermissionScope">Data Set Permission:</item>
+    <item key="FrmUserPermissionScope_grbPermissionScope">Scope Of Authority</item>
+    <item key="FrmUserPermissionScope_rdbAll">All Data</item>
+    <item key="FrmUserPermissionScope_rdbUserCompany">Company</item>
+    <item key="FrmUserPermissionScope_rdbUserDepartment">Department</item>
+    <item key="FrmUserPermissionScope_rdbUserWorkgroup">WorkGroup</item>
+    <item key="FrmUserPermissionScope_rdbUser">Only User</item>
+    <item key="FrmUserPermissionScope_rdbDetail">ByDetail</item>
+    <item key="FrmUserPermissionScope_rdbNone">None</item>
+    <item key="FrmUserPermissionScope_btnSelectAll">Select All</item>
+    <item key="FrmUserPermissionScope_btnInvertSelect">Select Invert</item>
+    <item key="FrmUserPermissionScope_btnBatchSave">&amp;Save</item>
+    <item key="FrmUserPermissionScope_btnCancel">Cancel</item>
+    <!-- FrmUserPermissionScope End -->
+
+    <!-- FrmRoleAdd Begin -->
+    <item key="FrmRoleAdd">Add Role(User Group) Management</item>
+    <item key="FrmRoleAdd_grbRole">Add Role(User Group) Management</item>
+    <item key="FrmRoleAdd_lblCode">&amp;Code:</item>
+    <item key="FrmRoleAdd_lblFullName">&amp;Name:</item>
+    <item key="FrmRoleAdd_lblCategory">Cate&amp;gory:</item>
+    <item key="FrmRoleAdd_chkEnabled">Enabled</item>
+    <item key="FrmRoleAdd_lblDescription">&amp;Description:</item>
+    <item key="FrmRoleAdd_btnAdd">&amp;Add</item>
+    <item key="FrmRoleAdd_btnSave">&amp;Save</item>
+    <item key="FrmRoleAdd_btnCancel">Cancel</item>
+    <!-- FrmRoleAdd End -->
+
+    <!-- FrmRoleEdit Begin -->
+    <item key="FrmRoleEdit">Edit Role(User Group)</item>
+    <item key="FrmRoleEdit_grbRole">Role</item>
+    <item key="FrmRoleEdit_lblId">ID:</item>
+    <item key="FrmRoleEdit_lblCode">Code:</item>
+    <item key="FrmRoleEdit_lblFullName">&amp;Name:</item>
+    <item key="FrmRoleEdit_lblCategory">Cate&amp;gory:</item>
+    <item key="FrmRoleEdit_chkEnabled">Enabled</item>
+    <item key="FrmRoleEdit_lblDescription">&amp;Description:</item>
+    <item key="FrmRoleEdit_btnLikeAdd">Like &amp;Add</item>
+    <item key="FrmRoleEdit_btnSave">&amp;Save</item>
+    <item key="FrmRoleEdit_btnCancel">Cancel</item>
+    <!-- FrmRoleEdit End -->
+
+    <!-- FrmRoleSelect Begin -->
+    <item key="FrmRoleSelect">Select Role(User Group)</item>
+    <item key="FrmRoleSelect_lblRoleCategroy">Role Categroy:</item>
+    <item key="FrmRoleSelect_colSelected">Select</item>
+    <item key="FrmRoleSelect_colRealName">Name</item>
+    <item key="FrmRoleSelect_colDescription">Description</item>
+    <item key="FrmRoleSelect_btnSelectAll">Select All</item>
+    <item key="FrmRoleSelect_btnInvertSelect">Select Invert</item>
+    <item key="FrmRoleSelect_btnSetNull">&amp;Null</item>
+    <item key="FrmRoleSelect_btnSelect">Select</item>
+    <item key="FrmRoleSelect_btnConfirm">Confirm</item>
+    <item key="FrmRoleSelect_btnCancel">Cancel</item>
+    <!-- FrmRoleSelect End -->
+
+    <!-- FrmRoleUserAdmin Begin -->
+    <item key="FrmRoleUserAdmin">Role(User Group)-User(Account)Management</item>
+    <item key="FrmRoleUserAdmin_btnCopy">Copy User</item>
+    <item key="FrmRoleUserAdmin_btnPaste">Paste User</item>
+    <item key="FrmRoleUserAdmin_lblRole">&amp;Role:</item>
+    <item key="FrmRoleUserAdmin_btnSearch">&amp;Query</item>
+    <item key="FrmRoleUserAdmin_colSelected">Select</item>
+    <item key="FrmRoleUserAdmin_colUserName">UserName</item>
+    <item key="FrmRoleUserAdmin_colDepartmentName">Department</item>
+    <item key="FrmRoleUserAdmin_colRealName">Name</item>
+    <item key="FrmRoleUserAdmin_colDescription">Description</item>
+    <item key="FrmRoleUserAdmin_btnSelectAll">Select All</item>
+    <item key="FrmRoleUserAdmin_btnInvertSelect">Select Invert</item>
+    <item key="FrmRoleUserAdmin_btnAdd">&amp;Add User</item>
+    <item key="FrmRoleUserAdmin_btnRemove">&amp;Remove</item>
+    <item key="FrmRoleUserAdmin_btnClose">Close</item>
+    <!-- FrmRoleUserAdmin End -->
+
+    <!-- FrmRoleUserBatchSet Begin -->
+    <item key="FrmRoleUserBatchSet">Role User BatchSet</item>
+    <item key="FrmRoleUserBatchSet_btnClearPermission">Clear Permission</item>
+    <item key="FrmRoleUserBatchSet_btnCopy">Copy Permission</item>
+    <item key="FrmRoleUserBatchSet_btnPaste">Paste Permission</item>
+    <item key="FrmRoleUserBatchSet_tpRole">Role</item>
+    <item key="FrmRoleUserBatchSet_tpUser">User</item>
+    <item key="FrmRoleUserBatchSet_btnOK">OK</item>
+    <item key="FrmRoleUserBatchSet_btnClose">Close</item>
+    <!-- FrmRoleUserBatchSet End -->
+
+    <!-- FrmRoleAdmin Begin -->
+    <item key="FrmRoleAdmin">Role(User Groups) Management</item>
+    <item key="FrmRoleAdmin_btnFrmRoleOrganizeScope">Role Organize Scope</item>
+    <item key="FrmRoleAdmin_btnBatchPermission">Batch Permissions Set</item>
+    <item key="FrmRoleAdmin_lblContents">&amp;Contents:</item>
+    <item key="FrmRoleAdmin_btnSearch">&amp;Query</item>
+    <item key="FrmRoleAdmin_lblRoleCategories">Role Categories:</item>
+    <item key="FrmRoleAdmin_btnRoleUserBatchSet">Role User Batch Set...</item>
+    <item key="FrmRoleAdmin_btnImport">Import</item>
+    <item key="FrmRoleAdmin_colSelected">Select</item>
+    <item key="FrmRoleAdmin_colFullName">Full Name</item>
+    <item key="FrmRoleAdmin_colRealName">Name</item>
+    <item key="FrmRoleAdmin_colDescription">Description</item>
+    <item key="FrmRoleAdmin_btnSelectAll">Select All</item>
+    <item key="FrmRoleAdmin_btnInvertSelect">Invert Select</item>
+    <item key="FrmRoleAdmin_btnAdd">&amp;Add</item>
+    <item key="FrmRoleAdmin_btnEdit">&amp;Edit</item>
+    <item key="FrmRoleAdmin_btnBatchSave">&amp;Save</item>
+    <item key="FrmRoleAdmin_btnBatchDelete">&amp;Delete</item>
+    <item key="FrmRoleAdmin_btnClose">Close</item>
+    <item key="FrmRoleAdmin_btnRoleUser">&amp;User</item>
+    <item key="FrmRoleAdmin_btnRolePermission">&amp;Permission</item>
+    <item key="FrmRoleAdmin_btnExport">Export Excel</item>
+    <item key="FrmRoleAdmin_colCode">Code</item>
+    <item key="FrmRoleAdmin_colEnabled">Enabled</item>
+    <!-- FrmRoleAdmin End -->
+
+    <!-- FrmRolePermissionAdmin Begin -->
+    <item key="FrmRolePermissionAdmin">Role Permission Admin</item>
+    <item key="FrmRolePermissionAdmin_btnRoleUserBatchSet">Role User BatchSet</item>
+    <item key="FrmRolePermissionAdmin_btnFrmRoleTableScope">Role Table Scope</item>
+    <item key="FrmRolePermissionAdmin_btnFrmTableColumnPermission">Table Column Permission</item>
+    <item key="FrmRolePermissionAdmin_btnBatchPermission">Batch Permission Set</item>
+    <item key="FrmRolePermissionAdmin_btnFrmRolePermissionScope">Role Permission Scope</item>
+    <item key="FrmRolePermissionAdmin_btnFrmRoleAdminScope">Role Admin Scope</item>
+    <item key="FrmRolePermissionAdmin_lblContents">&amp;Contents:</item>
+    <item key="FrmRolePermissionAdmin_lblRoleCategories">Role Categories:</item>
+    <item key="FrmRolePermissionAdmin_colSelected">Selected</item>
+    <item key="FrmRolePermissionAdmin_colCode">Code</item>
+    <item key="FrmRolePermissionAdmin_colRealName">Real Name</item>
+    <item key="FrmRolePermissionAdmin_colEnabled">Enabled</item>
+    <item key="FrmRolePermissionAdmin_colDescription">Description</item>
+    <item key="FrmRolePermissionAdmin_btnAdd">&amp;Add...</item>
+    <item key="FrmRolePermissionAdmin_btnEdit">&amp;Edit...</item>
+    <item key="FrmRolePermissionAdmin_btnRoleUser">&amp;User...</item>
+    <item key="FrmRolePermissionAdmin_btnRolePermission">&amp;Permission...</item>
+    <item key="FrmRolePermissionAdmin_btnExport">Export Excel...</item>
+    <item key="FrmRolePermissionAdmin_btnBatchDelete">&amp;Delete</item>
+    <item key="FrmRolePermissionAdmin_btnBatchSave">&amp;Save</item>
+    <item key="FrmRolePermissionAdmin_btnClose">Close</item>
+    <!-- FrmRolePermissionAdmin End -->
+
+    <!-- FrmRoleMultiSelect Begin -->
+    <item key="FrmRoleMultiSelect">Select Role</item>
+    <item key="FrmRoleMultiSelect_colSelected">Select</item>
+    <item key="FrmRoleMultiSelect_colFullName">Full Name</item>
+    <item key="FrmRoleMultiSelect_colDescription">Description</item>
+    <item key="FrmRoleMultiSelect_btnSelectAll">Select All</item>
+    <item key="FrmRoleMultiSelect_btnInvertSelection">Select Invert</item>
+    <item key="FrmRoleMultiSelect_btnConfirm">OK</item>
+    <item key="FrmRoleMultiSelect_btnCancel">Cancel</item>
+    <!-- FrmRoleMultiSelect End -->
+
+    <!-- FrmRoleSelectOne Begin -->
+    <item key="FrmRoleSelectOne">Select Role</item>
+    <item key="FrmRoleSelectOne_colSelected">Select</item>
+    <item key="FrmRoleSelectOne_colFullName">Full Name</item>
+    <item key="FrmRoleSelectOne_colDescription">Description</item>
+    <item key="FrmRoleSelectOne_btnConfirm">OK</item>
+    <item key="FrmRoleSelectOne_btnCancel">Cancel</item>
+    <!-- FrmRoleSelectOne End -->
+
+    <!-- FrmSequenceAdd Begin -->
+    <item key="FrmSequenceAdd">Add Sequence (Serial Code)</item>
+    <item key="FrmSequenceAdd_grbSequence">Add Sequence (Serial Code)</item>
+    <item key="FrmSequenceAdd_lblFullName">&amp;Name:</item>
+    <item key="FrmSequenceAdd_lblPrefix">Prefix:</item>
+    <item key="FrmSequenceAdd_lblSeparator">Separator:</item>
+    <item key="FrmSequenceAdd_lblSequence">Increasing sequence:</item>
+    <item key="FrmSequenceAdd_lblReduction">Reduction sequence:</item>
+    <item key="FrmSequenceAdd_lblStep">Step:</item>
+    <item key="FrmSequenceAdd_chkEnabled">Dispaly</item>
+    <item key="FrmSequenceAdd_lblDescription">&amp;Description:</item>
+    <item key="FrmSequenceAdd_btnSave">&amp;Save</item>
+    <item key="FrmSequenceAdd_btnAdd">&amp;Add</item>
+    <item key="FrmSequenceAdd_btnCancel">Cancle</item>
+    <!-- FrmSequenceAdd End -->
+
+    <!-- FrmSequenceAdmin Begin -->
+    <item key="FrmSequenceAdmin">Sequence (Serial Code) Management</item>
+    <item key="FrmSequenceAdmin_lblContents">&amp;Contents:</item>
+    <item key="FrmSequenceAdmin_chkAll">Dispaly All</item>
+    <item key="FrmSequenceAdmin_btnSearch">&amp;Query</item>
+    <item key="FrmSequenceAdmin_btnExport">Export Excel...</item>
+    <item key="FrmSequenceAdmin_colSelected">Select</item>
+    <item key="FrmSequenceAdmin_colFullName">Name</item>
+    <item key="FrmSequenceAdmin_colPrefix">Prefix</item>
+    <item key="FrmSequenceAdmin_colSeparator">Separator</item>
+    <item key="FrmSequenceAdmin_colSequence">Increasing sequence</item>
+    <item key="FrmSequenceAdmin_colReduction">Reduction sequence</item>
+    <item key="FrmSequenceAdmin_colStep">Step</item>
+    <item key="FrmSequenceAdmin_colDescription">Description</item>
+    <item key="FrmSequenceAdmin_btnSelectAll">Select All</item>
+    <item key="FrmSequenceAdmin_btnInvertSelect">Select Invert</item>
+    <item key="FrmSequenceAdmin_btnAdd">&amp;Add</item>
+    <item key="FrmSequenceAdmin_btnEdit">&amp;Edit</item>
+    <item key="FrmSequenceAdmin_btnHide">&amp;Hidden</item>
+    <item key="FrmSequenceAdmin_btnReset">&amp;Reset</item>
+    <item key="FrmSequenceAdmin_btnDelete">&amp;Delete</item>
+    <item key="FrmSequenceAdmin_btnClose">Close</item>
+    <!-- FrmSequenceAdmin End -->
+
+    <!-- FrmSequenceEdit Begin -->
+    <item key="FrmSequenceEdit">Edit Sequence (Serial Code)</item>
+    <item key="FrmSequenceEdit_grbSequence">Edit Sequence (Serial Code)</item>
+    <item key="FrmSequenceEdit_lblFullName">&amp;Name:</item>
+    <item key="FrmSequenceEdit_lblPrefix">Prefix:</item>
+    <item key="FrmSequenceEdit_lblSeparator">Separator:</item>
+    <item key="FrmSequenceEdit_lblSequence">Increasing sequence:</item>
+    <item key="FrmSequenceEdit_lblReduction">Reduction sequence:</item>
+    <item key="FrmSequenceEdit_lblStep">Step:</item>
+    <item key="FrmSequenceEdit_chkEnabled">Display</item>
+    <item key="FrmSequenceEdit_lblDescription">&amp;Description:</item>
+    <item key="FrmSequenceEdit_btnSave">&amp;Save</item>
+    <item key="FrmSequenceEdit_btnCancel">Cancle</item>
+    <!-- FrmSequenceEdit End -->
+
+    <!-- FrmImpersonation Begin -->
+    <item key="FrmImpersonation">Impersonation</item>
+    <item key="FrmImpersonation_colSelected">Select</item>
+    <item key="FrmImpersonation_colFullName">FullName</item>
+    <item key="FrmImpersonation_colDepartmentName">Department Full Name</item>
+    <item key="FrmImpersonation_btnImpersonation">&amp;Impersonation</item>
+    <item key="FrmImpersonation_btnClose">Close</item>
+    <!-- FrmImpersonation End -->
+
+    <!-- FrmPermissionItemAdmin Begin -->
+    <item key="FrmPermissionItemAdmin">Management of define Operation Permission</item>
+    <item key="FrmPermissionItemAdmin_lblSystem">Bussiness System:</item>
+    <item key="FrmPermissionItemAdmin_lblContents">&amp;Contents:</item>
+    <item key="FrmPermissionItemAdmin_btnExport">Export Excel...</item>
+    <item key="FrmPermissionItemAdmin_btnUserPermissionItem">User Permission</item>
+    <item key="FrmPermissionItemAdmin_btnRolePermissionItem">Role Permission</item>
+    <item key="FrmPermissionItemAdmin_colSelected">Select</item>
+    <item key="FrmPermissionItemAdmin_colCode">Code</item>
+    <item key="FrmPermissionItemAdmin_colFullName">Name</item>
+    <item key="FrmPermissionItemAdmin_colIsScope">Data Set</item>
+    <item key="FrmPermissionItemAdmin_colDescription">Description</item>
+    <item key="FrmPermissionItemAdmin_btnSelectAll">Select All</item>
+    <item key="FrmPermissionItemAdmin_btnInvertSelect">Invert Select</item>
+    <item key="FrmPermissionItemAdmin_btnAdd">&amp;Add</item>
+    <item key="FrmPermissionItemAdmin_btnEdit">&amp;Edit</item>
+    <item key="FrmPermissionItemAdmin_btnMove">&amp;Move</item>
+    <item key="FrmPermissionItemAdmin_btnBatchDelete">&amp;Delete</item>
+    <item key="FrmPermissionItemAdmin_btnModulePermission">Related Modules(Menu)</item>
+    <item key="FrmPermissionItemAdmin_btnBatchSave">&amp;Save</item>
+    <item key="FrmPermissionItemAdmin_btnClose">Close</item>
+    <item key="FrmPermissionItemAdmin_mItmAdd">Add...</item>
+    <item key="FrmPermissionItemAdmin_mItmEdit">Edit...</item>
+    <item key="FrmPermissionItemAdmin_mItmMove">Move...</item>
+    <item key="FrmPermissionItemAdmin_mItmDelete">Delete</item>
+    <item key="FrmPermissionItemAdmin_mItmRootAdd">Add Root Permission...</item>
+    <item key="FrmPermissionItemAdmin_mItmUserPermission">User(Account) Permission...</item>
+    <item key="FrmPermissionItemAdmin_mItmModulePermission">Related Modules(Menu)...</item>
+    <item key="FrmPermissionItemAdmin_mItmSetSortCode">Save Sort Order</item>
+    <!-- FrmPermissionItemAdmin End -->
+
+    <!-- FrmUserPermissionItem Begin -->
+    <item key="FrmUserPermissionItem">User Permission Setup</item>
+    <item key="FrmUserPermissionItem_btnClearPermission">Clear Permission</item>
+    <item key="FrmUserPermissionItem_btnCopy">Copy Permission</item>
+    <item key="FrmUserPermissionItem_btnPaste">Paste Permission</item>
+    <item key="FrmUserPermissionItem_tpUser">User</item>
+    <item key="FrmUserPermissionItem_tpPermissionItem">Own Permission</item>
+    <item key="FrmUserPermissionItem_btnOK">OK</item>
+    <item key="FrmUserPermissionItem_btnCancel">Cancel</item>
+    <!-- FrmUserPermissionItem End -->
+
+    <!-- FrmRolePermissionItem Begin -->
+    <item key="FrmRolePermissionItem">Role Permission Setup</item>
+    <item key="FrmRolePermissionItem_btnClearPermission">Clear Permission</item>
+    <item key="FrmRolePermissionItem_btnCopy">Copy Permission</item>
+    <item key="FrmRolePermissionItem_btnPaste">Paste Permission</item>
+    <item key="FrmRolePermissionItem_tpRole">Role</item>
+    <item key="FrmRolePermissionItem_tpPermissionItem">Own Permission</item>
+    <item key="FrmRolePermissionItem_btnOK">OK</item>
+    <item key="FrmRolePermissionItem_btnCancel">Cancel</item>
+    <!-- FrmRolePermissionItem End -->
+
+    <!-- FrmModulePermissionBatchSet Begin -->
+    <item key="FrmModulePermissionBatchSet">Permission and Menu Relation Setup</item>
+    <item key="FrmModulePermissionBatchSet_tpPermissionItem">Own Permission</item>
+    <item key="FrmModulePermissionBatchSet_tpModule">Access Menu</item>
+    <!-- FrmModulePermissionBatchSet End -->
+
+    <!-- FrmRequestAnAccount Begin -->
+    <item key="FrmRequestAnAccount">User(Account) Sign Up</item>
+    <item key="FrmRequestAnAccount_rbtnUserInput">User Input</item>
+    <item key="FrmRequestAnAccount_rbtnDefaultPassword">Default Password</item>
+    <item key="FrmRequestAnAccount_rbtnUserNamePassword">User(Account) and Password the same</item>
+    <item key="FrmRequestAnAccount_grpRequestAnAccount">User(Account)</item>
+    <item key="FrmRequestAnAccount_lblUserName">&amp;UserName:</item>
+    <item key="FrmRequestAnAccount_lblFullName">&amp;Name:</item>
+    <item key="FrmRequestAnAccount_lblGender">&amp;Gender:</item>
+    <item key="FrmRequestAnAccount_lblCode">&amp;Employee No:</item>
+    <item key="FrmRequestAnAccount_lblMobilePhone">&amp;Mobile Phone:</item>
+    <item key="FrmRequestAnAccount_lblE_mail">&amp;E-Mail:</item>
+    <item key="FrmRequestAnAccount_lblTelephone">&amp;Telephone:</item>
+    <item key="FrmRequestAnAccount_lblRole">Default &amp;Role:</item>
+    <item key="FrmRequestAnAccount_lblPassword">&amp;Password:</item>
+    <item key="FrmRequestAnAccount_lblConfirmPassword">&amp;Confirm Password:</item>
+    <item key="FrmRequestAnAccount_lblCompany">Company:</item>
+    <item key="FrmRequestAnAccount_lblSubCompany">Sub Company:</item>
+    <item key="FrmRequestAnAccount_lblDepartment">Department:</item>
+    <item key="FrmRequestAnAccount_lblWorkgroup">WorkGroup:</item>
+    <item key="FrmRequestAnAccount_chkEnabled">Enabled</item>
+    <item key="FrmRequestAnAccount_chkIsStaff">Is Staff</item>
+    <item key="FrmRequestAnAccount_lblDescription">Description:</item>
+    <item key="FrmRequestAnAccount_chkClose">Success then close the window.</item>
+    <item key="FrmRequestAnAccount_btnRequestAnAccount">Account Sign Up</item>
+    <item key="FrmRequestAnAccount_btnCancel">Cancel</item>
+    <!-- FrmRequestAnAccount End -->
+
+    <!-- FrmStaffAddressEdit Begin -->
+    <item key="FrmStaffAddressEdit">Edit Address Book</item>
+    <item key="FrmStaffAddressEdit_grbStaffAddress">Address Book</item>
+    <item key="FrmStaffAddressEdit_lblFullName">Full Name:</item>
+    <item key="FrmStaffAddressEdit_lblCompany">Company:</item>
+    <item key="FrmStaffAddressEdit_lblDep">Department:</item>
+    <item key="FrmStaffAddressEdit_lblDuty">Duty:</item>
+    <item key="FrmStaffAddressEdit_lblTEl">Office Phone:</item>
+    <item key="FrmStaffAddressEdit_lblMobile">Mobile Phone:</item>
+    <item key="FrmStaffAddressEdit_lblShortNumber">Cornet:</item>
+    <item key="FrmStaffAddressEdit_lblMail">Email:</item>
+    <item key="FrmStaffAddressEdit_lblOICQ">IM:</item>
+    <item key="FrmStaffAddressEdit_lblSignature">Signature:</item>
+    <item key="FrmStaffAddressEdit_lblDescription">Description:</item>
+    <item key="FrmStaffAddressEdit_btnSave">&amp;Save</item>
+    <item key="FrmStaffAddressEdit_btnCancel">Cancel</item>
+    <!-- FrmStaffAddressEdit End -->
+
+    <!-- FrmStaffOrganizeSelect Begin -->
+    <item key="FrmStaffOrganizeSelect">Select Staff</item>
+    <item key="FrmStaffOrganizeSelect_lblSearch">&amp;Contents:</item>
+    <item key="FrmStaffOrganizeSelect_btnSearch">&amp;Search:</item>
+    <item key="FrmStaffOrganizeSelect_chkContainChildren">Contain Staff in Subsector</item>
+    <item key="FrmStaffOrganizeSelect_colSelected">Select</item>
+    <item key="FrmStaffOrganizeSelect_colRealName">Name</item>
+    <item key="FrmStaffOrganizeSelect_colUserName">UserName</item>
+    <item key="FrmStaffOrganizeSelect_colCode">Code</item>
+    <item key="FrmStaffOrganizeSelect_colDescription">Description</item>
+    <item key="FrmStaffOrganizeSelect_btnSelectAll">Select All</item>
+    <item key="FrmStaffOrganizeSelect_btnInvertSelect">Select Invert</item>
+    <item key="FrmStaffOrganizeSelect_btnSetNull">&amp;Null</item>
+    <item key="FrmStaffOrganizeSelect_btnConfirm">Confirm</item>
+    <item key="FrmStaffOrganizeSelect_btnCancel">Cancel</item>
+    <!-- FrmStaffOrganizeSelect End -->
+
+    <!-- FrmStaffSelect Begin -->
+    <item key="FrmStaffSelect">Select Staff</item>
+    <item key="FrmStaffSelect_lblSearch">&amp;Contents:</item>
+    <item key="FrmStaffSelect_btnSearch">&amp;Search</item>
+    <item key="FrmStaffSelect_colSelected">Select</item>
+    <item key="FrmStaffSelect_colRealName">Name</item>
+    <item key="FrmStaffSelect_colUserName">UserName</item>
+    <item key="FrmStaffSelect_colCode">Code</item>
+    <item key="FrmStaffSelect_colDescription">Description</item>
+    <item key="FrmStaffSelect_btnSelectAll">Select All</item>
+    <item key="FrmStaffSelect_btnInvertSelect">Select Invert</item>
+    <item key="FrmStaffSelect_btnSetNull">&amp;Null</item>
+    <item key="FrmStaffSelect_btnConfirm">Confirm</item>
+    <item key="FrmStaffSelect_btnCancel">Cancel</item>
+    <!-- FrmStaffSelect End -->
+
+    <!-- FrmStaffChangeDepartment Begin -->
+    <item key="FrmStaffChangeDepartment">Move Staff Department</item>
+    <item key="FrmStaffChangeDepartment_grbStaffChangDepartment">Move Staff Department</item>
+    <item key="FrmStaffChangeDepartment_lblFullName">Full Name:</item>
+    <item key="FrmStaffChangeDepartment_lblCompany">Company:</item>
+    <item key="FrmStaffChangeDepartment_lblDep">Department:</item>
+    <item key="FrmStaffChangeDepartment_lblDuty">Duty:</item>
+    <item key="FrmStaffChangeDepartment_lblDescription">Description:</item>
+    <item key="FrmStaffChangeDepartment_lblCompanyName">&amp;Company:</item>
+    <item key="FrmStaffChangeDepartment_lblDepartment">&amp;Department:</item>
+    <item key="FrmStaffChangeDepartment_btnConfirm">Confirm</item>
+    <item key="FrmStaffChangeDepartment_btnCancel">Cancel</item>
+    <!-- FrmStaffChangeDepartment End -->
+
+    <!-- FrmStaffAddressAdmin Begin -->
+    <item key="FrmStaffAddressAdmin">Internal Address Book</item>
+    <item key="FrmStaffAddressAdmin_colSelected">Select</item>
+    <item key="FrmStaffAddressAdmin_lblSearch">&amp;Contents:</item>
+    <item key="FrmStaffAddressAdmin_btnAdd">&amp;Add</item>
+    <item key="FrmStaffAddressAdmin_btnMyAddress">Contact &amp;me</item>
+    <item key="FrmStaffAddressAdmin_btnSearch">&amp;Query</item>
+    <item key="FrmStaffAddressAdmin_lblOrganize">Company/&amp;Department:</item>
+    <item key="FrmStaffAddressAdmin_btnAll">All</item>
+    <item key="FrmStaffAddressAdmin_colRealName">Name</item>
+    <item key="FrmStaffAddressAdmin_colShortNumber">Cornet</item>
+    <item key="FrmStaffAddressAdmin_colDepFullName">Department</item>
+    <item key="FrmStaffAddressAdmin_colDuty">Duty</item>
+    <item key="FrmStaffAddressAdmin_colTel">Phone</item>
+    <item key="FrmStaffAddressAdmin_colMobile">Mobile</item>
+    <item key="FrmStaffAddressAdmin_colEmail">Email</item>
+    <item key="FrmStaffAddressAdmin_colOICQ">OICQ</item>
+    <item key="FrmStaffAddressAdmin_colDescription">Description</item>
+    <item key="FrmStaffAddressAdmin_btnExport">Export Excel</item>
+    <item key="FrmStaffAddressAdmin_btnEdit">&amp;Edit...</item>
+    <item key="FrmStaffAddressAdmin_btnBatchSave">&amp;Save</item>
+    <item key="FrmStaffAddressAdmin_btnClose">Close</item>
+    <!-- FrmStaffAddressAdmin End -->
+
+    <!-- FrmStaffAdd Begin -->
+    <item key="FrmStaffAdd">Add Employee(Personnel)</item>
+    <item key="FrmStaffAdd_grbStaffAdd">Employee(Personnel)</item>
+    <item key="FrmStaffAdd_lblUserName">&amp;UserName:</item>
+    <item key="FrmStaffAdd_lblFullName">&amp;Name:</item>
+    <item key="FrmStaffAdd_lblGender">&amp;Gender:</item>
+    <item key="FrmStaffAdd_lblCode">&amp;Code:</item>
+    <item key="FrmStaffAdd_lblParty">Politics Status:</item>
+    <item key="FrmStaffAdd_lblWorkgroup">&amp;WorkGroup:</item>
+    <item key="FrmStaffAdd_lblJoinInDate">Joined Date：</item>
+    <item key="FrmStaffAdd_lblWorkingProperty">Labor properties:</item>
+    <item key="FrmStaffAdd_lblOfficePhone">Office Phone:</item>
+    <item key="FrmStaffAdd_lblCompany">Com&amp;pany:</item>
+    <item key="FrmStaffAdd_lblSubCompany">&amp;Sub Company:</item>
+    <item key="FrmStaffAdd_lblDepartment">&amp;Department:</item>
+    <item key="FrmStaffAdd_lblEmail">&amp;Email:</item>
+    <item key="FrmStaffAdd_lblMobile">&amp;Mobile Phone:</item>
+    <item key="FrmStaffAdd_lblBankCode">Bank Account:</item>
+    <item key="FrmStaffAdd_lblRole">Default &amp;Role:</item>
+    <item key="FrmStaffAdd_lblPassword">&amp;Password:</item>
+    <item key="FrmStaffAdd_lblConfirmPassword">Confirm Password:</item>
+    <item key="FrmStaffAdd_lblDescription">Description:</item>
+    <item key="FrmStaffAdd_chbCreateUser">Create User</item>
+    <item key="FrmStaffAdd_chbEnabled">Enabled</item>
+    <item key="FrmStaffAdd_lblBirthday">Birth Date:</item>
+    <item key="FrmStaffAdd_lblNationality">Nationality:</item>
+    <item key="FrmStaffAdd_lblDuty">Dut&amp;y:</item>
+    <item key="FrmStaffAdd_lblTitle">Positional &amp;Title:</item>
+    <item key="FrmStaffAdd_lblWorkingDate">Working Date:</item>
+    <item key="FrmStaffAdd_lblIdCard">ID Card:</item>
+    <item key="FrmStaffAdd_lblOICQ">&amp;QQ:</item>
+    <item key="FrmStaffAdd_lblShortNumber">Short Number:</item>
+    <item key="FrmStaffAdd_lblSchool">Graduated School：</item>
+    <item key="FrmStaffAdd_lblMajor">Major:</item>
+    <item key="FrmStaffAdd_lblEducation">Education:</item>
+    <item key="FrmStaffAdd_lblDegree">Degree:</item>
+    <item key="FrmStaffAdd_lblProvince">Province:</item>
+    <item key="FrmStaffAdd_lblHomeAddress">Home Address:</item>
+    <item key="FrmStaffAdd_lblHomePhone">Home Phone:</item>
+    <item key="FrmStaffAdd_lblCarCode">License (plate) Number:</item>
+    <item key="FrmStaffAdd_lblEmergencyContact">Emergency Contact：</item>
+    <item key="FrmStaffAdd_chbIsStaff">&amp;Is Staff</item>
+    <item key="FrmStaffAdd_chbIsOperator">Is Operato&amp;r</item>
+    <item key="FrmStaffAdd_btnSelectCompany">Sel&amp;ect</item>
+    <item key="FrmStaffAdd_btnSelectDep">Se&amp;lect</item>
+    <item key="FrmStaffAdd_btnConfirm">Add Employee</item>
+    <item key="FrmStaffAdd_chkClose">Save and Close</item>
+    <item key="FrmStaffAdd_btnSave">&amp;Save</item>
+    <item key="FrmStaffAdd_btnCancel">Cancel</item>
+    <!-- FrmStaffAdd End -->
+
+    <!-- FrmStaffEdit Begin -->
+    <item key="FrmStaffEdit">Edit Staff</item>
+    <item key="FrmStaffEdit_grpStaffAdd">Staff</item>
+    <item key="FrmStaffEdit_lblFullName">Full Name:</item>
+    <item key="FrmStaffEdit_lblGender">Gender:</item>
+    <item key="FrmStaffEdit_lblCode">Code:</item>
+    <item key="FrmStaffEdit_lblParty">Party:</item>
+    <item key="FrmStaffEdit_lblCompany">Company Name:</item>
+    <item key="FrmStaffEdit_lblSubCompany">Sub Company:</item>
+    <item key="FrmStaffEdit_lblDepartment">Department:</item>
+    <item key="FrmStaffEdit_lblWorkgroup">Work Group:</item>
+    <item key="FrmStaffEdit_lblJoinInDate">JoinIn Date:</item>
+    <item key="FrmStaffEdit_lblWorkingProperty">Working Property:</item>
+    <item key="FrmStaffEdit_lblOfficePhone">Office Phone:</item>
+    <item key="FrmStaffEdit_lblEmail">E-Mail:</item>
+    <item key="FrmStaffEdit_lblMobile">Mobile:</item>
+    <item key="FrmStaffEdit_lblBankCode">Bank Code:</item>
+    <item key="FrmStaffEdit_lblIdentificationCode">Identification Code:</item>
+    <item key="FrmStaffEdit_lblUserName">&amp;User Name:</item>
+    <item key="FrmStaffEdit_lblRole">Defaule &amp;Role:</item>
+    <item key="FrmStaffEdit_lblPassword">&amp;Password:</item>
+    <item key="FrmStaffEdit_lblConfirmPassword">&amp;Confirm Password:</item>
+    <item key="FrmStaffEdit_chbCreateUser">Create User</item>
+    <item key="FrmStaffEdit_chbEnabled">Enable</item>
+    <item key="FrmStaffEdit_lblBirthday">Birthday:</item>
+    <item key="FrmStaffEdit_lblNationality">Nationality:</item>
+    <item key="FrmStaffEdit_lblDuty">Duty:</item>
+    <item key="FrmStaffEdit_lblTitle">Title:</item>
+    <item key="FrmStaffEdit_lblWorkingDate">Working Date:</item>
+    <item key="FrmStaffEdit_lblIdCard">Id Card:</item>
+    <item key="FrmStaffEdit_lblOICQ">IM Accounting:</item>
+    <item key="FrmStaffEdit_lblShortNumber">Short Number:</item>
+    <item key="FrmStaffEdit_lblSchool">School:</item>
+    <item key="FrmStaffEdit_lblMajor">Major:</item>
+    <item key="FrmStaffEdit_lblGraduationDate">Graduation Date:</item>
+    <item key="FrmStaffEdit_lblEducation">Education:</item>
+    <item key="FrmStaffEdit_lblDegree">Degree:</item>
+    <item key="FrmStaffEdit_lblProvince">Province:</item>
+    <item key="FrmStaffEdit_lblHomeAddress">Home Address:</item>
+    <item key="FrmStaffEdit_lblHomePhone">Home Phone:</item>
+    <item key="FrmStaffEdit_lblCarCode">Car Code:</item>
+    <item key="FrmStaffEdit_lblEmergencyContact">Emergency Contact:</item>
+    <item key="FrmStaffEdit_lblDescription">Description:</item>
+    <item key="FrmStaffEdit_btnSetStaffUser">Set Staff User</item>
+    <item key="FrmStaffEdit_btnUserProperty">User Property</item>
+    <item key="FrmStaffEdit_btnUserPermission">User Permission...</item>
+    <item key="FrmStaffEdit_btnDeleteStaffUser">Delete Staff User</item>
+    <item key="FrmStaffEdit_btnUpdateUser">Update User</item>
+    <item key="FrmStaffEdit_btnLikeAdd">Like &amp;Add</item>
+    <item key="FrmStaffEdit_btnConfirm">Confirm</item>
+    <item key="FrmStaffEdit_btnCancel">Cancel</item>
+    <!-- FrmStaffEdit End -->
+
+    <!-- FrmOrganizeRoleAdd Begin -->
+    <item key="FrmOrganizeRoleAdd">Add Position(User Groups)</item>
+    <item key="FrmOrganizeRoleAdd_grbOrganizeRole">Add Position(User Groups)</item>
+    <item key="FrmOrganizeRoleAdd_lblOrganize">Organize:</item>
+    <item key="FrmOrganizeRoleAdd_lblFullName">&amp;Name:</item>
+    <item key="FrmOrganizeRoleAdd_lblCode">&amp;Code:</item>
+    <item key="FrmOrganizeRoleAdd_chkEnabled">&amp;Enabled</item>
+    <item key="FrmOrganizeRoleAdd_lblDescription">&amp;Description:</item>
+    <item key="FrmOrganizeRoleAdd_btnAdd">&amp;Add</item>
+    <item key="FrmOrganizeRoleAdd_btnSave">&amp;Save</item>
+    <item key="FrmOrganizeRoleAdd_btnCancel">Cancel</item>
+    <item key="FrmOrganizeRoleAdd_btnLeadership">Leadership</item>
+    <item key="FrmOrganizeRoleAdd_btnBusinessLeadership">Business Leadership</item>
+    <item key="FrmOrganizeRoleAdd_btnFinancialLeadership">Financial Leadership</item>
+    <item key="FrmOrganizeRoleAdd_btnPersonnelLeadership">HR Leadership</item>
+    <item key="FrmOrganizeRoleAdd_btnAssistantLeadership">Branch Leadership</item>
+    <item key="FrmOrganizeRoleAdd_btnManager">Manager</item>
+    <item key="FrmOrganizeRoleAdd_btnAssistantManager">Assistant Manager</item>
+    <item key="FrmOrganizeRoleAdd_btnAssistant">Assistant</item>
+    <item key="FrmOrganizeRoleAdd_btnFinancial">Financial</item>
+    <item key="FrmOrganizeRoleAdd_btnAccounting">Accounting</item>
+    <item key="FrmOrganizeRoleAdd_btnCashier">Cashier</item>
+    <item key="FrmOrganizeRoleAdd_btnSystemManager">System Manager</item>
+    <!-- FrmOrganizeRoleAdd End -->
+
+    <!-- FrmOrganizeRoleEdit Begin -->
+    <item key="FrmOrganizeRoleEdit">Edit Position(User Groups)</item>
+    <item key="FrmOrganizeRoleEdit_grbOrganizeRole">Edit Position(User Groups)</item>
+    <item key="FrmOrganizeRoleEdit_lblOrganize">Organize:</item>
+    <item key="FrmOrganizeRoleEdit_lblCode">&amp;Code:</item>
+    <item key="FrmOrganizeRoleEdit_lblFullName">&amp;Name:</item>
+    <item key="FrmOrganizeRoleEdit_chkEnabled">&amp;Enabled</item>
+    <item key="FrmOrganizeRoleEdit_lblDescription">&amp;Description:</item>
+    <item key="FrmOrganizeRoleEdit_btnLikeAdd">Like &amp;Add</item>
+    <item key="FrmOrganizeRoleEdit_btnSave">&amp;Save</item>
+    <item key="FrmOrganizeRoleEdit_btnCancel">Cancel</item>
+    <!-- FrmOrganizeRoleEdit End -->
+
+    <!-- FrmOrganizeRoleSelect Begin -->
+    <item key="FrmOrganizeRoleSelect">Select Position(User Group)</item>
+    <item key="FrmOrganizeRoleSelect_colSelected">Select</item>
+    <item key="FrmOrganizeRoleSelect_colRealName">Name</item>
+    <item key="FrmOrganizeRoleSelect_colDescription">Description</item>
+    <item key="FrmOrganizeRoleSelect_btnConfirm">Confirm</item>
+    <item key="FrmOrganizeRoleSelect_btnCancel">Cancel</item>
+    <item key="FrmOrganizeRoleSelect_btnSetNull">&amp;Null</item>
+    <!-- FrmOrganizeRoleSelect End -->
+
+    <!-- FrmOrganizeRoleAdmin Begin -->
+    <item key="FrmOrganizeRoleAdmin">Organize Position Management</item>
+    <item key="FrmOrganizeRoleAdmin_lblSearch">&amp;Contents:</item>
+    <item key="FrmOrganizeRoleAdmin_btnSearch">&amp;Query</item>
+    <item key="FrmOrganizeRoleAdmin_colSelected">Select</item>
+    <item key="FrmOrganizeRoleAdmin_colRealName">Name</item>
+    <item key="FrmOrganizeRoleAdmin_colEnabled">Enabled</item>
+    <item key="FrmOrganizeRoleAdmin_colDescription">Description</item>
+    <item key="FrmOrganizeRoleAdmin_btnSelectAll">Select All</item>
+    <item key="FrmOrganizeRoleAdmin_btnInvertSelect">Invert Select</item>
+    <item key="FrmOrganizeRoleAdmin_btnAdd">&amp;Add</item>
+    <item key="FrmOrganizeRoleAdmin_btnEdit">&amp;Edit</item>
+    <item key="FrmOrganizeRoleAdmin_btnMove">&amp;Remove</item>
+    <item key="FrmOrganizeRoleAdmin_btnBatchDelete">&amp;Delete</item>
+    <item key="FrmOrganizeRoleAdmin_btnRolePermission">&amp;Permission</item>
+    <item key="FrmOrganizeRoleAdmin_btnRoleUser">&amp;User</item>
+    <item key="FrmOrganizeRoleAdmin_btnExport">Export to Excel</item>
+    <item key="FrmOrganizeRoleAdmin_btnBatchSave">&amp;Save</item>
+    <item key="FrmOrganizeRoleAdmin_btnClose">Close</item>
+    <!-- FrmOrganizeRoleAdmin End -->
+
+    <!-- FrmCompanySelect Begin -->
+    <item key="FrmCompanySelect_lblSearch">&amp;Contents:</item>
+    <item key="FrmCompanySelect_btnSearch">&amp;Search</item>
+    <item key="FrmCompanySelect_btnConfirm">Confirm</item>
+    <item key="FrmCompanySelect_btnCancel">Cancel</item>
+    <!-- FrmCompanySelect End -->
+
+    <!-- FrmAccountEdit Begin -->
+    <item key="FrmAccountEdit">Edit User(Account)</item>
+    <item key="FrmAccountEdit_tpUser">Account Messege</item>
+    <item key="FrmAccountEdit_grpRequestAnAccount">User(Account)</item>
+    <item key="FrmAccountEdit_tpUserOrganize">Part-Time Job</item>
+    <item key="FrmAccountEdit_lblUserName">&amp;UserName:</item>
+    <item key="FrmAccountEdit_lblRealName">&amp;Name:</item>
+    <item key="FrmAccountEdit_lblCode">&amp;Employee No:</item>
+    <item key="FrmAccountEdit_label2">&amp;Mobile Phone:</item>
+    <item key="FrmAccountEdit_lblE_mail">&amp;E-Mail:</item>
+    <item key="FrmAccountEdit_lblRole">Default &amp;Role:</item>
+    <item key="FrmAccountEdit_lblWorkgroup">&amp;WorkGroup:</item>
+    <item key="FrmAccountEdit_lblCompanyName">Com&amp;pany:</item>
+    <item key="FrmAccountEdit_lblSubCompany">&amp;Sub Company:</item>
+    <item key="FrmAccountEdit_lblDepartment">&amp;Department:</item>
+    <item key="FrmAccountEdit_chbEnabled">Enabled</item>
+    <item key="FrmAccountEdit_lblDescription">Description:</item>
+    <item key="FrmAccountEdit_btnSetPassword">&amp;Set Password...</item>
+    <item key="FrmAccountEdit_btnLikeAdd">Like &amp;Add</item>
+    <item key="FrmAccountEdit_btnSave">Account Sign Up</item>
+    <item key="FrmAccountEdit_btnCancel">Cancel</item>
+    <item key="FrmAccountEdit_colSelected">Select</item>
+    <item key="FrmAccountEdit_colCompanyName">Company</item>
+    <item key="FrmAccountEdit_colDepartmentName">Department</item>
+    <item key="FrmAccountEdit_colWorkgroupName">Workgroup</item>
+    <item key="FrmAccountEdit_colRoleName">Duty</item>
+    <item key="FrmAccountEdit_btnSelectAll">Select All</item>
+    <item key="FrmAccountEdit_btnInvertSelect">Select Invert</item>
+    <item key="FrmAccountEdit_btnAddToOrganize">&amp;Add</item>
+    <item key="FrmAccountEdit_btnRemove">Remove</item>
+    <!-- FrmAccountEdit End -->
+
+    <!-- FrmSignature Begin -->
+    <item key="FrmSignature">User Sign</item>
+    <!-- FrmSignature End -->
+
+    <!-- FrmImportUser Begin -->
+    <item key="FrmImportUser">Import User Data</item>
+    <item key="FrmImportUser_grbFile">Import Data</item>
+    <item key="FrmImportUser_lblFile">Import File：</item>
+    <item key="FrmImportUser_btnBrowse">Browse...</item>
+    <item key="FrmImportUser_btnDownload">DL Template</item>
+    <item key="FrmImportUser_grpData">Preview Data</item>
+    <item key="FrmImportUser_grbImport">Import Processing</item>
+    <item key="FrmImportUser_btnImport">&amp;Import</item>
+    <item key="FrmImportUser_btnClose">Close</item>
+    <!-- FrmImportUser End -->
+
+    <!-- FrmUserAdd Begin -->
+    <item key="FrmUserAdd">Add User(Account)</item>
+    <item key="FrmUserAdd_grbOperatorAdd">User(Account)</item>
+    <item key="FrmUserAdd_lblUserName">&amp;UserName:</item>
+    <item key="FrmUserAdd_lblRealName">&amp;Name:</item>
+    <item key="FrmUserAdd_lblCode">&amp;Code:</item>
+    <item key="FrmUserAdd_lblDefaultRole">Default &amp;Role:</item>
+    <item key="FrmUserAdd_lblSecurityLevel">&amp;Security Level:</item>
+    <item key="FrmUserAdd_lblPassword">&amp;Password:</item>
+    <item key="FrmUserAdd_lblConfirmPassword">&amp;Confirm Password:</item>
+    <item key="FrmUserAdd_chkEnabled">Enabled</item>
+    <item key="FrmUserAdd_chkClose">Add finish then Close the window.</item>
+    <item key="FrmUserAdd_btnAdd">&amp;Add</item>
+    <item key="FrmUserAdd_btnCancel">Cancel</item>
+    <!-- FrmUserAdd End -->
+
+    <!-- FrmUserEdit Begin -->
+    <item key="FrmUserEdit">User(Account) Property</item>
+    <item key="FrmUserEdit_grpUser">User(Account)</item>
+    <item key="FrmUserEdit_lblId">ID:</item>
+    <item key="FrmUserEdit_lblUserName">UserName(&amp;U)：</item>
+    <item key="FrmUserEdit_lblRealName">Name(&amp;N)：</item>
+    <item key="FrmUserEdit_lblCode">Code(&amp;C)：</item>
+    <item key="FrmUserEdit_lblDefaultRole">Default &amp;Role：</item>
+    <item key="FrmUserEdit_lblSecurityLevel">Security Level：</item>
+    <item key="FrmUserEdit_lblAllowTime">Allow LogOn：</item>
+    <item key="FrmUserEdit_lblTimeTo">to</item>
+    <item key="FrmUserEdit_lblLockDate">Pause：</item>
+    <item key="FrmUserEdit_lblDateTo">to</item>
+    <item key="FrmUserEdit_chkLock">Lock</item>
+    <item key="FrmUserEdit_btnIPLimitr">IP Limit(&amp;I)...</item>
+    <item key="FrmUserEdit_btnSetCommunicationPassword">Set Communication Password(&amp;P)...</item>
+    <item key="FrmUserEdit_btnHandwrittenSignature">User Sign...</item>
+    <item key="FrmUserEdit_btnSave">&amp;Save</item>
+    <item key="FrmUserEdit_btnCancel">Cancel</item>
+    <!-- FrmUserEdit End -->
+
+    <!-- FrmUserSetCommunicationPassword Begin -->
+    <item key="FrmUserSetCommunicationPassword">Set Communication Password</item>
+    <item key="FrmUserSetCommunicationPassword_grpSetPassword">Set Communication Password</item>
+    <item key="FrmUserSetCommunicationPassword_lblNewPassword">New Password(&amp;N)：</item>
+    <item key="FrmUserSetCommunicationPassword_lblConfirmPassword">Confirm Password(&amp;C)：</item>
+    <item key="FrmUserSetCommunicationPassword_btnConfirm">OK</item>
+    <item key="FrmUserSetCommunicationPassword_btnCancel">Cancel</item>
+    <!-- FrmUserSetCommunicationPassword End -->
+
+    <!-- FrmUserOrganizeRoleAdmin Begin -->
+    <item key="FrmUserOrganizeRoleAdmin">User Role Management</item>
+    <item key="FrmUserOrganizeRoleAdmin_lblStaff">&amp;User:</item>
+    <item key="FrmUserOrganizeRoleAdmin_btnSelectAll">Select All</item>
+    <item key="FrmUserOrganizeRoleAdmin_btnInvertSelect">Select Invert</item>
+    <item key="FrmUserOrganizeRoleAdmin_btnBatchSave">&amp;Save</item>
+    <item key="FrmUserOrganizeRoleAdmin_btnCancel">Cancel</item>
+    <!-- FrmUserOrganizeRoleAdmin End -->
+
+    <!-- FrmUserAddToOrganize Begin -->
+    <item key="FrmUserAddToOrganize">User(Account) Part-Time Job</item>
+    <item key="FrmUserAddToOrganize_grpRequestAnAccount">User(Account)</item>
+    <item key="FrmUserAddToOrganize_lblUserName">&amp;UserName:</item>
+    <item key="FrmUserAddToOrganize_lblRealName">&amp;Full Name:</item>
+    <item key="FrmUserAddToOrganize_lblRole">Duty:</item>
+    <item key="FrmUserAddToOrganize_lblCompany">Company:</item>
+    <item key="FrmUserAddToOrganize_lblSubCompany">Sub Company:</item>
+    <item key="FrmUserAddToOrganize_lblDepartment">&amp;Department:</item>
+    <item key="FrmUserAddToOrganize_lblWorkgroup">&amp;Workgroup:</item>
+    <item key="FrmUserAddToOrganize_chbEnabled">Enabled</item>
+    <item key="FrmUserAddToOrganize_btnAddToOrganize">&amp;Confirm</item>
+    <item key="FrmUserAddToOrganize_lblDescription">Description:</item>
+    <item key="FrmUserAddToOrganize_btnCancel">Cancel</item>
+    <!-- FrmUserAddToOrganize End -->
+
+    <!-- FrmUserOrganizeBatchSet Begin -->
+    <item key="FrmUserOrganizeBatchSet">User Organize Set</item>
+    <item key="FrmUserOrganizeBatchSet_grpRequestAnAccount">Organize</item>
+    <item key="FrmUserOrganizeBatchSet_lblCompany">&amp;Company:</item>
+    <item key="FrmUserOrganizeBatchSet_lblSubCompany">&amp;Sub Company:</item>
+    <item key="FrmUserOrganizeBatchSet_lblDepartment">&amp;Department:</item>
+    <item key="FrmUserOrganizeBatchSet_lblWorkgroup">&amp;Workgroup:</item>
+    <item key="FrmUserOrganizeBatchSet_btnConfirm">OK</item>
+    <item key="FrmUserOrganizeBatchSet_btnCancel">Cancel</item>
+    <!-- FrmUserOrganizeBatchSet End -->
+
+    <!-- FrmImportStaff Begin -->
+    <item key="FrmImportStaff">Import Staff Data</item>
+    <item key="FrmImportStaff_btnImport">&amp;Import Data</item>
+    <item key="FrmImportStaff_grpData">Import Data Preview</item>
+    <item key="FrmImportStaff_grbImport">Import Progress</item>
+    <item key="FrmImportStaff_grbFile">Import Data File</item>
+    <item key="FrmImportStaff_btnDownload">Download Template</item>
+    <item key="FrmImportStaff_btnBrowse1">Browse...</item>
+    <item key="FrmImportStaff_lblFile">Import File：</item>
+    <item key="FrmImportStaff_btnClose">Close</item>
+    <!-- FrmImportStaff End -->
+
+    <!-- FrmStaffAdmin Begin -->
+    <item key="FrmStaffAdmin">Staff(Personnel) Management</item>
+    <item key="FrmStaffAdmin_lblSearch">Contents:</item>
+    <item key="FrmStaffAdmin_btnSearch">&amp;Query</item>
+    <item key="FrmStaffAdmin_chkNotDepartment">Without Dept.</item>
+    <item key="FrmStaffAdmin_chkNotIsUser">Without Account</item>
+    <item key="FrmStaffAdmin_chkEnabled">Enabled</item>
+    <item key="FrmStaffAdmin_btnOrganize">Organize Managerment</item>
+    <item key="FrmStaffAdmin_colSelected">Select</item>
+    <item key="FrmStaffAdmin_colCode">Code</item>
+    <item key="FrmStaffAdmin_colRealName">Name</item>
+    <item key="FrmStaffAdmin_colGender">Gender</item>
+    <item key="FrmStaffAdmin_colMobile">Mobile</item>
+    <item key="FrmStaffAdmin_colOfficePhone">Phone</item>
+    <item key="FrmStaffAdmin_colDescription">Description</item>
+    <item key="FrmStaffAdmin_btnSelectAll">Select All</item>
+    <item key="FrmStaffAdmin_btnInvertSelect">Invert Select</item>
+    <item key="FrmStaffAdmin_btnAdd">&amp;Add</item>
+    <item key="FrmStaffAdmin_btnEdit">&amp;Edit</item>
+    <item key="FrmStaffAdmin_btnMove">&amp;Move</item>
+    <item key="FrmStaffAdmin_btnSetPassword">SetPassword...</item>
+    <item key="FrmStaffAdmin_btnUserPermission">&amp;Permission</item>
+    <item key="FrmStaffAdmin_btnBatchDelete">&amp;Delete</item>
+    <item key="FrmStaffAdmin_btnBatchSave">&amp;Save</item>
+    <item key="FrmStaffAdmin_btnClose">Close</item>
+    <item key="FrmStaffAdmin_mItmAdd">&amp;Add</item>
+    <item key="FrmStaffAdmin_mItmEdit">&amp;Edit</item>
+    <item key="FrmStaffAdmin_mItmMove">&amp;Move</item>
+    <item key="FrmStaffAdmin_mItmDelete">&amp;Delete</item>
+    <item key="FrmStaffAdmin_mItmOrganizeCategory">Maintenance Organization Category</item>
+    <item key="FrmStaffAdmin_mItmStaffAdd">Add Staff</item>
+    <item key="FrmStaffAdmin_mItemRoleAdd">Add Role</item>
+    <item key="FrmStaffAdmin_mItmGender">Gender Maintenance</item>
+    <item key="FrmStaffAdmin_mItmParty">Political Status Maintenance</item>
+    <item key="FrmStaffAdmin_mItmNationality">Nationality Maintenance</item>
+    <item key="FrmStaffAdmin_mItmTitle">Positional Title Maintenance </item>
+    <item key="FrmStaffAdmin_mItmDuty">Office Maintenance</item>
+    <item key="FrmStaffAdmin_mItmEducation">Education Maintenance</item>
+    <item key="FrmStaffAdmin_mItmDegree">Degree Maintenance</item>
+    <item key="FrmStaffAdmin_mItmWorkingProperty">Labor Properties Maintenance</item>
+    <item key="FrmStaffAdmin_mItmRoleAdmin">Role Management</item>
+    <item key="FrmStaffAdmin_mItmFrmUserPermissionReport">User Permission Report</item>
+    <item key="FrmStaffAdmin_mItemResetSortCode">Save Sort Order</item>
+    <!-- FrmStaffAdmin End -->
+
+    <!-- SDIMainForm Begin -->
+    <item key="SDIMainForm">.NET General Permission Management</item>
+    <item key="SDIMainForm_mitmFrmRequestAnAccount">User(Account) Sign Up</item>
+    <item key="SDIMainForm_mitmFrmStaffAddressEdit">My Contact</item>
+    <item key="SDIMainForm_mitmOnLine1">On Line</item>
+    <item key="SDIMainForm_mitmOnLine2">Off Line</item>
+    <item key="SDIMainForm_mitmOnLine3">Leave</item>
+    <item key="SDIMainForm_mitmOnLine4">Busy</item>
+    <item key="SDIMainForm_mitmOnLine5">Stealth</item>
+    <item key="SDIMainForm_mitmFrmMessage">Instant Message</item>
+    <item key="SDIMainForm_mitmFrmMessageSend">Send Message</item>
+    <item key="SDIMainForm_mitmFrmMessageBroadcast">Broadcast Message</item>
+    <item key="SDIMainForm_mitmAppliction">Business Application</item>
+    <item key="SDIMainForm_mitmFrmCodeGenerator">Code Generator</item>
+    <item key="SDIMainForm_mitmFrmBusinessCardAdmin">Card Management</item>
+    <item key="SDIMainForm_mitmFrmFileAdmin">Document Management</item>
+    <item key="SDIMainForm_mitmSystemAdmin">System Backend Management</item>
+    <item key="SDIMainForm_mitmFrmImpersonation"></item>
+    <item key="SDIMainForm_mitmFrmAccredit"></item>
+    <item key="SDIMainForm_mitmFrmUserAudit">User(Account) Audit</item>
+    <item key="SDIMainForm_mitmFrmUserAdmin">User(Account) Management</item>
+    <item key="SDIMainForm_mitmFrmOrganizeAdmin">Organization(Department) Management</item>
+    <item key="SDIMainForm_mitmFrmRoleAdmin">Role(User Groups) Management</item>
+    <item key="SDIMainForm_mitmFrmStaffAdmin">Employee(Personnel) Management</item>
+    <item key="SDIMainForm_mitmFrmOrganizeRoleAdmin">Job Management</item>
+    <item key="SDIMainForm_mitmFrmStaffAddressAdmin">Internal Address Book</item>
+    <item key="SDIMainForm_mitmFrmUserPermissionAdmin">User(Account) Permission Management</item>
+    <item key="SDIMainForm_mitmFrmRolePermissionAdmin">Role Permission Management</item>
+    <item key="SDIMainForm_mitmFrmOrganizePermissionAdmin">Organize Permission Management</item>
+    <item key="SDIMainForm_mitmFrmModuleAdmin">Module(Menu) Management</item>
+    <item key="SDIMainForm_mitmFrmPermissionItemAdmin">Management of define Operation Permission</item>
+    <item key="SDIMainForm_mitmFrmItemsAdmin">Data Dictionary(Item) Management</item>
+    <item key="SDIMainForm_mitmFrmSequenceAdmin">Sequence (Serial Code) Management</item>
+    <item key="SDIMainForm_mitmFrmConfig">Config</item>
+    <item key="SDIMainForm_mitmLogAdmin">System Log Management</item>
+    <item key="SDIMainForm_mitmFrmLogGeneral">User(Account) Visits</item>
+    <item key="SDIMainForm_mitmFrmLogByUser">Query by User(Account)</item>
+    <item key="SDIMainForm_mitmFrmLogByModule">Query by Module(Menu)</item>
+    <item key="SDIMainForm_mitmFrmSystemLogByDate">Query by Date</item>
+    <item key="SDIMainForm_mitmFrmExceptionAdmin">System Exception Log</item>
+    <item key="SDIMainForm_mitmWinWorkFlow">Process of Administrative Approval Management</item>
+    <item key="SDIMainForm_mitmFrmWorkFlowStatr">Start Approval Process</item>
+    <item key="SDIMainForm_mitmFrmWorkFlowWaitForAudit">Awaiting Approval Process</item>
+    <item key="SDIMainForm_mitmFrmWorkFlowMonitor">Approval Monitoring</item>
+    <item key="SDIMainForm_mitmFrmWorkFlowProcessAdmin">Management of define Approval Process</item>
+    <item key="SDIMainForm_mitmFrmUserPermission">My Permissions</item>
+    <item key="SDIMainForm_mitmUrlBuy">Buy Now</item>
+    <item key="SDIMainForm_mitmHelp">About</item>
+    <item key="SDIMainForm_mitmUrlOnLineHandbook">Online Guide</item>
+    <item key="SDIMainForm_mitmFrmCheckUpdate">Check Update</item>
+    <item key="SDIMainForm_mitmFrmAboutThis">About</item>
+    <item key="SDIMainForm_mitmUrlTechnicalSupport">Online Support</item>
+    <item key="SDIMainForm_mitmUrlErrorReport">Error Report</item>
+    <item key="SDIMainForm_mitmUrlShareAnIdea">Share An Idea</item>
+    <item key="SDIMainForm_mitmFrmUserChangePassword">Reset Password</item>
+    <item key="SDIMainForm_mitmFrmLogOn">LogOn Again</item>
+    <item key="SDIMainForm_mitmFrmScreenLock">Lock Screen</item>
+    <item key="SDIMainForm_mItemExit">Exit</item>
+    <item key="SDIMainForm_notifyIcon">DotNet General Rapid Development Framework</item>
+    <!-- SDIMainForm End -->
+
+    <!-- FrmUserAudit Begin -->
+    <item key="FrmUserAudit">User(Account) Audit</item>
+    <item key="FrmUserAudit_lblUserName">&amp;UserName:</item>
+    <item key="FrmUserAudit_btnSearch">&amp;Query</item>
+    <item key="FrmUserAudit_lblAudited">Audit Status:</item>
+    <item key="FrmUserAudit_lblDefaultRole">Default Role:</item>
+    <item key="FrmUserAudit_lblRole">Default Role:</item>
+    <item key="FrmUserAudit_colSelected">Select</item>
+    <item key="FrmUserAudit_colUsername">UserName</item>
+    <item key="FrmUserAudit_colRealName">Name</item>
+    <item key="FrmUserAudit_colDefaultRole">Default Role</item>
+    <item key="FrmUserAudit_colAudited">Audit</item>
+    <item key="FrmUserAudit_colDepartment">Department</item>
+    <item key="FrmUserAudit_colCreateOn">Create On</item>
+    <item key="FrmUserAudit_colDescription">Description</item>
+    <item key="FrmUserAudit_btnSelectAll">Select All</item>
+    <item key="FrmUserAudit_btnInvertSelect">Select Invert</item>
+    <item key="FrmUserAudit_btnPass">&amp;Pass</item>
+    <item key="FrmUserAudit_btnReject">&amp;Rejected</item>
+    <item key="FrmUserAudit_btnEdit">&amp;Edit</item>
+    <item key="FrmUserAudit_btnExport">Export Excel</item>
+    <item key="FrmUserAudit_btnDelete">&amp;Delete</item>
+    <item key="FrmUserAudit_btnClose">Close</item>
+    <item key="FrmUserAudit_btnSave">&amp;Save</item>
+    <item key="FrmUserAudit_btnCancel">Cancel</item>
+    <!-- FrmUserAudit End -->
+
+    <!-- FrmUserAdmin Begin -->
+    <item key="FrmUserAdmin">User(Account) Management</item>
+    <item key="FrmUserAdmin_lblContents">&amp;Contents:</item>
+    <item key="FrmUserAdmin_btnSearch">&amp;Query</item>
+    <item key="FrmUserAdmin_chkEnabled">Show Effective Only</item>
+    <item key="FrmUserAdmin_btnSetOrganize">Set Organize...</item>
+    <item key="FrmUserAdmin_colSelected">Select</item>
+    <item key="FrmUserAdmin_colUserName">UserName</item>
+    <item key="FrmUserAdmin_colCode">Empolyee No</item>
+    <item key="FrmUserAdmin_colRealName">Name</item>
+    <item key="FrmUserAdmin_colDepartmentName">Department</item>
+    <item key="FrmUserAdmin_colDepartment">Department</item>
+    <item key="FrmUserAdmin_colEmail">E-Mail</item>
+    <item key="FrmUserAdmin_colTelephone">Telephone</item>
+    <item key="FrmUserAdmin_colMobile">Mobile</item>
+    <item key="FrmUserAdmin_colDefaultRole">Default Role</item>
+    <item key="FrmUserAdmin_colEnabled">Enabled</item>
+    <item key="FrmUserAdmin_colDescription">Description</item>
+    <item key="FrmUserAdmin_btnSelectAll">Select All</item>
+    <item key="FrmUserAdmin_btnInvertSelect">Invert Select</item>
+    <item key="FrmUserAdmin_btnAdd">&amp;Add</item>
+    <item key="FrmUserAdmin_btnProperty">&amp;Property...</item>
+    <item key="FrmUserAdmin_btnSetPassword">&amp;SetPassword...</item>
+    <item key="FrmUserAdmin_btnRoleUser">Link Role-User</item>
+    <item key="FrmUserAdmin_btnExport">Export to Excel</item>
+    <item key="FrmUserAdmin_btnDelete">&amp;Delete</item>
+    <item key="FrmUserAdmin_btnClose">Close</item>
+    <item key="FrmUserAdmin_btnBatchSave">Save</item>
+    <!-- FrmUserAdmin End -->
+
+    <!-- FrmUserPermissionAdmin Begin -->
+    <item key="FrmUserPermissionAdmin">User(Account) Permission Management</item>
+    <item key="FrmUserPermissionAdmin_btnUserPermissionScope">User Permission Scope</item>
+    <item key="FrmUserPermissionAdmin_btnUserOrganizeScope">User Organize Scope</item>
+    <item key="FrmUserPermissionAdmin_btnBatchPermission">Batch Permissions Set</item>
+    <item key="FrmUserPermissionAdmin_btnFrmUserTableScope">User Table Scope</item>
+    <item key="FrmUserPermissionAdmin_btnFrmTableColumnPermission">Table Column Permission</item>
+    <item key="FrmUserPermissionAdmin_btnRoleUserBatchSet">User Role BatchSet</item>
+    <item key="FrmUserPermissionAdmin_lblSearch">Query:</item>
+    <item key="FrmUserPermissionAdmin_btnSearch">&amp;Query</item>
+    <item key="FrmUserPermissionAdmin_chkEnabled">Show Effective Only</item>
+    <item key="FrmUserPermissionAdmin_colSelected">select</item>
+    <item key="FrmUserPermissionAdmin_colUserName">UserName</item>
+    <item key="FrmUserPermissionAdmin_colRealName">Name</item>
+    <item key="FrmUserPermissionAdmin_colRole">Default Role</item>
+    <item key="FrmUserPermissionAdmin_colDepartmentName">Department</item>
+    <item key="FrmUserPermissionAdmin_colEnabled">Enabled</item>
+    <item key="FrmUserPermissionAdmin_colDescription">Description</item>
+    <item key="FrmUserPermissionAdmin_btnAdd">&amp;Add...</item>
+    <item key="FrmUserPermissionAdmin_btnProperty">Property...</item>
+    <item key="FrmUserPermissionAdmin_btnSetPassword">&amp;SetPassword...</item>
+    <item key="FrmUserPermissionAdmin_btnExport">Export Excel...</item>
+    <item key="FrmUserPermissionAdmin_btnDelete">&amp;Delete</item>
+    <item key="FrmUserPermissionAdmin_btnClose">Close</item>
+    <item key="FrmUserPermissionAdmin_btnPermission">&amp;Permission...</item>
+    <item key="FrmUserPermissionAdmin_btnUserRole">&amp;User Role...</item>
+    <!-- FrmUserPermissionAdmin End -->
+
+    <!-- FrmUseAuthorizationScope Begin -->
+    <item key="FrmUseAuthorizationScope">User Permission Scopes</item>
+    <item key="FrmUseAuthorizationScope_btnClearPermission">Clear Permission</item>
+    <item key="FrmUseAuthorizationScope_btnCopy">Copy Permission</item>
+    <item key="FrmUseAuthorizationScope_btnPaste">Paste Permission</item>
+    <item key="FrmUseAuthorizationScope_lblParent">Parent(&amp;U)：</item>
+    <item key="FrmUseAuthorizationScope_lblPermissionScope">Permission Scope:</item>
+    <item key="FrmUseAuthorizationScope_tpUser">User</item>
+    <item key="FrmUseAuthorizationScope_tpRole">Role</item>
+    <item key="FrmUseAuthorizationScope_tpOrganize">Organize</item>
+    <item key="FrmUseAuthorizationScope_tpModule">Module(Menu)</item>
+    <item key="FrmUseAuthorizationScope_tpPermissionItem">Permission Item</item>
+    <!-- FrmUseAuthorizationScope End -->
+
+    <!-- FrmLogByUser Begin -->
+    <item key="FrmLogByUser">Query by User(Account)</item>
+    <item key="FrmLogByUser_lblUser">User(Account):</item>
+    <item key="FrmLogByUser_lblStartDate">StartDate:</item>
+    <item key="FrmLogByUser_lblEndDate">EndDate:</item>
+    <item key="FrmLogByUser_colSelected">Select</item>
+    <item key="FrmLogByUser_btnQuery">&amp;Query</item>
+    <item key="FrmLogByUser_colProcessName">Module</item>
+    <item key="FrmLogByUser_colUserRealName">Name</item>
+    <item key="FrmLogByUser_colUserName">UserName</item>
+    <item key="FrmLogByUser_colCreateOn">Access Time</item>
+    <item key="FrmLogByUser_colIPAddress">IPAddress</item>
+    <item key="FrmLogByUser_colMethodName">Operation</item>
+    <item key="FrmLogByUser_colDescription">Description</item>
+    <item key="FrmLogByUser_btnBatchDelete">&amp;Delete</item>
+    <item key="FrmLogByUser_btnSelectAll">Select All</item>
+    <item key="FrmLogByUser_btnInvertSelect">Select Invert</item>
+    <item key="FrmLogByUser_btnClear">&amp;Clear All</item>
+    <item key="FrmLogByUser_btnExport">Export to Excel</item>
+    <item key="FrmLogByUser_btnDelete">Delete</item>
+    <item key="FrmLogByUser_btnClose">Close</item>
+    <!-- FrmLogByUser End -->
+
+    <!-- FrmMessageSend Begin -->
+    <item key="FrmMessageSend">Send Message</item>
+    <item key="FrmMessageSend_grbMessage">Message</item>
+    <item key="FrmMessageSend_lblSendTo">Send &amp;To:</item>
+    <item key="FrmMessageSend_btnMsgFont">Font</item>
+    <item key="FrmMessageSend_btnColor">Color</item>
+    <item key="FrmMessageSend_lblContents">&amp;Contents:</item>
+    <item key="FrmMessageSend_btnSend">&amp;Send</item>
+    <item key="FrmMessageSend_btnCancel">Cancel</item>
+    <!-- FrmMessageSend End -->
+
+    <!-- FrmUserChangePassword Begin -->
+    <item key="FrmUserChangePassword">Reset Password</item>
+    <item key="FrmUserChangePassword_lblOldPassword">&amp;Old Password:</item>
+    <item key="FrmUserChangePassword_grpSetPassword">Reset Password</item>
+    <item key="FrmUserChangePassword_lblNewPassword">&amp;New Password:</item>
+    <item key="FrmUserChangePassword_lblConfirmPassword">&amp;Confirm Password:</item>
+    <item key="FrmUserChangePassword_btnConfirm">Confirm</item>
+    <item key="FrmUserChangePassword_btnCancel">Cancel</item>
+    <!-- FrmUserChangePassword End -->
+
+    <!-- FrmMessageRead Begin -->
+    <item key="FrmMessageRead">Instant Message</item>
+    <item key="FrmMessageRead_btnSend">&amp;Send</item>
+    <item key="FrmMessageRead_btnCancel">Cancel</item>
+    <item key="FrmMessageRead_lblDescription">&amp;Replay:</item>
+    <!-- FrmMessageRead End -->
+
+    <!-- FrmMessage Begin -->
+    <item key="FrmMessage">Instant Message</item>
+    <item key="FrmMessage_tpOrganize">Organize</item>
+    <item key="FrmMessage_tpApplicationRole">Application Role</item>
+    <item key="FrmMessage_tpUserGroup">User Group</item>
+    <item key="FrmMessage_mitmFrmMessageSend">Send Message...</item>
+    <item key="FrmMessage_mitmFrmWorkReportAdd">Assigned tasks...</item>
+    <item key="FrmMessage_mitmFrmWorkReportList">View Work Log...</item>
+    <item key="FrmMessage_mitmFrmUserPermission">View Account Permission...</item>
+    <item key="FrmMessage_mitmFrmUserEdit">Edit User Information...</item>
+    <item key="FrmMessage_mitmFrmUserRoleAdmin">User(Account) Role...</item>
+    <item key="FrmMessage_mitmFrmUserPermissionAdmin">User(Account) Permission...</item>
+    <item key="FrmMessage_mitmApplicationRole">Application Role Management</item>
+    <item key="FrmMessage_mitmUserGroup">User Group Management</item>
+    <item key="FrmMessage_mitmFrmStaffAddressEdit">Internal Address Book...</item>
+    <item key="FrmMessage_mitmFrmLogByUser">System Operation Log...</item>
+    <!-- FrmMessage End -->
+
+    <!-- FrmMessageRemind Begin -->
+    <item key="FrmMessageRemind">Message Alerts</item>
+    <item key="FrmMessageRemind_grbMessage">Message Alerts</item>
+    <item key="FrmMessageRemind_lblContents">&amp;Contents:</item>
+    <item key="FrmMessageRemind_btnReply">Reply</item>
+    <item key="FrmMessageRemind_btnConfirml">Confirm</item>
+    <item key="FrmMessageRemind_btnCancel">Cancel</item>
+    <!-- FrmMessageRemind End -->
+
+    <!-- FrmMessageBroadcast Begin -->
+    <item key="FrmMessageBroadcast">Broadcast Message</item>
+    <item key="FrmMessageBroadcast_grbMessage">Message</item>
+    <item key="FrmMessageBroadcast_lblContents">&amp;Contents:</item>
+    <item key="FrmMessageBroadcast_btnSend">Send</item>
+    <item key="FrmMessageBroadcast_btnCancel">Cancel</item>
+    <!-- FrmMessageBroadcast End -->
+
+    <!-- FrmUserRoleOrganizeSelect Begin -->
+    <item key="FrmUserRoleOrganizeSelect">Select</item>
+    <item key="FrmUserRoleOrganizeSelect_tpOrganizeTree">Organize Tree</item>
+    <item key="FrmUserRoleOrganizeSelect_tpOrganizeList">Search</item>
+    <item key="FrmUserRoleOrganizeSelect_btnSetNull">Set &amp;Null</item>
+    <item key="FrmUserRoleOrganizeSelect_lblContents">&amp;Contect:</item>
+    <item key="FrmUserRoleOrganizeSelect_btnSearch">&amp;Query</item>
+    <item key="FrmUserRoleOrganizeSelect_colSelected">Select</item>
+    <item key="FrmUserRoleOrganizeSelect_colCode">Code</item>
+    <item key="FrmUserRoleOrganizeSelect_colFullName">Full Name</item>
+    <item key="FrmUserRoleOrganizeSelect_colIsInnerOrganize">Inner Organize</item>
+    <item key="FrmUserRoleOrganizeSelect_colDescription">Description</item>
+    <item key="FrmUserRoleOrganizeSelect_lblRoleCategroy">Role Categroy:</item>
+    <item key="FrmUserRoleOrganizeSelect_colSelected1">Select</item>
+    <item key="FrmUserRoleOrganizeSelect_colFullName1">Full Name</item>
+    <item key="FrmUserRoleOrganizeSelect_colDescription1">Description</item>
+    <item key="FrmUserRoleOrganizeSelect_btnSelectAll">Select All</item>
+    <item key="FrmUserRoleOrganizeSelect_btnInvertSelect">Invert Select</item>
+    <item key="FrmUserRoleOrganizeSelect_btnSelect">Add</item>
+    <item key="FrmUserRoleOrganizeSelect_btnConfirm">OK</item>
+    <item key="FrmUserRoleOrganizeSelect_btnCancel">Cancel</item>
+    <item key="FrmUserRoleOrganizeSelect_lblSearch">&amp;Contect:</item>
+    <item key="FrmUserRoleOrganizeSelect_btnSearch1">&amp;Query</item>
+    <item key="FrmUserRoleOrganizeSelect_lblRoleCategories">Role:</item>
+    <item key="FrmUserRoleOrganizeSelect_colSelected2">Select</item>
+    <item key="FrmUserRoleOrganizeSelect_colUserName">User Name</item>
+    <item key="FrmUserRoleOrganizeSelect_colRealName">Real Name</item>
+    <item key="FrmUserRoleOrganizeSelect_colDepartment">Department</item>
+    <item key="FrmUserRoleOrganizeSelect_colDescription2">Description</item>
+    <!-- FrmUserRoleOrganizeSelect End -->
+
+    <!-- UserControl UCFreeWorkFlow Begin -->
+    <item key="UCFreeWorkFlow_lblSendTo">Send to:</item>
+    <item key="UCFreeWorkFlow_btnSelect">Select</item>
+    <item key="UCFreeWorkFlow_lblAuditIdea">Instructions:</item>
+    <item key="UCFreeWorkFlow_btnAuditPass">Approved</item>
+    <item key="UCFreeWorkFlow_btnAuditReject">Reject</item>
+    <item key="UCFreeWorkFlow_btnTransmit">Forward</item>
+    <item key="UCFreeWorkFlow_btnAuditDetail">Details...</item>
+    <item key="UCFreeWorkFlow_btnAuditQuash">Revocation</item>
+    <!-- UserControl UCFreeWorkFlow End -->
+
+    <!-- UserControl UCAutoWorkFlow Begin -->
+    <item key="UCAutoWorkFlow_lblAuditIdea">Instructions:</item>
+    <item key="UCAutoWorkFlow_btnAuditPass">Approved</item>
+    <item key="UCAutoWorkFlow_btnAuditReject">Rejected</item>
+    <item key="UCAutoWorkFlow_btnAuditDetail">Details</item>
+    <!-- UserControl UCAutoWorkFlow End -->
+
+    <!-- UserControl UCAutoWorkFlowStatr Begin -->
+    <item key="UCAutoWorkFlowStatr_lblAuditIdea">Instructions:</item>
+    <item key="UCAutoWorkFlowStatr_btnSendTo">Submit</item>
+    <!-- UserControl UCAutoWorkFlowStatr End -->
+
+    <!-- UserControl UCFreeWorkFlowStatr Begin -->
+    <item key="UCFreeWorkFlowStatr_lblSendTo">Submitted to:</item>
+    <item key="UCFreeWorkFlowStatr_btnUserSelect">Select User...</item>
+    <item key="UCFreeWorkFlowStatr_lblAuditIdea">Comments as:</item>
+    <!-- UserControl UCFreeWorkFlowStatr End -->
+
+    <!-- UserControl UCWorkFlow Begin -->
+    <item key="UCWorkFlow_lblSendTo">Submitted to:</item>
+    <item key="UCWorkFlow_btnSelect">Select...</item>
+    <item key="UCWorkFlow_lblAuditIdea">Comments as:</item>
+    <item key="UCWorkFlow_btnAuditPass">Pass</item>
+    <item key="UCWorkFlow_btnAuditReject">Reject</item>
+    <item key="UCWorkFlow_btnTransmit">Transmit</item>
+    <item key="UCWorkFlow_btnAuditQuash">Quash</item>
+    <item key="UCWorkFlow_btnAuditDetail">Detail</item>
+    <!-- UserControl UCWorkFlow End -->
+
+    <!-- UserControl UCWorkFlowStatr Begin -->
+    <item key="UCWorkFlowStatr_lblSendTo">Submitted to:</item>
+    <item key="UCWorkFlowStatr_btnSelect">Select...</item>
+    <item key="UCWorkFlowStatr_lblAuditIdea">Comments as:</item>
+    <item key="UCWorkFlowStatr_btnSendToBy">Submit</item>
+    <!-- UserControl UCWorkFlowStatr End -->
+
+    <!-- UserControl UCOrganizeSelect Begin -->
+    <item key="UCOrganizeSelect_btnSelect">Select</item>
+    <item key="UCOrganizeSelect_btnSetNull">Null</item>
+    <!-- UserControl UCOrganizeSelect End -->
+
+    <!-- UserControl UCPermissionSelect Begin -->
+    <item key="UCPermissionSelect_btnSelect">Select</item>
+    <item key="UCPermissionSelect_btnSetNull">Null</item>
+    <!-- UserControl UCPermissionSelect End -->
+
+    <!-- UserControl UCUserSelect Begin -->
+    <item key="UCUserSelect_btnSelect">Select</item>
+    <item key="UCUserSelect_btnSetNull">Null</item>
+    <!-- UserControl UCUserSelect End -->
+
+    <!-- UCStaffSelect Begin -->
+    <item key="UCStaffSelect_btnSelect">Select</item>
+    <item key="UCStaffSelect_btnSetNull">Null</item>
+    <!-- UCStaffSelect End -->
+
+    <!-- UCRoleSelect Begin -->
+    <item key="UCRoleSelect_btnSelect">Select</item>
+    <item key="UCRoleSelect_btnSetNull">Null</item>
+    <!-- UCRoleSelect End -->
+
+    <!-- UCModuleSelect Begin -->
+    <item key="UCModuleSelect_btnSelect">Select</item>
+    <item key="UCModuleSelect_btnSetNull">Null</item>
+    <!-- UCModuleSelect End -->
+
+    <!-- UCFolderSelect Begin -->
+    <item key="UCFolderSelect_btnSelectFolder">Select</item>
+    <item key="UCFolderSelect_btnSetNull">Null</item>
+    <!-- UCFolderSelect End -->
+
+    <!-- UCPicture Begin -->
+    <item key="UCPicture_btnSelect">Select</item>
+    <item key="UCPicture_btnClear">Clear</item>
+    <item key="UCPicture_btnDelete">Delete</item>
+    <!-- UCPicture End -->
+
+    <!-- UCItemDetailsTreeSelect Begin -->
+    <item key="UCItemDetailsTreeSelect_btnSelectItemDetails">Select...</item>
+    <item key="UCItemDetailsTreeSelecte_btnParent">Higher...</item>
+    <!-- UCItemDetailsTreeSelect End -->
+
+    <!-- UCAttachmentt Begin -->
+    <item key="UCAttachment_colSelected">Select</item>
+    <item key="UCAttachment_colFullName">Name</item>
+    <item key="UCAttachment_colFileSize">Size</item>
+    <item key="UCAttachment_colDescription">Description</item>
+    <item key="UCAttachment_btnSelectAll">Select All</item>
+    <item key="UCAttachment_btnInvertSelect">Select Invert</item>
+    <item key="UCAttachment_btnSelect">Add...</item>
+    <item key="UCAttachment_btnUpload">Upload</item>
+    <item key="UCAttachment_btnDownload">Download</item>
+    <item key="UCAttachment_btnDelete">Delete</item>
+    <!-- UCAttachmentt End -->
+
+    <!-- UserControl UCScopePermissionSelect Begin -->
+    <item key="UCScopePermissionSelect_btnSelect">Select...</item>
+    <item key="UCScopePermissionSelect_btnSetNull">Null</item>
+    <!-- UserControl UCScopePermissionSelect End -->
+
+    <!-- FrmDocumentAdd Begin -->
+    <item key="FrmDocumentAdd">Add Document</item>
+    <item key="FrmDocumentAdd_grpDocument">Add Document</item>
+    <item key="FrmDocumentAdd_lblTitle">&amp;Title:</item>
+    <item key="FrmDocumentAdd_lblContent">&amp;Content:</item>
+    <item key="FrmDocumentAdd_lblDescription">&amp;Description:</item>
+    <item key="FrmDocumentAdd_chbEnabled">Enabled</item>
+    <item key="FrmDocumentAdd_btnAdd">&amp;Add</item>
+    <item key="FrmDocumentAdd_btnSave">&amp;Save</item>
+    <item key="FrmDocumentAdd_btnCancel">Cancel</item>
+    <!-- FrmDocumentAdd End -->
+
+    <!-- FrmDocumentEdit Begin -->
+    <item key="FrmDocumentEdit">Edit Document</item>
+    <item key="FrmDocumentEdit_grpDocument">Edit Document</item>
+    <item key="FrmDocumentEdit_lblTitle">&amp;Title:</item>
+    <item key="FrmDocumentEdit_lblContent">&amp;Content:</item>
+    <item key="FrmDocumentEdit_lblDescription">&amp;Description:</item>
+    <item key="FrmDocumentEdit_chbEnabled">Enabled</item>
+    <item key="FrmDocumentEdit_btnAdd">&amp;Add</item>
+    <item key="FrmDocumentEdit_btnSave">&amp;Save</item>
+    <item key="FrmDocumentEdit_btnCancel">Cancel</item>
+    <!-- FrmDocumentEdit End -->
+
+    <!-- FrmFileEdit Begin -->
+    <item key="FrmFileEdit">Edit File</item>
+    <item key="FrmFileEdit_grpFile">Edit File</item>
+    <item key="FrmFileEdit_lblSelect">Select &amp;Folder:</item>
+    <item key="FrmFileEdit_lblFullName">&amp;Name:</item>
+    <item key="FrmFileEdit_lblDescription">&amp;Description:</item>
+    <item key="FrmFileEdit_btnDownLoad">DownLoad</item>
+    <item key="FrmFileEdit_btnSave">&amp;Save</item>
+    <item key="FrmFileEdit_btnCancel">Cancel</item>
+    <!-- FrmFileEdit End -->
+
+    <!-- FrmFolderAdd Begin -->
+    <item key="FrmFolderAdd">Add Folder</item>
+    <item key="FrmFolderAdd_grpFolder">Add Folder</item>
+    <item key="FrmFolderAdd_lblParent">&amp;Parent Node:</item>
+    <item key="FrmFolderAdd_lblFullName">&amp;Name:</item>
+    <item key="FrmFolderAdd_lblDescription">&amp;Description:</item>
+    <item key="FrmFolderAdd_chkEnabled">Enabled</item>
+    <item key="FrmFolderAdd_btnAdd">&amp;Add</item>
+    <item key="FrmFolderAdd_btnCancel">Cancel</item>
+    <!-- FrmFolderAdd End -->
+
+    <!-- FrmFolderEdit Begin -->
+    <item key="FrmFolderEdit">Edit Folder</item>
+    <item key="FrmFolderEdit_grpFolder">Edit Folder</item>
+    <item key="FrmFolderEdit_lblParent">&amp;Parent Node:</item>
+    <item key="FrmFolderEdit_lblFullName">&amp;Name:</item>
+    <item key="FrmFolderEdit_chkEnabled">&amp;Enabled</item>
+    <item key="FrmFolderEdit_lblDescription">&amp;Description:</item>
+    <item key="FrmFolderEdit_chbEnabled">Enabled</item>
+    <item key="FrmFolderEdit_btnSave">&amp;Save</item>
+    <item key="FrmFolderEdit_btnCancel">Cancel</item>
+    <!-- FrmFolderEdit End -->
+
+    <!-- FrmWorkFlowActivityAdmin Begin -->
+    <item key="FrmWorkFlowActivityAdmin">Define Steps of Approval Process</item>
+    <item key="FrmWorkFlowActivityAdmin_lblWorkFlowCode">The Code of Approval Process:</item>
+    <item key="FrmWorkFlowActivityAdmin_lblWorkFlowFullName">The Name of Approval Process:</item>
+    <item key="FrmWorkFlowActivityAdmin_colSelected">Select</item>
+    <item key="FrmWorkFlowActivityAdmin_colFullName">Audit</item>
+    <item key="FrmWorkFlowActivityAdmin_colAuditUserRealName">User</item>
+    <item key="FrmWorkFlowActivityAdmin_colAuditRoleRealName">Role</item>
+    <item key="FrmWorkFlowActivityAdmin_colDescription">Description</item>
+    <item key="FrmWorkFlowActivityAdmin_grpActivity">The Steps of Approval Process</item>
+    <item key="FrmWorkFlowActivityAdmin_lblFullName">Audit:</item>
+    <item key="FrmWorkFlowActivityAdmin_lblUser">&amp;User:</item>
+    <item key="FrmWorkFlowActivityAdmin_lblRole">&amp;Role:</item>
+    <item key="FrmWorkFlowActivityAdmin_lblDescription">Description:</item>
+    <item key="FrmWorkFlowActivityAdmin_btnExport">Export to Excel</item>
+    <item key="FrmWorkFlowActivityAdmin_btnBatchSave">&amp;Save</item>
+    <item key="FrmWorkFlowActivityAdmin_btnDelete">&amp;Delete</item>
+    <item key="FrmWorkFlowActivityAdmin_btnAdd">&amp;Add</item>
+    <item key="FrmWorkFlowActivityAdmin_btnClose">Close</item>
+    <!-- FrmWorkFlowActivityAdmin End -->
+
+    <!-- FrmWorkFlowStatr Begin -->
+    <item key="FrmWorkFlowStatr">Start Approval Process</item>
+    <item key="FrmWorkFlowStatr_lblCategoryId">Documents Classification ID(table)|  CategoryId:</item>
+    <item key="FrmWorkFlowStatr_lblCategoryFullName">Documents Classification Name| CategoryFullName:</item>
+    <item key="FrmWorkFlowStatr_lblObjectId">Order(Id)| ObjectId:</item>
+    <item key="FrmWorkFlowStatr_lblObjectFullName">Order Name| ObjectFullName:</item>
+    <item key="FrmWorkFlowStatr_rbByRole">Audit By Role</item>
+    <item key="FrmWorkFlowStatr_rbByUser">Audit By User</item>
+    <item key="FrmWorkFlowStatr_lblWorkFlowCode">Through which workflow (confirmed by workflow number):</item>
+    <!-- FrmWorkFlowStatr End -->
+
+    <!-- FrmWorkFlowTest Begin -->
+    <item key="FrmWorkFlowTest">FrmWorkFlowTest</item>
+    <item key="FrmWorkFlowTest_btnStart">Start WorkFlow</item>
+    <item key="FrmWorkFlowTest_btnWorkFlowMonitor">WorkFlow State Monitor</item>
+    <item key="FrmWorkFlowTest_btnMyWorkFlow">Awaiting Approval Process(Mine)</item>
+    <item key="FrmWorkFlowTest_lblWorkFlowId">WorkFlow Id:</item>
+    <item key="FrmWorkFlowTest_lblCategoryId">Documents Classification ID:</item>
+    <item key="FrmWorkFlowTest_lblCategoryFullName">Documents Classification Name:</item>
+    <item key="FrmWorkFlowTest_lblObjectId">Order ID:</item>
+    <item key="FrmWorkFlowTest_lblObjectFullName">Order Name:</item>
+    <item key="FrmWorkFlowTest_chkPermissionAuditing">Audit Permission</item>
+    <item key="FrmWorkFlowTest_btnInit">Init WorkFlow</item>
+    <!-- FrmWorkFlowTest End -->
+
+    <!-- FrmWorkFlowWaitForAudit Begin -->
+    <item key="FrmWorkFlowWaitForAudit">Awaiting Approval Process</item>
+    <item key="FrmWorkFlowWaitForAudit_lblCategory">Categories:</item>
+    <item key="FrmWorkFlowWaitForAudit_lblBill">Bill:</item>
+    <item key="FrmWorkFlowWaitForAudit_lblSearch">Query &amp;Content:</item>
+    <item key="FrmWorkFlowWaitForAudit_btnSearch">&amp;Query:</item>
+    <item key="FrmWorkFlowWaitForAudit_colSelected">Select</item>
+    <item key="FrmWorkFlowWaitForAudit_colCategoryFullName">Category</item>
+    <item key="FrmWorkFlowWaitForAudit_colObjectFullName">Name</item>
+    <item key="FrmWorkFlowWaitForAudit_colAuditDate">Audit Date</item>
+    <item key="FrmWorkFlowWaitForAudit_colCreateBy">Create By</item>
+    <item key="FrmWorkFlowWaitForAudit_colCreateOn">Create Date</item>
+    <item key="FrmWorkFlowWaitForAudit_colSendDate">Send Date</item>
+    <item key="FrmWorkFlowWaitForAudit_colAuditUserRealName">Auditor</item>
+    <item key="FrmWorkFlowWaitForAudit_colAuditIder">Instructions</item>
+    <item key="FrmWorkFlowWaitForAudit_colToDepartmentName">Awaiting Department</item>
+    <item key="FrmWorkFlowWaitForAudit_colToRoleRealName">Role Awaiting Audit</item>
+    <item key="FrmWorkFlowWaitForAudit_colToUserRealName">People Awaiting Audit</item>
+    <item key="FrmWorkFlowWaitForAudit_colAuditState">Audit Status</item>
+    <item key="FrmWorkFlowWaitForAudit_rbByRole">Audit By Role</item>
+    <item key="FrmWorkFlowWaitForAudit_rbByUser">Audit By User</item>
+    <item key="FrmWorkFlowWaitForAudit_btnExport">Export to Excel</item>
+    <item key="FrmWorkFlowWaitForAudit_btnClose">Close</item>
+    <!-- FrmWorkFlowWaitForAudit End -->
+
+    <!-- FrmWorkFlowMonitor Begin -->
+    <item key="FrmWorkFlowMonitor">Approval Monitoring</item>
+    <item key="FrmWorkFlowMonitor_lblCategory">Categories:</item>
+    <item key="FrmWorkFlowMonitor_lblBill">Bill:</item>
+    <item key="FrmWorkFlowMonitor_lblSearch">Query &amp;Content:</item>
+    <item key="FrmWorkFlowMonitor_btnSearch">&amp;Query:</item>
+    <item key="FrmWorkFlowMonitor_colCategoryFullName">Categories</item>
+    <item key="FrmWorkFlowMonitor_colObjectFullName">Name</item>
+    <item key="FrmWorkFlowMonitor_colCreateBy">Issuer</item>
+    <item key="FrmWorkFlowMonitor_colAuditUserRealName">Auditor</item>
+    <item key="FrmWorkFlowMonitor_colSendDate">Audit Date</item>
+    <item key="FrmWorkFlowMonitor_colAuditIder">Instructions</item>
+    <item key="FrmWorkFlowMonitor_colToDepartmentName">Awaiting Department</item>
+    <item key="FrmWorkFlowMonitor_colToUserRealName">People Awaiting Audit</item>
+    <item key="FrmWorkFlowMonitor_colToRoleRealName">Role Awaiting Audit</item>
+    <item key="FrmWorkFlowMonitor_colAuditStatus">Audit Status</item>
+    <item key="FrmWorkFlowMonitor_btnExport">Export to Excel</item>
+    <item key="FrmWorkFlowMonitor_btnAuditDetail">Audit Details</item>
+    <item key="FrmWorkFlowMonitor_btnClose">Cancel</item>
+    <!-- FrmWorkFlowMonitor End -->
+
+    <!-- FrmWorkFlowAuditDetail Begin -->
+    <item key="FrmWorkFlowAuditDetail">Approval Process Details</item>
+    <item key="FrmWorkFlowAuditDetail_colSendDate">Date of Issuer</item>
+    <item key="FrmWorkFlowAuditDetail_colAuditUserRealName">Issuer</item>
+    <item key="FrmWorkFlowAuditDetail_colAuditIder">Instructions</item>
+    <item key="FrmWorkFlowAuditDetail_colToDepartmentName">Audit Department</item>
+    <item key="FrmWorkFlowAuditDetail_colToRoleRealName">Audit Role</item>
+    <item key="FrmWorkFlowAuditDetail_colToUserRealName">Auditor</item>
+    <item key="FrmWorkFlowAuditDetail_colAuditStatus">Audit Status</item>
+    <item key="FrmWorkFlowAuditDetail_colAuditDate">Audit Date</item>
+    <item key="FrmWorkFlowAuditDetail_btnExport">Export to Excel</item>
+    <item key="FrmWorkFlowAuditDetail_btnClose">Cancel</item>
+    <!-- FrmWorkFlowAuditDetail End -->
+
+    <!-- FrmWorkFlowProcessAdmin Begin -->
+    <item key="FrmWorkFlowProcessAdmin">Management of define Approval Process</item>
+    <item key="FrmWorkFlowProcessAdmin_lblAuditCategoryCode">Audit Category:</item>
+    <item key="FrmWorkFlowProcessAdmin_lblCategories">Categories:</item>
+    <item key="FrmWorkFlowProcessAdmin_lblDocument">Document:</item>
+    <item key="FrmWorkFlowProcessAdmin_lblContents">Contents:</item>
+    <item key="FrmWorkFlowProcessAdmin_colSelected">Select</item>
+    <item key="FrmWorkFlowProcessAdmin_colCode">Code</item>
+    <item key="FrmWorkFlowProcessAdmin_colFullName">&amp;Name</item>
+    <item key="FrmWorkFlowProcessAdmin_colDescription">Description</item>
+    <item key="FrmWorkFlowProcessAdmin_btnExport">Export to Excel</item>
+    <item key="FrmWorkFlowProcessAdmin_btnAdd">&amp;Add</item>
+    <item key="FrmWorkFlowProcessAdmin_btnEdit">&amp;Edit</item>
+    <item key="FrmWorkFlowProcessAdmin_btnStepAdmin">Define Steps of &amp;Work Process</item>
+    <item key="FrmWorkFlowProcessAdmin_btnBatchDelete">&amp;Delete</item>
+    <item key="FrmWorkFlowProcessAdmin_btnBatchSave">&amp;Save</item>
+    <item key="FrmWorkFlowProcessAdmin_btnClose">Close</item>
+    <!-- FrmWorkFlowProcessAdmin End -->
+
+    <!-- FrmWorkFlowProcessAdd Begin -->
+    <item key="FrmWorkFlowProcessAdd">Add Approval Process</item>
+    <item key="FrmWorkFlowProcessAdd_grbWorkFlow">Add Approval Process</item>
+    <item key="FrmWorkFlowProcessAdd_lblAuditCategoryCode">Audit Category:</item>
+    <item key="FrmWorkFlowProcessAdd_lblRole">&amp;User:</item>
+    <item key="FrmWorkFlowProcessAdd_lblParent">&amp;Organization:</item>
+    <item key="FrmWorkFlowProcessAdd_lblFullName">&amp;Name:</item>
+    <item key="FrmWorkFlowProcessAdd_lblCode">Code:</item>
+    <item key="FrmWorkFlowProcessAdd_lblCategory">Category:</item>
+    <item key="FrmWorkFlowProcessAdd_lblBillTemplate">Bill Template:</item>
+    <item key="FrmWorkFlowProcessAdd_chkEnabled">&amp;Enabled</item>
+    <item key="FrmWorkFlowProcessAdd_lblDescription">&amp;Description:</item>
+    <item key="FrmWorkFlowProcessAdd_btnAdd">&amp;Add</item>
+    <item key="FrmWorkFlowProcessAdd_btnCancel">Cancel</item>
+    <!-- FrmWorkFlowProcessAdd End -->
+
+    <!-- FrmWorkFlowProcessEdit Begin -->
+    <item key="FrmWorkFlowProcessEdit">Edit Approval Process</item>
+    <item key="FrmWorkFlowProcessEdit_grbWorkFlow">Edit Approval Process</item>
+    <item key="FrmWorkFlowProcessEdit_lblAuditCategoryCode">Audit Category:</item>
+    <item key="FrmWorkFlowProcessEdit_lblRole">&amp;User:</item>
+    <item key="FrmWorkFlowProcessEdit_lblParent">&amp;Organization:</item>
+    <item key="FrmWorkFlowProcessEdit_lblFullName">&amp;Name:</item>
+    <item key="FrmWorkFlowProcessEdit_lblCode">&amp;Code:</item>
+    <item key="FrmWorkFlowProcessEdit_lblCategory">Category:</item>
+    <item key="FrmWorkFlowProcessEdit_lblBillTemplate">Bill Template:</item>
+    <item key="FrmWorkFlowProcessEdit_chkEnabled">Enabled</item>
+    <item key="FrmWorkFlowProcessEdit_lblDescription">&amp;Description:</item>
+    <item key="FrmWorkFlowProcessEdit_btnSave">&amp;Save</item>
+    <item key="FrmWorkFlowProcessEdit_btnCancel">Cancel</item>
+    <!-- FrmWorkFlowProcessEdit End -->
+
+    <!-- FrmUserPermissionBatchSet Begin -->
+    <item key="FrmUserPermissionBatchSet">User Permission Batch Set</item>
+    <item key="FrmUserPermissionBatchSet_btnClearPermission">Clear Permission</item>
+    <item key="FrmUserPermissionBatchSet_btnCopy">Copy Permission</item>
+    <item key="FrmUserPermissionBatchSet_btnPaste">Paste Permission</item>
+    <item key="FrmUserPermissionBatchSet_tpUser">User(Account)</item>
+    <item key="FrmUserPermissionBatchSet_tpRole">Role(UserGroup)</item>
+    <item key="FrmUserPermissionBatchSet_tpModule">Module(Menu) Visit Permission</item>
+    <item key="FrmUserPermissionBatchSet_tpPermissionItem">Management Permission</item>
+    <!-- FrmUserPermissionBatchSet End -->
+
+    <!-- FrmRolePermissionBatchSet Begin -->
+    <item key="FrmRolePermissionBatchSet">Role(UserGroup) Permission Batch Set</item>
+    <item key="FrmRolePermissionBatchSet_btnClearPermission">Clear Permission</item>
+    <item key="FrmRolePermissionBatchSet_btnCopy">Copy Permission</item>
+    <item key="FrmRolePermissionBatchSet_btnPaste">Paste Permission</item>
+    <item key="FrmRolePermissionBatchSet_tpRole">Role(UserGroup)</item>
+    <item key="FrmRolePermissionBatchSet_tpUser">User(Account)</item>
+    <item key="FrmRolePermissionBatchSet_tpModule">Module(Menu) Visit Permission</item>
+    <item key="FrmRolePermissionBatchSet_tpPermissionItem">Management Permission</item>
+    <!-- FrmRolePermissionBatchSet End -->
+
+    <!-- FrmUserOrganizeScope Begin -->
+    <item key="FrmUserOrganizeScope">User(Account) Scope Of Data Set Permission Settings</item>
+    <item key="FrmUserOrganizeScope_lblPermissionScope">Permission Scope</item>
+    <item key="FrmUserOrganizeScope_lblContents">&amp;Contents:</item>
+    <item key="FrmUserOrganizeScope_btnSearch">&amp;Search</item>
+    <item key="FrmUserOrganizeScope_colRealName">Name</item>
+    <item key="FrmUserOrganizeScope_colAll">All</item>
+    <item key="FrmUserOrganizeScope_colUserCompany">Company</item>
+    <item key="FrmUserOrganizeScope_colUserSubCompany">Sub Company</item>
+    <item key="FrmUserOrganizeScope_colUserDepartment">Department</item>
+    <item key="FrmUserOrganizeScope_colUserWorkgroup">Workgroup</item>
+    <item key="FrmUserOrganizeScope_colUser">Only User</item>
+    <item key="FrmUserOrganizeScope_colDetail">Detail</item>
+    <item key="FrmUserOrganizeScope_btnExport">Export to Excel</item>
+    <item key="FrmUserOrganizeScope_btnBatchSave">&amp;Save</item>
+    <item key="FrmUserOrganizeScope_btnClose">&amp;Close</item>
+    <!-- FrmUserOrganizeScope End -->
+
+    <!-- FrmRoleOrganizeScope Begin -->
+    <item key="FrmRoleOrganizeScope">Role(UserGroup) DataSet Permission Scope Settings</item>
+    <item key="FrmRoleOrganizeScope_lblPermissionScope">Permission Scope:</item>
+    <item key="FrmRoleOrganizeScope_lblRoleCategories">Categories of Role:</item>
+    <item key="FrmRoleOrganizeScope_colRealName">Name</item>
+    <item key="FrmRoleOrganizeScope_colAll">All</item>
+    <item key="FrmRoleOrganizeScope_colUserCompany">Company</item>
+    <item key="FrmRoleOrganizeScope_colUserSubCompany">Sub Company</item>
+    <item key="FrmRoleOrganizeScope_colUserDepartment">Department</item>
+    <item key="FrmRoleOrganizeScope_colUserWorkgroup">Workgroup</item>
+    <item key="FrmRoleOrganizeScope_colUser">Only User</item>
+    <item key="FrmRoleOrganizeScope_colNone">None</item>
+    <item key="FrmRoleOrganizeScope_colDetail">Detail</item>
+    <item key="FrmRoleOrganizeScope_btnExport">Export to Excel</item>
+    <item key="FrmRoleOrganizeScope_btnBatchSave">&amp;Save</item>
+    <item key="FrmRoleOrganizeScope_btnClose">Close</item>
+    <!-- FrmRoleOrganizeScope End -->
+
+    <!-- FrmLogOnByName Begin -->
+    <item key="FrmLogOnByName">LogOn</item>
+    <item key="FrmLogOnByName_btnRequestAnAccount">Request An Account</item>
+    <item key="FrmLogOnByName_grpLogOn">LogOn</item>
+    <item key="FrmLogOnByName_lblUser">User(&amp;U)</item>
+    <item key="FrmLogOnByName_lblPassword">Password(&amp;P)</item>
+    <item key="FrmLogOnByName_chkRememberPassword">RememberPassword</item>
+    <item key="FrmLogOnByName_chbAutoLogOn">AutoLogOn</item>
+    <item key="FrmLogOnByName_btnConfig">Configuration</item>
+    <item key="FrmLogOnByName_btnConfirm">LogOn(&amp;L)</item>
+    <item key="FrmLogOnByName_btnExit">Exit(&amp;E)</item>
+    <item key="FrmLogOnByName_btnCancel">Cancel</item>
+    <!-- FrmLogOnByName End -->
+
+    <!-- FrmLogOnByCertificates Begin -->
+    <item key="FrmLogOnByCertificates">LogOn</item>
+    <item key="FrmLogOnByCertificates_grpLogOn">LogOn</item>
+    <item key="FrmLogOnByCertificates_lblUser">User(&amp;U)：</item>
+    <item key="FrmLogOnByCertificates_lblPassword">Password(&amp;P)：</item>
+    <item key="FrmLogOnByCertificates_lblVerifyCode">VerifyCode(&amp;V)：</item>
+    <item key="FrmLogOnByCertificates_chkRememberPassword">RememberPassword</item>
+    <item key="FrmLogOnByCertificates_btnConfig">Configuration</item>
+    <item key="FrmLogOnByCertificates_btnConfirm">LogOn(&amp;L)</item>
+    <item key="FrmLogOnByCertificates_btnExit">Exit(&amp;E)</item>
+    <item key="FrmLogOnByCertificates_btnCancel">Cancel(&amp;C)</item>
+    <!-- FrmLogOnByCertificates End -->
+
+    <!-- FrmDataGridViewSetting Begin -->
+    <item key="FrmDataGridViewSetting">GridView Setting</item>
+    <item key="FrmDataGridViewSetting_grbSetting">Setting</item>
+    <item key="FrmDataGridViewSetting_HeaderText">Header Text</item>
+    <item key="FrmDataGridViewSetting_Width">Width</item>
+    <item key="FrmDataGridViewSetting_Visible">Visible</item>
+    <item key="FrmDataGridViewSetting_Frozen">Frozen</item>
+    <item key="FrmDataGridViewSetting_btnSave">&amp;Save</item>
+    <item key="FrmDataGridViewSetting_btnCancel">&amp;Cancel</item>
+    <!-- FrmDataGridViewSetting End -->
+
+    <!-- FrmConfig Begin -->
+    <item key="FrmConfig">System Configuration</item>
+    <item key="FrmConfig_lblCustomerCompanyName">&amp;CompanyName:</item>
+    <item key="FrmConfig_tpClient">Client Setup</item>
+    <item key="FrmConfig_tpServer">Server Setup</item>
+    <item key="FrmConfig_lblUser">User:</item>
+    <item key="FrmConfig_lblUserName">User Name(&amp;U):</item>
+    <item key="FrmConfig_lblPassword">Password(&amp;P):</item>
+    <item key="FrmConfig_lblCurrentLanguage">Language(&amp;L):</item>
+    <item key="FrmConfig_chkRememberPassword">Remenber PWD</item>
+    <item key="FrmConfig_chbAutoLogOn">Auto LogOn</item>
+    <item key="FrmConfig_chkUseMessage">Use Message</item>
+    <item key="FrmConfig_chkEncryptPassword">Encrypt-Password</item>
+    <item key="FrmConfig_chkClientEncryptPassword">Encryp PWD</item>
+    <item key="FrmConfig_lblMainForm">MainForm(&amp;M):</item>
+    <item key="FrmConfig_btnSDIMainForm">Run as System Tool</item>
+    <item key="FrmConfig_btnTabsMainForm">Run as Main System</item>
+    <item key="FrmConfig_lblLogOnForm">LogOn Form(&amp;F):</item>
+    <item key="FrmConfig_lblService">Run Service(&amp;R):</item>
+    <item key="FrmConfig_lblRootMenuCode">&amp;Root Menu Code:</item>
+    <item key="FrmConfig_chkCheckOnLine">Check OnLine</item>
+    <item key="FrmConfig_chkAllowUserRegister">Allow User Register</item>
+    <item key="FrmConfig_chkRecordLog">Record Log</item>
+    <item key="FrmConfig_chkWorkFlow">Enable WorkFlow</item>
+
+    <item key="FrmConfig_chkUseUserPermission">Enable User Permission</item>
+    <item key="FrmConfig_chkUseModulePermission">Enable Module Permission</item>
+    <item key="FrmConfig_chkUseOrganizePermission">Enable Organize Permission</item>
+    <item key="FrmConfig_chkUseTableColumnPermission">Enable TableColumns Permission</item>
+    <item key="FrmConfig_chkUseTableScopePermission">Enable TableScope Permission</item>
+    <item key="FrmConfig_chkUsePermissionScope">Enable Permission Scope</item>
+    <item key="FrmConfig_lblOnLineLimit">OnLine Limit:</item>
+    <item key="FrmConfig_chkEncryptDbConnection">Encrypt DB ConnStr</item>
+    <item key="FrmConfig_lblUserCenterDbConnection">UserCenterDB Conn:</item>
+    <item key="FrmConfig_lblBusinessDbConnection">BusinessDB Conn:</item>
+    <item key="FrmConfig_lblWorkFlowDbConnection">WorkFlow Conn:</item>
+    <item key="FrmConfig_btnSystemSecurity">System Security...</item>
+    <item key="FrmConfig_btnDecrypt">&amp;Decrypt</item>
+    <item key="FrmConfig_btnEncrypt">&amp;Encrypt</item>
+    <item key="FrmConfig_btnInitialize">Reset System</item>
+    <item key="FrmConfig_btnConfirm">&amp;Save</item>
+    <item key="FrmConfig_btnCancel">Cancel</item>
+    <!-- FrmConfig End -->
+
+    <!-- FrmSystemSecurity Begin -->
+    <item key="FrmSystemSecurity">System Security</item>
+    <item key="FrmSystemSecurity_grpPasswordSecurity">Password Security</item>
+    <item key="FrmSystemSecurity_chkServerEncryptPassword">Encrypt Password On Server</item>
+    <item key="FrmSystemSecurity_lblPasswordMiniLength">Password Length:</item>
+    <item key="FrmSystemSecurity_chkNumericCharacters">Must with Numeric and Characters</item>
+    <item key="FrmSystemSecurity_lblPasswordChangeCycle">Request Change Password(Month):</item>
+    <item key="FrmSystemSecurity_grpAccountSecurity">Account Security</item>
+    <item key="FrmSystemSecurity_chkCheckOnLine">Allowed to logon only once</item>
+    <item key="FrmSystemSecurity_lblAccountMinimumLength">Account Length:</item>
+    <item key="FrmSystemSecurity_grpBruteForce">Brute Force</item>
+    <item key="FrmSystemSecurity_lblPasswordErrowLock">Password Error Lock:</item>
+    <item key="FrmSystemSecurity_lblPasswordLockCycle">Lock Time(Minutes):</item>
+    <item key="FrmSystemSecurity_btnConfirm">Save(&amp;S)</item>
+    <item key="FrmSystemSecurity_btnCancel">Cancel</item>
+    <!-- FrmSystemSecurity End -->
+
+    <!-- BaseForm LoadWindow Begin -->
+    <item key="LoadWindow">Loading Window</item>
+    <!-- BaseForm LoadWindow End -->
+
+    <!-- DataGridView RightClickMenu Begin -->
+    <item key="clickToolStripMenuItem">Data Column Setting</item>
+    <!-- DataGridView RightClickMenu End -->
+
+    <!-- FrmIE Begin -->
+    <item key="FrmIE">Browser</item>
+    <!-- FrmIE End -->
+
+    <!-- FrmAboutThis Begin -->
+    <item key="FrmAboutThis">About</item>
+    <item key="FrmAboutThis_btnConfirm">OK</item>
+    <!-- FrmAboutThis End -->
+
+    <!-- FrmScreenLock Begin -->
+    <item key="FrmScreenLock">Screen lock</item>
+    <item key="FrmScreenLock_grpLogOn">Screen lock settting</item>
+    <item key="FrmScreenLock_lblMessage">Please enter your password to unlock!</item>
+    <item key="FrmScreenLock_lblPassword">Password(&amp;P):</item>
+    <item key="FrmScreenLock_ckbIsLock">Auto lock</item>
+    <item key="FrmScreenLock_lblWait">Wait to lock time:</item>
+    <item key="FrmScreenLock_lblMinute">Minutes</item>
+    <item key="FrmScreenLock_btnConfirm">Unlock(&amp;U)</item>
+    <!-- FrmScreenLock End -->
+
+    <!-- TabsMainForm Begin -->
+    <item key="TabsMainForm_btnSystem">Systen(&amp;S)</item>
+    <item key="TabsMainForm_btnReLogin">ReLogin</item>
+    <item key="TabsMainForm_btnModifPWD">Change Password</item>
+    <item key="TabsMainForm_btnQuit">Log Out</item>
+    <item key="TabsMainForm_btnWindows">Window(&amp;W)</item>
+    <item key="TabsMainForm_btnMainTabs">Main Window</item>
+    <item key="TabsMainForm_btnRemoveSelectedTab">Close current Window</item>
+    <item key="TabsMainForm_btnTool">Tools(&amp;T)</item>
+    <item key="TabsMainForm_btnCalculator">Calculator</item>
+    <item key="TabsMainForm_btnNoteBook">Notepad</item>
+    <item key="TabsMainForm_btnOthers">Others</item>
+    <item key="TabsMainForm_btnLanguages">Languages Change</item>
+    <item key="TabsMainForm_btLangCN">CN</item>
+    <item key="TabsMainForm_btnLangTW">TW</item>
+    <item key="TabsMainForm_btnLangUS">US</item>
+    <item key="TabsMainForm_btnSelectTheme">Choose style</item>
+    <item key="TabsMainForm_btn预设风格">Default Style</item>
+    <item key="TabsMainForm_btnWindowsXP预设">WindowsXP Default</item>
+    <item key="TabsMainForm_btnWindows7蓝">Windows7 Blue</item>
+    <item key="TabsMainForm_btnOffice2007蓝">Office2007 Blue</item>
+    <item key="TabsMainForm_btnOffice2007银">Office2007 Silver</item>
+    <item key="TabsMainForm_btnOffice2007黑">Office2007 Black</item>
+    <item key="TabsMainForm_btnOffice2010银">Office2010 Silver</item>
+    <item key="TabsMainForm_btnHelps">Helps</item>
+    <item key="TabsMainForm_btnAbout">About</item>
+    <item key="TabsMainForm_lblBottomInfo">Welcome to use JiRiGaLa Soft</item>
+    <item key="TabsMainForm_barLeft">Function Menu</item>
+    <item key="TabsMainForm_barRight">Instant messaging</item>
+    <item key="TabsMainForm_barRightN">Memorandum</item>
+    <item key="TabsMainForm_btnSaveNoteBook">Save</item>
+    <item key="TabsMainForm_btnToMain">MainWindows</item>
+    <item key="TabsMainForm_btnReLoadMenu">Reset Menu</item>
+    <item key="TabsMainForm_btnQuitSystem">Exit</item>
+    <item key="TabsMainForm_tabItemMain">MainWindows</item>
+    <item key="TabsMainForm_tsMenuItemCloseThis">Close the Windows</item>
+    <item key="TabsMainForm_tsMenuItemCloseOther">Close All Other</item>
+    <item key="TabsMainForm_tsMenuItemCloseAll">Close All</item>
+    <!-- TabsMainForm End -->
+
+    <!-- FrmCheckUpdate Begin -->
+    <item key="FrmCheckUpdate">.NET General Permission Management</item>
+    <item key="FrmCheckUpdate_lblNew">Latest Version:</item>
+    <item key="FrmCheckUpdate_lblCurrent">Current Version:</item>
+    <item key="FrmCheckUpdate_btnConfirm">OK</item>
+    <item key="FrmCheckUpdate_lblBuy">BLOG：http://jirigala.cnblogs.com</item>
+    <!-- FrmCheckUpdate End -->
+
+
+  </items>
+</resources>

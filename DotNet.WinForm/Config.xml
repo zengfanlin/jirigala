@@ -1,0 +1,190 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<configuration>
+	<appSettings>
+		
+		<!-- ================== 1：这里主要是客户端配置项内容部分 ================== -->	
+		
+		<!-- 当前用户名 -->
+		<add key="CurrentUserName" value="Administrator" />
+		<!-- 当前密码 -->
+		<add key="CurrentPassword" value="2A1B132C0E64FA299B014B39F7DE5C2F" />
+		<!-- 登录是否保存密码，默认能记住密码会好用一些 -->
+		<add key="RememberPassword" value="True" />
+		<!-- 是否自动登录，默认不自动登录会好一些 -->
+		<add key="AutoLogOn" value="False" />
+		<!-- 客户端加密存储密码-->
+		<add key="ClientEncryptPassword" value="True" />
+		<!-- 大规模用户权限管理 -->
+		<add key="LoadAllUser" value="True" />
+		<!-- 当前客户选择的语言 -->
+		<add key="CurrentLanguage" value="zh-CN" Options="zh-CN,zh-TW,en-US" />
+
+		<!-- ================== 2：这里主要是服务器端配置项内容部分 ================== -->
+		
+		<!-- 允许用户注册 -->
+		<add key="AllowUserRegister" value="False" />
+		<!-- 启用即时通讯 --> 
+		<add key="UseMessage" value="True" />
+		<!-- 启用按用户授权 -->
+		<add key="UseUserPermission" value="True" />
+    <!-- 启用按组织机构授权 -->
+    <add key="UseOrganizePermission" value="True" />
+    <!-- 用户是否需要配置模块菜单权限 -->
+		<add key="UseModulePermission" value="True" />
+		<!-- 是否启用操作权限 -->
+		<add key="UsePermissionItem" value="True" />
+		<!-- 启用表字段权限 -->
+		<add key="UseTableColumnPermission" value="False" />
+		<!-- 启用数据表的列权限 -->
+		<add key="UseTableScopePermission" value="False" />
+    <!-- 启用权限范围 -->
+    <add key="UsePermissionScope" value="True" />
+    <!-- 启用分级授权分级管理 -->
+    <add key="UseAuthorizationScope" value="True" />
+
+    <!-- 记录系统日志 -->
+		<add key="RecordLog" value="True" />
+		<!-- 最大在线用户数量限制 -->
+		<add key="OnLineLimit" value="200" />
+		
+		<!-- 是否开启IP限制 -->
+		<add key="CheckIPAddress" value="False"/>
+		<!-- 是否开启手写签名 -->
+		<add key="HandwrittenSignature" value="True"/>
+    <!-- 系统默认密码 -->
+    <add key="DefaultPassword" value="abcd1234"/>
+
+    <!-- 服务器端加密存储密码 -->
+    <add key="ServerEncryptPassword" value="True" />
+    <!-- 密码最小长度 -->
+    <add key="PasswordMiniLength" value="6" />
+    <!-- 必须字母+数字组合 -->
+    <add key="NumericCharacters" value="True" />
+    <!-- 密码修改周期(月) -->
+    <add key="PasswordChangeCycle" value="3" />
+    <!-- 允许重复登录 -->
+    <add key="CheckOnLine" value="False" />
+    <!-- 用户名最小长度 -->
+    <add key="AccountMinimumLength" value="4" />
+    <!-- 密码错误锁定次数 -->
+    <add key="PasswordErrowLockLimit" value="5" />
+    <!-- 密码错误锁定周期(分钟) -->
+    <add key="PasswordErrowLockCycle" value="30" />
+    
+    <!-- ================== 3：数据库连接相关配置 ================== -->
+		
+		<!-- 用户中心数据库类型-->
+		<add key="UserCenterDbType" value="SqlServer" Options="SqlServer,Oracle,MySql,DB2,SQLite,Access"/>
+		<!-- 业务逻辑数据库类型-->
+		<add key="BusinessDbType" value="SqlServer" Options="SqlServer,Oracle,MySql,DB2,SQLite,Access"/>
+		<!-- 工作流数据库类型-->
+		<add key="WorkFlowDbType" value="SqlServer" Options="SqlServer,Oracle,MySql,DB2,SQLite,Access"/>
+		<!-- 密数据库连接字符串-->
+		<add key="EncryptDbConnection" value="False" />
+		<!-- 用户中心数据库连接字符串-->
+		<add key="UserCenterDbConnection" value="Data Source=localhost;Initial Catalog=UserCenterV37;Integrated Security=SSPI;"/>
+    <add key="UserCenterDbConnection1" value="Data Source=192.168.1.50;Initial Catalog=UserCenterV37;User Id = sa ; Password = 87242667;max pool size=15;min pool size=5" />
+    <add key="UserCenterDbConnection2" value="Data Source=192.168.10.198;Initial Catalog=UserCenterV37;User Id = sa ; Password = sa ;max pool size=15;min pool size=5" />
+    <!-- 业务逻辑数据库连接字符串-->
+		<add key="BusinessDbConnection" value="Data Source=localhost;Initial Catalog=ProjectV37;Integrated Security=SSPI;"/>
+		<!-- 工作流数据库连接字符串-->
+		<add key="WorkFlowDbConnection" value="Data Source=localhost;Initial Catalog=WorkFlowV37;Integrated Security=SSPI;"/>
+    <add key="WorkFlowDbConnection1" value="Data Source=192.168.1.50;Initial Catalog=WorkFlowV37;User Id = sa ; Password = 87242667;max pool size=15;min pool size=5" />
+
+
+    <!-- ================== 4：系统性的参数配置 ================== -->
+		
+		<!-- 系统主窗体 -->
+		<add key="MainForm" value="TabsMainForm" />
+		<!-- 系统登录窗体 -->
+		<add key="LogOnForm" value="FrmLogOnByName" />
+    <!-- 这里是设置，读取哪个系统的菜单 Base WorkFlow -->
+    <add key="SystemCode" value="WorkFlow" />
+    <!-- 这里是设置，读取哪个子系统的菜单 -->
+    <add key="RootMenuCode" value="DotNet.Common" />
+		<!-- 客户端信息配置 -->
+		<!-- 公司名称 -->
+		<add key="CustomerCompanyName" value="杭州海日涵科技有限公司" />
+		<!-- 存储配置信息的方式 -->
+		<add key="ConfigurationFrom" value="UserConfig" />
+		<!-- 软件名称 -->
+		<add key="SoftName" value="DotNet" />
+		<!-- 软件全称 -->
+		<add key="SoftFullName" value="通用权限管理系統" />
+		<!-- 软件版本 -->
+		<add key="Version" value="3.7" />
+		<!-- 注册码，备用 -->
+		<add key="RegisterKey" value="125O8O9O4O2O1O371O272O120O79O75O39O32O14O12O4O2O1O1O1O0O0O0O0O11O415O353O572O1293O793O1955O1616O8709O12046O26173O24945O67637O49437O207130O118290O433900O569186O281334O379729O2310391O2168260O2335649O2370981" />
+		<!-- 软件的运行模式、用什么服务提供程序 DotNet.Service DotNet.WCFClient -->
+		<add key="Service" value="DotNet.Business" Options="DotNet.Business,DotNet.WCFClient" />
+		
+		<!-- ================== 5：系统邮件错误报告反馈相关 ================== -->
+		
+		<!-- 软件的错误报告发给谁 -->
+		<add key="ErrorReportTo" value="Jirigala_bao@hotmail.com, 252056973@QQ.COM" />
+		<!-- 发出错误邮箱的地址 -->
+		<add key="ErrorReportMailUserName" value="Jirigala@gmail.com" />
+		<!-- 发出错误邮箱的密码 -->
+		<add key="ErrorReportMailPassword" value="C81A0F07FEE506BD522015F8AE206ED7" />
+
+		<!-- ================== 6：备用各种配置参考部分 ================== -->
+		
+		<!--
+    
+		<add key="UserCenterDbConnection" value="Data Source=localhost;Initial Catalog=UserCenterV37;User Id = sa ; Password = Password@sa;"/>
+		<add key="BusinessDbConnection" value="Data Source=localhost;Initial Catalog=ProjectV37;User Id = sa ; Password = Password@sa;"/>
+		
+		<add key="UserCenterDbConnection" value="Server=JIRIGALA-PC\SQL2005;Database=UserCenterV37;Uid=sa;Pwd=sa;"/>
+		<add key="WorkFlowDbConnection" value="Server=JIRIGALA-PC\SQL2005;Database=WorkFlowV37;Uid=sa;Pwd=sa;"/>
+		<add key="BusinessDbConnection" value="Server=JIRIGALA-PC\SQL2005;Database=UserCenterV37;Uid=sa;Pwd=sa;"/>
+
+		<add key="Service" value="DotNet.Service" />
+		<add key="DbType" value="Oracle"/>
+		<add key="UserCenterDbConnection" value="Data Source=(DESCRIPTION=(ADDRESS_LIST=(ADDRESS=(PROTOCOL=TCP)(HOST=10.1.201.40)(PORT=1521)))(CONNECT_DATA=(SERVICE_NAME=orcl)));User Id=usercenter;Password=usercenter;"/>
+		<add key="BusinessDbConnection" value="Data Source=(DESCRIPTION=(ADDRESS_LIST=(ADDRESS=(PROTOCOL=TCP)(HOST=10.1.201.40)(PORT=1521)))(CONNECT_DATA=(SERVICE_NAME=orcl)));User Id=REHABILITATION;Password=REHABILITATION;"/>
+
+		<add key="DbType" value="SqlServer"/>
+		<add key="UserCenterDbConnection" value="Data Source=localhost;Initial Catalog=UserCenterV37;Integrated Security=SSPI;"/>
+		<add key="BusinessDbConnection" value="Data Source=localhost;Initial Catalog=UserCenterV37;Integrated Security=SSPI;"/>
+    
+		<add key="DbType" value="Oracle"/>
+		<add key="UserCenterDbConnection" value="Data Source=ORACLE11;user=DBO_UserCenterV37;password=DBO_UserCenterV37;"/>
+		<add key="BusinessDbConnection" value="Data Source=ORACLE11;user=DBO_UserCenterV37;password=DBO_UserCenterV37;"/>
+
+		<add key="UserCenterDbConnection" value="Data Source=ORACLE11;User Id=DBO_USERCENTERV37;Password=DBO_USERCENTERV37;"/>
+		<add key="BusinessDbConnection" value="Data Source=ORACLE11;User Id=DBO_USERCENTERV37;Password=DBO_USERCENTERV37;"/>
+
+		<add key="DbType" value="SqlServer"/>
+		<add key="UserCenterDbConnection" value="Data Source=localhost;Initial Catalog=UserCenterV37;Integrated Security=SSPI;"/>
+		<add key="BusinessDbConnection" value="Data Source=localhost;Initial Catalog=UserCenterV37;Integrated Security=SSPI;"/>
+    
+		<add key="UserCenterDbConnection" value="Data Source=localhost;Initial Catalog=UserCenterV37;Integrated Security=SSPI;"/>
+		<add key="BusinessDbConnection" value="Data Source=localhost;Initial Catalog=UserCenterV37;Integrated Security=SSPI;"/>
+		<add key="UserCenterDbConnection" value="Server=192.168.3.19;Database=UserCenterV37;Uid=sa;Pwd=123456;"/>
+		<add key="BusinessDbConnection" value="Server=192.168.3.19;Database=UserCenterV37;Uid=sa;Pwd=123456;"/>
+		<add key="UserCenterDbConnection" value="Data Source=localhost;Initial Catalog=UserCenterV37;Integrated Security=SSPI;"/>
+		<add key="BusinessDbConnection" value="Data Source=localhost;Initial Catalog=UserCenterV37;Integrated Security=SSPI;"/>
+		<add key="Service" value="DotNet.Service"/>
+		<add key="Service" value="DotNet.WCFClient"/>
+		<add key="Service" value="DotNet.RemotingClient"/>
+		<add key="Service" value="DotNet.WebService.Client"/>
+		<add key="UserCenterDbConnection" value="Server=192.168.3.19;Database=UserCenterV37;Uid=sa;Pwd=123456;"/>
+		<add key="BusinessDbConnection" value="Server=192.168.3.19;Database=UserCenterV37;Uid=sa;Pwd=123456;"/>
+		<add key="UserCenterDbConnection" value="Server=JIRIGALA-PC;Database=UserCenterV37;Uid=sa;Pwd=sa;"/>
+		<add key="BusinessDbConnection" value="Server=JIRIGALA-PC;Database=UserCenterV37;Uid=sa;Pwd=sa;"/>
+		<add key="UserCenterDbConnection" value="Data Source=JIRIGALA-PC\SQLEXPRESS;Initial Catalog=UserCenterV37;Integrated Security=SSPI;" />
+		<add key="UserCenterDbConnection" value="Server=210.83.84.73;Database=UserCenterV37;Uid=sa;Pwd=Festind1234;"/>
+		<add key="SAPConnectionString" value="ASHOST=10.137.201.2;CLIENT=800;SYSNR=0;USER={UserName};PASSWD={Password};LANG=ZH"/>
+		<add key="UserCenterDbConnection" value="Server=192.168.10.88;Database=LinAnWater;Uid=sa;Pwd=sa;max pool size=30;min pool size=10" />
+		<add key="UserCenterDbConnection" value="Server=192.168.10.88;Database=DataCenter;Uid=sa;Pwd=sa;max pool size=30;min pool size=10" />
+		<add key="UserCenterDbConnection" value="Data Source=JIRIGALA-PC\SQLEXPRESS;Initial Catalog=UserCenterV37;Integrated Security=SSPI;" />
+		<add key="UserCenterDbConnection" value="Server=localhost;Database=Water;Uid=SA;Pwd=19780519;"/>
+		<add key="UserCenterDbConnection" value="server=localhost;uid=root;password=root;database=eq;pooling=false;character set=utf8"/>
+		<add key="UserCenterDbConnection" value="server=10.10.68.141;uid=root;password=esseesse;database=eq;pooling=false;character set=utf8"/>
+		<add key="UserCenterDbConnection" value="Server=JIRIGALA\sqlexpress;Database=Official;Integrated Security=True;Pooling=true"/>
+		<add key="UserCenterDbConnection" value="server=localhost;uid=root;password=root;database=eq;pooling=false;character set=utf8"/>
+		<add key="DbType" value="MySql"/>
+		<add key="DbType" value="Oracle"/>
+		-->
+	</appSettings>
+</configuration>

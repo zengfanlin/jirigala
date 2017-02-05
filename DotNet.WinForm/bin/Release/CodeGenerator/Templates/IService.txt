@@ -1,0 +1,141 @@
+﻿//--------------------------------------------------------------------
+// All Rights Reserved , Copyright (C) #YearCreated# , #Company# TECH, Ltd. 
+//--------------------------------------------------------------------
+
+using System.Data;
+using System.ServiceModel;
+using System.Collections.Generic;
+
+namespace #Project#.Business
+{
+	// using DotNet.Business;
+	using DotNet.Utilities;
+
+	/// <summary>
+	/// I#ClassName#Service
+	/// #Description#服务层接口
+	/// 
+	/// 修改记录
+	/// 
+	///	#DateCreated# 版本：1.0 #Author# 创建文件。
+	///		
+	/// 版本：1.0
+	///
+	/// <author>
+	///	<name>#Author#</name>
+	///	<date>#DateCreated#</date>
+	/// </author> 
+	/// </summary>
+	[ServiceContract]
+	public interface I#ClassName#Service
+	{
+		/// <summary>
+		/// 新增实体
+		/// </summary>
+		/// <param name="userInfo">用户</param>
+		/// <param name="entity">实体</param>
+		/// <param name="statusCode">返回状态</param>
+		/// <param name="statusMessage">返回状态信息</param>
+		/// <returns>主键</returns>
+		[OperationContract]
+		string Add(BaseUserInfo userInfo, #ClassName#Entity entity, out string statusCode, out string statusMessage);
+
+		/// <summary>
+		/// 获取列表
+		/// </summary>
+		/// <param name="userInfo">用户</param>
+		/// <returns>数据表</returns>
+		[OperationContract]
+		DataTable GetDataTable(BaseUserInfo userInfo);
+
+		/// <summary>
+		/// 分页查询
+		/// </summary>
+		/// <param name="userInfo">用户</param>
+		/// <param name="userId">用户主键</param>
+		/// <param name="searchValue">查询关键字</param>
+		/// <param name="recordCount">返回记录数</param>
+		/// <param name="pageIndex">当前页</param>
+		/// <param name="pageSize">每页显示条数</param>
+		/// <param name="sortExpression">排序字段</param>
+		/// <param name="sortDire">排序方向</param>
+		/// <returns>数据表</returns>
+		[OperationContract]
+		DataTable GetDataTableByPage(BaseUserInfo userInfo, string userId, string auditStatus, string searchValue, out int recordCount, int pageIndex, int pageSize, string sortExpression, string sortDire);
+		
+		/// <summary>
+		/// 获取实体
+		/// </summary>
+		/// <param name="userInfo">用户</param>
+		/// <param name="id">主键</param>
+		/// <returns>实体</returns>
+		[OperationContract]
+		#ClassName#Entity GetEntity(BaseUserInfo userInfo, string id);
+		
+		/// <summary>
+		/// 更新实体
+		/// </summary>
+		/// <param name="userInfo">用户</param>
+		/// <param name="entity">实体</param>
+		/// <param name="statusCode">返回状态码</param>
+		/// <param name="statusMessage">返回状态信息</param>
+		/// <returns>影响行数</returns>
+		[OperationContract]
+		int Update(BaseUserInfo userInfo, #ClassName#Entity entity, out string statusCode, out string statusMessage);
+		
+		/// <summary>
+		/// 根据主键获取数据
+		/// </summary>
+		/// <param name="userInfo">用户</param>
+		/// <param name="ids">主键</param>
+		/// <returns>数据表</returns>
+		[OperationContract]
+		DataTable GetDataTableByIds(BaseUserInfo userInfo, string[] ids);
+		
+		/// <summary>
+		/// 根据条件获取数据
+		/// </summary>
+		/// <param name="userInfo">用户</param>
+		/// <param name="names">字段</param>
+		/// <param name="values">值</param>
+		/// <returns>数据表</returns>
+		[OperationContract]
+		DataTable GetDataTableByValues(BaseUserInfo userInfo,  List<KeyValuePair<string, object>> parameters);
+				
+		/// <summary>
+		/// 批次儲存資料
+		/// </summary>
+		/// <param name="userInfo">用户</param>
+		/// <param name="entites">实体列表</param>
+		/// <returns>影响行数</returns>
+		[OperationContract]
+		int BatchSave(BaseUserInfo userInfo, List<#ClassName#Entity> entites);
+				
+		/// <summary>
+		/// 删除数据
+		/// </summary>
+		/// <param name="userInfo">用户</param>
+		/// <param name="id">主键</param>
+		/// <returns>数据表</returns>
+		[OperationContract]
+		int Delete(BaseUserInfo userInfo, string id);
+		
+		/// <summary>
+		/// 批量删除
+		/// </summary>
+		/// <param name="userInfo">用户</param>
+		/// <param name="ids">主键数组</param>
+		/// <returns>影响行数</returns>
+		[OperationContract]
+		int BatchDelete(BaseUserInfo userInfo, string[] ids);
+
+		/// <summary>
+		/// 批量逻辑删除
+		/// </summary>
+		/// <param name="userInfo">用户</param>
+		/// <param name="ids">主键数组</param>
+		/// <returns>影响行数</returns>
+		[OperationContract]
+		int SetDeleted(BaseUserInfo userInfo, string[] ids);
+	}
+}

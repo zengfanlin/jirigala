@@ -1,0 +1,471 @@
+﻿//-----------------------------------------------------------------
+// All Rights Reserved , Copyright (C) 2012 , #Company# TECH, Ltd .
+//-----------------------------------------------------------------
+
+using System;
+using System.Collections.Generic;
+using System.Data;
+using System.Web.UI;
+using System.Web.UI.WebControls;
+using System.Text.RegularExpressions;
+
+using DotNet.Business;
+using DotNet.Utilities;
+
+/// <remarks>
+/// #ClassName#Edit
+/// 编辑#Description#
+///
+/// #DateCreated# 版本：1.0  #Author# 创建代码。
+///
+/// 版本：1.0
+///
+/// <author>
+///	<name>#Author#</name>
+///	<date>#DateCreated#</date>
+/// </author>
+/// </remarks>
+public partial class #ClassName#Edit : BasePage
+{
+    /// <summary>
+    /// 是否按工作流方式运行
+    /// </summary>
+    private bool UseWorkFlow
+    {
+        get
+        {
+            bool useWorkFlow = false;
+            if (ViewState["UseWorkFlow"] != null)
+            {
+                useWorkFlow = (bool)ViewState["UseWorkFlow"];
+            }
+            return useWorkFlow;
+        }
+        set
+        {
+            ViewState["UseWorkFlow"] = value;
+        }
+    }
+
+    /// <summary>
+    /// 主键
+    /// </summary>
+    private string EntityId
+    {
+        get
+        {
+            return this.txtId.Value;
+        }
+        set
+        {
+            this.txtId.Value = value;
+        }
+    }
+
+    /// <summary>
+    /// 返回页面
+    /// </summary>
+    public string ReturnURL
+    {
+        get
+        {
+            return this.txtReturnURL.Value;
+        }
+        set
+        {
+            this.txtReturnURL.Value = value;
+        }
+    }
+
+    #region private void GetParamter() 读取参数
+    /// <summary>
+    /// 读取参数
+    /// </summary>
+    private void GetParamter()
+    {
+        if (Page.Request["Id"] != null)
+        {
+            this.EntityId = Page.Request["Id"].ToString();
+        }
+        if (Page.Request["ReturnURL"] != null)
+        {
+            this.ReturnURL = Page.Request["ReturnURL"].ToString();
+        }
+    }
+    #endregion
+
+    #region private void DoPageLoad() 页面初次加载时的动作
+    /// <summary>
+    /// 页面初次加载时的动作
+    /// </summary>
+    private void DoPageLoad()
+    {
+        // 绑定下拉框数据
+        this.GetItemDetails();
+        // 获取参数
+        this.GetParamter();
+        // 显示实体
+        this.ShowEntity();
+        // 设置空间状态
+        this.SetControlState();
+    }
+    #endregion
+
+    #region private void GetItemDetails() 绑定下拉框数据
+    /// <summary>
+    /// 绑定下拉框数据
+    /// </summary>
+    private void GetItemDetails()
+    {
+        #ItemDetails#
+    }
+    #endregion
+
+    #region private void SetControlState() 设置控件状态
+    /// <summary>
+    /// 设置控件状态
+    /// </summary>
+    private void SetControlState()
+    {
+        // 是否采用了提交功能
+        if (!string.IsNullOrEmpty(this.EntityId))
+        {
+            this.btnAdd.Visible = false;
+            this.btnUpdate.Visible = true;
+        }
+        else
+        {
+            this.btnAdd.Visible = true;
+            this.btnUpdate.Visible = false;
+        }
+        // 暂时是按直接提交与走流程提交区别
+        // this.btnSubmit.Visible = this.UseWorkFlow;
+    }
+    #endregion
+
+    protected void Page_Load(object sender, EventArgs e)
+    {
+        // 判断是否登录
+        Utilities.CheckIsLogOn("../../../" + Utilities.UserNotLogOn);
+        if (!Page.IsPostBack)
+        {
+            // 页面初次加载时的动作
+            this.DoPageLoad();
+        }
+    }
+
+    #region private void ShowEntity()
+    /// <summary>
+    /// 显示实体
+    /// </summary>
+    private void ShowEntity()
+    {
+        // 已经提交的不可以更新
+        bool allowEdit = true;
+        bool allowSend = true;
+
+        // 是否启用的审批流程
+        BaseWorkFlowBillTemplateManager templateManager = new BaseWorkFlowBillTemplateManager(this.WorkFlowDbHelper, this.UserInfo);
+        List<KeyValuePair<string, object>> parameters = new List<KeyValuePair<string, object>>();
+        parameters.Add(new KeyValuePair<string, object>(BaseWorkFlowBillTemplateEntity.FieldCode, "#ClassName#"));
+        parameters.Add(new KeyValuePair<string, object>(BaseWorkFlowBillTemplateEntity.FieldEnabled, 1));
+        parameters.Add(new KeyValuePair<string, object>(BaseWorkFlowBillTemplateEntity.FieldDeletionStateCode, 0));
+        string useWorkFlow = templateManager.GetProperty(parameters, "UseWorkFlow");
+        if (!string.IsNullOrEmpty(useWorkFlow))
+        {
+            UseWorkFlow = useWorkFlow.Equals("1");
+        }
+
+        if (!string.IsNullOrEmpty(this.EntityId))
+        {
+            #ClassName#Entity entity = new #ClassName#Manager(this.UserInfo).GetEntity(this.EntityId);
+            if (entity != null && !string.IsNullOrEmpty(entity.Id))
+            {
+                this.hdUserId.Value = entity.UserId;
+                this.lblUserName.Text = entity.UserName;
+                this.hdOrganizeId.Value = entity.DepartmentId;
+                this.lblOrganizeName.Text = entity.DepartmentName;
+				#ShowEntity#
+				#GetAttachment#
+                if (entity.Enabled == 1)
+                {
+                    // 已经生效的， 不可以编辑
+                    allowEdit = false;
+					allowSend = false;
+					this.btnAuditPass.Enabled = false;
+                    this.btnAuditReject.Enabled = true;
+                }
+                else
+                {
+                    if (this.UseWorkFlow)
+                    {
+                        // 已经进入审批流程的，不可以修改
+						if (entity.AuditStatus != null)
+						{
+							if (entity.AuditStatus.Equals(AuditStatus.StartAudit.ToString())
+								|| entity.AuditStatus.Equals(AuditStatus.AuditPass.ToString())
+								|| entity.AuditStatus.Equals(AuditStatus.WaitForAudit.ToString()))
+							{
+								allowEdit = false;
+								allowSend = false;
+							}
+                            if (entity.AuditStatus.Equals(AuditStatus.AuditPass.ToString()))
+                            {
+                                this.btnAuditPass.Enabled = false;
+                            }
+                            if (entity.AuditStatus.Equals(AuditStatus.AuditReject.ToString()))
+                            {
+                                this.btnAuditReject.Enabled = false;
+                            }
+						}
+                    }
+                }
+                // 是系统管理员可以编辑
+                if (this.UserInfo.IsAdministrator)
+                {
+                    allowEdit = true;
+                }
+            }
+            else
+            {
+                // 重新定向到内容没找到页面
+                Page.Response.Redirect("../../../" + Utilities.NotFindPage);
+            }
+        }
+        else
+        {
+            // 默认新增状态的优化
+            this.hdUserId.Value = this.UserInfo.Id;
+            this.lblUserName.Text = this.UserInfo.RealName;
+            this.hdOrganizeId.Value = this.UserInfo.DepartmentId;
+            this.lblOrganizeName.Text = this.UserInfo.DepartmentName;
+			#ShowDefaultValue#
+            // 重新定向到内容没找到页面
+            // Page.Response.Redirect("../../../" + Utilities.NotFindPage);
+        }
+        
+        // 限制提交按钮，更新按钮
+        if (this.UseWorkFlow)
+        {
+            // 采用审批流程的，才可以提交
+            this.btnSubmit.Visible = allowSend;
+            if (this.UserInfo.IsAdministrator)
+            {
+                if (this.btnAuditPass.Enabled)
+                {
+                    this.btnAuditPass.Visible = true;
+                }
+                if (!string.IsNullOrEmpty(this.EntityId))
+                {
+                    if (this.btnAuditReject.Enabled)
+                    {
+                        this.btnAuditReject.Visible = true;
+                    }
+                }
+            }
+        }
+        this.btnUpdate.Visible = !allowEdit;
+    }
+    #endregion
+
+    #region private bool CheckInput()
+    /// <summary>
+    /// 检查输入的有效性
+    /// </summary>
+    /// <returns>有效</returns>
+    private bool CheckInput()
+    {
+        bool returnValue = true;
+        Regex integerRegex = new Regex(RegexCollection.Integer);
+        Regex floatRegex = new Regex(RegexCollection.Float);
+        #CheckInput#
+        return returnValue;
+    }
+    #endregion
+
+    private #ClassName#Entity GetEntity()
+    {
+        // 这里需要防止更新错数据，或者丢失数据，所以需要从数据库里读取一下整个类，比较安全
+        #ClassName#Entity entity = new #ClassName#Entity();
+        if(!string.IsNullOrEmpty(this.EntityId))
+		{
+            entity = new #ClassName#Manager(this.UserInfo).GetEntity(this.EntityId);
+		}
+        else
+        {
+            entity.Enabled = 0;
+            entity.DeletionStateCode = 0;
+        }
+		#GetEntity#
+        entity.UserId = this.hdUserId.Value;
+        entity.UserName = new BaseUserManager().GetEntity(entity.UserId).RealName;
+        entity.DepartmentId = this.hdOrganizeId.Value;
+        entity.DepartmentName = new BaseOrganizeManager().GetEntity(entity.DepartmentId).FullName;
+        return entity;
+    }
+
+    /// <summary>
+    /// 添加实体
+    /// </summary>
+    /// <param name="submit">提交</param>
+    /// <param name="enabled">直接生效</param>
+    /// <returns>主键</returns>
+    private string Add(bool submit = false, bool enabled = false)
+    {
+        #ClassName#Entity entity = this.GetEntity();
+		// 这里是直接提交的功能
+        if (submit)
+        {
+            if (this.UseWorkFlow)
+            {
+                entity.Enabled = 0;
+            }
+            else
+            {
+                entity.Enabled = 1;
+            }
+        }
+		// 直接生效
+        if (enabled)
+        {
+            entity.Enabled = 1;
+            entity.AuditStatus = AuditStatus.AuditComplete.ToString();
+        }
+		this.EntityId = new #ClassName#Manager(this.UserInfo).Add(entity);
+        #SaveFiles#
+        return this.EntityId;
+    }
+
+    protected void btnAdd_Click(object sender, EventArgs e)
+    {
+        // 检查页面的输入
+        if (!this.CheckInput())
+        {
+            return;
+        }
+		// 添加
+        this.SaveEntity(false);
+        if (string.IsNullOrEmpty(this.ReturnURL))
+        {
+            Utilities.CloseWindow(true);
+        }
+        else
+        {
+            Page.Response.Redirect(this.ReturnURL);
+        }
+    }
+
+    /// <summary>
+    /// 更新实体
+    /// </summary>
+    /// <returns>影响行数</returns>
+    private int Update()
+    {
+        #SaveFiles#
+        #ClassName#Entity entity = this.GetEntity();
+        return new #ClassName#Manager(this.UserInfo).Update(entity);
+    }
+
+    protected void btnUpdate_Click(object sender, EventArgs e)
+    {
+        // 检查页面的输入
+        if (!this.CheckInput())
+        {
+            return;
+        }
+        this.SaveEntity();
+        if (string.IsNullOrEmpty(this.ReturnURL))
+        {
+            Utilities.CloseWindow(true);
+        }
+        else
+        {
+            Page.Response.Redirect(this.ReturnURL);
+        }
+    }
+
+    private string SaveEntity(bool submit = false)
+    {
+        if (string.IsNullOrEmpty(this.EntityId))
+        {
+            this.EntityId = this.Add(submit);
+        }
+        else
+        {
+            this.Update();
+        }
+        return this.EntityId;
+    }
+
+    protected void btnSubmit_Click(object sender, EventArgs e)
+    {
+        // 检查页面的输入
+        if (!this.CheckInput())
+        {
+            return;
+        }
+        this.SaveEntity(true);
+        // 这里是为了实现给帮别人提交单据的功能
+        string userId = this.hdUserId.Value;
+        string url = "../../Common/WorkFlow/BillByWorkFlowSubmit.aspx?ReturnURL=../../WorkFlow/#ClassName#/#ClassName#List.aspx&UserId=" + userId + "&ObjectId=" + this.EntityId + "&ObjectFullName=#Title#&CategoryCode=#ClassName#&CategoryFullName=#Title#";
+        Page.Response.Redirect(url);
+    }
+
+    /// <summary>
+    /// 直接审核通过的处理
+    /// </summary>
+    private void AuditPass()
+    {
+        // 若没保存过的，直接就生效了？
+        if (string.IsNullOrEmpty(this.EntityId))
+        {
+            this.EntityId = this.Add(false, true);
+        }
+        else
+        {
+            // 若是更新时审核通过的，那就需要调用方法了。
+            BaseWorkFlowCurrentManager workFlowCurrentManager = new BaseWorkFlowCurrentManager(this.WorkFlowDbHelper, this.UserInfo);
+            string currentId = workFlowCurrentManager.GetCurrentId("#ClassName#", this.EntityId);
+            workFlowCurrentManager.AuditComplete(currentId, string.Empty);
+        }
+        if (string.IsNullOrEmpty(this.ReturnURL))
+        {
+            Utilities.CloseWindow(true);
+        }
+        else
+        {
+            Page.Response.Redirect(this.ReturnURL);
+        }
+    }
+
+    protected void btnAuditPass_Click(object sender, EventArgs e)
+    {
+        // 审核通过
+        this.AuditPass();
+    }
+
+    /// <summary>
+    /// 直接退回
+    /// </summary>
+    private void AuditReject()
+    {
+        // 若是更新时审核通过的，那就需要调用方法了。
+        BaseWorkFlowCurrentManager workFlowCurrentManager = new BaseWorkFlowCurrentManager(this.WorkFlowDbHelper, this.UserInfo);
+        string currentId = workFlowCurrentManager.GetCurrentId("#ClassName#", this.EntityId);
+        workFlowCurrentManager.AuditReject(currentId, string.Empty);
+        if (string.IsNullOrEmpty(this.ReturnURL))
+        {
+            Utilities.CloseWindow(true);
+        }
+        else
+        {
+            Page.Response.Redirect(this.ReturnURL);
+        }
+    }
+
+    protected void btnAuditReject_Click(object sender, EventArgs e)
+    {
+        // 直接退回
+        this.AuditReject();
+    }
+}

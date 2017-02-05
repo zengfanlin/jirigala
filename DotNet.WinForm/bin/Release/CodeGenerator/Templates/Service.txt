@@ -1,0 +1,816 @@
+﻿//--------------------------------------------------------------------
+// All Rights Reserved , Copyright (C) #YearCreated# , #Company# TECH, Ltd. 
+//--------------------------------------------------------------------
+
+using System;
+using System.Data;
+using System.Collections.Generic;
+using System.Reflection;
+using System.ServiceModel;
+
+namespace #Project#.Business
+{
+	using DotNet.Business;
+	using DotNet.Utilities;
+
+	/// <summary>
+	/// #ClassName#Service
+	/// #Description#服务层
+	/// 
+	/// 修改记录
+	/// 
+	///	#DateCreated# 版本：1.0 #Author# 建立档案。
+	///		
+	/// 版本：1.0
+	///
+	/// <author>
+	///	<name>#Author#</name>
+	///	<date>#DateCreated#</date>
+	/// </author> 
+	/// </summary>
+	[ServiceBehavior(IncludeExceptionDetailInFaults = true)]
+	public class #ClassName#Service : System.MarshalByRefObject, I#ClassName#Service
+	{
+		private string serviceName = "#ClassName#";
+		
+		/// <summary>
+		/// 用户中心数据库连接字符串
+		/// </summary>
+		private readonly string UserCenterDbConnection = BaseSystemInfo.UserCenterDbConnection;
+
+		/// <summary>
+		/// 业务逻辑数据库连接字符串
+		/// </summary>
+		private readonly string BusinessDbConnection = BaseSystemInfo.BusinessDbConnection;
+
+		#region public string Add(BaseUserInfo userInfo, #ClassName#Entity entity, out string statusCode, out string statusMessage) 新增实体
+		/// <summary>
+		/// 新增实体
+		/// </summary>
+		/// <param name="userInfo">用户</param>
+		/// <param name="entity">实体</param>
+		/// <param name="statusCode">返回状态码</param>
+		/// <param name="statusMessage">返回状态消息</param>
+		/// <returns>主鍵</returns>
+		public string Add(BaseUserInfo userInfo, #ClassName#Entity entity, out string statusCode, out string statusMessage)
+		{
+			// 写入调试信息
+			#if (DEBUG)
+				int milliStart = BaseBusinessLogic.StartDebug(userInfo, MethodBase.GetCurrentMethod());
+			#endif
+
+			// 加強安全验证防止未登录用户调用
+			#if (!DEBUG)
+				LogOnService.UserIsLogOn(userInfo);
+			#endif
+
+			string returnValue = string.Empty;            
+			statusCode = string.Empty;
+
+			using (IDbHelper UCdbHelper = DbHelperFactory.GetHelper(BaseSystemInfo.UserCenterDbType))
+			{
+				try
+				{
+					UCdbHelper.Open(UserCenterDbConnection);
+					BaseLogManager.Instance.Add(UCdbHelper, userInfo, this.serviceName, "新增实体", MethodBase.GetCurrentMethod());
+
+					using (IDbHelper dbHelper = DbHelperFactory.GetHelper(BaseSystemInfo.BusinessDbType))
+					{
+						try
+						{
+							dbHelper.Open(BusinessDbConnection);
+							#ClassName#Manager manager = new #ClassName#Manager(dbHelper, userInfo);
+							returnValue = manager.AddEntity(entity);
+							// returnValue = manager.Add(entity, out statusCode);
+							statusMessage = manager.GetStateMessage(statusCode);
+						}
+						catch (Exception ex)
+						{
+							BaseExceptionManager.LogException(UCdbHelper, userInfo, ex);
+							throw ex;
+						}
+						finally
+						{
+							dbHelper.Close();
+						}
+					}
+				}
+				catch (Exception ex)
+				{
+					BaseExceptionManager.LogException(UCdbHelper, userInfo, ex);
+					throw ex;
+				}
+				finally
+				{
+					UCdbHelper.Close();
+				}
+			}
+
+			// 写入调试信息
+			#if (DEBUG)
+				BaseBusinessLogic.EndDebug(MethodBase.GetCurrentMethod(), milliStart);
+			#endif
+			
+			return returnValue;
+		}
+		#endregion
+
+		#region public DataTable GetDataTable(BaseUserInfo userInfo) 取得数据表
+		/// <summary>
+		/// 取得数据表
+		/// </summary>
+		/// <param name="userInfo">用户</param>
+		/// <returns>数据表</returns>
+		public DataTable GetDataTable(BaseUserInfo userInfo)
+		{
+			// 写入调试信息
+			#if (DEBUG)
+				int milliStart = BaseBusinessLogic.StartDebug(userInfo, MethodBase.GetCurrentMethod());
+			#endif
+
+			// 加強安全验证防止未登录用户调用
+			#if (!DEBUG)
+				LogOnService.UserIsLogOn(userInfo);
+			#endif
+
+			DataTable dataTable = new DataTable(#ClassName#Entity.TableName);
+			
+			using (IDbHelper UCdbHelper = DbHelperFactory.GetHelper(BaseSystemInfo.UserCenterDbType))
+			{
+				try
+				{
+					UCdbHelper.Open(UserCenterDbConnection);
+					BaseLogManager.Instance.Add(UCdbHelper, userInfo, this.serviceName, "取得列表", MethodBase.GetCurrentMethod());
+
+					using (IDbHelper dbHelper = DbHelperFactory.GetHelper(BaseSystemInfo.BusinessDbType))
+					{
+						try
+						{
+							dbHelper.Open(BusinessDbConnection);
+							// 取得列表
+							#ClassName#Manager manager = new #ClassName#Manager(dbHelper, userInfo);
+							dataTable = manager.GetDataTable(new KeyValuePair<string, object>(#ClassName#Entity.FieldDeletionStateCode, 0), #ClassName#Entity.FieldSortCode);
+							dataTable.TableName = #ClassName#Entity.TableName;
+						}
+						catch (Exception ex)
+						{
+							BaseExceptionManager.LogException(UCdbHelper, userInfo, ex);
+							throw ex;
+						}
+						finally
+						{
+							dbHelper.Close();
+						}
+					}
+				}
+				catch (Exception ex)
+				{
+					BaseExceptionManager.LogException(UCdbHelper, userInfo, ex);
+					throw ex;
+				}
+				finally
+				{
+					UCdbHelper.Close();
+				}
+			}
+
+			// 写入调试信息
+			#if (DEBUG)
+				BaseBusinessLogic.EndDebug(MethodBase.GetCurrentMethod(), milliStart);
+			#endif
+
+			return dataTable;
+		}
+		#endregion
+
+		#region public DataTable GetDataTableByPage(BaseUserInfo userInfo, string userId, string auditStatus, string searchValue, out int recordCount, int pageIndex = 1, int pageSize = 20, string sortExpression = null, string sortDire = null) 分页查询
+		/// <summary>
+		/// 分页查询
+		/// </summary>
+		/// <param name="userInfo">用户</param>
+		/// <param name="userId">用户主键</param>
+		/// <param name="searchValue">查询关键字</param>
+		/// <param name="recordCount">记录数</param>
+		/// <param name="pageIndex">当前页</param>
+		/// <param name="pageSize">每页显示记录条数</param>
+		/// <param name="sortExpression">排序字段</param>
+		/// <param name="sortDire">排序方向</param>
+		/// <returns>数据表</returns>
+		public DataTable GetDataTableByPage(BaseUserInfo userInfo, string userId, string auditStatus, string searchValue, out int recordCount, int pageIndex = 1, int pageSize = 20, string sortExpression = null, string sortDire = null)
+		{
+			// 写入调试信息
+			#if (DEBUG)
+				int milliStart = BaseBusinessLogic.StartDebug(userInfo, MethodBase.GetCurrentMethod());
+			#endif
+
+			// 加強安全验证防止未登录用户调用
+			#if (!DEBUG)
+				LogOnService.UserIsLogOn(userInfo);
+			#endif
+
+			DataTable dataTable = new DataTable(#ClassName#Entity.TableName);
+			
+			using (IDbHelper UCdbHelper = DbHelperFactory.GetHelper(BaseSystemInfo.UserCenterDbType))
+			{
+				try
+				{
+					UCdbHelper.Open(UserCenterDbConnection);
+					BaseLogManager.Instance.Add(UCdbHelper, userInfo, this.serviceName, "取得列表", MethodBase.GetCurrentMethod());
+
+					using (IDbHelper dbHelper = DbHelperFactory.GetHelper(BaseSystemInfo.BusinessDbType))
+					{
+						try
+						{
+							dbHelper.Open(BusinessDbConnection);
+							// 取得列表
+							#ClassName#Manager manager = new #ClassName#Manager(dbHelper, userInfo);
+							dataTable = manager.GetDataTableByPage(userId, auditStatus, searchValue, out recordCount, pageIndex, pageSize, sortExpression, sortDire);
+							dataTable.TableName = #ClassName#Entity.TableName;
+						}
+						catch (Exception ex)
+						{
+							BaseExceptionManager.LogException(UCdbHelper, userInfo, ex);
+							throw ex;
+						}
+						finally
+						{
+							dbHelper.Close();
+						}
+					}
+				}
+				catch (Exception ex)
+				{
+					BaseExceptionManager.LogException(UCdbHelper, userInfo, ex);
+					throw ex;
+				}
+				finally
+				{
+					UCdbHelper.Close();
+				}
+			}
+
+			// 写入调试信息
+			#if (DEBUG)
+				BaseBusinessLogic.EndDebug(MethodBase.GetCurrentMethod(), milliStart);
+			#endif
+
+			return dataTable;
+		}
+		#endregion
+
+		#region public #ClassName#Entity GetEntity(BaseUserInfo userInfo, string id) 取得实体
+		/// <summary>
+		/// 取得实体
+		/// </summary>
+		/// <param name="userInfo">用户</param>
+		/// <param name="id">主鍵</param>
+		/// <returns>实体</returns>
+		public #ClassName#Entity GetEntity(BaseUserInfo userInfo, string id)
+		{
+			// 写入调试信息
+			#if (DEBUG)
+				int milliStart = BaseBusinessLogic.StartDebug(userInfo, MethodBase.GetCurrentMethod());
+			#endif
+
+			// 加強安全验证防止未登录用户调用
+			#if (!DEBUG)
+				LogOnService.UserIsLogOn(userInfo);
+			#endif
+
+			#ClassName#Entity entity = null;
+
+			using (IDbHelper UCdbHelper = DbHelperFactory.GetHelper(BaseSystemInfo.UserCenterDbType))
+			{
+				try
+				{
+					UCdbHelper.Open(UserCenterDbConnection);
+					BaseLogManager.Instance.Add(UCdbHelper, userInfo, this.serviceName, "取得实体", MethodBase.GetCurrentMethod());
+					
+					using (IDbHelper dbHelper = DbHelperFactory.GetHelper(BaseSystemInfo.BusinessDbType))
+					{
+						try
+						{
+							dbHelper.Open(BusinessDbConnection);
+							#ClassName#Manager manager = new #ClassName#Manager(dbHelper, userInfo);
+							entity = manager.GetEntity(id);
+						}
+						catch (Exception ex)
+						{
+							BaseExceptionManager.LogException(UCdbHelper, userInfo, ex);
+							throw ex;
+						}
+						finally
+						{
+							dbHelper.Close();
+						}
+					}
+				}
+				catch (Exception ex)
+				{
+					BaseExceptionManager.LogException(UCdbHelper, userInfo, ex);
+					throw ex;
+				}
+				finally
+				{
+					UCdbHelper.Close();
+				}
+			}
+
+			// 写入调试信息
+			#if (DEBUG)
+				BaseBusinessLogic.EndDebug(MethodBase.GetCurrentMethod(), milliStart);
+			#endif
+
+			return entity;
+		}
+		#endregion
+
+		#region public int Update(BaseUserInfo userInfo, #ClassName#Entity entity, out string statusCode, out string statusMessage) 更新实体
+		/// <summary>
+		/// 更新实体
+		/// </summary>
+		/// <param name="userInfo">用户</param>
+		/// <param name="entity">实体</param>
+		/// <param name="statusCode">返回状态码</param>
+		/// <param name="statusMessage">返回状态信息</param>
+		/// <returns>影响行数</returns>
+		public int Update(BaseUserInfo userInfo, #ClassName#Entity entity, out string statusCode, out string statusMessage)
+		{
+			// 写入调试信息
+			#if (DEBUG)
+				int milliStart = BaseBusinessLogic.StartDebug(userInfo, MethodBase.GetCurrentMethod());
+			#endif
+
+			// 加強安全验证防止未登录用户调用
+			#if (!DEBUG)
+				LogOnService.UserIsLogOn(userInfo);
+			#endif
+
+			int returnValue = 0;
+			statusCode = string.Empty;
+
+			using (IDbHelper UCdbHelper = DbHelperFactory.GetHelper(BaseSystemInfo.UserCenterDbType))
+			{
+				try
+				{
+					UCdbHelper.Open(UserCenterDbConnection);
+					BaseLogManager.Instance.Add(UCdbHelper, userInfo, this.serviceName, "更新实体", MethodBase.GetCurrentMethod());
+					
+					using (IDbHelper dbHelper = DbHelperFactory.GetHelper(BaseSystemInfo.BusinessDbType))
+					{
+						try
+						{
+							dbHelper.Open(BusinessDbConnection);
+							#ClassName#Manager manager = new #ClassName#Manager(dbHelper, userInfo);
+							returnValue = manager.UpdateEntity(entity);
+							// returnValue = manager.Update(entity, out statusCode);
+							statusMessage = manager.GetStateMessage(statusCode);
+						}
+						catch (Exception ex)
+						{
+							BaseExceptionManager.LogException(UCdbHelper, userInfo, ex);
+							throw ex;
+						}
+						finally
+						{
+							dbHelper.Close();
+						}
+					}
+				}
+				catch (Exception ex)
+				{
+					BaseExceptionManager.LogException(UCdbHelper, userInfo, ex);
+					throw ex;
+				}
+				finally
+				{
+					UCdbHelper.Close();
+				}
+			}
+
+			// 写入调试信息
+			#if (DEBUG)
+				BaseBusinessLogic.EndDebug(MethodBase.GetCurrentMethod(), milliStart);
+			#endif
+
+			return returnValue;
+		}
+		#endregion
+
+		#region public DataTable GetDataTableByIds(BaseUserInfo userInfo, string[] ids) 根据主键数组获取数据
+		/// <summary>
+		/// 根据主键数组获取数据
+		/// </summary>
+		/// <param name="userInfo">用户</param>
+		/// <param name="ids">主鍵</param>
+		/// <returns>数据表</returns>
+		public DataTable GetDataTableByIds(BaseUserInfo userInfo, string[] ids)
+		{
+			// 写入调试信息
+			#if (DEBUG)
+				int milliStart = BaseBusinessLogic.StartDebug(userInfo, MethodBase.GetCurrentMethod());
+			#endif
+
+			// 加強安全验证防止未登录用户调用
+			#if (!DEBUG)
+				LogOnService.UserIsLogOn(userInfo);
+			#endif
+
+			DataTable dataTable = new DataTable(#ClassName#Entity.TableName);
+
+			using (IDbHelper UCdbHelper = DbHelperFactory.GetHelper(BaseSystemInfo.UserCenterDbType))
+			{
+				try
+				{
+					UCdbHelper.Open(UserCenterDbConnection);
+					BaseLogManager.Instance.Add(UCdbHelper, userInfo, this.serviceName, "根据主键数组获取数据", MethodBase.GetCurrentMethod());
+					
+					using (IDbHelper dbHelper = DbHelperFactory.GetHelper(BaseSystemInfo.BusinessDbType))
+					{
+						try
+						{
+							dbHelper.Open(BusinessDbConnection);
+							#ClassName#Manager manager = new #ClassName#Manager(dbHelper, userInfo);
+							dataTable = manager.GetDataTable(#ClassName#Entity.FieldId, ids, #ClassName#Entity.FieldSortCode);
+							dataTable.TableName = #ClassName#Entity.TableName;
+						}
+						catch (Exception ex)
+						{
+							BaseExceptionManager.LogException(UCdbHelper, userInfo, ex);
+							throw ex;
+						}
+						finally
+						{
+							dbHelper.Close();
+						}
+					}
+				}
+				catch (Exception ex)
+				{
+					BaseExceptionManager.LogException(UCdbHelper, userInfo, ex);
+					throw ex;
+				}
+				finally
+				{
+					UCdbHelper.Close();
+				}
+			}
+
+			// 写入调试信息
+			#if (DEBUG)
+				BaseBusinessLogic.EndDebug(MethodBase.GetCurrentMethod(), milliStart);
+			#endif
+
+			return dataTable;
+		}
+		#endregion
+		
+		#region public DataTable GetDataTableByValues(BaseUserInfo userInfo, List<KeyValuePair<string, object>> parameters) 根据条件获取数据
+		/// <summary>
+		/// 根据条件获取数据
+		/// </summary>
+		/// <param name="userInfo">用户</param>
+		/// <param name="names">字段</param>
+		/// <param name="values">值</param>
+		/// <returns>数据表</returns>
+		public DataTable GetDataTableByValues(BaseUserInfo userInfo, List<KeyValuePair<string, object>> parameters)
+		{
+			// 写入调试信息
+			#if (DEBUG)
+				int milliStart = BaseBusinessLogic.StartDebug(userInfo, MethodBase.GetCurrentMethod());
+			#endif
+
+			// 加強安全验证防止未登录用户调用
+			#if (!DEBUG)
+				LogOnService.UserIsLogOn(userInfo);
+			#endif
+
+			DataTable dataTable = new DataTable(#ClassName#Entity.TableName);
+
+			using (IDbHelper UCdbHelper = DbHelperFactory.GetHelper(BaseSystemInfo.UserCenterDbType))
+			{
+				try
+				{
+					UCdbHelper.Open(UserCenterDbConnection);
+					BaseLogManager.Instance.Add(UCdbHelper, userInfo, this.serviceName, "根据条件获取数据", MethodBase.GetCurrentMethod());
+					
+					using (IDbHelper dbHelper = DbHelperFactory.GetHelper(BaseSystemInfo.BusinessDbType))
+					{
+						try
+						{
+							dbHelper.Open(BusinessDbConnection);
+							// 根据条件获取数据
+							#ClassName#Manager manager = new #ClassName#Manager(dbHelper, userInfo);
+							dataTable = manager.GetDataTable(parameters);
+							dataTable.TableName = #ClassName#Entity.TableName;
+						}
+						catch (Exception ex)
+						{
+							BaseExceptionManager.LogException(UCdbHelper, userInfo, ex);
+							throw ex;
+						}
+						finally
+						{
+							dbHelper.Close();
+						}
+					}
+				}
+				catch (Exception ex)
+				{
+					BaseExceptionManager.LogException(UCdbHelper, userInfo, ex);
+					throw ex;
+				}
+				finally
+				{
+					UCdbHelper.Close();
+				}
+			}
+
+			// 写入调试信息
+			#if (DEBUG)
+				BaseBusinessLogic.EndDebug(MethodBase.GetCurrentMethod(), milliStart);
+			#endif
+
+			return dataTable;
+		}
+		#endregion
+		
+		#region public int BatchSave(BaseUserInfo userInfo, List<#ClassName#Entity> entites) 批量存储实体
+		/// <summary>
+		/// 批量存储实体
+		/// </summary>
+		/// <param name="userInfo">用户</param>
+		/// <param name="entites">实体列表</param>
+		/// <returns>影响行数</returns>
+		public int BatchSave(BaseUserInfo userInfo, List<#ClassName#Entity> entites)
+		{
+			// 写入调试信息
+			#if (DEBUG)
+				int milliStart = BaseBusinessLogic.StartDebug(userInfo, MethodBase.GetCurrentMethod());
+			#endif
+
+			// 加強安全验证防止未登录用户调用
+			#if (!DEBUG)
+				LogOnService.UserIsLogOn(userInfo);
+			#endif
+
+			int returnValue = 0;
+
+			using (IDbHelper UCdbHelper = DbHelperFactory.GetHelper(BaseSystemInfo.UserCenterDbType))
+			{
+				try
+				{
+					UCdbHelper.Open(UserCenterDbConnection);
+					BaseLogManager.Instance.Add(UCdbHelper, userInfo, this.serviceName, "批量存储实体", MethodBase.GetCurrentMethod());
+
+					using (IDbHelper dbHelper = DbHelperFactory.GetHelper(BaseSystemInfo.BusinessDbType))
+					{
+						try
+						{
+							dbHelper.Open(BusinessDbConnection);
+							#ClassName#Manager manager = new #ClassName#Manager(dbHelper, userInfo);
+							// returnValue = manager.BatchSave(entites);
+							foreach (var entity in entites)
+							{
+								returnValue += manager.Update(entity);
+							}
+						}
+						catch (Exception ex)
+						{
+							BaseExceptionManager.LogException(UCdbHelper, userInfo, ex);
+							throw ex;
+						}
+						finally
+						{
+							dbHelper.Close();
+						}
+					}
+				}
+				catch (Exception ex)
+				{
+					BaseExceptionManager.LogException(UCdbHelper, userInfo, ex);
+					throw ex;
+				}
+				finally
+				{
+					UCdbHelper.Close();
+				}
+			}
+
+			// 写入调试信息
+			#if (DEBUG)
+				BaseBusinessLogic.EndDebug(MethodBase.GetCurrentMethod(), milliStart);
+			#endif
+
+			return returnValue;
+		}
+		#endregion
+		
+		#region public int Delete(BaseUserInfo userInfo, string id) 删除数据
+		/// <summary>
+		/// 删除数据
+		/// </summary>
+		/// <param name="userInfo">用户</param>
+		/// <param name="id">主鍵</param>
+		/// <returns>数据表</returns>
+		public int Delete(BaseUserInfo userInfo, string id)
+		{
+			// 写入调试信息
+			#if (DEBUG)
+				int milliStart = BaseBusinessLogic.StartDebug(userInfo, MethodBase.GetCurrentMethod());
+			#endif
+
+			// 加強安全验证防止未登录用户调用
+			#if (!DEBUG)
+				LogOnService.UserIsLogOn(userInfo);
+			#endif
+
+			int returnValue = 0;
+
+			using (IDbHelper UCdbHelper = DbHelperFactory.GetHelper(BaseSystemInfo.UserCenterDbType))
+			{
+				try
+				{
+					UCdbHelper.Open(UserCenterDbConnection);
+					BaseLogManager.Instance.Add(UCdbHelper, userInfo, this.serviceName, "删除数据", MethodBase.GetCurrentMethod());
+					
+					using (IDbHelper dbHelper = DbHelperFactory.GetHelper(BaseSystemInfo.BusinessDbType))
+					{
+						try
+						{
+							dbHelper.Open(BusinessDbConnection);
+							#ClassName#Manager manager = new #ClassName#Manager(dbHelper, userInfo);
+							returnValue = manager.Delete(id);
+						}
+						catch (Exception ex)
+						{
+							BaseExceptionManager.LogException(UCdbHelper, userInfo, ex);
+							throw ex;
+						}
+						finally
+						{
+							dbHelper.Close();
+						}
+					}
+				}
+				catch (Exception ex)
+				{
+					BaseExceptionManager.LogException(UCdbHelper, userInfo, ex);
+					throw ex;
+				}
+				finally
+				{
+					UCdbHelper.Close();
+				}
+			}
+
+			// 写入调试信息
+			#if (DEBUG)
+				BaseBusinessLogic.EndDebug(MethodBase.GetCurrentMethod(), milliStart);
+			#endif
+
+			return returnValue;
+		}
+		#endregion
+
+		#region public int BatchDelete(BaseUserInfo userInfo, string[] ids) 批量删除数据
+		/// <summary>
+		/// 批量删除数据
+		/// </summary>
+		/// <param name="userInfo">用户</param>
+		/// <param name="ids">主键数组</param>
+		/// <returns>影响行数</returns>
+		public int BatchDelete(BaseUserInfo userInfo, string[] ids)
+		{
+			// 写入调试信息
+			#if (DEBUG)
+				int milliStart = BaseBusinessLogic.StartDebug(userInfo, MethodBase.GetCurrentMethod());
+			#endif
+
+			// 加強安全验证防止未登录用户调用
+			#if (!DEBUG)
+				LogOnService.UserIsLogOn(userInfo);
+			#endif
+
+			int returnValue = 0;
+
+			using (IDbHelper UCdbHelper = DbHelperFactory.GetHelper(BaseSystemInfo.UserCenterDbType))
+			{
+				try
+				{
+					UCdbHelper.Open(UserCenterDbConnection);
+					BaseLogManager.Instance.Add(UCdbHelper, userInfo, this.serviceName, "批量删除数据", MethodBase.GetCurrentMethod());
+
+					using (IDbHelper dbHelper = DbHelperFactory.GetHelper(BaseSystemInfo.BusinessDbType))
+					{
+						try
+						{
+							dbHelper.Open(BusinessDbConnection);
+							// 开始事务
+							dbHelper.BeginTransaction();
+							#ClassName#Manager manager = new #ClassName#Manager(dbHelper, userInfo);
+							returnValue = manager.Delete(ids);
+							// 提交事务
+							dbHelper.CommitTransaction();
+						}
+						catch (Exception ex)
+						{
+							// 回滚事务
+							dbHelper.RollbackTransaction();
+							BaseExceptionManager.LogException(UCdbHelper, userInfo, ex);
+							throw ex;
+						}
+						finally
+						{
+							dbHelper.Close();
+						}
+					}
+				}
+				catch (Exception ex)
+				{
+					BaseExceptionManager.LogException(UCdbHelper, userInfo, ex);
+					throw ex;
+				}
+				finally
+				{
+					UCdbHelper.Close();
+				}
+			}
+
+			// 写入调试信息
+			#if (DEBUG)
+				BaseBusinessLogic.EndDebug(MethodBase.GetCurrentMethod(), milliStart);
+			#endif
+
+			return returnValue;
+		}
+		#endregion
+
+		#region public int SetDeleted(BaseUserInfo userInfo, string[] ids) 批量设置删除标志
+		/// <summary>
+		/// 批量设置删除标志
+		/// </summary>
+		/// <param name="userInfo">用户</param>
+		/// <param name="ids">主键数组</param>
+		/// <returns>影响行数</returns>
+		public int SetDeleted(BaseUserInfo userInfo, string[] ids)
+		{
+			// 写入调试信息
+			#if (DEBUG)
+				int milliStart = BaseBusinessLogic.StartDebug(userInfo, MethodBase.GetCurrentMethod());
+			#endif
+
+			// 加強安全验证防止未登录用户调用
+			#if (!DEBUG)
+				LogOnService.UserIsLogOn(userInfo);
+			#endif
+
+			int returnValue = 0;
+
+			using (IDbHelper UCdbHelper = DbHelperFactory.GetHelper(BaseSystemInfo.UserCenterDbType))
+			{
+				try
+				{
+					UCdbHelper.Open(UserCenterDbConnection);
+					BaseLogManager.Instance.Add(UCdbHelper, userInfo, this.serviceName, "批量设置删除标志", MethodBase.GetCurrentMethod());
+					
+					using (IDbHelper dbHelper = DbHelperFactory.GetHelper(BaseSystemInfo.BusinessDbType))
+					{
+						try
+						{
+							dbHelper.Open(BusinessDbConnection);
+							#ClassName#Manager manager = new #ClassName#Manager(dbHelper, userInfo);
+							returnValue = manager.SetDeleted(ids);
+						}
+						catch (Exception ex)
+						{
+							BaseExceptionManager.LogException(UCdbHelper, userInfo, ex);
+							throw ex;
+						}
+						finally
+						{
+							dbHelper.Close();
+						}
+					}
+				}
+				catch (Exception ex)
+				{
+					BaseExceptionManager.LogException(UCdbHelper, userInfo, ex);
+					throw ex;
+				}
+				finally
+				{
+					UCdbHelper.Close();
+				}
+			}
+
+			// 写入调试信息
+			#if (DEBUG)
+				BaseBusinessLogic.EndDebug(MethodBase.GetCurrentMethod(), milliStart);
+			#endif
+
+			return returnValue;
+		}
+		#endregion
+	}
+}

@@ -1,0 +1,17 @@
+D:\DotNet.Common\DotNet.CommonV3.7\DotNet.Utilities\bin\Release\DotNet.Utilities.dll
+D:\DotNet.Common\DotNet.CommonV3.7\DotNet.Utilities\bin\Release\DotNet.Utilities.pdb
+D:\DotNet.Common\DotNet.CommonV3.7\DotNet.Utilities\bin\Release\ChnCharInfo.dll
+D:\DotNet.Common\DotNet.CommonV3.7\DotNet.Utilities\bin\Release\NPOI.dll
+D:\DotNet.Common\DotNet.CommonV3.7\DotNet.Utilities\bin\Release\ChnCharInfo.xml
+D:\DotNet.Common\DotNet.CommonV3.7\DotNet.Utilities\bin\Release\zh-CN\ChnCharInfo.resources.dll
+D:\DotNet.Common\DotNet.CommonV3.7\DotNet.Utilities\obj\Release\ResolveAssemblyReference.cache
+D:\DotNet.Common\DotNet.CommonV3.7\DotNet.Utilities\obj\Release\DotNet.Utilities.dll
+D:\DotNet.Common\DotNet.CommonV3.7\DotNet.Utilities\obj\Release\DotNet.Utilities.pdb
+F:\权限管理-JiRi\DotNet.CommonV3.7_20120724\DotNet.Utilities\bin\Release\DotNet.Utilities.dll
+F:\权限管理-JiRi\DotNet.CommonV3.7_20120724\DotNet.Utilities\bin\Release\DotNet.Utilities.pdb
+F:\权限管理-JiRi\DotNet.CommonV3.7_20120724\DotNet.Utilities\bin\Release\ChnCharInfo.dll
+F:\权限管理-JiRi\DotNet.CommonV3.7_20120724\DotNet.Utilities\bin\Release\ChnCharInfo.xml
+F:\权限管理-JiRi\DotNet.CommonV3.7_20120724\DotNet.Utilities\bin\Release\zh-CN\ChnCharInfo.resources.dll
+F:\权限管理-JiRi\DotNet.CommonV3.7_20120724\DotNet.Utilities\obj\Release\ResolveAssemblyReference.cache
+F:\权限管理-JiRi\DotNet.CommonV3.7_20120724\DotNet.Utilities\obj\Release\DotNet.Utilities.dll
+F:\权限管理-JiRi\DotNet.CommonV3.7_20120724\DotNet.Utilities\obj\Release\DotNet.Utilities.pdb

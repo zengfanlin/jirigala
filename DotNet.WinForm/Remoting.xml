@@ -1,0 +1,36 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<configuration>
+  <system.runtime.remoting>
+    <application name="DotNet.WinForm">
+      <client displayName="Client for DotNet.RemotingServer">
+        <wellknown type="DotNet.Service.AccreditService, DotNet.Service" url="tcp://10.214.59.147:7888/AccreditService.rem" />
+        <wellknown type="DotNet.Service.BusinessCardService, DotNet.Service" url="tcp://10.214.59.147:7888/BusinessCardService.rem" />
+        <wellknown type="DotNet.Service.DbConnectionService, DotNet.Service" url="tcp://10.214.59.147:7888/DbConnectionService.rem" />
+        <wellknown type="DotNet.Service.ExceptionService, DotNet.Service" url="tcp://10.214.59.147:7888/ExceptionService.rem" />
+        <wellknown type="DotNet.Service.FileService, DotNet.Service" url="tcp://10.214.59.147:7888/FileService.rem" />
+        <wellknown type="DotNet.Service.FolderService, DotNet.Service" url="tcp://10.214.59.147:7888/FolderService.rem" />
+        <wellknown type="DotNet.Service.ItemDetailsService, DotNet.Service" url="tcp://10.214.59.147:7888/ItemDetailsService.rem" />
+        <wellknown type="DotNet.Service.ItemsService, DotNet.Service" url="tcp://10.214.59.147:7888/ItemsService.rem" />
+        <wellknown type="DotNet.Service.LogOnService, DotNet.Service" url="tcp://10.214.59.147:7888/LogOnService.rem" />
+        <wellknown type="DotNet.Service.LogService, DotNet.Service" url="tcp://10.214.59.147:7888/LogService.rem" />
+        <wellknown type="DotNet.Service.MessageService, DotNet.Service" url="tcp://10.214.59.147:7888/MessageService.rem" />
+        <wellknown type="DotNet.Service.ModuleService, DotNet.Service" url="tcp://10.214.59.147:7888/ModuleService.rem" />
+        <wellknown type="DotNet.Service.OrganizeService, DotNet.Service" url="tcp://10.214.59.147:7888/OrganizeService.rem" />
+        <wellknown type="DotNet.Service.ParameterService, DotNet.Service" url="tcp://10.214.59.147:7888/ParameterService.rem" />
+        <wellknown type="DotNet.Service.PermissionItemService, DotNet.Service" url="tcp://10.214.59.147:7888/PermissionItemService.rem" />
+        <wellknown type="DotNet.Service.PermissionService, DotNet.Service" url="tcp://10.214.59.147:7888/PermissionService.rem" />
+        <wellknown type="DotNet.Service.RoleService, DotNet.Service" url="tcp://10.214.59.147:7888/RoleService.rem" />
+        <wellknown type="DotNet.Service.SequenceService, DotNet.Service" url="tcp://10.214.59.147:7888/SequenceService.rem" />
+        <wellknown type="DotNet.Service.StaffService, DotNet.Service" url="tcp://10.214.59.147:7888/StaffService.rem" />
+        <wellknown type="DotNet.Service.UserService, DotNet.Service" url="tcp://10.214.59.147:7888/UserService.rem" />
+        <wellknown type="DotNet.Service.WorkReportService, DotNet.Service" url="tcp://10.214.59.147:7888/WorkReportService.rem" />
+        <wellknown type="DotNet.Service.ServiceManager, DotNet.Service" url="tcp://10.214.59.147:7888/ServiceManager.rem" />
+      </client>
+      <channels>
+        <channel ref="tcp" displayName="TCP Channel (ServiceManager)"/>
+        <channel ref="http" displayName="HTTP Channel (ServiceManager)"/>
+        <channel ref="ipc" displayName="IPC Channel (ServiceManager)"/>
+      </channels>
+    </application>
+  </system.runtime.remoting>
+</configuration>

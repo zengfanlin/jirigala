@@ -1,0 +1,9 @@
+D:\DotNet.Common\DotNet.CommonV3.7\DotNet.Utilities\bin\Debug\DotNet.Utilities.dll
+D:\DotNet.Common\DotNet.CommonV3.7\DotNet.Utilities\bin\Debug\DotNet.Utilities.pdb
+D:\DotNet.Common\DotNet.CommonV3.7\DotNet.Utilities\bin\Debug\ChnCharInfo.dll
+D:\DotNet.Common\DotNet.CommonV3.7\DotNet.Utilities\bin\Debug\ChnCharInfo.xml
+D:\DotNet.Common\DotNet.CommonV3.7\DotNet.Utilities\bin\Debug\zh-CN\ChnCharInfo.resources.dll
+D:\DotNet.Common\DotNet.CommonV3.7\DotNet.Utilities\obj\Debug\ResolveAssemblyReference.cache
+D:\DotNet.Common\DotNet.CommonV3.7\DotNet.Utilities\obj\Debug\DotNet.Utilities.dll
+D:\DotNet.Common\DotNet.CommonV3.7\DotNet.Utilities\obj\Debug\DotNet.Utilities.pdb
+D:\DotNet.Common\DotNet.CommonV3.7\DotNet.Utilities\bin\Debug\NPOI.dll

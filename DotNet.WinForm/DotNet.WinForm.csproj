@@ -1,0 +1,2580 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="4.0">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{A9AF7337-02AC-4793-BCB7-270FBE0AF2C3}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>DotNet.WinForm</RootNamespace>
+    <AssemblyName>DotNet.WinForm</AssemblyName>
+    <StartupObject>DotNet.WinForm.Program</StartupObject>
+    <ApplicationIcon>App.ico</ApplicationIcon>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <OldToolsVersion>3.5</OldToolsVersion>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <TargetFrameworkProfile>
+    </TargetFrameworkProfile>
+    <PublishUrl>\\192.168.0.66\E%24\messager\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Unc</InstallFrom>
+    <UpdateEnabled>true</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <UpdateUrl>\\jirigala\setup\</UpdateUrl>
+    <SupportUrl>http://www.cnblogs.com/jirigala/archive/2011/12/17/2291252.html</SupportUrl>
+    <ErrorReportUrl>http://www.cnblogs.com/jirigala/archive/2011/12/17/2291253.html</ErrorReportUrl>
+    <ProductName>通用权限管理系统</ProductName>
+    <PublisherName>Hairihan TECH</PublisherName>
+    <SuiteName>C#.NET及ASP.NET通用权限管理系统</SuiteName>
+    <MinimumRequiredVersion>3.7.0.0</MinimumRequiredVersion>
+    <WebPage>index.htm</WebPage>
+    <OpenBrowserOnPublish>false</OpenBrowserOnPublish>
+    <AutorunEnabled>true</AutorunEnabled>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>3.7.0.0</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <CreateDesktopShortcut>true</CreateDesktopShortcut>
+    <PublishWizardCompleted>true</PublishWizardCompleted>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+    <BootstrapperComponentsLocation>Relative</BootstrapperComponentsLocation>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>
+    </DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignManifests>false</SignManifests>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestCertificateThumbprint>816E21E58DD4991631760595CABD84C2E57DDFB8</ManifestCertificateThumbprint>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestKeyFile>DotNet.WinForm_TemporaryKey.pfx</ManifestKeyFile>
+  </PropertyGroup>
+  <PropertyGroup>
+    <GenerateManifests>false</GenerateManifests>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignAssembly>false</SignAssembly>
+  </PropertyGroup>
+  <PropertyGroup>
+    <TargetZone>LocalIntranet</TargetZone>
+  </PropertyGroup>
+  <PropertyGroup />
+  <PropertyGroup />
+  <PropertyGroup />
+  <PropertyGroup>
+    <NoWin32Manifest>true</NoWin32Manifest>
+  </PropertyGroup>
+  <PropertyGroup>
+    <AssemblyOriginatorKeyFile>
+    </AssemblyOriginatorKeyFile>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Aspose.Cells">
+      <HintPath>bin\Debug\Aspose.Cells.dll</HintPath>
+    </Reference>
+    <Reference Include="DevComponents.DotNetBar2">
+      <HintPath>bin\Debug\DevComponents.DotNetBar2.dll</HintPath>
+    </Reference>
+    <Reference Include="ICSharpCode.TextEditor">
+      <HintPath>..\External\ICSharpCode.TextEditor.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="Microsoft.Vbe.Interop, Version=12.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c">
+      <SpecificVersion>False</SpecificVersion>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+      <HintPath>bin\Debug\Microsoft.Vbe.Interop.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Vbe.Interop.Forms">
+      <HintPath>bin\Debug\Microsoft.Vbe.Interop.Forms.dll</HintPath>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="NPOI">
+      <HintPath>bin\Debug\NPOI.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Runtime.Remoting" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.ServiceModel" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="BusinessCard\Business\BaseBusinessCardEntity.cs" />
+    <Compile Include="BusinessCard\Business\BaseBusinessCardManager.cs" />
+    <Compile Include="BusinessCard\Business\BaseBusinessCardTable.cs" />
+    <Compile Include="BusinessCard\Business\BusinessCardService.cs" />
+    <Compile Include="BusinessCard\Business\IBusinessCardService.cs" />
+    <Compile Include="BusinessCard\FrmBusinessCardAdd.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BusinessCard\FrmBusinessCardAdd.designer.cs">
+      <DependentUpon>FrmBusinessCardAdd.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BusinessCard\FrmBusinessCardAdmin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BusinessCard\FrmBusinessCardAdmin.designer.cs">
+      <DependentUpon>FrmBusinessCardAdmin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BusinessCard\FrmBusinessCardEdit.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BusinessCard\FrmBusinessCardEdit.designer.cs">
+      <DependentUpon>FrmBusinessCardEdit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CodeGenerator\Business\CodeGenerator.cs" />
+    <Compile Include="CodeGenerator\Business\CodeGenerator.Entity.cs" />
+    <Compile Include="CodeGenerator\Business\CodeGenerator.GetListPage.cs" />
+    <Compile Include="CodeGenerator\Business\CodeGenerator.Manager.cs" />
+    <Compile Include="CodeGenerator\Business\CodeGenerator.Table.cs" />
+    <Compile Include="CodeGenerator\Business\CodeGenerator.DBSQL.cs" />
+    <Compile Include="CodeGenerator\Business\PdmReader.cs" />
+    <Compile Include="CodeGenerator\Business\SettingHelper.cs" />
+    <Compile Include="CodeGenerator\Business\CodeGenerator.GetShowPage.cs" />
+    <Compile Include="CodeGenerator\Business\CodeGenerator.GetEditPage.cs" />
+    <Compile Include="CodeGenerator\Business\CodeGenerator.GetSearch.cs" />
+    <Compile Include="CodeGenerator\FrmCodeGenerator.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CodeGenerator\FrmCodeGenerator.designer.cs">
+      <DependentUpon>FrmCodeGenerator.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CodeGenerator\RegionFoldingStrategy.cs" />
+    <Compile Include="CodeGenerator\UcCodeView.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="CommonModule\CSPager\AsposeExcelTools.cs" />
+    <Compile Include="CommonModule\CSPager\CallCtrlSafety.cs" />
+    <Compile Include="CommonModule\CSPager\CoolPrintPreviewControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="CommonModule\CSPager\CoolPrintPreviewDialog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CommonModule\CSPager\CoolPrintPreviewDialog.designer.cs">
+      <DependentUpon>CoolPrintPreviewDialog.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CommonModule\CSPager\Export2Excel.cs" />
+    <Compile Include="CommonModule\CSPager\Pager.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="CommonModule\CSPager\PagerInfo.cs" />
+    <Compile Include="CommonModule\CSPager\PrintDGV.cs" />
+    <Compile Include="CommonModule\CSPager\PrintOptions.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CommonModule\CSPager\PrintOptions.designer.cs">
+      <DependentUpon>PrintOptions.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CommonModule\CSPager\RegistryHelper.cs" />
+    <Compile Include="CommonModule\CSPager\SortableBindingList.cs" />
+    <Compile Include="CommonModule\CSPager\WinGridView.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="CommonModule\CSPager\WinGridView.designer.cs">
+      <DependentUpon>WinGridView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CommonModule\CSPager\WinGridViewPager.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="CommonModule\CSPager\WinGridViewPager.designer.cs">
+      <DependentUpon>WinGridViewPager.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CommonModule\CSPager\WinListViewPager.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="CommonModule\CSPager\WinListViewPager.designer.cs">
+      <DependentUpon>WinListViewPager.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CommonModule\File\FrmDocumentAdd.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CommonModule\File\FrmDocumentAdd.designer.cs">
+      <DependentUpon>FrmDocumentAdd.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CommonModule\File\FrmDocumentEdit.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CommonModule\File\FrmDocumentEdit.designer.cs">
+      <DependentUpon>FrmDocumentEdit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CommonModule\File\FrmFileAdmin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CommonModule\File\FrmFileAdmin.designer.cs">
+      <DependentUpon>FrmFileAdmin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CommonModule\File\FrmFileEdit.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CommonModule\File\FrmFileEdit.designer.cs">
+      <DependentUpon>FrmFileEdit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CommonModule\File\FrmFolderAdd.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CommonModule\File\FrmFolderAdd.designer.cs">
+      <DependentUpon>FrmFolderAdd.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CommonModule\File\FrmFolderAdmin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CommonModule\File\FrmFolderAdmin.designer.cs">
+      <DependentUpon>FrmFolderAdmin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CommonModule\File\FrmFolderEdit.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CommonModule\File\FrmFolderEdit.designer.cs">
+      <DependentUpon>FrmFolderEdit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CommonModule\File\FrmFolderMultiSelect.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CommonModule\File\FrmFolderMultiSelect.designer.cs">
+      <DependentUpon>FrmFolderMultiSelect.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CommonModule\File\FrmFolderPermission.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CommonModule\File\FrmFolderPermission.designer.cs">
+      <DependentUpon>FrmFolderPermission.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CommonModule\File\FrmFolderSelect.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CommonModule\File\FrmFolderSelect.designer.cs">
+      <DependentUpon>FrmFolderSelect.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CommonModule\File\FrmPicture.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CommonModule\File\FrmPicture.designer.cs">
+      <DependentUpon>FrmPicture.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CommonModule\File\UCAttachment.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="CommonModule\File\UCAttachment.designer.cs">
+      <DependentUpon>UCAttachment.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CommonModule\File\UCFolderSelect.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="CommonModule\File\UCFolderSelect.designer.cs">
+      <DependentUpon>UCFolderSelect.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CommonModule\File\UCPicture.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="CommonModule\File\UCPicture.designer.cs">
+      <DependentUpon>UCPicture.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CommonModule\Items\FrmItemDetailsAdd.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CommonModule\Items\FrmItemDetailsAdd.designer.cs">
+      <DependentUpon>FrmItemDetailsAdd.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CommonModule\Items\FrmItemDetailsAdmin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CommonModule\Items\FrmItemDetailsAdmin.designer.cs">
+      <DependentUpon>FrmItemDetailsAdmin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CommonModule\Items\FrmItemDetailsEdit.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CommonModule\Items\FrmItemDetailsEdit.designer.cs">
+      <DependentUpon>FrmItemDetailsEdit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CommonModule\Items\FrmItemDetailsMultiSelect.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CommonModule\Items\FrmItemDetailsMultiSelect.designer.cs">
+      <DependentUpon>FrmItemDetailsMultiSelect.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CommonModule\Items\FrmItemDetailsSelect.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CommonModule\Items\FrmItemDetailsSelect.designer.cs">
+      <DependentUpon>FrmItemDetailsSelect.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CommonModule\Items\FrmItemDetailsTreeSelect.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CommonModule\Items\FrmItemDetailsTreeSelect.designer.cs">
+      <DependentUpon>FrmItemDetailsTreeSelect.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CommonModule\Items\FrmItemsAdd.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CommonModule\Items\FrmItemsAdd.designer.cs">
+      <DependentUpon>FrmItemsAdd.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CommonModule\Items\FrmItemsAdmin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CommonModule\Items\FrmItemsAdmin.designer.cs">
+      <DependentUpon>FrmItemsAdmin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CommonModule\Items\FrmItemsEdit.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CommonModule\Items\FrmItemsEdit.designer.cs">
+      <DependentUpon>FrmItemsEdit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CommonModule\Items\UCItemDetailsTreeSelect.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="CommonModule\Items\UCItemDetailsTreeSelect.designer.cs">
+      <DependentUpon>UCItemDetailsTreeSelect.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CommonModule\LogOn\FrmConfig.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CommonModule\LogOn\FrmConfig.designer.cs">
+      <DependentUpon>FrmConfig.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CommonModule\LogOn\FrmScreenLock.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CommonModule\LogOn\FrmScreenLock.designer.cs">
+      <DependentUpon>FrmScreenLock.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CommonModule\LogOn\FrmLogOn.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CommonModule\LogOn\FrmLogOn.designer.cs">
+      <DependentUpon>FrmLogOn.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CommonModule\LogOn\FrmLogOnByCertificates.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CommonModule\LogOn\FrmLogOnByCertificates.designer.cs">
+      <DependentUpon>FrmLogOnByCertificates.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CommonModule\LogOn\FrmLogOnByName.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CommonModule\LogOn\FrmLogOnByName.designer.cs">
+      <DependentUpon>FrmLogOnByName.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CommonModule\LogOn\FrmLogOnSelect.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CommonModule\LogOn\FrmLogOnSelect.designer.cs">
+      <DependentUpon>FrmLogOnSelect.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CommonModule\LogOn\FrmSelectNetwork.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CommonModule\LogOn\FrmSelectNetwork.designer.cs">
+      <DependentUpon>FrmSelectNetwork.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CommonModule\LogOn\FrmSystemSecurity.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CommonModule\LogOn\FrmSystemSecurity.Designer.cs">
+      <DependentUpon>FrmSystemSecurity.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CommonModule\Log\FrmApplicationLogByDate.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CommonModule\Log\FrmApplicationLogByDate.designer.cs">
+      <DependentUpon>FrmApplicationLogByDate.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CommonModule\Log\FrmLogByModule.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CommonModule\Log\FrmLogByModule.designer.cs">
+      <DependentUpon>FrmLogByModule.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CommonModule\Log\FrmLogByUser.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CommonModule\Log\FrmLogByUser.designer.cs">
+      <DependentUpon>FrmLogByUser.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CommonModule\Log\FrmLogGeneral.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CommonModule\Log\FrmLogGeneral.designer.cs">
+      <DependentUpon>FrmLogGeneral.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CommonModule\Log\FrmSystemLogByDate.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CommonModule\Log\FrmSystemLogByDate.designer.cs">
+      <DependentUpon>FrmSystemLogByDate.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CommonModule\Permission\FrmOrganizePermissionAdmin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CommonModule\Permission\FrmOrganizePermissionAdmin.designer.cs">
+      <DependentUpon>FrmOrganizePermissionAdmin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CommonModule\Permission\FrmOrganizePermission.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CommonModule\Permission\FrmOrganizePermission.designer.cs">
+      <DependentUpon>FrmOrganizePermission.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CommonModule\ResourcePermission\FrmProjectRolePermissionAdmin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CommonModule\ResourcePermission\FrmProjectRolePermissionAdmin.designer.cs">
+      <DependentUpon>FrmProjectRolePermissionAdmin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CommonModule\ResourcePermission\FrmProjectUserPermissionAdmin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CommonModule\ResourcePermission\FrmProjectUserPermissionAdmin.designer.cs">
+      <DependentUpon>FrmProjectUserPermissionAdmin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CommonModule\ResourcePermission\FrmTableColumnsRolePermissionAdmin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CommonModule\ResourcePermission\FrmTableColumnsRolePermissionAdmin.designer.cs">
+      <DependentUpon>FrmTableColumnsRolePermissionAdmin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CommonModule\ResourcePermission\FrmTableColumnsUserPermissionAdmin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CommonModule\ResourcePermission\FrmTableColumnsUserPermissionAdmin.designer.cs">
+      <DependentUpon>FrmTableColumnsUserPermissionAdmin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CommonModule\Role\FrmRoleAdminList.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CommonModule\Role\FrmRoleAdminList.Designer.cs">
+      <DependentUpon>FrmRoleAdminList.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CommonModule\Role\FrmRoleWithUser.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CommonModule\Role\FrmRoleWithUser.Designer.cs">
+      <DependentUpon>FrmRoleWithUser.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CommonModule\Role\FrmRoleWithUserEdit.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CommonModule\Role\FrmRoleWithUserEdit.Designer.cs">
+      <DependentUpon>FrmRoleWithUserEdit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CommonModule\Staff\FrmImportStaff.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CommonModule\Staff\FrmImportStaff.designer.cs">
+      <DependentUpon>FrmImportStaff.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CommonModule\User\FrmUserOrganizeBatchSet.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CommonModule\User\FrmUserOrganizeBatchSet.designer.cs">
+      <DependentUpon>FrmUserOrganizeBatchSet.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CommonModule\Utilities\FrmPrint.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CommonModule\Utilities\FrmPrint.designer.cs">
+      <DependentUpon>FrmPrint.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CommonModule\WorkFlow\FrmUserRoleOrganizeSelect.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CommonModule\WorkFlow\FrmUserRoleOrganizeSelect.Designer.cs">
+      <DependentUpon>FrmUserRoleOrganizeSelect.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CommonModule\WorkFlow\UCWorkFlow.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="CommonModule\WorkFlow\UCWorkFlow.Designer.cs">
+      <DependentUpon>UCWorkFlow.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CommonModule\WorkFlow\UCWorkFlowStatr.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="CommonModule\WorkFlow\UCWorkFlowStatr.Designer.cs">
+      <DependentUpon>UCWorkFlowStatr.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmIE.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmIE.designer.cs">
+      <DependentUpon>FrmIE.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MDIMainForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MDIMainForm.designer.cs">
+      <DependentUpon>MDIMainForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SDIMainForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SDIMainForm.designer.cs">
+      <DependentUpon>SDIMainForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TabsMainForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TabsMainForm.designer.cs">
+      <DependentUpon>TabsMainForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CommonModule\Message\FrmMessage.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CommonModule\Message\FrmMessage.designer.cs">
+      <DependentUpon>FrmMessage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CommonModule\Message\FrmMessageBroadcast.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CommonModule\Message\FrmMessageBroadcast.designer.cs">
+      <DependentUpon>FrmMessageBroadcast.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CommonModule\Message\FrmMessageRead.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CommonModule\Message\FrmMessageRead.designer.cs">
+      <DependentUpon>FrmMessageRead.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CommonModule\Message\FrmMessageRemind.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CommonModule\Message\FrmMessageRemind.designer.cs">
+      <DependentUpon>FrmMessageRemind.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CommonModule\Message\FrmMessageSend.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CommonModule\Message\FrmMessageSend.designer.cs">
+      <DependentUpon>FrmMessageSend.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CommonModule\Message\ImagePopup.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CommonModule\Message\Tools.cs" />
+    <Compile Include="CommonModule\Module\FrmModuleAdd.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CommonModule\Module\FrmModuleAdd.designer.cs">
+      <DependentUpon>FrmModuleAdd.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CommonModule\Module\FrmModuleAdmin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CommonModule\Module\FrmModuleAdmin.designer.cs">
+      <DependentUpon>FrmModuleAdmin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CommonModule\Module\FrmModuleConfig.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CommonModule\Module\FrmModuleConfig.designer.cs">
+      <DependentUpon>FrmModuleConfig.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CommonModule\Module\FrmModuleEdit.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CommonModule\Module\FrmModuleEdit.designer.cs">
+      <DependentUpon>FrmModuleEdit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CommonModule\Module\FrmModuleMultiSelect.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CommonModule\Module\FrmModuleMultiSelect.designer.cs">
+      <DependentUpon>FrmModuleMultiSelect.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CommonModule\Module\FrmModulePermissionItemBatchSet.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CommonModule\Module\FrmModulePermissionItemBatchSet.designer.cs">
+      <DependentUpon>FrmModulePermissionItemBatchSet.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CommonModule\Module\FrmModuleSelect.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CommonModule\Module\FrmModuleSelect.designer.cs">
+      <DependentUpon>FrmModuleSelect.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CommonModule\Organize\FrmCompanySelect.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CommonModule\Organize\FrmCompanySelect.designer.cs">
+      <DependentUpon>FrmCompanySelect.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CommonModule\Organize\FrmOrganizeAdd.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CommonModule\Organize\FrmOrganizeAdd.designer.cs">
+      <DependentUpon>FrmOrganizeAdd.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CommonModule\Organize\FrmOrganizeAdmin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CommonModule\Organize\FrmOrganizeAdmin.designer.cs">
+      <DependentUpon>FrmOrganizeAdmin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CommonModule\Organize\FrmOrganizeCodeBuilder.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CommonModule\Organize\FrmOrganizeCodeBuilder.designer.cs">
+      <DependentUpon>FrmOrganizeCodeBuilder.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CommonModule\Organize\FrmOrganizeEdit.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CommonModule\Organize\FrmOrganizeEdit.designer.cs">
+      <DependentUpon>FrmOrganizeEdit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CommonModule\Organize\FrmOrganizeMultiSelect.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CommonModule\Organize\FrmOrganizeMultiSelect.designer.cs">
+      <DependentUpon>FrmOrganizeMultiSelect.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CommonModule\Organize\FrmOrganizeSelect.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CommonModule\Organize\FrmOrganizeSelect.designer.cs">
+      <DependentUpon>FrmOrganizeSelect.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CommonModule\PermissionItem\FrmPermissionItemAdd.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CommonModule\PermissionItem\FrmPermissionItemAdd.designer.cs">
+      <DependentUpon>FrmPermissionItemAdd.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CommonModule\PermissionItem\FrmPermissionItemAdmin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CommonModule\PermissionItem\FrmPermissionItemAdmin.designer.cs">
+      <DependentUpon>FrmPermissionItemAdmin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CommonModule\PermissionItem\FrmPermissionItemEdit.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CommonModule\PermissionItem\FrmPermissionItemEdit.designer.cs">
+      <DependentUpon>FrmPermissionItemEdit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CommonModule\PermissionItem\FrmPermissionItemModuleBatchSet.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CommonModule\PermissionItem\FrmPermissionItemModuleBatchSet.designer.cs">
+      <DependentUpon>FrmPermissionItemModuleBatchSet.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CommonModule\PermissionItem\FrmPermissionSelect.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CommonModule\PermissionItem\FrmPermissionSelect.designer.cs">
+      <DependentUpon>FrmPermissionSelect.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CommonModule\PermissionItem\FrmScopePermissionSelect.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CommonModule\PermissionItem\FrmScopePermissionSelect.designer.cs">
+      <DependentUpon>FrmScopePermissionSelect.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CommonModule\PermissionItem\FrmSetPermissionItem.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CommonModule\PermissionItem\FrmSetPermissionItem.designer.cs">
+      <DependentUpon>FrmSetPermissionItem.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CommonModule\PermissionScope\FrmRoleModulePermission.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CommonModule\PermissionScope\FrmRoleModulePermission.designer.cs">
+      <DependentUpon>FrmRoleModulePermission.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CommonModule\PermissionScope\FrmRoleModulePermissionBatchSet.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CommonModule\PermissionScope\FrmRoleModulePermissionBatchSet.designer.cs">
+      <DependentUpon>FrmRoleModulePermissionBatchSet.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CommonModule\PermissionScope\FrmRoleOrganizeScope.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CommonModule\PermissionScope\FrmRoleOrganizeScope.designer.cs">
+      <DependentUpon>FrmRoleOrganizeScope.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CommonModule\Permission\FrmRolePermission.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CommonModule\Permission\FrmRolePermission.designer.cs">
+      <DependentUpon>FrmRolePermission.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CommonModule\Permission\FrmRolePermission2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CommonModule\Permission\FrmRolePermission2.designer.cs">
+      <DependentUpon>FrmRolePermission2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CommonModule\Permission\FrmRolePermissionAdmin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CommonModule\Permission\FrmRolePermissionAdmin.designer.cs">
+      <DependentUpon>FrmRolePermissionAdmin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CommonModule\Permission\FrmRolePermissionBatchSet.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CommonModule\Permission\FrmRolePermissionBatchSet.designer.cs">
+      <DependentUpon>FrmRolePermissionBatchSet.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CommonModule\Permission\FrmRolePermissionItem.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CommonModule\Permission\FrmRolePermissionItem.designer.cs">
+      <DependentUpon>FrmRolePermissionItem.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CommonModule\Permission\FrmRolePermissionItemScope.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CommonModule\Permission\FrmRolePermissionItemScope.designer.cs">
+      <DependentUpon>FrmRolePermissionItemScope.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CommonModule\PermissionScope\FrmRolePermissionScope.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CommonModule\PermissionScope\FrmRolePermissionScope.designer.cs">
+      <DependentUpon>FrmRolePermissionScope.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CommonModule\Permission\FrmShowConstraintTable.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CommonModule\Permission\FrmShowConstraintTable.designer.cs">
+      <DependentUpon>FrmShowConstraintTable.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CommonModule\Permission\FrmTableColumnPermission.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CommonModule\Permission\FrmTableColumnPermission.designer.cs">
+      <DependentUpon>FrmTableColumnPermission.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CommonModule\Permission\FrmTableScope.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CommonModule\Permission\FrmTableScope.designer.cs">
+      <DependentUpon>FrmTableScope.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CommonModule\Permission\FrmTableScopeConstraint.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CommonModule\Permission\FrmTableScopeConstraint.designer.cs">
+      <DependentUpon>FrmTableScopeConstraint.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CommonModule\PermissionScope\FrmUserModulePermission.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CommonModule\PermissionScope\FrmUserModulePermission.designer.cs">
+      <DependentUpon>FrmUserModulePermission.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CommonModule\PermissionScope\FrmUserModulePermissionBatchSet.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CommonModule\PermissionScope\FrmUserModulePermissionBatchSet.designer.cs">
+      <DependentUpon>FrmUserModulePermissionBatchSet.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CommonModule\Permission\FrmUserModulePermissionItem.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CommonModule\Permission\FrmUserModulePermissionItem.designer.cs">
+      <DependentUpon>FrmUserModulePermissionItem.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CommonModule\PermissionScope\FrmUserOrganizeScope.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CommonModule\PermissionScope\FrmUserOrganizeScope.designer.cs">
+      <DependentUpon>FrmUserOrganizeScope.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CommonModule\Permission\FrmUserPermission.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CommonModule\Permission\FrmUserPermission.designer.cs">
+      <DependentUpon>FrmUserPermission.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CommonModule\Permission\FrmUserPermissionAdmin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CommonModule\Permission\FrmUserPermissionAdmin.designer.cs">
+      <DependentUpon>FrmUserPermissionAdmin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CommonModule\Permission\FrmUserPermissionBatchSet.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CommonModule\Permission\FrmUserPermissionBatchSet.designer.cs">
+      <DependentUpon>FrmUserPermissionBatchSet.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CommonModule\Permission\FrmUserPermissionItem.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CommonModule\Permission\FrmUserPermissionItem.designer.cs">
+      <DependentUpon>FrmUserPermissionItem.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CommonModule\Permission\FrmUserPermissionItemScope.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CommonModule\Permission\FrmUserPermissionItemScope.designer.cs">
+      <DependentUpon>FrmUserPermissionItemScope.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CommonModule\PermissionScope\FrmUserPermissionScope.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CommonModule\PermissionScope\FrmUserPermissionScope.designer.cs">
+      <DependentUpon>FrmUserPermissionScope.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CommonModule\Permission\FrmUserPermissionView.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CommonModule\Permission\FrmUserPermissionView.designer.cs">
+      <DependentUpon>FrmUserPermissionView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CommonModule\Permission\UCUserPermission.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="CommonModule\Permission\UCUserPermission.designer.cs">
+      <DependentUpon>UCUserPermission.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="CommonModule\ResourcePermission\FrmResourcePermission.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CommonModule\ResourcePermission\FrmResourcePermission.designer.cs">
+      <DependentUpon>FrmResourcePermission.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CommonModule\ResourcePermission\FrmResourceSetPermission.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CommonModule\ResourcePermission\FrmResourceSetPermission.designer.cs">
+      <DependentUpon>FrmResourceSetPermission.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CommonModule\ResourcePermission\FrmRoleAuthorizationScope.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CommonModule\ResourcePermission\FrmRoleAuthorizationScope.designer.cs">
+      <DependentUpon>FrmRoleAuthorizationScope.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CommonModule\ResourcePermission\FrmRoleResourcePermission.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CommonModule\ResourcePermission\FrmRoleResourcePermission.designer.cs">
+      <DependentUpon>FrmRoleResourcePermission.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CommonModule\ResourcePermission\FrmRoleTreeResourcePermission.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CommonModule\ResourcePermission\FrmRoleTreeResourcePermission.designer.cs">
+      <DependentUpon>FrmRoleTreeResourcePermission.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CommonModule\ResourcePermission\FrmTreeResourcePermission.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CommonModule\ResourcePermission\FrmTreeResourcePermission.designer.cs">
+      <DependentUpon>FrmTreeResourcePermission.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CommonModule\ResourcePermission\FrmUseAuthorizationScope.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CommonModule\ResourcePermission\FrmUseAuthorizationScope.designer.cs">
+      <DependentUpon>FrmUseAuthorizationScope.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CommonModule\ResourcePermission\FrmUserResourcePermission.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CommonModule\ResourcePermission\FrmUserResourcePermission.designer.cs">
+      <DependentUpon>FrmUserResourcePermission.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CommonModule\ResourcePermission\FrmUserTreeResourcePermission.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CommonModule\ResourcePermission\FrmUserTreeResourcePermission.designer.cs">
+      <DependentUpon>FrmUserTreeResourcePermission.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CommonModule\ResourcePermission\PermissionScopes.cs" />
+    <Compile Include="CommonModule\Duty\FrmOrganizeRoleAdd.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CommonModule\Duty\FrmOrganizeRoleAdd.designer.cs">
+      <DependentUpon>FrmOrganizeRoleAdd.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CommonModule\Duty\FrmOrganizeRoleAdmin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CommonModule\Duty\FrmOrganizeRoleAdmin.designer.cs">
+      <DependentUpon>FrmOrganizeRoleAdmin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CommonModule\Duty\FrmOrganizeRoleEdit.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CommonModule\Duty\FrmOrganizeRoleEdit.designer.cs">
+      <DependentUpon>FrmOrganizeRoleEdit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CommonModule\Duty\FrmOrganizeRoleSelect.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CommonModule\Duty\FrmOrganizeRoleSelect.designer.cs">
+      <DependentUpon>FrmOrganizeRoleSelect.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CommonModule\Role\FrmRoleAdd.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CommonModule\Role\FrmRoleAdd.designer.cs">
+      <DependentUpon>FrmRoleAdd.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CommonModule\Role\FrmRoleAdmin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CommonModule\Role\FrmRoleAdmin.designer.cs">
+      <DependentUpon>FrmRoleAdmin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CommonModule\Role\FrmRoleEdit.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CommonModule\Role\FrmRoleEdit.designer.cs">
+      <DependentUpon>FrmRoleEdit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CommonModule\Role\FrmRoleSelect.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CommonModule\Role\FrmRoleSelect.designer.cs">
+      <DependentUpon>FrmRoleSelect.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CommonModule\Role\FrmRoleUserAdmin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CommonModule\Role\FrmRoleUserAdmin.designer.cs">
+      <DependentUpon>FrmRoleUserAdmin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CommonModule\Role\FrmRoleUserBatchSet.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CommonModule\Role\FrmRoleUserBatchSet.designer.cs">
+      <DependentUpon>FrmRoleUserBatchSet.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CommonModule\Sequence\FrmSequenceAdd.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CommonModule\Sequence\FrmSequenceAdd.designer.cs">
+      <DependentUpon>FrmSequenceAdd.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CommonModule\Sequence\FrmSequenceAdmin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CommonModule\Sequence\FrmSequenceAdmin.designer.cs">
+      <DependentUpon>FrmSequenceAdmin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CommonModule\Sequence\FrmSequenceEdit.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CommonModule\Sequence\FrmSequenceEdit.designer.cs">
+      <DependentUpon>FrmSequenceEdit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+      <DependentUpon>Settings.settings</DependentUpon>
+    </Compile>
+    <Compile Include="CommonModule\Staff\FrmSendEmail.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CommonModule\Staff\FrmSendEmail.designer.cs">
+      <DependentUpon>FrmSendEmail.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CommonModule\Staff\FrmStaffAdd.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CommonModule\Staff\FrmStaffAdd.designer.cs">
+      <DependentUpon>FrmStaffAdd.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CommonModule\Staff\FrmStaffAddressAdmin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CommonModule\Staff\FrmStaffAddressAdmin.designer.cs">
+      <DependentUpon>FrmStaffAddressAdmin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CommonModule\Staff\FrmStaffAddressEdit.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CommonModule\Staff\FrmStaffAddressEdit.designer.cs">
+      <DependentUpon>FrmStaffAddressEdit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CommonModule\Staff\FrmStaffAdmin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CommonModule\Staff\FrmStaffAdmin.designer.cs">
+      <DependentUpon>FrmStaffAdmin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CommonModule\Staff\FrmStaffChangeDepartment.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CommonModule\Staff\FrmStaffChangeDepartment.designer.cs">
+      <DependentUpon>FrmStaffChangeDepartment.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CommonModule\Staff\FrmStaffEdit.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CommonModule\Staff\FrmStaffEdit.designer.cs">
+      <DependentUpon>FrmStaffEdit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CommonModule\Staff\FrmStaffOrganizeSelect.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CommonModule\Staff\FrmStaffOrganizeSelect.designer.cs">
+      <DependentUpon>FrmStaffOrganizeSelect.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CommonModule\Staff\FrmStaffSelect.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CommonModule\Staff\FrmStaffSelect.designer.cs">
+      <DependentUpon>FrmStaffSelect.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CommonModule\User\FrmImportUser.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CommonModule\User\FrmImportUser.Designer.cs">
+      <DependentUpon>FrmImportUser.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CommonModule\Utilities\FrmCheckUpdate.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CommonModule\Utilities\FrmCheckUpdate.designer.cs">
+      <DependentUpon>FrmCheckUpdate.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CommonModule\User\FrmAccountEdit.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CommonModule\User\FrmAccountEdit.designer.cs">
+      <DependentUpon>FrmAccountEdit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CommonModule\User\FrmChangeCommunicationPassword.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CommonModule\User\FrmChangeCommunicationPassword.designer.cs">
+      <DependentUpon>FrmChangeCommunicationPassword.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CommonModule\User\FrmChangeSignedPassword.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CommonModule\User\FrmChangeSignedPassword.designer.cs">
+      <DependentUpon>FrmChangeSignedPassword.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CommonModule\User\FrmCreateDigitalSignature.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CommonModule\User\FrmCreateDigitalSignature.designer.cs">
+      <DependentUpon>FrmCreateDigitalSignature.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CommonModule\User\FrmDigitalSignature.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CommonModule\User\FrmDigitalSignature.designer.cs">
+      <DependentUpon>FrmDigitalSignature.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CommonModule\User\FrmIPLimit.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CommonModule\User\FrmIPLimit.designer.cs">
+      <DependentUpon>FrmIPLimit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CommonModule\User\FrmRequestAnAccount.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CommonModule\User\FrmRequestAnAccount.designer.cs">
+      <DependentUpon>FrmRequestAnAccount.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CommonModule\User\FrmSignature.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CommonModule\User\FrmSignature.designer.cs">
+      <DependentUpon>FrmSignature.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CommonModule\User\FrmUserAdd.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CommonModule\User\FrmUserAdd.designer.cs">
+      <DependentUpon>FrmUserAdd.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CommonModule\User\FrmUserAddToOrganize.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CommonModule\User\FrmUserAddToOrganize.designer.cs">
+      <DependentUpon>FrmUserAddToOrganize.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CommonModule\User\FrmUserAdmin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CommonModule\User\FrmUserAdmin.designer.cs">
+      <DependentUpon>FrmUserAdmin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CommonModule\User\FrmUserAudit.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CommonModule\User\FrmUserAudit.designer.cs">
+      <DependentUpon>FrmUserAudit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CommonModule\User\FrmUserChangePassword.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CommonModule\User\FrmUserChangePassword.designer.cs">
+      <DependentUpon>FrmUserChangePassword.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CommonModule\User\FrmUserEdit.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CommonModule\User\FrmUserEdit.designer.cs">
+      <DependentUpon>FrmUserEdit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CommonModule\User\FrmUserOrganizeRoleAdmin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CommonModule\User\FrmUserOrganizeRoleAdmin.designer.cs">
+      <DependentUpon>FrmUserOrganizeRoleAdmin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CommonModule\User\FrmUserRoleAdmin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CommonModule\User\FrmUserRoleAdmin.designer.cs">
+      <DependentUpon>FrmUserRoleAdmin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CommonModule\User\FrmUserRoleBatchSet.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CommonModule\User\FrmUserRoleBatchSet.designer.cs">
+      <DependentUpon>FrmUserRoleBatchSet.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CommonModule\User\FrmUserSelect.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CommonModule\User\FrmUserSelect.designer.cs">
+      <DependentUpon>FrmUserSelect.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CommonModule\User\FrmUserSetCommunicationPassword.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CommonModule\User\FrmUserSetCommunicationPassword.designer.cs">
+      <DependentUpon>FrmUserSetCommunicationPassword.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CommonModule\User\FrmUserSetPassword.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CommonModule\User\FrmUserSetPassword.designer.cs">
+      <DependentUpon>FrmUserSetPassword.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CommonModule\Utilities\BaseCheckInput.cs" />
+    <Compile Include="CommonModule\Utilities\BaseExportCSV.cs" />
+    <Compile Include="CommonModule\Utilities\BaseExportExcel.cs" />
+    <Compile Include="CommonModule\Utilities\BaseForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CommonModule\Utilities\BaseInterfaceLogic.cs" />
+    <Compile Include="CommonModule\Utilities\CacheManager.cs" />
+    <Compile Include="CommonModule\Utilities\ClientCache.cs" />
+    <Compile Include="CommonModule\Utilities\FormPostion.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="CommonModule\Utilities\FrmAboutThis.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CommonModule\Utilities\FrmAboutThis.designer.cs">
+      <DependentUpon>FrmAboutThis.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CommonModule\Utilities\FrmDataGridViewSetting.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CommonModule\Utilities\FrmDataGridViewSetting.designer.cs">
+      <DependentUpon>FrmDataGridViewSetting.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CommonModule\Utilities\FrmException.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CommonModule\Utilities\FrmException.designer.cs">
+      <DependentUpon>FrmException.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CommonModule\Utilities\FrmExceptionAdmin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CommonModule\Utilities\FrmExceptionAdmin.designer.cs">
+      <DependentUpon>FrmExceptionAdmin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CommonModule\Utilities\FrmOnlineEmailSupport.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CommonModule\Utilities\FrmOnlineEmailSupport.designer.cs">
+      <DependentUpon>FrmOnlineEmailSupport.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CommonModule\Utilities\Interface\IBaseForm.cs" />
+    <Compile Include="CommonModule\Utilities\Interface\IBaseMainForm.cs" />
+    <Compile Include="CommonModule\Utilities\UserControl\UCItemDetailsSelect.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="CommonModule\Utilities\UserControl\UCItemDetailsSelect.Designer.cs">
+      <DependentUpon>UCItemDetailsSelect.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CommonModule\Utilities\UserControl\UCModuleSelect.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="CommonModule\Utilities\UserControl\UCModuleSelect.Designer.cs">
+      <DependentUpon>UCModuleSelect.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CommonModule\Utilities\UserControl\UCOrganizeSelect.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="CommonModule\Utilities\UserControl\UCOrganizeSelect.Designer.cs">
+      <DependentUpon>UCOrganizeSelect.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CommonModule\Utilities\UserControl\UCPermissionSelect.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="CommonModule\Utilities\UserControl\UCPermissionSelect.Designer.cs">
+      <DependentUpon>UCPermissionSelect.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CommonModule\Utilities\UserControl\UCRoleSelect.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="CommonModule\Utilities\UserControl\UCRoleSelect.Designer.cs">
+      <DependentUpon>UCRoleSelect.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CommonModule\Utilities\UserControl\UCScopePermissionSelect.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="CommonModule\Utilities\UserControl\UCScopePermissionSelect.Designer.cs">
+      <DependentUpon>UCScopePermissionSelect.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CommonModule\Utilities\UserControl\UCStaffSelect.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="CommonModule\Utilities\UserControl\UCStaffSelect.Designer.cs">
+      <DependentUpon>UCStaffSelect.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CommonModule\Utilities\UserControl\UCTableSort.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="CommonModule\Utilities\UserControl\UCTableSort.Designer.cs">
+      <DependentUpon>UCTableSort.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CommonModule\Utilities\UserControl\UCUserSelect.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="CommonModule\Utilities\UserControl\UCUserSelect.Designer.cs">
+      <DependentUpon>UCUserSelect.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CommonModule\WorkFlow\FrmWorkFlowActivityAdmin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CommonModule\WorkFlow\FrmWorkFlowActivityAdmin.designer.cs">
+      <DependentUpon>FrmWorkFlowActivityAdmin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CommonModule\WorkFlow\FrmWorkFlowAuditDetail.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CommonModule\WorkFlow\FrmWorkFlowAuditDetail.designer.cs">
+      <DependentUpon>FrmWorkFlowAuditDetail.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CommonModule\WorkFlow\FrmWorkFlowMonitor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CommonModule\WorkFlow\FrmWorkFlowMonitor.designer.cs">
+      <DependentUpon>FrmWorkFlowMonitor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CommonModule\WorkFlow\FrmWorkFlowProcessAdd.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CommonModule\WorkFlow\FrmWorkFlowProcessAdd.designer.cs">
+      <DependentUpon>FrmWorkFlowProcessAdd.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CommonModule\WorkFlow\FrmWorkFlowProcessAdmin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CommonModule\WorkFlow\FrmWorkFlowProcessAdmin.designer.cs">
+      <DependentUpon>FrmWorkFlowProcessAdmin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CommonModule\WorkFlow\FrmWorkFlowProcessEdit.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CommonModule\WorkFlow\FrmWorkFlowProcessEdit.designer.cs">
+      <DependentUpon>FrmWorkFlowProcessEdit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CommonModule\WorkFlow\FrmWorkFlowStatr.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CommonModule\WorkFlow\FrmWorkFlowStatr.designer.cs">
+      <DependentUpon>FrmWorkFlowStatr.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CommonModule\WorkFlow\FrmWorkFlowTest.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CommonModule\WorkFlow\FrmWorkFlowTest.designer.cs">
+      <DependentUpon>FrmWorkFlowTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CommonModule\WorkFlow\FrmWorkFlowWaitForAudit.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CommonModule\WorkFlow\FrmWorkFlowWaitForAudit.Designer.cs">
+      <DependentUpon>FrmWorkFlowWaitForAudit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CommonModule\WorkFlow\UCAutoWorkFlow.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="CommonModule\WorkFlow\UCAutoWorkFlow.designer.cs">
+      <DependentUpon>UCAutoWorkFlow.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CommonModule\WorkFlow\UCAutoWorkFlowStatr.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="CommonModule\WorkFlow\UCAutoWorkFlowStatr.designer.cs">
+      <DependentUpon>UCAutoWorkFlowStatr.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CommonModule\WorkFlow\UCFreeWorkFlow.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="CommonModule\WorkFlow\UCFreeWorkFlow.designer.cs">
+      <DependentUpon>UCFreeWorkFlow.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CommonModule\WorkFlow\UCFreeWorkFlowStatr.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="CommonModule\WorkFlow\UCFreeWorkFlowStatr.designer.cs">
+      <DependentUpon>UCFreeWorkFlowStatr.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="BusinessCard\FrmBusinessCardAdd.resx">
+      <DependentUpon>FrmBusinessCardAdd.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BusinessCard\FrmBusinessCardAdmin.resx">
+      <DependentUpon>FrmBusinessCardAdmin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BusinessCard\FrmBusinessCardEdit.resx">
+      <DependentUpon>FrmBusinessCardEdit.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CodeGenerator\FrmCodeGenerator.resx">
+      <DependentUpon>FrmCodeGenerator.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CodeGenerator\UcCodeView.resx">
+      <DependentUpon>UcCodeView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CommonModule\CSPager\CoolPrintPreviewDialog.resx">
+      <DependentUpon>CoolPrintPreviewDialog.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CommonModule\CSPager\Pager.resx">
+      <DependentUpon>Pager.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CommonModule\CSPager\PrintOptions.resx">
+      <DependentUpon>PrintOptions.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CommonModule\CSPager\WinGridView.resx">
+      <DependentUpon>WinGridView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CommonModule\CSPager\WinGridViewPager.resx">
+      <DependentUpon>WinGridViewPager.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CommonModule\CSPager\WinListViewPager.resx">
+      <DependentUpon>WinListViewPager.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CommonModule\File\FrmDocumentAdd.resx">
+      <DependentUpon>FrmDocumentAdd.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CommonModule\File\FrmDocumentEdit.resx">
+      <DependentUpon>FrmDocumentEdit.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CommonModule\File\FrmFileAdmin.resx">
+      <DependentUpon>FrmFileAdmin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CommonModule\File\FrmFileEdit.resx">
+      <DependentUpon>FrmFileEdit.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CommonModule\File\FrmFolderAdd.resx">
+      <DependentUpon>FrmFolderAdd.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CommonModule\File\FrmFolderAdmin.resx">
+      <DependentUpon>FrmFolderAdmin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CommonModule\File\FrmFolderEdit.resx">
+      <DependentUpon>FrmFolderEdit.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CommonModule\File\FrmFolderMultiSelect.resx">
+      <DependentUpon>FrmFolderMultiSelect.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CommonModule\File\FrmFolderPermission.resx">
+      <DependentUpon>FrmFolderPermission.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CommonModule\File\FrmFolderSelect.resx">
+      <DependentUpon>FrmFolderSelect.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CommonModule\File\FrmPicture.resx">
+      <DependentUpon>FrmPicture.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CommonModule\File\UCAttachment.resx">
+      <DependentUpon>UCAttachment.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CommonModule\File\UCFolderSelect.resx">
+      <DependentUpon>UCFolderSelect.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CommonModule\File\UCPicture.resx">
+      <DependentUpon>UCPicture.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CommonModule\Items\FrmItemDetailsAdd.resx">
+      <DependentUpon>FrmItemDetailsAdd.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CommonModule\Items\FrmItemDetailsAdmin.resx">
+      <DependentUpon>FrmItemDetailsAdmin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CommonModule\Items\FrmItemDetailsEdit.resx">
+      <DependentUpon>FrmItemDetailsEdit.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CommonModule\Items\FrmItemDetailsMultiSelect.resx">
+      <DependentUpon>FrmItemDetailsMultiSelect.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CommonModule\Items\FrmItemDetailsSelect.resx">
+      <DependentUpon>FrmItemDetailsSelect.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CommonModule\Items\FrmItemDetailsTreeSelect.resx">
+      <DependentUpon>FrmItemDetailsTreeSelect.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CommonModule\Items\FrmItemsAdd.resx">
+      <DependentUpon>FrmItemsAdd.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CommonModule\Items\FrmItemsAdmin.resx">
+      <DependentUpon>FrmItemsAdmin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CommonModule\Items\FrmItemsEdit.resx">
+      <DependentUpon>FrmItemsEdit.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CommonModule\Items\UCItemDetailsTreeSelect.resx">
+      <DependentUpon>UCItemDetailsTreeSelect.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CommonModule\LogOn\FrmConfig.resx">
+      <DependentUpon>FrmConfig.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CommonModule\LogOn\FrmScreenLock.resx">
+      <DependentUpon>FrmScreenLock.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CommonModule\LogOn\FrmLogOn.resx">
+      <DependentUpon>FrmLogOn.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CommonModule\LogOn\FrmLogOnByCertificates.resx">
+      <DependentUpon>FrmLogOnByCertificates.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CommonModule\LogOn\FrmLogOnByName.resx">
+      <DependentUpon>FrmLogOnByName.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CommonModule\LogOn\FrmLogOnSelect.resx">
+      <DependentUpon>FrmLogOnSelect.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CommonModule\LogOn\FrmSelectNetwork.resx">
+      <DependentUpon>FrmSelectNetwork.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CommonModule\LogOn\FrmSystemSecurity.resx">
+      <DependentUpon>FrmSystemSecurity.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CommonModule\Log\FrmApplicationLogByDate.resx">
+      <DependentUpon>FrmApplicationLogByDate.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CommonModule\Log\FrmLogByModule.resx">
+      <DependentUpon>FrmLogByModule.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CommonModule\Log\FrmLogByUser.resx">
+      <DependentUpon>FrmLogByUser.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CommonModule\Log\FrmLogGeneral.resx">
+      <DependentUpon>FrmLogGeneral.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CommonModule\Log\FrmSystemLogByDate.resx">
+      <DependentUpon>FrmSystemLogByDate.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CommonModule\Permission\FrmOrganizePermissionAdmin.resx">
+      <DependentUpon>FrmOrganizePermissionAdmin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CommonModule\Permission\FrmOrganizePermission.resx">
+      <DependentUpon>FrmOrganizePermission.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CommonModule\ResourcePermission\FrmProjectRolePermissionAdmin.resx">
+      <DependentUpon>FrmProjectRolePermissionAdmin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CommonModule\ResourcePermission\FrmProjectUserPermissionAdmin.resx">
+      <DependentUpon>FrmProjectUserPermissionAdmin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CommonModule\ResourcePermission\FrmTableColumnsRolePermissionAdmin.resx">
+      <DependentUpon>FrmTableColumnsRolePermissionAdmin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CommonModule\ResourcePermission\FrmTableColumnsUserPermissionAdmin.resx">
+      <DependentUpon>FrmTableColumnsUserPermissionAdmin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CommonModule\Role\FrmRoleAdminList.resx">
+      <DependentUpon>FrmRoleAdminList.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CommonModule\Role\FrmRoleWithUser.resx">
+      <DependentUpon>FrmRoleWithUser.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CommonModule\Role\FrmRoleWithUserEdit.resx">
+      <DependentUpon>FrmRoleWithUserEdit.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CommonModule\Staff\FrmImportStaff.resx">
+      <DependentUpon>FrmImportStaff.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CommonModule\User\FrmUserOrganizeBatchSet.resx">
+      <DependentUpon>FrmUserOrganizeBatchSet.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CommonModule\Utilities\FrmPrint.resx">
+      <DependentUpon>FrmPrint.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CommonModule\WorkFlow\FrmUserRoleOrganizeSelect.resx">
+      <DependentUpon>FrmUserRoleOrganizeSelect.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CommonModule\WorkFlow\UCWorkFlow.resx">
+      <DependentUpon>UCWorkFlow.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CommonModule\WorkFlow\UCWorkFlowStatr.resx">
+      <DependentUpon>UCWorkFlowStatr.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmIE.resx">
+      <DependentUpon>FrmIE.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MDIMainForm.resx">
+      <DependentUpon>MDIMainForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SDIMainForm.resx">
+      <DependentUpon>SDIMainForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TabsMainForm.resx">
+      <DependentUpon>TabsMainForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CommonModule\Message\FrmMessage.resx">
+      <DependentUpon>FrmMessage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CommonModule\Message\FrmMessageBroadcast.resx">
+      <DependentUpon>FrmMessageBroadcast.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CommonModule\Message\FrmMessageRead.resx">
+      <DependentUpon>FrmMessageRead.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CommonModule\Message\FrmMessageRemind.resx">
+      <DependentUpon>FrmMessageRemind.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CommonModule\Message\FrmMessageSend.resx">
+      <DependentUpon>FrmMessageSend.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CommonModule\Message\ImagePopup.resx">
+      <DependentUpon>ImagePopup.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CommonModule\Module\FrmModuleAdd.resx">
+      <DependentUpon>FrmModuleAdd.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CommonModule\Module\FrmModuleAdmin.resx">
+      <DependentUpon>FrmModuleAdmin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CommonModule\Module\FrmModuleConfig.resx">
+      <DependentUpon>FrmModuleConfig.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CommonModule\Module\FrmModuleEdit.resx">
+      <DependentUpon>FrmModuleEdit.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CommonModule\Module\FrmModuleMultiSelect.resx">
+      <DependentUpon>FrmModuleMultiSelect.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CommonModule\Module\FrmModulePermissionItemBatchSet.resx">
+      <DependentUpon>FrmModulePermissionItemBatchSet.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CommonModule\Module\FrmModuleSelect.resx">
+      <DependentUpon>FrmModuleSelect.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CommonModule\Organize\FrmCompanySelect.resx">
+      <DependentUpon>FrmCompanySelect.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CommonModule\Organize\FrmOrganizeAdd.resx">
+      <DependentUpon>FrmOrganizeAdd.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CommonModule\Organize\FrmOrganizeAdmin.resx">
+      <DependentUpon>FrmOrganizeAdmin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CommonModule\Organize\FrmOrganizeCodeBuilder.resx">
+      <DependentUpon>FrmOrganizeCodeBuilder.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CommonModule\Organize\FrmOrganizeEdit.resx">
+      <DependentUpon>FrmOrganizeEdit.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CommonModule\Organize\FrmOrganizeMultiSelect.resx">
+      <DependentUpon>FrmOrganizeMultiSelect.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CommonModule\Organize\FrmOrganizeSelect.resx">
+      <DependentUpon>FrmOrganizeSelect.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CommonModule\PermissionItem\FrmPermissionItemAdd.resx">
+      <DependentUpon>FrmPermissionItemAdd.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CommonModule\PermissionItem\FrmPermissionItemAdmin.resx">
+      <DependentUpon>FrmPermissionItemAdmin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CommonModule\PermissionItem\FrmPermissionItemEdit.resx">
+      <DependentUpon>FrmPermissionItemEdit.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CommonModule\PermissionItem\FrmPermissionItemModuleBatchSet.resx">
+      <DependentUpon>FrmPermissionItemModuleBatchSet.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CommonModule\PermissionItem\FrmPermissionSelect.resx">
+      <DependentUpon>FrmPermissionSelect.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CommonModule\PermissionItem\FrmScopePermissionSelect.resx">
+      <DependentUpon>FrmScopePermissionSelect.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CommonModule\PermissionItem\FrmSetPermissionItem.resx">
+      <DependentUpon>FrmSetPermissionItem.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CommonModule\PermissionScope\FrmRoleModulePermission.resx">
+      <DependentUpon>FrmRoleModulePermission.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CommonModule\PermissionScope\FrmRoleModulePermissionBatchSet.resx">
+      <DependentUpon>FrmRoleModulePermissionBatchSet.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CommonModule\PermissionScope\FrmRoleOrganizeScope.resx">
+      <DependentUpon>FrmRoleOrganizeScope.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CommonModule\Permission\FrmRolePermission.resx">
+      <DependentUpon>FrmRolePermission.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CommonModule\Permission\FrmRolePermission2.resx">
+      <DependentUpon>FrmRolePermission2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CommonModule\Permission\FrmRolePermissionAdmin.resx">
+      <DependentUpon>FrmRolePermissionAdmin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CommonModule\Permission\FrmRolePermissionBatchSet.resx">
+      <DependentUpon>FrmRolePermissionBatchSet.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CommonModule\Permission\FrmRolePermissionItem.resx">
+      <DependentUpon>FrmRolePermissionItem.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CommonModule\Permission\FrmRolePermissionItemScope.resx">
+      <DependentUpon>FrmRolePermissionItemScope.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CommonModule\PermissionScope\FrmRolePermissionScope.resx">
+      <DependentUpon>FrmRolePermissionScope.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CommonModule\Permission\FrmShowConstraintTable.resx">
+      <DependentUpon>FrmShowConstraintTable.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CommonModule\Permission\FrmTableColumnPermission.resx">
+      <DependentUpon>FrmTableColumnPermission.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CommonModule\Permission\FrmTableScope.resx">
+      <DependentUpon>FrmTableScope.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CommonModule\Permission\FrmTableScopeConstraint.resx">
+      <DependentUpon>FrmTableScopeConstraint.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CommonModule\PermissionScope\FrmUserModulePermission.resx">
+      <DependentUpon>FrmUserModulePermission.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CommonModule\PermissionScope\FrmUserModulePermissionBatchSet.resx">
+      <DependentUpon>FrmUserModulePermissionBatchSet.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CommonModule\Permission\FrmUserModulePermissionItem.resx">
+      <DependentUpon>FrmUserModulePermissionItem.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CommonModule\PermissionScope\FrmUserOrganizeScope.resx">
+      <DependentUpon>FrmUserOrganizeScope.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CommonModule\Permission\FrmUserPermission.resx">
+      <DependentUpon>FrmUserPermission.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CommonModule\Permission\FrmUserPermissionAdmin.resx">
+      <DependentUpon>FrmUserPermissionAdmin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CommonModule\Permission\FrmUserPermissionBatchSet.resx">
+      <DependentUpon>FrmUserPermissionBatchSet.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CommonModule\Permission\FrmUserPermissionItem.resx">
+      <DependentUpon>FrmUserPermissionItem.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CommonModule\Permission\FrmUserPermissionItemScope.resx">
+      <DependentUpon>FrmUserPermissionItemScope.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CommonModule\PermissionScope\FrmUserPermissionScope.resx">
+      <DependentUpon>FrmUserPermissionScope.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CommonModule\Permission\FrmUserPermissionView.resx">
+      <DependentUpon>FrmUserPermissionView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CommonModule\Permission\UCUserPermission.resx">
+      <DependentUpon>UCUserPermission.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="CommonModule\ResourcePermission\FrmResourcePermission.resx">
+      <DependentUpon>FrmResourcePermission.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CommonModule\ResourcePermission\FrmResourceSetPermission.resx">
+      <DependentUpon>FrmResourceSetPermission.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CommonModule\ResourcePermission\FrmRoleAuthorizationScope.resx">
+      <DependentUpon>FrmRoleAuthorizationScope.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CommonModule\ResourcePermission\FrmRoleResourcePermission.resx">
+      <DependentUpon>FrmRoleResourcePermission.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CommonModule\ResourcePermission\FrmRoleTreeResourcePermission.resx">
+      <DependentUpon>FrmRoleTreeResourcePermission.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CommonModule\ResourcePermission\FrmTreeResourcePermission.resx">
+      <DependentUpon>FrmTreeResourcePermission.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CommonModule\ResourcePermission\FrmUseAuthorizationScope.resx">
+      <DependentUpon>FrmUseAuthorizationScope.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CommonModule\ResourcePermission\FrmUserResourcePermission.resx">
+      <DependentUpon>FrmUserResourcePermission.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CommonModule\ResourcePermission\FrmUserTreeResourcePermission.resx">
+      <DependentUpon>FrmUserTreeResourcePermission.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CommonModule\Duty\FrmOrganizeRoleAdd.resx">
+      <DependentUpon>FrmOrganizeRoleAdd.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CommonModule\Duty\FrmOrganizeRoleAdmin.resx">
+      <DependentUpon>FrmOrganizeRoleAdmin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CommonModule\Duty\FrmOrganizeRoleEdit.resx">
+      <DependentUpon>FrmOrganizeRoleEdit.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CommonModule\Duty\FrmOrganizeRoleSelect.resx">
+      <DependentUpon>FrmOrganizeRoleSelect.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CommonModule\Role\FrmRoleAdd.resx">
+      <DependentUpon>FrmRoleAdd.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CommonModule\Role\FrmRoleAdmin.resx">
+      <DependentUpon>FrmRoleAdmin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CommonModule\Role\FrmRoleEdit.resx">
+      <DependentUpon>FrmRoleEdit.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CommonModule\Role\FrmRoleSelect.resx">
+      <DependentUpon>FrmRoleSelect.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CommonModule\Role\FrmRoleUserAdmin.resx">
+      <DependentUpon>FrmRoleUserAdmin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CommonModule\Role\FrmRoleUserBatchSet.resx">
+      <DependentUpon>FrmRoleUserBatchSet.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CommonModule\Sequence\FrmSequenceAdd.resx">
+      <DependentUpon>FrmSequenceAdd.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CommonModule\Sequence\FrmSequenceAdmin.resx">
+      <DependentUpon>FrmSequenceAdmin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CommonModule\Sequence\FrmSequenceEdit.resx">
+      <DependentUpon>FrmSequenceEdit.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CommonModule\Staff\FrmSendEmail.resx">
+      <DependentUpon>FrmSendEmail.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CommonModule\Staff\FrmStaffAdd.resx">
+      <DependentUpon>FrmStaffAdd.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CommonModule\Staff\FrmStaffAddressAdmin.resx">
+      <DependentUpon>FrmStaffAddressAdmin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CommonModule\Staff\FrmStaffAddressEdit.resx">
+      <DependentUpon>FrmStaffAddressEdit.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CommonModule\Staff\FrmStaffAdmin.resx">
+      <DependentUpon>FrmStaffAdmin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CommonModule\Staff\FrmStaffChangeDepartment.resx">
+      <DependentUpon>FrmStaffChangeDepartment.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CommonModule\Staff\FrmStaffEdit.resx">
+      <DependentUpon>FrmStaffEdit.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CommonModule\Staff\FrmStaffOrganizeSelect.resx">
+      <DependentUpon>FrmStaffOrganizeSelect.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CommonModule\Staff\FrmStaffSelect.resx">
+      <DependentUpon>FrmStaffSelect.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CommonModule\User\FrmImportUser.resx">
+      <DependentUpon>FrmImportUser.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CommonModule\Utilities\FrmCheckUpdate.resx">
+      <DependentUpon>FrmCheckUpdate.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CommonModule\User\FrmAccountEdit.resx">
+      <DependentUpon>FrmAccountEdit.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CommonModule\User\FrmChangeCommunicationPassword.resx">
+      <DependentUpon>FrmChangeCommunicationPassword.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CommonModule\User\FrmChangeSignedPassword.resx">
+      <DependentUpon>FrmChangeSignedPassword.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CommonModule\User\FrmCreateDigitalSignature.resx">
+      <DependentUpon>FrmCreateDigitalSignature.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CommonModule\User\FrmDigitalSignature.resx">
+      <DependentUpon>FrmDigitalSignature.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CommonModule\User\FrmIPLimit.resx">
+      <DependentUpon>FrmIPLimit.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CommonModule\User\FrmRequestAnAccount.resx">
+      <DependentUpon>FrmRequestAnAccount.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CommonModule\User\FrmSignature.resx">
+      <DependentUpon>FrmSignature.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CommonModule\User\FrmUserAdd.resx">
+      <DependentUpon>FrmUserAdd.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CommonModule\User\FrmUserAddToOrganize.resx">
+      <DependentUpon>FrmUserAddToOrganize.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CommonModule\User\FrmUserAdmin.resx">
+      <DependentUpon>FrmUserAdmin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CommonModule\User\FrmUserAudit.resx">
+      <DependentUpon>FrmUserAudit.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CommonModule\User\FrmUserChangePassword.resx">
+      <DependentUpon>FrmUserChangePassword.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CommonModule\User\FrmUserEdit.resx">
+      <DependentUpon>FrmUserEdit.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CommonModule\User\FrmUserOrganizeRoleAdmin.resx">
+      <DependentUpon>FrmUserOrganizeRoleAdmin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CommonModule\User\FrmUserRoleAdmin.resx">
+      <DependentUpon>FrmUserRoleAdmin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CommonModule\User\FrmUserRoleBatchSet.resx">
+      <DependentUpon>FrmUserRoleBatchSet.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CommonModule\User\FrmUserSelect.resx">
+      <DependentUpon>FrmUserSelect.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CommonModule\User\FrmUserSetCommunicationPassword.resx">
+      <DependentUpon>FrmUserSetCommunicationPassword.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CommonModule\User\FrmUserSetPassword.resx">
+      <DependentUpon>FrmUserSetPassword.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CommonModule\Utilities\BaseForm.resx">
+      <DependentUpon>BaseForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CommonModule\Utilities\FrmAboutThis.resx">
+      <DependentUpon>FrmAboutThis.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CommonModule\Utilities\FrmDataGridViewSetting.resx">
+      <DependentUpon>FrmDataGridViewSetting.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CommonModule\Utilities\FrmException.resx">
+      <DependentUpon>FrmException.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CommonModule\Utilities\FrmExceptionAdmin.resx">
+      <DependentUpon>FrmExceptionAdmin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CommonModule\Utilities\FrmOnlineEmailSupport.resx">
+      <DependentUpon>FrmOnlineEmailSupport.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CommonModule\Utilities\UserControl\UCItemDetailsSelect.resx">
+      <DependentUpon>UCItemDetailsSelect.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CommonModule\Utilities\UserControl\UCModuleSelect.resx">
+      <DependentUpon>UCModuleSelect.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CommonModule\Utilities\UserControl\UCOrganizeSelect.resx">
+      <DependentUpon>UCOrganizeSelect.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CommonModule\Utilities\UserControl\UCPermissionSelect.resx">
+      <DependentUpon>UCPermissionSelect.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CommonModule\Utilities\UserControl\UCRoleSelect.resx">
+      <DependentUpon>UCRoleSelect.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CommonModule\Utilities\UserControl\UCScopePermissionSelect.resx">
+      <DependentUpon>UCScopePermissionSelect.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CommonModule\Utilities\UserControl\UCStaffSelect.resx">
+      <DependentUpon>UCStaffSelect.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CommonModule\Utilities\UserControl\UCTableSort.resx">
+      <DependentUpon>UCTableSort.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CommonModule\Utilities\UserControl\UCUserSelect.resx">
+      <DependentUpon>UCUserSelect.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CommonModule\WorkFlow\FrmWorkFlowActivityAdmin.resx">
+      <DependentUpon>FrmWorkFlowActivityAdmin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CommonModule\WorkFlow\FrmWorkFlowAuditDetail.resx">
+      <DependentUpon>FrmWorkFlowAuditDetail.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CommonModule\WorkFlow\FrmWorkFlowMonitor.resx">
+      <DependentUpon>FrmWorkFlowMonitor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CommonModule\WorkFlow\FrmWorkFlowProcessAdd.resx">
+      <DependentUpon>FrmWorkFlowProcessAdd.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CommonModule\WorkFlow\FrmWorkFlowProcessAdmin.resx">
+      <DependentUpon>FrmWorkFlowProcessAdmin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CommonModule\WorkFlow\FrmWorkFlowProcessEdit.resx">
+      <DependentUpon>FrmWorkFlowProcessEdit.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CommonModule\WorkFlow\FrmWorkFlowStatr.resx">
+      <DependentUpon>FrmWorkFlowStatr.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CommonModule\WorkFlow\FrmWorkFlowTest.resx">
+      <DependentUpon>FrmWorkFlowTest.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CommonModule\WorkFlow\FrmWorkFlowWaitForAudit.resx">
+      <DependentUpon>FrmWorkFlowWaitForAudit.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CommonModule\WorkFlow\UCAutoWorkFlow.resx">
+      <DependentUpon>UCAutoWorkFlow.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CommonModule\WorkFlow\UCAutoWorkFlowStatr.resx">
+      <DependentUpon>UCAutoWorkFlowStatr.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CommonModule\WorkFlow\UCFreeWorkFlow.resx">
+      <DependentUpon>UCFreeWorkFlow.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CommonModule\WorkFlow\UCFreeWorkFlowStatr.resx">
+      <DependentUpon>UCFreeWorkFlowStatr.cs</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="CodeGenerator\Templates\EditEntity.aspx.cs.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="CodeGenerator\Templates\EditEntity.aspx.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="CodeGenerator\Templates\IService.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="CodeGenerator\Templates\ListEntity.aspx.cs.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="CodeGenerator\Templates\ListEntity.aspx.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="CodeGenerator\Templates\Manager.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="CodeGenerator\Templates\PdmDD.html">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="CodeGenerator\Templates\Service.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="CodeGenerator\Templates\ShowEntity.aspx.cs.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="CodeGenerator\Templates\ShowEntity.aspx.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="CodeGenerator\Templates\ListEntity.aspx.cs.WCF.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="CommonModule\CSPager\App.ico" />
+    <None Include="Resources\ShareAnIdea.png" />
+    <None Include="Resources\OA.png" />
+    <None Include="Resources\Address.png" />
+    <None Include="Resources\Document.png" />
+    <Content Include="Config.xml">
+      <SubType>Designer</SubType>
+      <SubType>Designer</SubType>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\Face\Face_0.gif">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\Face\Face_1.gif">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\Face\Face_10.gif">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\Face\Face_100.gif">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\Face\Face_101.gif">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\Face\Face_102.gif">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\Face\Face_103.gif">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\Face\Face_104.gif">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\Face\Face_105.gif">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\Face\Face_106.gif">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\Face\Face_107.gif">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\Face\Face_108.gif">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\Face\Face_109.gif">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\Face\Face_11.gif">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\Face\Face_110.gif">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\Face\Face_111.gif">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\Face\Face_112.gif">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\Face\Face_113.gif">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\Face\Face_114.gif">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\Face\Face_115.gif">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\Face\Face_116.gif">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\Face\Face_117.gif">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\Face\Face_118.gif">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\Face\Face_119.gif">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\Face\Face_12.gif">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\Face\Face_120.gif">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\Face\Face_121.gif">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\Face\Face_122.gif">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\Face\Face_123.gif">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\Face\Face_124.gif">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\Face\Face_125.gif">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\Face\Face_126.gif">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\Face\Face_127.gif">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\Face\Face_128.gif">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\Face\Face_129.gif">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\Face\Face_13.gif">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\Face\Face_130.gif">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\Face\Face_131.gif">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\Face\Face_132.gif">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\Face\Face_133.gif">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\Face\Face_134.gif">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\Face\Face_14.gif">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\Face\Face_15.gif">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\Face\Face_16.gif">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\Face\Face_17.gif">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\Face\Face_18.gif">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\Face\Face_19.gif">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\Face\Face_2.gif">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\Face\Face_20.gif">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\Face\Face_21.gif">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\Face\Face_22.gif">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\Face\Face_23.gif">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\Face\Face_24.gif">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\Face\Face_25.gif">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\Face\Face_26.gif">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\Face\Face_27.gif">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\Face\Face_28.gif">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\Face\Face_29.gif">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\Face\Face_3.gif">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\Face\Face_30.gif">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\Face\Face_31.gif">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\Face\Face_32.gif">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\Face\Face_33.gif">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\Face\Face_34.gif">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\Face\Face_35.gif">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\Face\Face_36.gif">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\Face\Face_37.gif">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\Face\Face_38.gif">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\Face\Face_39.gif">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\Face\Face_4.gif">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\Face\Face_40.gif">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\Face\Face_41.gif">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\Face\Face_42.gif">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\Face\Face_43.gif">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\Face\Face_44.gif">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\Face\Face_45.gif">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\Face\Face_46.gif">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\Face\Face_47.gif">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\Face\Face_48.gif">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\Face\Face_49.gif">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\Face\Face_5.gif">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\Face\Face_50.gif">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\Face\Face_51.gif">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\Face\Face_52.gif">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\Face\Face_53.gif">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\Face\Face_54.gif">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\Face\Face_55.gif">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\Face\Face_56.gif">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\Face\Face_57.gif">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\Face\Face_58.gif">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\Face\Face_59.gif">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\Face\Face_6.gif">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\Face\Face_60.gif">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\Face\Face_61.gif">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\Face\Face_62.gif">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\Face\Face_63.gif">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\Face\Face_64.gif">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\Face\Face_65.gif">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\Face\Face_66.gif">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\Face\Face_67.gif">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\Face\Face_68.gif">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\Face\Face_69.gif">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\Face\Face_7.gif">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\Face\Face_70.gif">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\Face\Face_71.gif">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\Face\Face_72.gif">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\Face\Face_73.gif">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\Face\Face_74.gif">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\Face\Face_75.gif">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\Face\Face_76.gif">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\Face\Face_77.gif">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\Face\Face_78.gif">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\Face\Face_79.gif">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\Face\Face_8.gif">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\Face\Face_80.gif">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\Face\Face_81.gif">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\Face\Face_82.gif">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\Face\Face_83.gif">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\Face\Face_84.gif">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\Face\Face_85.gif">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\Face\Face_86.gif">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\Face\Face_87.gif">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\Face\Face_88.gif">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\Face\Face_89.gif">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\Face\Face_9.gif">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\Face\Face_90.gif">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\Face\Face_91.gif">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\Face\Face_92.gif">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\Face\Face_93.gif">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\Face\Face_94.gif">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\Face\Face_95.gif">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\Face\Face_96.gif">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\Face\Face_97.gif">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\Face\Face_98.gif">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\Face\Face_99.gif">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <None Include="Resources\Home.jpg" />
+    <Content Include="Resources\Localization\en-US.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="Resources\Localization\zh-CN.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="Resources\Localization\zh-TW.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="Resources\Media\msg.wav">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\Media\system.wav">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <None Include="Resources\Company.jpg" />
+    <Content Include="Resources\Head.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="App.ico">
+    </Content>
+    <None Include="Resources\Help.png" />
+    <None Include="Resources\Templates\ImportUserTemplate.xls">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Resources\update.png" />
+    <Content Include="CommonModule\Utilities\App.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.0">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4 %28x86 和 x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.2.0">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 2.0 %28x86%29</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.0">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.0 %28x86%29</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Windows.Installer.3.1">
+      <Visible>False</Visible>
+      <ProductName>Windows Installer 3.1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Properties\app.manifest" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\DotNet.Business\DotNet.Business.csproj">
+      <Project>{690EF14B-320E-439A-B0A5-3D956084DC6A}</Project>
+      <Name>DotNet.Business</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\DotNet.Utilities\DotNet.Utilities.csproj">
+      <Project>{2FB4C4A9-F14C-4CDD-9D0E-7C4E7CEBEBDD}</Project>
+      <Name>DotNet.Utilities</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="CommonModule\CSPager\Entity\" />
+  </ItemGroup>
+  <ItemGroup>
+    <PublishFile Include="Resources\Localization\en-US.xml">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>File</FileType>
+    </PublishFile>
+    <PublishFile Include="Resources\Localization\zh-CN.xml">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>File</FileType>
+    </PublishFile>
+    <PublishFile Include="Resources\Localization\zh-TW.xml">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>File</FileType>
+    </PublishFile>
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

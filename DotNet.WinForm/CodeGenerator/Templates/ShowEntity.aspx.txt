@@ -1,0 +1,66 @@
+﻿<%@ Page Language="C#" AutoEventWireup="true" CodeFile="#ClassName#Show.aspx.cs" Inherits="#ClassName#Show" %>
+<%@ Register Src="../../Common/Attachment/Attachment.ascx" TagName="Attachment" TagPrefix="Attachment" %>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>#Title#</title>
+    <meta name="Coding" content="杭州海日涵科技有限公司" />
+    <meta name="Author" content="JiRiGaLa_Bao@Hotmail.com"/>
+    <base target="_self" />
+    <script language='javascript' src='../../../JavaScript/Default.js'></script>
+    <link rel="stylesheet" type="text/css" href="../../../Themes/Default/Global.css">
+    <link rel="stylesheet" type="text/css" href="../../../Themes/Default/Portal.css">
+    <link rel="stylesheet" type="text/css" href="../../../Themes/Default/Style.css">
+    <link href="../../../Themes/Blue/CoolBlueMenu.css" type="text/css" rel="stylesheet" />
+    <link href="../../../Themes/Blue/Blue.css" type="text/css" rel="stylesheet" />
+    <link href="../../../Themes/Blue/Blue_tmp.css" type="text/css" rel="stylesheet" />
+    <style>
+        .Button
+        {
+            background-image: url(../../../Themes/Default/Images/Button.gif);
+        }
+        .ButtonLarge
+        {
+            background-image: url(../../../Themes/Default/Images/ButtonLarge.gif);
+        }
+    </style>
+</head>
+<body topmargin="0" bottommargin="0" leftmargin="0" rightmargin="0">
+    <!--startprint-->
+    <form id="form1" method="post" runat="server" onkeydown="EnterToTab()">
+    <table width="100%">
+        <tr>
+            <td>
+                <div class="breadcrumbHeader">
+                    <b>#Title#</b><span>
+                        <img id="img" src="../../../Themes/Default/Images/close.gif" alt="隐藏" onmouseover="this.style.cursor='hand'"
+                            onclick="displayTable()" /></span>
+                </div>
+            </td>
+        </tr>
+        <tr>
+            <td width="100%" valign="top">
+                <table id="table" class="table" border="0" cellpadding="0" cellspacing="0">
+                    <tr>
+                        #ShowPageField#
+                    </tr>
+                </table>
+            </td>
+        </tr>
+		<tr>
+            <td valign="middle">
+                <br />
+                <asp:Button ID="btnReturn" runat="server" CssClass="Button" Visible="false" Text="返回(R)" AccessKey="R"
+                    TabIndex="3" OnClick="btnReturn_Click" onmouseover="this.style.backgroundImage='url(../../../Themes/Default/Images/Buttonm.gif)';"
+                    onmouseout="this.style.backgroundImage='url(../../../Themes/Default/Images/Button.gif)';" />
+                <br />
+				<br />
+            </td>
+        </tr>
+    </table>
+    <asp:HiddenField ID="txtReturnURL" runat="server"/>
+    <asp:HiddenField ID="txtId" runat="server" />
+    </form>
+    <!--endprint-->
+</body>
+</html>

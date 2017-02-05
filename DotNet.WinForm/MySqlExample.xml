@@ -1,0 +1,52 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<configuration>
+  <appSettings>
+    <!-- 客户等相关信息配置 -->
+    <add key="CustomerCompanyName" value="通用开发平台"/>
+    <add key="ConfigurationFrom" value="通用开发平台"/>
+    <add key="SoftName" value="P2P"/>
+    <add key="SoftFullName" value="通用开发平台"/>
+    <add key="Version" value="1.1" />
+    <add key="RootMenuID" value="Equipment"/>
+    <add key="CurrentLanguage" value="zh-CHS"/>
+
+    <!-- 登录窗体 -->
+    <add key="LoginAssembly" value="DotNet.WinForm.Login"/>
+    <add key="LoginForm" value="FrmLoginSelect"/>
+    <add key="MainForm" value="SDIMainForm"/>
+    <!-- 默认加载用户 -->
+    <add key="LoadUser" value="true"/>
+    <!-- 允许用户注册 -->
+    <add key="AllowUserRegister" value="false"/>
+    <add key="RegisterKey" value="125O8O9O4O2O1O371O272O120O79O75O39O32O14O12O4O2O1O1O1O0O0O0O0O11O415O353O572O1293O793O1955O1616O8709O12046O26173O24945O67637O49437O207130O118290O433900O569186O281334O379729O2310391O2168260O2335649O2370981"/>
+
+    <add key="FileWebService"       value="http://localhost/WebServiceP2PServer/"/>
+    <add key="WorkReportWebService" value="http://localhost/WebServiceP2PServer/"/>
+    <add key="WebService"           value="http://localhost/WebServiceP2PServer/"/>
+
+    <add key="CommonWebService"     value="http://localhost/WebServiceP2PServer/"/>
+    <add key="WebServiceUsername" value="Jirisoft"/>
+    <add key="WebServicePassword" value="Jirisoft"/>
+    <!-- 启用权限域 -->
+    <add key="UseScopePermission" value="true"/>
+    <!-- 启用逐级授权 -->
+    <add key="UseLicensedPermission" value="true"/>
+    <!-- Local Remoting WebService -->
+    <add key="RunMode" value="Local"/>
+    <add key="ServiceFactory" value="ServiceFactory"/>
+    <add key="ServicePath" value="DotNet.Service"/>
+
+    <!-- 是否进行日志记录 -->
+    <add key="RecordLog" value="true"/>
+
+    <!-- Local Remoting WebService -->
+    <add key="RunMode" value="Local"/>
+    <add key="ServiceFactory" value="ServiceFactory"/>
+    <add key="ServicePath" value="DotNet.Service"/>
+    <add key="DataBaseType" value="MySql"/>
+    <add key="DbHelperClass" value="DotNet.DbUtilities.MySqlHelper"/>
+    <add key="DbHelperAssmely" value="DotNet.DbUtilities"/>
+    <add key="UserCenterConnection" value="server=127.0.0.1;uid=root;password=root;database=Example;pooling=false;character set=utf8"/>
+
+  </appSettings>
+</configuration>

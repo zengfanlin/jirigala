@@ -1,0 +1,152 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<configuration>
+  <!-- 窗体.权限的具体权限映射关系 -->
+  <appSettings>
+    <!-- FrmPermissionAdmin 权限配置 -->
+    <add key="PermissionAdmin.Access" value="PermissionAdmin" Description="访问权限配置"/>
+    <add key="PermissionAdmin.AddRoot" value="PermissionAdmin" Description="添加根权限"/>
+    <add key="PermissionAdmin.Add" value="PermissionAdmin" Description="添加权限"/>
+    <add key="PermissionAdmin.Edit" value="PermissionAdmin" Description="编辑权限"/>
+    <add key="PermissionAdmin.Move" value="PermissionAdmin" Description="移动权限"/>
+    <add key="PermissionAdmin.Export" value="PermissionAdmin" Description="导出数据"/>
+    <add key="PermissionAdmin.Delete" value="PermissionAdmin" Description="删除权限"/>
+
+    <!-- FrmModuleAdmin 模块管理窗体 -->
+    <add key="ModuleAdmin.Access" value="ModuleAdmin" Description="访问模块管理"/>
+    <add key="ModuleAdmin.AddRoot" value="ModuleAdmin" Description="添加根模块"/>
+    <add key="ModuleAdmin.Add" value="ModuleAdmin" Description="添加模块"/>
+    <add key="ModuleAdmin.Edit" value="ModuleAdmin" Description="编辑模块"/>
+    <add key="ModuleAdmin.Delete" value="ModuleAdmin" Description="删除模块"/>
+    <add key="ModuleAdmin.Export" value="ModuleAdmin" Description="导出数据"/>
+    <add key="ModuleAdmin.ModulePermission" value="ModuleAdmin" Description="模块挂接权限"/>
+
+    <!-- FrmModuleConfig 模块配置 -->
+    <add key="ModuleConfig.Access" value="ModuleAdmin" Description="访问模块配置"/>
+    <add key="ModuleConfig.Edit" value="ModuleAdmin" Description="编辑模块配置"/>
+
+    <!-- FrmOrganizeAdmin 组织机构管理 -->
+    <add key="OrganizeAdmin.Access" value="OrganizeAdmin" Description="访问组织机构管理"/>
+    <add key="OrganizeAdmin.AddRoot" value="OrganizeAdmin" Description="添加根组织机构"/>
+    <add key="OrganizeAdmin.Add" value="OrganizeAdmin" Description="添加组织机构"/>
+    <add key="OrganizeAdmin.Edit" value="OrganizeAdmin" Description="编辑组织机构"/>
+    <add key="OrganizeAdmin.Move" value="OrganizeAdmin" Description="移动组织机构"/>
+    <add key="OrganizeAdmin.Delete" value="OrganizeAdmin" Description="删除组织机构"/>
+    <add key="OrganizeAdmin.Export" value="OrganizeAdmin" Description="导出组织机构"/>
+
+    <add key="OrganizeAdmin.AddRole" value="OrganizeAdmin" Description="添加角色"/>
+    <add key="OrganizeAdmin.AddStaff" value="OrganizeAdmin" Description="添加职员"/>
+    <add key="OrganizeAdmin.Category" value="OrganizeAdmin" Description="机构类别管理"/>
+    <add key="OrganizeAdmin.UserPermissionReport" value="OrganizeAdmin" Description="查看用户权限报表"/>
+    <add key="OrganizeAdmin.CodeBuilder" value="OrganizeAdmin" Description="机构编号生成器"/>
+    <add key="OrganizeAdmin.SetSortCode" value="OrganizeAdmin" Description="设置派讯顺序"/>
+    
+    <!-- FrmRoleAdmin 角色管理 -->
+    <add key="RoleAdmin.Access" value="RoleAdmin" Description="访问角色管理"/>
+    <add key="RoleAdmin.Search" value="RoleAdmin" Description="查询角色"/>
+    <add key="RoleAdmin.Add" value="RoleAdmin" Description="添加角色"/>
+    <add key="RoleAdmin.Edit" value="RoleAdmin" Description="编辑角色"/>
+    <add key="RoleAdmin.Export" value="RoleAdmin" Description="导出数据"/>
+    <add key="RoleAdmin.Delete" value="RoleAdmin" Description="删除角色"/>
+    <add key="RoleAdmin.RoleUser" value="RoleAdmin" Description="角色用户管理"/>
+    <add key="RoleAdmin.RolePermission" value="RoleAdmin" Description="角色权限管理"/>
+
+    <add key="RoleAdmin.permissionScopeCode" value="SystemAdmin" Description="角色管理权限域"/>
+
+    <!-- FrmUserAudit 帐号审核 -->
+    <add key="UserAudit.Access" value="UserAdmin" Description="访问账户审核"/>
+    <add key="UserAudit.Search" value="UserAdmin" Description="查询用户"/>
+    <add key="UserAudit.Pass" value="UserAdmin" Description="通过审核"/>
+    <add key="UserAudit.Reject" value="UserAdmin" Description="驳回用户"/>
+    <add key="UserAudit.Edit" value="UserAdmin" Description="编辑用户"/>
+    <add key="UserAudit.UserPermission" value="UserAdmin" Description="用户权限"/>
+    <add key="UserAudit.Export" value="UserAdmin" Description="导出数据"/>
+    <add key="UserAudit.Delete" value="UserAdmin" Description="删除用户"/>
+
+    <!-- FrmUserAdmin 用户管理 -->
+    <add key="UserAdmin.Access" value="UserAdmin" Description="访问用户管理"/>
+    <add key="UserAdmin.Search" value="UserAdmin" Description="查询用户"/>
+    <add key="UserAdmin.Add" value="UserAdmin" Description="添加用户"/>
+    <add key="UserAdmin.Property" value="UserAdmin" Description="编辑用户"/>
+    <add key="UserAdmin.SetPassword" value="UserAdmin" Description="设置密码"/>
+    <add key="UserAdmin.UserPermission" value="UserAdmin" Description="用户权限"/>
+    <add key="UserAdmin.Export" value="UserAdmin" Description="导出数据"/>
+    <add key="UserAdmin.Delete" value="UserAdmin" Description="删除用户"/>
+
+    <!-- FrmItemsAdmin 基础主键管理 -->
+    <add key="ItemsAdmin.Access" value="ItemsAdmin" Description="访问基础主键管理"/>
+    <add key="ItemsAdmin.Search" value="ItemsAdmin" Description="查询基础主键"/>
+    <add key="ItemsAdmin.Add" value="ItemsAdmin" Description="添加基础主键"/>
+    <add key="ItemsAdmin.Edit" value="ItemsAdmin" Description="编辑基础主键"/>
+    <add key="ItemsAdmin.Move" value="ItemsAdmin" Description="移动数据"/>
+    <add key="ItemsAdmin.Export" value="ItemsAdmin" Description="导出数据"/>
+    <add key="ItemsAdmin.Delete" value="ItemsAdmin" Description="删除"/>
+    
+    <!-- FrmItemDetailsAdmin 基础主键明细管理 -->
+    <add key="ItemDetailsAdmin.Access" value="ItemsAdmin" Description="访问基础主键明细管理"/>
+    <add key="ItemDetailsAdmin.Search" value="ItemsAdmin" Description="查询基础明细主键"/>
+    <add key="ItemDetailsAdmin.Add" value="ItemsAdmin" Description="添加基础明细主键"/>
+    <add key="ItemDetailsAdmin.Edit" value="ItemsAdmin" Description="编辑基础明细主键"/>
+    <add key="ItemDetailsAdmin.Move" value="ItemsAdmin" Description="移动明细数据"/>
+    <add key="ItemDetailsAdmin.Export" value="ItemsAdmin" Description="导出明细数据"/>
+    <add key="ItemDetailsAdmin.Delete" value="ItemsAdmin" Description="删除明细"/>
+    
+    <!-- FrmFileAdmin 文件管理 -->
+    <add key="FileAdmin.Access" value="FileAdmin" Description="访问文件管理"/>
+    <add key="FileAdmin.AddRootFolder" value="FileAdmin" Description="添加根文件夹"/>
+    <add key="FileAdmin.AddFolder" value="FileAdmin" Description="添加文件夹"/>
+    <add key="FileAdmin.EditFolder" value="FileAdmin" Description="编辑文件夹"/>
+    <add key="FileAdmin.MoveFolder" value="FileAdmin" Description="移动文件夹"/>
+    <add key="FileAdmin.DeleteFolder" value="FileAdmin" Description="删除文件夹"/>
+    <add key="FileAdmin.AdminFolder" value="FileAdmin" Description="管理文件夹"/>
+    
+    <add key="FileAdmin.AddFile" value="FileAdmin" Description="添加文件"/>
+    <add key="FileAdmin.EditFile" value="FileAdmin" Description="编辑文件"/>
+    <add key="FileAdmin.MoveFile" value="FileAdmin" Description="移动文件"/>
+    <add key="FileAdmin.DeleteFile" value="FileAdmin" Description="删除文件"/>
+    <add key="FileAdmin.Download" value="FileAdmin" Description="下载文件"/>
+
+    <!-- FrmFolderAdmin 文件夹管理 -->
+    <add key="FolderAdmin.Access" value="FolderAdmin" Description="访问文件夹管理"/>
+    <add key="FolderAdmin.AddRoot" value="FolderAdmin" Description="添加根文件夹"/>
+    <add key="FolderAdmin.Add" value="FolderAdmin" Description="添加文件夹"/>
+    <add key="FolderAdmin.Edit" value="FolderAdmin" Description="编辑文件夹"/>
+    <add key="FolderAdmin.Move" value="FolderAdmin" Description="移动文件夹"/>
+    <add key="FolderAdmin.Delete" value="FolderAdmin" Description="删除文件夹"/>
+
+    <!-- FrmLogByDate 系统日志按日期查询 -->
+    <add key="LogByDate.Access" value="LogAdmin" Description="访问系统日志管理"/>
+    <add key="LogByDate.Search" value="LogAdmin" Description="查询日志"/>
+    <add key="LogByDate.Export" value="LogAdmin" Description="导出数据"/>
+    <add key="LogByDate.Delete" value="LogAdmin" Description="删除日志"/>
+    <add key="LogByDate.Clear" value="LogAdmin" Description="清除日志"/>
+
+    <!-- FrmLogByModule 系统日志按模块查询 -->
+    <add key="LogByModule.Access" value="LogAdmin" Description="访问系统日志管理"/>
+    <add key="LogByModule.Search" value="LogAdmin" Description="查询日志"/>
+    <add key="LogByModule.Export" value="LogAdmin" Description="导出数据"/>
+    <add key="LogByModule.Delete" value="LogAdmin" Description="删除日志"/>
+    <add key="LogByModule.Clear" value="LogAdmin" Description="清除日志"/>
+
+    <!-- FrmLogByUser 系统日志按用户查询 -->
+    <add key="LogByUser.Access" value="LogAdmin" Description="访问系统日志管理"/>
+    <add key="LogByUser.Search" value="LogAdmin" Description="查询日志"/>
+    <add key="LogByUser.Export" value="LogAdmin" Description="导出数据"/>
+    <add key="LogByUser.Delete" value="LogAdmin" Description="删除日志"/>
+    <add key="LogByUser.Clear" value="LogAdmin" Description="清除日志"/>
+
+    <add key="LogByUser.permissionScopeCode" value="SystemAdmin" Description="角色管理权限域"/>
+
+    <!-- FrmSequenceAdmin 序列管理 -->
+    <add key="SequenceAdmin.Access" value="SequenceAdmin" Description="访问序列管理"/>
+    <add key="SequenceAdmin.Add" value="SequenceAdmin" Description="添加序列"/>
+    <add key="SequenceAdmin.Edit" value="SequenceAdmin" Description="编辑序列"/>
+    <add key="SequenceAdmin.Delete" value="SequenceAdmin" Description="删除序列"/>
+    <add key="SequenceAdmin.Export" value="SequenceAdmin" Description="删除序列"/>
+
+    <!-- FrmBusinessCardAdmin 名片管理 -->
+    <add key="BusinessCardAdmin.AddPublic" value="BusinessCardAdmin" Description="访问名片管理"/>
+    <add key="BusinessCardAdmin.EditPublic" value="BusinessCardAdmin" Description="编辑共有名片"/>
+    <add key="BusinessCardAdmin.DeletePublic" value="BusinessCardAdmin" Description="删除共有名片"/>
+    <add key="BusinessCardAdmin.ExportPublic" value="BusinessCardAdmin" Description="导出共有名片"/>
+  </appSettings>
+</configuration>

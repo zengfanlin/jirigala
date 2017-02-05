@@ -1,0 +1,343 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{690EF14B-320E-439A-B0A5-3D956084DC6A}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>DotNet.Business</RootNamespace>
+    <AssemblyName>DotNet.Business</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>App.ico</ApplicationIcon>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System" />
+    <Reference Include="System.configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.ServiceModel" />
+    <Reference Include="System.Transactions" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AbstractServiceFactory.cs" />
+    <Compile Include="IService\IPermissionService.Role.cs" />
+    <Compile Include="IService\IPermissionService.User.cs" />
+    <Compile Include="IService\IPermissionService.Test.cs" />
+    <Compile Include="IService\IPermissionService.Resource.cs" />
+    <Compile Include="Manager\Manager.Auto\BaseContactDetailsManager.Auto.cs" />
+    <Compile Include="Manager\Manager.Auto\BaseContactManager.Auto.cs" />
+    <Compile Include="Manager\Manager.Auto\BaseFolderManager.Auto.cs" />
+    <Compile Include="Manager\Manager.Auto\BaseParameterManager.Auto.cs" />
+    <Compile Include="Manager\Manager.WorkFlow\BaseWorkFlowBillTemplateManager.Auto.cs" />
+    <Compile Include="Manager\Manager.Permission\BaseOrganizePermissionManager.cs" />
+    <Compile Include="Manager\Manager.Permission\BaseOrganizeModuleScopeManager.cs" />
+    <Compile Include="Manager\Manager.Permission\BaseOrganizeScopeManager.cs" />
+    <Compile Include="Manager\Manager.User\BaseUserManager.Organize.cs" />
+    <Compile Include="Manager\Manager.User\BaseUserManager.Role.cs" />
+    <Compile Include="Manager\Manager.User\BaseUserManager.Duty.cs" />
+    <Compile Include="Manager\Manager.WorkFlow\BaseWorkFlowBillTemplateManager.cs" />
+    <Compile Include="Manager\Manager.WorkFlow\BaseWorkFlowManager.cs" />
+    <Compile Include="Manager\Manager.WorkFlow\BaseWorkFlowManager.AuditComplete.cs" />
+    <Compile Include="Manager\Manager.WorkFlow\BaseWorkFlowManager.AuditQuash.cs" />
+    <Compile Include="Manager\Manager.WorkFlow\BaseWorkFlowManager.AuditStatr.cs" />
+    <Compile Include="Manager\Manager.WorkFlow\BaseWorkFlowManager.FreeStart.cs" />
+    <Compile Include="Manager\Manager.WorkFlow\BaseWorkFlowManager.FreeAuditPass.cs" />
+    <Compile Include="Manager\Manager.WorkFlow\BaseWorkFlowManager.FreeAuditReject.cs" />
+    <Compile Include="Manager\Manager\BaseContactDetailsManager.cs" />
+    <Compile Include="Manager\Manager\BaseContactManager.cs" />
+    <Compile Include="Manager\Manager\BaseOrganizeManager.Expand.cs" />
+    <Compile Include="Model\BaseWorkFlowBillTemplateEntity.cs" />
+    <Compile Include="Model\BaseWorkFlowBillTemplateTable.cs" />
+    <Compile Include="Model\BaseOrganizeEntity.Expand.cs" />
+    <Compile Include="Model\BaseOrganizeTable.Expand.cs" />
+    <Compile Include="Service\PermissionService.Role.cs" />
+    <Compile Include="Service\PermissionService.User.cs" />
+    <Compile Include="Service\PermissionService.Resource.cs" />
+    <Compile Include="Service\PermissionService.Scope.cs" />
+    <Compile Include="Service\PermissionService.Organize.cs" />
+    <Compile Include="Service\UserService.Role.cs" />
+    <Compile Include="Service\UserService.Organize.cs" />
+    <Compile Include="Service\RoleService.User.cs" />
+    <Compile Include="Utilities\BaseDbSortLogic.cs" />
+    <Compile Include="Utilities\BaseEntity.cs" />
+    <Compile Include="Utilities\TableManager.cs" />
+    <Compile Include="Utilities\BaseManager.cs" />
+    <Compile Include="Utilities\BaseManager.GetList.cs" />
+    <Compile Include="Utilities\ConstraintUtil.cs" />
+    <Compile Include="Utilities\DbLogic.cs" />
+    <Compile Include="Utilities\IBaseManager.cs" />
+    <Compile Include="Utilities\SQLBuilder.NameValueCollection.cs" />
+    <Compile Include="Model\BaseExceptionEntity.cs" />
+    <Compile Include="Manager\Manager\BaseExceptionManager.cs" />
+    <Compile Include="Model\BaseExceptionTable.cs" />
+    <Compile Include="Model\BaseLogEntity.cs" />
+    <Compile Include="Manager\Manager\BaseLogManager.cs" />
+    <Compile Include="Model\BaseLogTable.cs" />
+    <Compile Include="Model\BaseSequenceEntity.cs" />
+    <Compile Include="Manager\Manager.Auto\BaseSequenceManager.Auto.cs" />
+    <Compile Include="Manager\Manager\BaseSequenceManager.cs" />
+    <Compile Include="Model\BaseSequenceTable.cs" />
+    <Compile Include="Model\BaseTableColumnsEntity.cs" />
+    <Compile Include="Model\BaseTableColumnsTable.cs" />
+    <Compile Include="DotNetService.cs" />
+    <Compile Include="IServiceFactory.cs" />
+    <Compile Include="IService\IDbHelperService.cs" />
+    <Compile Include="IService\IExceptionService.cs" />
+    <Compile Include="IService\IFileService.cs" />
+    <Compile Include="IService\IFolderService.cs" />
+    <Compile Include="IService\IItemDetailsService.cs" />
+    <Compile Include="IService\IItemsService.cs" />
+    <Compile Include="IService\ILogOnService.cs" />
+    <Compile Include="IService\ILogService.cs" />
+    <Compile Include="IService\IMessageService.cs" />
+    <Compile Include="IService\IModuleService.cs" />
+    <Compile Include="IService\IOrganizeService.cs" />
+    <Compile Include="IService\IParameterService.cs" />
+    <Compile Include="IService\IPermissionItemService.cs" />
+    <Compile Include="IService\IPermissionService.cs" />
+    <Compile Include="IService\IRoleService.cs" />
+    <Compile Include="IService\ISequenceService.cs" />
+    <Compile Include="IService\IStaffService.cs" />
+    <Compile Include="IService\ITableColumnsService.cs" />
+    <Compile Include="IService\IUserService.cs" />
+    <Compile Include="IService\IWorkFlowActivityAdminService.cs" />
+    <Compile Include="IService\IWorkFlowCurrentService.cs" />
+    <Compile Include="IService\IWorkFlowProcessAdminService.cs" />
+    <Compile Include="IService\IWorkReportService.cs" />
+    <Compile Include="Manager\Manager.Auto\BaseCommentManager.Auto.cs" />
+    <Compile Include="Manager\Manager.Auto\BaseFileManager.Auto.cs" />
+    <Compile Include="Manager\Manager.Auto\BaseItemDetailsManager.Auto.cs" />
+    <Compile Include="Manager\Manager.Auto\BaseItemsManager.Auto.cs" />
+    <Compile Include="Manager\Manager.Auto\BaseMessageManager.Auto.cs" />
+    <Compile Include="Manager\Manager.Auto\BaseModuleManager.Auto.cs" />
+    <Compile Include="Manager\Manager.Auto\BaseNewsManager.Auto.cs" />
+    <Compile Include="Manager\Manager.Auto\BaseNoteManager.Auto.cs" />
+    <Compile Include="Manager\Manager.Auto\BaseOrganizeManager.Auto.cs" />
+    <Compile Include="Manager\Manager.Auto\BaseRoleManager.Auto.cs" />
+    <Compile Include="Manager\Manager.Auto\BaseStaffManager.Auto.cs" />
+    <Compile Include="Manager\Manager.Auto\BaseTableColumnsManager.Auto.cs" />
+    <Compile Include="Manager\Manager.Auto\BaseUserAddressManager.Auto.cs" />
+    <Compile Include="Manager\Manager.User\BaseUserManager.Auto.cs" />
+    <Compile Include="Manager\Manager.Auto\BaseUserOrganizeManager.Auto.cs" />
+    <Compile Include="Manager\Manager.Auto\BaseUserRoleManager.Auto.cs" />
+    <Compile Include="Manager\Manager.Auto\BasePermissionItemManager.Auto.cs" />
+    <Compile Include="Manager\Manager.Auto\BasePermissionManager.Auto.cs" />
+    <Compile Include="Manager\Manager.Auto\BasePermissionScopeManager.Auto.cs" />
+    <Compile Include="Manager\Manager.Permission\BasePermissionItemManager.cs" />
+    <Compile Include="Manager\Manager.Permission\BasePermissionManager.cs" />
+    <Compile Include="Manager\Manager.Permission\BasePermissionModuleManager.cs" />
+    <Compile Include="Manager\Manager.Permission\BasePermissionScopeManager.cs" />
+    <Compile Include="Manager\Manager.Permission\BaseRoleModuleScopeManager.cs" />
+    <Compile Include="Manager\Manager.Permission\BaseRoleOrganizeScopeManager.cs" />
+    <Compile Include="Manager\Manager.Permission\BaseRolePermissionManager.cs" />
+    <Compile Include="Manager\Manager.Permission\BaseRolePermissionScopeManager.cs" />
+    <Compile Include="Manager\Manager.Permission\BaseRoleRoleScopeManager.cs" />
+    <Compile Include="Manager\Manager.Permission\BaseRoleScopeManager.cs" />
+    <Compile Include="Manager\Manager.Permission\BaseRoleUserScopeManager.cs" />
+    <Compile Include="Manager\Manager.Permission\BaseUserModuleScopeManager.cs" />
+    <Compile Include="Manager\Manager.Permission\BaseUserOrganizeScopeManager.cs" />
+    <Compile Include="Manager\Manager.Permission\BaseUserPermissionManager.cs" />
+    <Compile Include="Manager\Manager.Permission\BaseUserPermissionScopeManager.cs" />
+    <Compile Include="Manager\Manager.Permission\BaseUserRoleScopeManager.cs" />
+    <Compile Include="Manager\Manager.Permission\BaseUserScopeManager.cs" />
+    <Compile Include="Manager\Manager.Permission\BaseUserUserScopeManager.cs" />
+    <Compile Include="Manager\Manager.User\BaseUserManager.Add.cs" />
+    <Compile Include="Manager\Manager.User\BaseUserManager.Bank.cs" />
+    <Compile Include="Manager\Manager.User\BaseUserManager.ChangePassword.cs" />
+    <Compile Include="Manager\Manager.User\BaseUserManager.CheckIP.cs" />
+    <Compile Include="Manager\Manager.User\BaseUserManager.cs" />
+    <Compile Include="Manager\Manager.User\BaseUserManager.Delete.cs" />
+    <Compile Include="Manager\Manager.User\BaseUserManager.LogOn.cs" />
+    <Compile Include="Manager\Manager.User\BaseUserManager.SetPassword.cs" />
+    <Compile Include="Manager\Manager.User\BaseUserManager.Update.cs" />
+    <Compile Include="Manager\Manager.WorkFlow\BaseWorkFlowActivityManager.Auto.cs" />
+    <Compile Include="Manager\Manager.WorkFlow\BaseWorkFlowCurrentManager.Auto.cs" />
+    <Compile Include="Manager\Manager.WorkFlow\BaseWorkFlowHistoryManager.Auto.cs" />
+    <Compile Include="Manager\Manager.WorkFlow\BaseWorkFlowProcessManager.Auto.cs" />
+    <Compile Include="Manager\Manager.WorkFlow\BaseWorkFlowStepManager.Auto.cs" />
+    <Compile Include="Manager\Manager.WorkFlow\BaseWorkFlowActivityManager.cs" />
+    <Compile Include="Manager\Manager.WorkFlow\BaseWorkFlowCurrentManager.cs" />
+    <Compile Include="Manager\Manager.WorkFlow\BaseWorkFlowHistoryManager.cs" />
+    <Compile Include="Manager\Manager.WorkFlow\BaseWorkFlowProcessManager.cs" />
+    <Compile Include="Manager\Manager.WorkFlow\BaseWorkFlowStepManager.cs" />
+    <Compile Include="Manager\Manager.WorkFlow\IWorkFlowManager.cs" />
+    <Compile Include="Manager\Manager.WorkFlow\UserBillManager.cs" />
+    <Compile Include="Manager\Manager.WorkFlow\UserBillManager.WorkFlow.cs" />
+    <Compile Include="Manager\Manager.WorkFlow\UserReportManager.WorkFlow.cs" />
+    <Compile Include="Manager\Manager\BaseCommentManager.cs" />
+    <Compile Include="Manager\Manager\BaseFileManager.cs" />
+    <Compile Include="Manager\Manager\BaseFolderManager.cs" />
+    <Compile Include="Manager\Manager\BaseItemDetailsManager.cs" />
+    <Compile Include="Manager\Manager\BaseItemsManager.cs" />
+    <Compile Include="Manager\Manager\BaseMessageManager.cs" />
+    <Compile Include="Manager\Manager\BaseModuleManager.cs" />
+    <Compile Include="Manager\Manager\BaseNewsManager.cs" />
+    <Compile Include="Manager\Manager\BaseNoteManager.cs" />
+    <Compile Include="Manager\Manager\BaseOrganizeManager.cs" />
+    <Compile Include="Manager\Manager\BaseParameterManager.cs" />
+    <Compile Include="Manager\Manager\BaseProjectManager.cs" />
+    <Compile Include="Manager\Manager\BaseRoleManager.cs" />
+    <Compile Include="Manager\Manager\BaseStaffManager.cs" />
+    <Compile Include="Manager\Manager\BaseTableColumnsManager.cs" />
+    <Compile Include="Manager\Manager\BaseUserOrganizeManager.cs" />
+    <Compile Include="Model\BaseCommentEntity.cs" />
+    <Compile Include="Model\BaseContactDetailsEntity.cs" />
+    <Compile Include="Model\BaseContactEntity.cs" />
+    <Compile Include="Model\BaseFileEntity.cs" />
+    <Compile Include="Model\BaseFolderEntity.cs" />
+    <Compile Include="Model\BaseItemDetailsEntity.cs" />
+    <Compile Include="Model\BaseItemsEntity.cs" />
+    <Compile Include="Model\BaseMessageEntity.cs" />
+    <Compile Include="Model\BaseModuleEntity.cs" />
+    <Compile Include="Model\BaseNewsEntity.cs" />
+    <Compile Include="Model\BaseNoteEntity.cs" />
+    <Compile Include="Model\BaseOrganizeEntity.cs" />
+    <Compile Include="Model\BaseParameterEntity.cs" />
+    <Compile Include="Model\BasePermissionEntity.cs" />
+    <Compile Include="Model\BasePermissionItemEntity.cs" />
+    <Compile Include="Model\BasePermissionScopeEntity.cs" />
+    <Compile Include="Model\BaseProjectEntity.cs" />
+    <Compile Include="Model\BaseRoleEntity.cs" />
+    <Compile Include="Model\BaseStaffEntity.cs" />
+    <Compile Include="Model\BaseUserAddressEntity.cs" />
+    <Compile Include="Model\BaseUserEntity.cs" />
+    <Compile Include="Model\BaseUserOrganizeEntity.cs" />
+    <Compile Include="Model\BaseUserRoleEntity.cs" />
+    <Compile Include="Model\BaseWorkFlowActivityEntity.cs" />
+    <Compile Include="Model\BaseWorkFlowCurrentEntity.cs" />
+    <Compile Include="Model\BaseWorkFlowHistoryEntity.cs" />
+    <Compile Include="Model\BaseWorkFlowProcessEntity.cs" />
+    <Compile Include="Model\BaseWorkFlowStepEntity.cs" />
+    <Compile Include="Model\BaseWorkReportEntity.cs" />
+    <Compile Include="Model\BaseCommentTable.cs" />
+    <Compile Include="Model\BaseContactDetailsTable.cs" />
+    <Compile Include="Model\BaseContactTable.cs" />
+    <Compile Include="Model\BaseFileTable.cs" />
+    <Compile Include="Model\BaseFolderTable.cs" />
+    <Compile Include="Model\BaseItemDetailsTable.cs" />
+    <Compile Include="Model\BaseItemsTable.cs" />
+    <Compile Include="Model\BaseMessageTable.cs" />
+    <Compile Include="Model\BaseModuleTable.cs" />
+    <Compile Include="Model\BaseNewsTable.cs" />
+    <Compile Include="Model\BaseNoteTable.cs" />
+    <Compile Include="Model\BaseOrganizeTable.cs" />
+    <Compile Include="Model\BaseParameterTable.cs" />
+    <Compile Include="Model\BasePermissionItemTable.cs" />
+    <Compile Include="Model\BasePermissionScopeTable.cs" />
+    <Compile Include="Model\BasePermissionTable.cs" />
+    <Compile Include="Model\BaseProjectTable.cs" />
+    <Compile Include="Model\BaseRoleTable.cs" />
+    <Compile Include="Model\BaseStaffTable.cs" />
+    <Compile Include="Model\BaseUserAddressTable.cs" />
+    <Compile Include="Model\BaseUserOrganizeTable.cs" />
+    <Compile Include="Model\BaseUserRoleTable.cs" />
+    <Compile Include="Model\BaseUserTable.cs" />
+    <Compile Include="Model\BaseWorkFlowActivityTable.cs" />
+    <Compile Include="Model\BaseWorkFlowCurrentTable.cs" />
+    <Compile Include="Model\BaseWorkFlowHistoryTable.cs" />
+    <Compile Include="Model\BaseWorkFlowProcessTable.cs" />
+    <Compile Include="Model\BaseWorkFlowStepTable.cs" />
+    <Compile Include="Model\BaseWorkReportTable.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="ServiceFactory.cs" />
+    <Compile Include="Service\BusinessDbHelperService.cs" />
+    <Compile Include="Service\DbHelperService.cs" />
+    <Compile Include="Service\ExceptionService.cs" />
+    <Compile Include="Service\FileService.cs" />
+    <Compile Include="Service\FolderService.cs" />
+    <Compile Include="Service\ItemDetailsService.cs" />
+    <Compile Include="Service\ItemsService.cs" />
+    <Compile Include="Service\LogOnService.cs" />
+    <Compile Include="Service\LogService.cs" />
+    <Compile Include="Service\MessageService.cs" />
+    <Compile Include="Service\ModuleService.cs" />
+    <Compile Include="Service\OrganizeService.cs" />
+    <Compile Include="Service\ParameterService.cs" />
+    <Compile Include="Service\PermissionItemService.cs" />
+    <Compile Include="Service\PermissionService.cs" />
+    <Compile Include="Service\PermissionService.Test.cs" />
+    <Compile Include="Service\RoleService.cs" />
+    <Compile Include="Service\SequenceService.cs" />
+    <Compile Include="Service\StaffService.cs" />
+    <Compile Include="Service\TableColumnsService.cs" />
+    <Compile Include="Service\UserCenterDbHelperService.cs" />
+    <Compile Include="Service\UserService.cs" />
+    <Compile Include="Service\WorkFlowActivityAdminService.cs" />
+    <Compile Include="Service\WorkFlowCurrentService.cs" />
+    <Compile Include="Service\WorkFlowProcessAdminService.cs" />
+    <Compile Include="Utilities\BaseManager.Exists.cs" />
+    <Compile Include="Utilities\BaseManager.Delete.cs" />
+    <Compile Include="Utilities\BaseManager.GetProperties.cs" />
+    <Compile Include="Utilities\BaseManager.SetProperty.cs" />
+    <Compile Include="Utilities\BaseManager.GetProperty.cs" />
+    <Compile Include="Utilities\BaseManager.GetDataTable.cs" />
+    <Compile Include="Utilities\BaseManager.DbHelper.cs" />
+    <Compile Include="Utilities\BaseManager.GetDataTableByPage.cs" />
+    <Compile Include="Utilities\DbLogic.Exists.cs" />
+    <Compile Include="Utilities\DbLogic.Delete.cs" />
+    <Compile Include="Utilities\DbLogic.GetDataTable.cs" />
+    <Compile Include="Utilities\DbLogic.GetProperties.cs" />
+    <Compile Include="Utilities\DbLogic.SetProperty.cs" />
+    <Compile Include="Utilities\DbLogic.GetProperty.cs" />
+    <Compile Include="Utilities\DbLogic.IsModifed.cs" />
+    <Compile Include="Utilities\DbLogic.LockNoWait.cs" />
+    <Compile Include="Utilities\DbLogic.GetDataTableByPage.cs" />
+    <Compile Include="Utilities\DbLogic.ParentChildrens.cs" />
+    <Compile Include="Utilities\BaseManager.ParentChildrens.cs" />
+    <Compile Include="Utilities\BaseManager.PreviousNext.cs" />
+    <Compile Include="Utilities\SQLBuilder.KeyValuePair.cs" />
+    <Compile Include="Utilities\DbLogic.GetDataReader.cs" />
+    <Compile Include="Utilities\SQLBuilder.cs" />
+    <Compile Include="Utilities\BaseManager.SetDeleted.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\DotNet.Utilities\DotNet.Utilities.csproj">
+      <Project>{2FB4C4A9-F14C-4CDD-9D0E-7C4E7CEBEBDD}</Project>
+      <Name>DotNet.Utilities</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="IService\IPermissionService.Organize.cs" />
+    <Compile Include="Manager\Manager.WorkFlow\BaseWorkFlowManager.AuditReject.cs" />
+    <Compile Include="Manager\Manager.WorkFlow\BaseWorkFlowManager.AuditPass.cs" />
+    <Compile Include="Manager\Manager.WorkFlow\BaseWorkFlowManager.AuditTransmit.cs" />
+    <None Include="Model\SqlMap.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="App.ico" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

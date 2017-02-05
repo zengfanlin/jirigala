@@ -1,0 +1,130 @@
+﻿<%@ Page Language="C#" AutoEventWireup="true" CodeFile="#ClassName#Edit.aspx.cs" Inherits="#ClassName#Edit" %>
+<%@ Import Namespace="DotNet.Utilities" %>
+<%@ Register Src="../../Common/Attachment/Attachment.ascx" TagName="Attachment" TagPrefix="Attachment" %>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>#Title#</title>
+    <meta name="Coding" content="杭州海日涵科技有限公司" />
+    <meta name="Author" content="JiRiGaLa_Bao@Hotmail.com"/>
+    <base target="_self" />
+    <script language="javascript" src="../../../JavaScript/Default.js"></script>
+	<script language="javascript" type="text/javascript" src="../../../JavaScript/My97DatePicker/WdatePicker.js" defer="defer"></script>
+	<link rel="stylesheet" type="text/css" href="../../../Themes/Default/Global.css"/>
+    <link rel="stylesheet" type="text/css" href="../../../Themes/Default/Portal.css"/>
+    <link rel="stylesheet" type="text/css" href="../../../Themes/Default/Style.css"/>
+    <link href="../../../Themes/Blue/CoolBlueMenu.css" type="text/css" rel="stylesheet" />
+    <link href="../../../Themes/Blue/Blue.css" type="text/css" rel="stylesheet" />
+    <link href="../../../Themes/Blue/Blue_tmp.css" type="text/css" rel="stylesheet" />
+    <style>
+        .Button
+        {
+            background-image: url(../../../Themes/Default/Images/Button.gif);
+        }
+        .ButtonLarge
+        {
+            background-image: url(../../../Themes/Default/Images/ButtonLarge.gif);
+        }
+    </style>
+	    <script language="javascript" src="../../../javascript/artdialog/artDialog.js?skin=blue"></script>
+    <script language="javascript" src="../../../javascript/artdialog/plugins/iframeTools.js"></script>
+    <script>
+        (function (config) {
+            config['fixed'] = true;
+            config['resize'] = false;
+            config['width'] = '600px';
+            config['height'] = '450px';
+            config['title'] = "选择";
+        })(art.dialog.defaults);
+
+        // 弹出窗口选用户
+        function SelectUser(hdUserId, lblRealName, hdOrganizeId, lblOrganizeName) {
+            // 传递空间名称
+            art.dialog.data('hdUserId', hdUserId);
+            art.dialog.data('ucRealName', lblRealName);
+            art.dialog.data('hdOrganizeId', hdOrganizeId);
+            art.dialog.data('ucOrganizeName', lblOrganizeName);
+            art.dialog.data('isMultiSelect', false);
+            art.dialog.open('../../../Modules/Common/User/UserSelect.aspx');
+        }
+
+        // 弹出窗口选角色
+        function SelectRole(ucRoleId, lblRoleName) {
+            // 传递空间名称
+            art.dialog.data('hdRoleId', ucRoleId);
+            art.dialog.data('lblRoleName', lblRoleName);
+            art.dialog.data('isMultiSelect', false);
+            art.dialog.open('../../../Modules/Common/Role/RoleSelect.aspx');
+        }
+
+        // 弹出窗口选部门
+        function SelectOrganize(ucOrganizeId, lblOrganizeName) {
+            // 传递空间名称
+            art.dialog.data('hdOrganizeId', ucOrganizeId);
+            art.dialog.data('lblOrganizeFullName', lblOrganizeName);
+            art.dialog.data('isMultiSelect', false);
+            art.dialog.open('../../../Modules/Common/Organize/OrganizeSelect.aspx');
+        }
+
+		function Validate() {
+			#ValidateCode#
+			return true;
+        } 
+    </script>
+</head>
+<body topmargin="0" bottommargin="0" leftmargin="0" rightmargin="0">
+    <!--startprint-->
+    <form id="form1" method="post" runat="server" onkeydown="EnterToTab()">
+    <table width="100%">
+        <tr>
+            <td>
+                <div class="breadcrumbHeader">
+                    <b>#Title#</b>
+					<span>
+						<img id="img" src="../../../Themes/Default/Images/close.gif" alt="隐藏" onmouseover="this.style.cursor='hand'"
+							onclick="displayTable()" />
+					</span>
+                </div>
+            </td>
+        </tr>
+        <tr>
+            <td width="100%" valign="top">
+                <table id="table" class="table" border="0" cellpadding="0" cellspacing="0">
+					#EditPageField#
+                    <tr>
+                        <td colspan="2" align="center" valign="middle" class="td-content">
+                            <br />
+                            <asp:Button ID="btnAdd" runat="server" CssClass="Button" Text="存草稿" AccessKey="S"
+								TabIndex="1" OnClick="btnAdd_Click" OnClientClick="return Validate();" onmouseover="this.style.backgroundImage='url(../../../Themes/Default/Images/Buttonm.gif)';"
+								onmouseout="this.style.backgroundImage='url(../../../Themes/Default/Images/Button.gif)';"
+								Visible="False" />
+							&nbsp;<asp:Button ID="btnUpdate" runat="server" CssClass="Button" Text="更新" AccessKey="U"
+								TabIndex="2" OnClick="btnUpdate_Click" OnClientClick="return Validate();" onmouseover="this.style.backgroundImage='url(../../../Themes/Default/Images/Buttonm.gif)';"
+								onmouseout="this.style.backgroundImage='url(../../../Themes/Default/Images/Button.gif)';" />
+							&nbsp;<asp:Button ID="btnSubmit" runat="server" Visible="false" CssClass="Button" Text="提交单据" AccessKey="U"
+								TabIndex="3" OnClick="btnSubmit_Click" onmouseover="this.style.backgroundImage='url(../../../Themes/Default/Images/Buttonm.gif)';"
+								onmouseout="this.style.backgroundImage='url(../../../Themes/Default/Images/Button.gif)';" />
+								&nbsp;<asp:Button ID="btnAuditPass" runat="server" CssClass="Button" Text="通过(P)"
+                                AccessKey="P" TabIndex="3" OnClick="btnAuditPass_Click" UseSubmitBehavior="false"
+                                OnClientClick="this.value='正在提交';this.disabled=true;" onmouseover="this.style.backgroundImage='url(../../../Themes/Default/Images/Buttonm.gif)';"
+                                onmouseout="this.style.backgroundImage='url(../../../Themes/Default/Images/Button.gif)';"
+                                Visible="False" />
+                            &nbsp;<asp:Button ID="btnAuditReject" runat="server" CssClass="Button" Text="退回(B)" AccessKey="B"
+                                TabIndex="4" OnClientClick="return confirm('你确认退回给申请单据者？');" OnClick="btnAuditReject_Click"
+                                onmouseover="this.style.backgroundImage='url(../../../Themes/Default/Images/Buttonm.gif)';"
+                                onmouseout="this.style.backgroundImage='url(../../../Themes/Default/Images/Button.gif)';"
+                                Visible="False" />
+							<br />
+                            <br />
+                        </td>
+                    </tr>
+                </table>
+            </td>
+        </tr>
+    </table>
+    <asp:HiddenField ID="txtReturnURL" runat="server" />
+    <asp:HiddenField ID="txtId" runat="server" />
+    </form>
+    <!--endprint-->
+</body>
+</html>

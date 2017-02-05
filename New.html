@@ -1,0 +1,1347 @@
+&nbsp;为什么项目型软件公司为什么那么累？程序员拼死拼活的干项目为啥总是无法按时完成？</br></br> &nbsp;其实努力开发软件一个月还真干不了多少事情，因为有太多的细节需要优化，一个人一个月其实能完成的工作任务还是有限的，我把3月份每天都做了什么都进行了详细的记录， 基本上一有空就完善通用权限管理系统组件源码，几乎所有的业余时间都耗费在这个上，在有接近10年开发经验的前提下，每天都投入好几个小时耗费至少接近8个小时吧，除了工作特忙的时间以外几乎坚持每天都完善了这个组件。</br></br> [通用权限管理系统V3.3] 版本改进部分
+<table cellspacing="1" cellpadding="5" bgcolor="burlywood" border="0">
+    <tbody>
+        <tr align="center" bgcolor="#c0c0c0">
+            <td bgcolor="lemonchiffon" style="width:40px">
+                序号</td>
+            <td bgcolor="lemonchiffon" style="width:80px">
+                日期
+            </td>
+            <td bgcolor="lemonchiffon" style="width:80px">
+                作者
+            </td>
+            <td bgcolor="lemonchiffon">
+                修改内容
+            </td>
+        </tr>
+        <tr>
+            <td bgcolor="#ffffff">
+                1</td>
+            <td bgcolor="#ffffff">
+                2011-03-01
+            </td>
+            <td bgcolor="#ffffff">
+                吉日嘎拉
+            </td>
+            <td bgcolor="#ffffff">
+                对DotNet.Kernel 目录中的 目录名称，命名空间进行了整理。
+            </td>
+        </tr>
+        <tr>
+            <td bgcolor="#ffffff">
+                2</td>
+            <td bgcolor="#ffffff">
+                2011-03-01
+            </td>
+            <td bgcolor="#ffffff">
+                吉日嘎拉
+            </td>
+            <td bgcolor="#ffffff">
+                对BaseManager增加函数，支持直接执行一些SQL语句的方法，
+                <br />
+                public int ExecuteNonQuery(string commandText)
+                <br />
+                public int ExecuteNonQuery(string commandText, DbParameter[] dbParameters)
+                <br />
+                public object ExecuteScalar(string commandText)
+                <br />
+                public object ExecuteScalar(string commandText, DbParameter[] dbParameters)
+                <br />
+                public DataTable Fill(string commandText)
+                <br />
+                public DataTable Fill(string commandText, DbParameter[] dbParameters)。
+            </td>
+        </tr>
+        <tr>
+            <td bgcolor="#ffffff">
+                3</td>
+            <td bgcolor="#ffffff">
+                2011-03-02
+            </td>
+            <td bgcolor="#ffffff">
+                吉日嘎拉
+            </td>
+            <td bgcolor="#ffffff">
+                LogIn 都整理为 LogOn。
+            </td>
+        </tr>
+        <tr>
+            <td bgcolor="#ffffff">
+                4</td>
+            <td bgcolor="#ffffff">
+                2011-03-02
+            </td>
+            <td bgcolor="#ffffff">
+                吉日嘎拉
+            </td>
+            <td bgcolor="#ffffff">
+                DotNet.WebService 整理。
+            </td>
+        </tr>
+        <tr>
+            <td bgcolor="#ffffff">
+                5</td>
+            <td bgcolor="#ffffff">
+                2011-03-03
+            </td>
+            <td bgcolor="#ffffff">
+                吉日嘎拉
+            </td>
+            <td bgcolor="#ffffff">
+                FrmUserPermissionBatchSet类 518行Clipboard.SetData(&quot;uerPermission&quot;, userPermission);
+                <br />
+                应为 Clipboard.SetData(&quot;userPermission&quot;, userPermission); 导致复制权限用不了~~。
+            </td>
+        </tr>
+        <tr>
+            <td bgcolor="#ffffff">
+                6</td>
+            <td bgcolor="#ffffff">
+                2011-03-03
+            </td>
+            <td bgcolor="#ffffff">
+                吉日嘎拉
+            </td>
+            <td bgcolor="#ffffff">
+                增加CodeSmith通用权限模板在DotNet.DesignDocument目录中。
+            </td>
+        </tr>
+        <tr>
+            <td bgcolor="#ffffff">
+                7</td>
+            <td bgcolor="#ffffff">
+                2011-03-06
+            </td>
+            <td bgcolor="#ffffff">
+                吉日嘎拉
+            </td>
+            <td bgcolor="#ffffff">
+                Base_ItemDetails_WorkingProperty 类似表修改为 Items_WorkingProperty 表名太长了 Oracle 支持不是很好。
+            </td>
+        </tr>
+        <tr>
+            <td bgcolor="#ffffff">
+                8</td>
+            <td bgcolor="#ffffff">
+                2011-03-07
+            </td>
+            <td bgcolor="#ffffff">
+                吉日嘎拉
+            </td>
+            <td bgcolor="#ffffff">
+                Base_ResourcePermissionScope 类似表修改为 Base_PermissionScope 表名太长了 Oracle 支持不是很好。
+            </td>
+        </tr>
+        <tr>
+            <td bgcolor="#ffffff">
+                9</td>
+            <td bgcolor="#ffffff">
+                2011-03-07
+            </td>
+            <td bgcolor="#ffffff">
+                吉日嘎拉
+            </td>
+            <td bgcolor="#ffffff">
+                Base_ResourcePermission 类似表修改为 Base_Permission 表名太长了 Oracle 支持不是很好。
+            </td>
+        </tr>
+        <tr>
+            <td bgcolor="#ffffff">
+                10</td>
+            <td bgcolor="#ffffff">
+                2011-03-08
+            </td>
+            <td bgcolor="#ffffff">
+                吉日嘎拉
+            </td>
+            <td bgcolor="#ffffff">
+                grd*_Sorted 方法进行改进、序号的产生方式没调用服务器上的方法。
+            </td>
+        </tr>
+        <tr>
+            <td bgcolor="#ffffff">
+                11</td>
+            <td bgcolor="#ffffff">
+                2011-03-08
+            </td>
+            <td bgcolor="#ffffff">
+                吉日嘎拉
+            </td>
+            <td bgcolor="#ffffff">
+                代码生成器改进对 Oracle 的支持。
+            </td>
+        </tr>
+        <tr>
+            <td bgcolor="#ffffff">
+                12</td>
+            <td bgcolor="#ffffff">
+                2011-03-08
+            </td>
+            <td bgcolor="#ffffff">
+                吉日嘎拉
+            </td>
+            <td bgcolor="#ffffff">
+                启动工作流无法提交的错误修正。
+            </td>
+        </tr>
+        <tr>
+            <td bgcolor="#ffffff">
+                13</td>
+            <td bgcolor="#ffffff">
+                2011-03-08
+            </td>
+            <td bgcolor="#ffffff">
+                吉日嘎拉
+            </td>
+            <td bgcolor="#ffffff">
+                登录时配置多语言设置时的界面随时变化效果进行改进。
+            </td>
+        </tr>
+        <tr>
+            <td bgcolor="#ffffff">
+                14</td>
+            <td bgcolor="#ffffff">
+                2011-03-09
+            </td>
+            <td bgcolor="#ffffff">
+                吉日嘎拉
+            </td>
+            <td bgcolor="#ffffff">
+                组织机构全部导出功能改进。
+            </td>
+        </tr>
+        <tr>
+            <td bgcolor="#ffffff">
+                15</td>
+            <td bgcolor="#ffffff">
+                2011-03-09
+            </td>
+            <td bgcolor="#ffffff">
+                吉日嘎拉
+            </td>
+            <td bgcolor="#ffffff">
+                操作权限定义全部导出功能改进。
+            </td>
+        </tr>
+        <tr>
+            <td bgcolor="#ffffff">
+                16</td>
+            <td bgcolor="#ffffff">
+                2011-03-09
+            </td>
+            <td bgcolor="#ffffff">
+                吉日嘎拉
+            </td>
+            <td bgcolor="#ffffff">
+                模块菜单全部导出功能改进。
+            </td>
+        </tr>
+        <tr>
+            <td bgcolor="#ffffff">
+                17</td>
+            <td bgcolor="#ffffff">
+                2011-03-09
+            </td>
+            <td bgcolor="#ffffff">
+                吉日嘎拉
+            </td>
+            <td bgcolor="#ffffff">
+                用户权限设置页面进行改进。
+            </td>
+        </tr>
+        <tr>
+            <td bgcolor="#ffffff">
+                18</td>
+            <td bgcolor="#ffffff">
+                2011-03-09
+            </td>
+            <td bgcolor="#ffffff">
+                吉日嘎拉
+            </td>
+            <td bgcolor="#ffffff">
+                角色权限设置页面进行改进。
+            </td>
+        </tr>
+        <tr>
+            <td bgcolor="#ffffff">
+                19</td>
+            <td bgcolor="#ffffff">
+                2011-03-11
+            </td>
+            <td bgcolor="#ffffff">
+                吉日嘎拉
+            </td>
+            <td bgcolor="#ffffff">
+                操作权限定义页面增加 用户、角色的批量权限设置功能。
+            </td>
+        </tr>
+        <tr>
+            <td bgcolor="#ffffff">
+                20</td>
+            <td bgcolor="#ffffff">
+                2011-03-11
+            </td>
+            <td bgcolor="#ffffff">
+                吉日嘎拉
+            </td>
+            <td bgcolor="#ffffff">
+                模块菜单管理页面增加 用户、角色的批量权限设置功能。
+            </td>
+        </tr>
+        <tr>
+            <td bgcolor="#ffffff">
+                21</td>
+            <td bgcolor="#ffffff">
+                2011-03-11
+            </td>
+            <td bgcolor="#ffffff">
+                吉日嘎拉
+            </td>
+            <td bgcolor="#ffffff">
+                用户、角色的批量关联关系设定功能。
+            </td>
+        </tr>
+        <tr>
+            <td bgcolor="#ffffff">
+                22</td>
+            <td bgcolor="#ffffff">
+                2011-03-11
+            </td>
+            <td bgcolor="#ffffff">
+                吉日嘎拉
+            </td>
+            <td bgcolor="#ffffff">
+                角色、用户的批量关联关系设定功能。
+            </td>
+        </tr>
+        <tr>
+            <td bgcolor="#ffffff">
+                23</td>
+            <td bgcolor="#ffffff">
+                2011-03-11
+            </td>
+            <td bgcolor="#ffffff">
+                吉日嘎拉
+            </td>
+            <td bgcolor="#ffffff">
+                角色、用户关系清理的功能实现。
+            </td>
+        </tr>
+        <tr>
+            <td bgcolor="#ffffff">
+                24</td>
+            <td bgcolor="#ffffff">
+                2011-03-12
+            </td>
+            <td bgcolor="#ffffff">
+                吉日嘎拉
+            </td>
+            <td bgcolor="#ffffff">
+                角色列表资源数据集权限功能实现。
+            </td>
+        </tr>
+        <tr>
+            <td bgcolor="#ffffff">
+                25</td>
+            <td bgcolor="#ffffff">
+                2011-03-12
+            </td>
+            <td bgcolor="#ffffff">
+                吉日嘎拉
+            </td>
+            <td bgcolor="#ffffff">
+                用户列表资源数据集权限功能实现。
+            </td>
+        </tr>
+        <tr>
+            <td bgcolor="#ffffff">
+                26</td>
+            <td bgcolor="#ffffff">
+                2011-03-12
+            </td>
+            <td bgcolor="#ffffff">
+                吉日嘎拉
+            </td>
+            <td bgcolor="#ffffff">
+                资源数据集权限对，角色用户的设置功能实现。
+            </td>
+        </tr>
+        <tr>
+            <td bgcolor="#ffffff">
+                27</td>
+            <td bgcolor="#ffffff">
+                2011-03-12
+            </td>
+            <td bgcolor="#ffffff">
+                吉日嘎拉
+            </td>
+            <td bgcolor="#ffffff">
+                模块访问权限ModuleAccess修改为 资源访问权限Resource.AccessPermission。
+            </td>
+        </tr>
+        <tr>
+            <td bgcolor="#ffffff">
+                28</td>
+            <td bgcolor="#ffffff">
+                2011-03-12
+            </td>
+            <td bgcolor="#ffffff">
+                吉日嘎拉
+            </td>
+            <td bgcolor="#ffffff">
+                对模块访问权限进行一次大改进。
+            </td>
+        </tr>
+        <tr>
+            <td bgcolor="#ffffff">
+                29</td>
+            <td bgcolor="#ffffff">
+                2011-03-12
+            </td>
+            <td bgcolor="#ffffff">
+                吉日嘎拉
+            </td>
+            <td bgcolor="#ffffff">
+                系统管理权限SystemAdmin修改为 资源访问权限Resource.ManagePermission。
+            </td>
+        </tr>
+        <tr>
+            <td bgcolor="#ffffff">
+                30</td>
+            <td bgcolor="#ffffff">
+                2011-03-12
+            </td>
+            <td bgcolor="#ffffff">
+                吉日嘎拉
+            </td>
+            <td bgcolor="#ffffff">
+                组织机构的权限管理，角色、用户的设置功能进行大改进。
+            </td>
+        </tr>
+        <tr>
+            <td bgcolor="#ffffff">
+                31</td>
+            <td bgcolor="#ffffff">
+                2011-03-12
+            </td>
+            <td bgcolor="#ffffff">
+                吉日嘎拉
+            </td>
+            <td bgcolor="#ffffff">
+                修正 public static string MSGC023 = &quot;请至少选择一条记录。&quot;;
+                <br />
+                public static string MSGC024 = &quot;只能选择一条记录。&quot;。
+            </td>
+        </tr>
+        <tr>
+            <td bgcolor="#ffffff">
+                32</td>
+            <td bgcolor="#ffffff">
+                2011-03-13
+            </td>
+            <td bgcolor="#ffffff">
+                吉日嘎拉
+            </td>
+            <td bgcolor="#ffffff">
+                LicensePermission 授权范围取消，统一为可管理资源权限范围。
+            </td>
+        </tr>
+        <tr>
+            <td bgcolor="#ffffff">
+                33</td>
+            <td bgcolor="#ffffff">
+                2011-03-14
+            </td>
+            <td bgcolor="#ffffff">
+                吉日嘎拉
+            </td>
+            <td bgcolor="#ffffff">
+                授权的相关管理者程序、授权范围的管理者程序，都搬动了位置，放到根目录下。
+            </td>
+        </tr>
+        <tr>
+            <td bgcolor="#ffffff">
+                34</td>
+            <td bgcolor="#ffffff">
+                2011-03-15
+            </td>
+            <td bgcolor="#ffffff">
+                吉日嘎拉
+            </td>
+            <td bgcolor="#ffffff">
+                角色管理中的，授权范围设置（用户、角色、组织结构、模块、操作权限）。
+            </td>
+        </tr>
+        <tr>
+            <td bgcolor="#ffffff">
+                35</td>
+            <td bgcolor="#ffffff">
+                2011-03-16
+            </td>
+            <td bgcolor="#ffffff">
+                吉日嘎拉
+            </td>
+            <td bgcolor="#ffffff">
+                用户账户管理中的，授权范围设置（用户、角色、组织结构、模块、操作权限）。
+            </td>
+        </tr>
+        <tr>
+            <td bgcolor="#ffffff">
+                36</td>
+            <td bgcolor="#ffffff">
+                2011-03-17
+            </td>
+            <td bgcolor="#ffffff">
+                吉日嘎拉
+            </td>
+            <td bgcolor="#ffffff">
+                ByPermissionCode、ByPermission统一修改为PermissionScopeCode。
+            </td>
+        </tr>
+        <tr>
+            <td bgcolor="#ffffff">
+                37</td>
+            <td bgcolor="#ffffff">
+                2011-03-17
+            </td>
+            <td bgcolor="#ffffff">
+                吉日嘎拉
+            </td>
+            <td bgcolor="#ffffff">
+                组织机构按管理范围列取出来(内部组织机构按管理范围列取出来)。
+            </td>
+        </tr>
+        <tr>
+            <td bgcolor="#ffffff">
+                38</td>
+            <td bgcolor="#ffffff">
+                2011-03-17
+            </td>
+            <td bgcolor="#ffffff">
+                吉日嘎拉
+            </td>
+            <td bgcolor="#ffffff">
+                模块管理按管理范围列取出来。
+            </td>
+        </tr>
+        <tr>
+            <td bgcolor="#ffffff">
+                39</td>
+            <td bgcolor="#ffffff">
+                2011-03-17
+            </td>
+            <td bgcolor="#ffffff">
+                吉日嘎拉
+            </td>
+            <td bgcolor="#ffffff">
+                操作权限定义管理按管理范围列取出来。
+            </td>
+        </tr>
+        <tr>
+            <td bgcolor="#ffffff">
+                40</td>
+            <td bgcolor="#ffffff">
+                2011-03-17
+            </td>
+            <td bgcolor="#ffffff">
+                吉日嘎拉
+            </td>
+            <td bgcolor="#ffffff">
+                用户账户管理按管理范围列取出来。
+            </td>
+        </tr>
+        <tr>
+            <td bgcolor="#ffffff">
+                41</td>
+            <td bgcolor="#ffffff">
+                2011-03-17
+            </td>
+            <td bgcolor="#ffffff">
+                吉日嘎拉
+            </td>
+            <td bgcolor="#ffffff">
+                角色管理按管理范围列取出来。
+            </td>
+        </tr>
+        <tr>
+            <td bgcolor="#ffffff">
+                42</td>
+            <td bgcolor="#ffffff">
+                2011-03-17
+            </td>
+            <td bgcolor="#ffffff">
+                吉日嘎拉
+            </td>
+            <td bgcolor="#ffffff">
+                可授权的范围&quot;LicensePermission&quot;修改为&quot;Resource.ManagePermission&quot;。
+            </td>
+        </tr>
+        <tr>
+            <td bgcolor="#ffffff">
+                43</td>
+            <td bgcolor="#ffffff">
+                2011-03-17
+            </td>
+            <td bgcolor="#ffffff">
+                吉日嘎拉
+            </td>
+            <td bgcolor="#ffffff">
+                把底层权限全部整理一遍，所有的原有的操作权限，全部清除干净、重新整理。
+            </td>
+        </tr>
+        <tr>
+            <td bgcolor="#ffffff">
+                44</td>
+            <td bgcolor="#ffffff">
+                2011-03-19
+            </td>
+            <td bgcolor="#ffffff">
+                吉日嘎拉
+            </td>
+            <td bgcolor="#ffffff">
+                无管理权限范围用户登录系统后的错误进行改进。
+            </td>
+        </tr>
+        <tr>
+            <td bgcolor="#ffffff">
+                45</td>
+            <td bgcolor="#ffffff">
+                2011-03-19
+            </td>
+            <td bgcolor="#ffffff">
+                吉日嘎拉
+            </td>
+            <td bgcolor="#ffffff">
+                职员帐户的绑定功能实现、绑定帐户删除时的错误进行处理。
+            </td>
+        </tr>
+        <tr>
+            <td bgcolor="#ffffff">
+                46</td>
+            <td bgcolor="#ffffff">
+                2011-03-19
+            </td>
+            <td bgcolor="#ffffff">
+                吉日嘎拉
+            </td>
+            <td bgcolor="#ffffff">
+                操作权限项定义进行彻底的一次梳理，心里爽多了，思路也清晰了很多了。
+            </td>
+        </tr>
+        <tr>
+            <td bgcolor="#ffffff">
+                47</td>
+            <td bgcolor="#ffffff">
+                2011-03-19
+            </td>
+            <td bgcolor="#ffffff">
+                吉日嘎拉
+            </td>
+            <td bgcolor="#ffffff">
+                XX.Access 权限进行改进，与模仿访问权限进行挂钩。
+            </td>
+        </tr>
+        <tr>
+            <td bgcolor="#ffffff">
+                48</td>
+            <td bgcolor="#ffffff">
+                2011-03-20
+            </td>
+            <td bgcolor="#ffffff">
+                吉日嘎拉
+            </td>
+            <td bgcolor="#ffffff">
+                FrmRolePermissionLicensed 修改为 FrmRolePermissionItemScope。
+            </td>
+        </tr>
+        <tr>
+            <td bgcolor="#ffffff">
+                49</td>
+            <td bgcolor="#ffffff">
+                2011-03-20
+            </td>
+            <td bgcolor="#ffffff">
+                吉日嘎拉
+            </td>
+            <td bgcolor="#ffffff">
+                FrmUserPermissionLicensed 修改为 FrmUserPermissionItemScope。
+            </td>
+        </tr>
+        <tr>
+            <td bgcolor="#ffffff">
+                50</td>
+            <td bgcolor="#ffffff">
+                2011-03-20
+            </td>
+            <td bgcolor="#ffffff">
+                吉日嘎拉
+            </td>
+            <td bgcolor="#ffffff">
+                完善操作权限与模块（菜单）关联设置页面FrmModulePermissionBatchSet。
+            </td>
+        </tr>
+        <tr>
+            <td bgcolor="#ffffff">
+                51</td>
+            <td bgcolor="#ffffff">
+                2011-03-21
+            </td>
+            <td bgcolor="#ffffff">
+                吉日嘎拉
+            </td>
+            <td bgcolor="#ffffff">
+                DotNet.Business 修改为 DotNet.Manager。
+            </td>
+        </tr>
+        <tr>
+            <td bgcolor="#ffffff">
+                52</td>
+            <td bgcolor="#ffffff">
+                2011-03-22
+            </td>
+            <td bgcolor="#ffffff">
+                吉日嘎拉
+            </td>
+            <td bgcolor="#ffffff">
+                DotNet.Kernel分类目录修改为DotNet.Business分类目录。
+            </td>
+        </tr>
+        <tr>
+            <td bgcolor="#ffffff">
+                53</td>
+            <td bgcolor="#ffffff">
+                2011-03-22
+            </td>
+            <td bgcolor="#ffffff">
+                吉日嘎拉
+            </td>
+            <td bgcolor="#ffffff">
+                DotNet.Kernel分类目录修改为DotNet.Business分类目录。
+            </td>
+        </tr>
+        <tr>
+            <td bgcolor="#ffffff">
+                54</td>
+            <td bgcolor="#ffffff">
+                2011-03-22
+            </td>
+            <td bgcolor="#ffffff">
+                吉日嘎拉
+            </td>
+            <td bgcolor="#ffffff">
+                按用户设置数据权限范围功能优化。
+            </td>
+        </tr>
+        <tr>
+            <td bgcolor="#ffffff">
+                55</td>
+            <td bgcolor="#ffffff">
+                2011-03-22
+            </td>
+            <td bgcolor="#ffffff">
+                吉日嘎拉
+            </td>
+            <td bgcolor="#ffffff">
+                按角色设置数据权限范围功能优化。
+            </td>
+        </tr>
+        <tr>
+            <td bgcolor="#ffffff">
+                56</td>
+            <td bgcolor="#ffffff">
+                2011-03-23
+            </td>
+            <td bgcolor="#ffffff">
+                吉日嘎拉
+            </td>
+            <td bgcolor="#ffffff">
+                代码生成器多操作几步后，无法打开设计文档的程序错误修正。
+            </td>
+        </tr>
+        <tr>
+            <td bgcolor="#ffffff">
+                57</td>
+            <td bgcolor="#ffffff">
+                2011-03-24
+            </td>
+            <td bgcolor="#ffffff">
+                吉日嘎拉
+            </td>
+            <td bgcolor="#ffffff">
+                BaseExceptionManager 等转移到 DotNet.BaseManager中。
+            </td>
+        </tr>
+        <tr>
+            <td bgcolor="#ffffff">
+                58</td>
+            <td bgcolor="#ffffff">
+                2011-03-24
+            </td>
+            <td bgcolor="#ffffff">
+                吉日嘎拉
+            </td>
+            <td bgcolor="#ffffff">
+                BaseLogManager 等转移到 DotNet.BaseManager中。
+            </td>
+        </tr>
+        <tr>
+            <td bgcolor="#ffffff">
+                59</td>
+            <td bgcolor="#ffffff">
+                2011-03-24
+            </td>
+            <td bgcolor="#ffffff">
+                吉日嘎拉
+            </td>
+            <td bgcolor="#ffffff">
+                代码生成器服务层代码错误修正。
+            </td>
+        </tr>
+    </tbody>
+</table>
+</br> </br> [通用权限管理系统V3.4] 版本改进部分
+<table cellspacing="1" cellpadding="5" bgcolor="burlywood" border="0">
+    <tbody>
+        <tr align="center" bgcolor="#c0c0c0">
+            <td bgcolor="lemonchiffon" style="width:40px">
+                序号</td>
+            <td bgcolor="lemonchiffon" style="width:80px">
+                日期
+            </td>
+            <td bgcolor="lemonchiffon" style="width:80px">
+                作者
+            </td>
+            <td bgcolor="lemonchiffon">
+                修改内容
+            </td>
+        </tr>
+        <tr>
+            <td bgcolor="#ffffff">
+                60</td>
+            <td bgcolor="#ffffff">
+                2011-03-24
+            </td>
+            <td bgcolor="#ffffff">
+                吉日嘎拉
+            </td>
+            <td bgcolor="#ffffff">
+                改进为Oracle数据库的兼容性，数据库访问层进行改进。
+            </td>
+        </tr>
+        <tr>
+            <td bgcolor="#ffffff">
+                61</td>
+            <td bgcolor="#ffffff">
+                2011-03-25
+            </td>
+            <td bgcolor="#ffffff">
+                吉日嘎拉
+            </td>
+            <td bgcolor="#ffffff">
+                日志按日期查询，漏写清除日志功能。
+            </td>
+        </tr>
+        <tr>
+            <td bgcolor="#ffffff">
+                62</td>
+            <td bgcolor="#ffffff">
+                2011-03-26
+            </td>
+            <td bgcolor="#ffffff">
+                吉日嘎拉
+            </td>
+            <td bgcolor="#ffffff">
+                选项（字典）管理功能，增加权限配置功能。
+            </td>
+        </tr>
+        <tr>
+            <td bgcolor="#ffffff">
+                63</td>
+            <td bgcolor="#ffffff">
+                2011-03-26
+            </td>
+            <td bgcolor="#ffffff">
+                吉日嘎拉
+            </td>
+            <td bgcolor="#ffffff">
+                操作权限项与模块菜单的关联关系设置程序优化测试。
+            </td>
+        </tr>
+        <tr>
+            <td bgcolor="#ffffff">
+                64</td>
+            <td bgcolor="#ffffff">
+                2011-03-27
+            </td>
+            <td bgcolor="#ffffff">
+                吉日嘎拉
+            </td>
+            <td bgcolor="#ffffff">
+                Base_Log日志表，ModifiedOn字段增加。
+            </td>
+        </tr>
+        <tr>
+            <td bgcolor="#ffffff">
+                65</td>
+            <td bgcolor="#ffffff">
+                2011-03-27
+            </td>
+            <td bgcolor="#ffffff">
+                吉日嘎拉
+            </td>
+            <td bgcolor="#ffffff">
+                日志文件记录错误修正，并不是每个窗体都记录了日志。
+            </td>
+        </tr>
+        <tr>
+            <td bgcolor="#ffffff">
+                66</td>
+            <td bgcolor="#ffffff">
+                2011-03-27
+            </td>
+            <td bgcolor="#ffffff">
+                吉日嘎拉
+            </td>
+            <td bgcolor="#ffffff">
+                窗体程序的日志文件的，进入模块时间与离开时间的记录，方便统计检查使用效率等。
+            </td>
+        </tr>
+        <tr>
+            <td bgcolor="#ffffff">
+                67</td>
+            <td bgcolor="#ffffff">
+                2011-03-28
+            </td>
+            <td bgcolor="#ffffff">
+                吉日嘎拉
+            </td>
+            <td bgcolor="#ffffff">
+                调整优化登录服务程序，把一些方法写入消息服务中。
+            </td>
+        </tr>
+        <tr>
+            <td bgcolor="#ffffff">
+                68</td>
+            <td bgcolor="#ffffff">
+                2011-03-28
+            </td>
+            <td bgcolor="#ffffff">
+                吉日嘎拉
+            </td>
+            <td bgcolor="#ffffff">
+                调整优化操作权限服务程序，把一些方法写入用户管理器中。
+            </td>
+        </tr>
+        <tr>
+            <td bgcolor="#ffffff">
+                69</td>
+            <td bgcolor="#ffffff">
+                2011-03-29
+            </td>
+            <td bgcolor="#ffffff">
+                吉日嘎拉
+            </td>
+            <td bgcolor="#ffffff">
+                Items_UserAuditStatus 修改为 Items_AuditStatus。
+            </td>
+        </tr>
+        <tr>
+            <td bgcolor="#ffffff">
+                70</td>
+            <td bgcolor="#ffffff">
+                2011-03-29
+            </td>
+            <td bgcolor="#ffffff">
+                吉日嘎拉
+            </td>
+            <td bgcolor="#ffffff">
+                Oracle数据库访问层进行优化  
+                <br />
+                public IDbDataParameter[] MakeParameters(string[] targetFileds,
+                Object[] targetValues)。
+            </td>
+        </tr>
+        <tr>
+            <td bgcolor="#ffffff">
+                71</td>
+            <td bgcolor="#ffffff">
+                2011-03-29
+            </td>
+            <td bgcolor="#ffffff">
+                吉日嘎拉
+            </td>
+            <td bgcolor="#ffffff">
+                调整优化Oracle数据库支持，账户权限配置页面的错误修正。
+            </td>
+        </tr>
+        <tr>
+            <td bgcolor="#ffffff">
+                72</td>
+            <td bgcolor="#ffffff">
+                2011-03-29
+            </td>
+            <td bgcolor="#ffffff">
+                吉日嘎拉
+            </td>
+            <td bgcolor="#ffffff">
+                Items_AuditStatus 审核状态表进行优化。
+            </td>
+        </tr>
+        <tr>
+            <td bgcolor="#ffffff">
+                73</td>
+            <td bgcolor="#ffffff">
+                2011-03-29
+            </td>
+            <td bgcolor="#ffffff">
+                吉日嘎拉
+            </td>
+            <td bgcolor="#ffffff">
+                选项（字典）表的删除不是伪删除而是真删除的错误进行修正。
+            </td>
+        </tr>
+        <tr>
+            <td bgcolor="#ffffff">
+                74</td>
+            <td bgcolor="#ffffff">
+                2011-03-30
+            </td>
+            <td bgcolor="#ffffff">
+                吉日嘎拉
+            </td>
+            <td bgcolor="#ffffff">
+                即时通讯是否需要的开关，状态栏中的小图表的，左右键按键控制改进。
+            </td>
+        </tr>
+        <tr>
+            <td bgcolor="#ffffff">
+                75</td>
+            <td bgcolor="#ffffff">
+                2011-03-30
+            </td>
+            <td bgcolor="#ffffff">
+                吉日嘎拉
+            </td>
+            <td bgcolor="#ffffff">
+                FrmItemDetailsAdmin 增加目标表变量显示，使用起来会更方便。
+            </td>
+        </tr>
+        <tr>
+            <td bgcolor="#ffffff">
+                76</td>
+            <td bgcolor="#ffffff">
+                2011-03-30
+            </td>
+            <td bgcolor="#ffffff">
+                吉日嘎拉
+            </td>
+            <td bgcolor="#ffffff">
+                DbHelperFactory 增加支持数据库连接串的传入。
+            </td>
+        </tr>
+        <tr>
+            <td bgcolor="#ffffff">
+                77</td>
+            <td bgcolor="#ffffff">
+                2011-03-30
+            </td>
+            <td bgcolor="#ffffff">
+                吉日嘎拉
+            </td>
+            <td bgcolor="#ffffff">
+                BaseSystemInfo.EncryptPassword 是否加密密码选项无法保存的错误修正。
+            </td>
+        </tr>
+        <tr>
+            <td bgcolor="#ffffff">
+                78</td>
+            <td bgcolor="#ffffff">
+                2011-03-30
+            </td>
+            <td bgcolor="#ffffff">
+                吉日嘎拉
+            </td>
+            <td bgcolor="#ffffff">
+                BaseSystemInfo.UsePermissionScope，是否启用数据集权限范围的控制生效与否进行优化。
+            </td>
+        </tr>
+        <tr>
+            <td bgcolor="#ffffff">
+                79</td>
+            <td bgcolor="#ffffff">
+                2011-03-30
+            </td>
+            <td bgcolor="#ffffff">
+                吉日嘎拉
+            </td>
+            <td bgcolor="#ffffff">
+                增加 BaseSystemInfo.UseUserPermission，是否启用按用户权限。
+            </td>
+        </tr>
+        <tr>
+            <td bgcolor="#ffffff">
+                80</td>
+            <td bgcolor="#ffffff">
+                2011-03-30
+            </td>
+            <td bgcolor="#ffffff">
+                吉日嘎拉
+            </td>
+            <td bgcolor="#ffffff">
+                增加 BaseSystemInfo.UseMessage，是否启用即时内部消息。
+            </td>
+        </tr>
+        <tr>
+            <td bgcolor="#ffffff">
+                81</td>
+            <td bgcolor="#ffffff">
+                2011-03-30
+            </td>
+            <td bgcolor="#ffffff">
+                吉日嘎拉
+            </td>
+            <td bgcolor="#ffffff">
+                服务程序的日志文件的，进入模块时间与离开时间的记录，方便统计检查使用效率等。
+            </td>
+        </tr>
+        <tr>
+            <td bgcolor="#ffffff">
+                82</td>
+            <td bgcolor="#ffffff">
+                2011-04-01
+            </td>
+            <td bgcolor="#ffffff">
+                吉日嘎拉
+            </td>
+            <td bgcolor="#ffffff">
+                Sex字段名修改为Gender字段。
+            </td>
+        </tr>
+        <tr>
+            <td bgcolor="#ffffff">
+                83</td>
+            <td bgcolor="#ffffff">
+                2011-04-01
+            </td>
+            <td bgcolor="#ffffff">
+                Nick Deng
+            </td>
+            <td bgcolor="#ffffff">
+                FrmUserOrganizeScope 无法设置数据集权限,无法加载已设置的数据集权限。
+            </td>
+        </tr>
+        <tr>
+            <td bgcolor="#ffffff">
+                84</td>
+            <td bgcolor="#ffffff">
+                2011-04-01
+            </td>
+            <td bgcolor="#ffffff">
+                Nick Deng
+            </td>
+            <td bgcolor="#ffffff">
+                FrmRoleOrganizeScope 无法设置数据集权限,无法加载已设置的数据集权限。
+            </td>
+        </tr>
+        <tr>
+            <td bgcolor="#ffffff">
+                85</td>
+            <td bgcolor="#ffffff">
+                2011-04-01
+            </td>
+            <td bgcolor="#ffffff">
+                Nick Deng
+            </td>
+            <td bgcolor="#ffffff">
+                PermissionScope 减少一个无用枚举值。
+            </td>
+        </tr>
+        <tr>
+            <td bgcolor="#ffffff">
+                86</td>
+            <td bgcolor="#ffffff">
+                2011-04-01
+            </td>
+            <td bgcolor="#ffffff">
+                Nick Deng
+            </td>
+            <td bgcolor="#ffffff">
+                BaseRoleOrganizeScopeManager.cs 优化数据集权限设置。
+            </td>
+        </tr>
+        <tr>
+            <td bgcolor="#ffffff">
+                87</td>
+            <td bgcolor="#ffffff">
+                2011-04-01
+            </td>
+            <td bgcolor="#ffffff">
+                Nick Deng
+            </td>
+            <td bgcolor="#ffffff">
+                BaseUserOrganizeScopeManager.cs 优化数据集权限设置。
+            </td>
+        </tr>
+        <tr>
+            <td bgcolor="#ffffff">
+                88</td>
+            <td bgcolor="#ffffff">
+                2011-04-01
+            </td>
+            <td bgcolor="#ffffff">
+                吉日嘎拉
+            </td>
+            <td bgcolor="#ffffff">
+                IPV4的本机IP地址获得方法改进。
+            </td>
+        </tr>
+    </tbody>
+</table>
+</br> 
+
+
+</br> </br> [通用权限管理系统V3.6] 版本改进部分
+<table cellspacing="1" cellpadding="5" bgcolor="burlywood" border="0">
+    <tbody>
+        <tr align="center" bgcolor="#c0c0c0">
+            <td bgcolor="lemonchiffon" style="width:40px">
+                序号</td>
+            <td bgcolor="lemonchiffon" style="width:80px">
+                日期
+            </td>
+            <td bgcolor="lemonchiffon" style="width:80px">
+                作者
+            </td>
+            <td bgcolor="lemonchiffon">
+                修改内容
+            </td>
+        </tr>
+        <tr>
+            <td bgcolor="#ffffff">
+                1</td>
+            <td bgcolor="#ffffff">
+                2011-10-01
+            </td>
+            <td bgcolor="#ffffff">
+                吉日嘎拉
+            </td>
+            <td bgcolor="#ffffff">
+                代码生成器直接生成到相应的目录里去,不用人工复制过去。
+            </td>
+        </tr>   
+    </tbody>
+</table>
+</br> 
+
+
+<br />
+</br> [通用权限管理系统V3.X] 版本接着想改进的部分<table cellspacing="1" cellpadding="5" bgcolor="burlywood" border="0">
+    <tbody>
+        <tr align="center" bgcolor="#c0c0c0">
+            <td bgcolor="lemonchiffon" style="width:40px">
+                序号</td>
+            <td bgcolor="lemonchiffon" style="width:80px">
+                日期
+            </td>
+            <td bgcolor="lemonchiffon" style="width:80px">
+                作者
+            </td>
+            <td bgcolor="lemonchiffon">
+                修改内容
+            </td>
+        </tr>
+        <tr>
+        <td bgcolor="#ffffff">
+                1
+            </td>
+            <td bgcolor="#ffffff">
+                2011-04-??
+            </td>
+            <td bgcolor="#ffffff">
+                吉日嘎拉
+            </td>
+            <td bgcolor="#ffffff">
+                Resource.AccessPermission 资源访问权限 的智能判断是否存在。<br />
+            </td>
+        </tr>
+        <td bgcolor="#ffffff">
+                2&nbsp;</td>
+            <td bgcolor="#ffffff">
+                2011-04-??
+            </td>
+            <td bgcolor="#ffffff">
+                吉日嘎拉
+            </td>
+            <td bgcolor="#ffffff">
+                Resource.ManagePermission 资源管理权限 的智能判断是否存在。<br />
+            </td>
+        </tr>
+        <td bgcolor="#ffffff">
+                3</td>
+            <td bgcolor="#ffffff">
+                2011-04-??
+            </td>
+            <td bgcolor="#ffffff">
+                吉日嘎拉
+            </td>
+            <td bgcolor="#ffffff">
+                主程序的美化验收工作进行。<br />
+            </td>
+        </tr>
+        <td bgcolor="#ffffff">
+                4</td>
+            <td bgcolor="#ffffff">
+                2011-04-??
+            </td>
+            <td bgcolor="#ffffff">
+                吉日嘎拉
+            </td>
+            <td bgcolor="#ffffff">
+                DotNet.WebService的验收工作进行。
+            </td>
+        </tr>
+        <td bgcolor="#ffffff">
+                5</td>
+            <td bgcolor="#ffffff">
+                2011-04-??
+            </td>
+            <td bgcolor="#ffffff">
+                吉日嘎拉
+            </td>
+            <td bgcolor="#ffffff">
+                软件的注册功能实现？错误反馈时反馈单位的名称。
+            </td>
+        </tr>
+        <td bgcolor="#ffffff">
+                6</td>
+            <td bgcolor="#ffffff">
+                2011-04-??
+            </td>
+            <td bgcolor="#ffffff">
+                吉日嘎拉
+            </td>
+            <td bgcolor="#ffffff">
+                软件的帮助功能可以参考虚拟光驱DAEMON Tools Lite的帮助菜单。
+            </td>
+        </tr>
+        <td bgcolor="#ffffff">
+                7</td>
+            <td bgcolor="#ffffff">
+                2011-04-??
+            </td>
+            <td bgcolor="#ffffff">
+                吉日嘎拉
+            </td>
+            <td bgcolor="#ffffff">
+                模块菜单访问权限的整理。
+            </td>
+        </tr>
+        
+    </tbody>
+</table>
+</br> </br> &nbsp;经过多年的努力，现在终于出了通用权限成熟商业版本了，了结了接近十年的软件产品梦想，把劳动成果可以分享给成百上千的人了，终于有一个精雕细刻的信息化管理系统必备后台管理工具，通用权限管理系统组件这个国产精品软件产品诞生了。<br />
+</br> &nbsp;随着社会的发展，信息化建设的越来越深入分工越来越明确道路，通用权限管理系统组件将成为政府信息化项目采购核心组件之一。同时也会是中小型企业信息化集成的核心简便高效的组件之一，有助于各种子系统的集中统一管理规划的必备规范工具。<br />
+</br> &nbsp; 通用权限管理系统组件有效缩短信息化开发建设周期、降低风险、提高工作效率，减少多个子系统之间的 集成成本及复杂程度，可以有效避免基础功能部分的重复建设浪费人力物力甚至浪费生命的目的，减轻软件
+开发公司、软件开发人员的工作量，提供高效的规范化的可2次开发的软件组件、实实在在提高生产力，积极推动社会发展。<br />
+</br> &nbsp;通用权限管理系统组件要成为国产软件组件的骄傲，为信息化建设项目创造价值，我们需要铜墙铁壁的质 量有保障的基础组件，我们提倡国人制造有深度、有重复利用价值、功能定位专一的优秀软件组件产品。<br />
+</br> &nbsp;通用权限管理系统组件为减轻开发人员的重复工作少加班为出发点、成为政府信息化项目采购核心软件组件为目标，做个知名的国产软件组件产品是我们开发团队的终极梦想。</br>

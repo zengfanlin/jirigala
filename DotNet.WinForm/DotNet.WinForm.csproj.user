@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <PublishUrlHistory>\\192.168.0.66\E%24\messager\</PublishUrlHistory>
+    <InstallUrlHistory />
+    <SupportUrlHistory>http://www.cnblogs.com/jirigala/archive/2011/12/17/2291252.html</SupportUrlHistory>
+    <UpdateUrlHistory>\\jirigala\setup\</UpdateUrlHistory>
+    <BootstrapperUrlHistory />
+    <ErrorReportUrlHistory>http://www.cnblogs.com/jirigala/archive/2011/12/17/2291253.html</ErrorReportUrlHistory>
+    <FallbackCulture>zh-CN</FallbackCulture>
+    <VerifyUploadedFiles>false</VerifyUploadedFiles>
+    <ProjectView>ProjectFiles</ProjectView>
+  </PropertyGroup>
+</Project>

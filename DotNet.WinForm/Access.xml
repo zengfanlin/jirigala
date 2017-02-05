@@ -1,0 +1,41 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<configuration>
+	<appSettings>
+		<!-- 登录时的配置文件选项 -->
+		<add key="LoginTo" value="Config" dispaly="默认配置"/>
+		<add key="LoginTo" value="Inner" dispaly="内网登录"/>
+		<add key="LoginTo" value="Outer" dispaly="外网登录"/>
+
+		<add key="DefaultLoginTo" value="Config"/>
+		<add key="LoginUsername" value="Administrator"/>
+		<add key="LoginPassword" value=""/>
+		<add key="PersistCookie" value="True"/>
+
+		<!-- Local Remoting WebService -->
+		<add key="CustomerCompanyName" value="宁波市教育局人事管理系统"/>
+		<add key="ConfigurationFrom" value="UserConfig"/>
+		<add key="SoftName" value="HRM"/>
+		<add key="SoftFullName" value="宁波市教育局人事管理系统"/>
+		<add key="Version" value="1.0" />
+		<add key="RunMode" value="Local"/>
+		<add key="CurrentLanguage" value="zh-CHS"/>
+		<add key="CommonWebService" value="http://localhost/ESSE.Common.WebService1.1/"/>
+		<add key="WebService" value="http://localhost/ESSE.Common.WebService1.1/"/>
+		<add key="WebServiceUsername" value="ESSESOFT"/>
+		<add key="WebServicePassword" value="ESSESOFT"/>
+		<add key="WebProxy" value=""/>
+		<add key="MaxPoolSize" value="1"/>
+		<add key="MinPoolSize" value="1"/>
+
+		<add key="RootMenuID" value="Equipment"/>
+		<add key="DataBaseType" value="Access"/>
+		<add key="ServerName" value=""/>
+		<add key="DataBase" value="E:\Work\dotnet\ESSE.Common V1.1\hrm.mdb"/>
+		<add key="TrustLink" value="No"/>
+		<add key="UserName" value="Admin"/>
+		<add key="Password" value=""/>
+		<add key="MaxPoolSize" value="1"/>
+		<add key="MinPoolSize" value="1"/>
+		<add key="RegisterKey" value="125O8O9O4O2O1O371O272O120O79O75O39O32O14O12O4O2O1O1O1O0O0O0O0O11O415O353O572O1293O793O1955O1616O8709O12046O26173O24945O67637O49437O207130O118290O433900O569186O281334O379729O2310391O2168260O2335649O2370981"/>
+	</appSettings>
+</configuration>

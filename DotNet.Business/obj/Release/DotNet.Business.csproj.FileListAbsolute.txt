@@ -1,0 +1,11 @@
+F:\权限管理-JiRi\DotNet.CommonV3.7_20120724\DotNet.Business\bin\Release\DotNet.Business.dll
+F:\权限管理-JiRi\DotNet.CommonV3.7_20120724\DotNet.Business\bin\Release\DotNet.Business.pdb
+F:\权限管理-JiRi\DotNet.CommonV3.7_20120724\DotNet.Business\bin\Release\DotNet.Utilities.dll
+F:\权限管理-JiRi\DotNet.CommonV3.7_20120724\DotNet.Business\bin\Release\NPOI.dll
+F:\权限管理-JiRi\DotNet.CommonV3.7_20120724\DotNet.Business\bin\Release\ChnCharInfo.dll
+F:\权限管理-JiRi\DotNet.CommonV3.7_20120724\DotNet.Business\bin\Release\DotNet.Utilities.pdb
+F:\权限管理-JiRi\DotNet.CommonV3.7_20120724\DotNet.Business\bin\Release\ChnCharInfo.xml
+F:\权限管理-JiRi\DotNet.CommonV3.7_20120724\DotNet.Business\bin\Release\zh-CN\ChnCharInfo.resources.dll
+F:\权限管理-JiRi\DotNet.CommonV3.7_20120724\DotNet.Business\obj\Release\ResolveAssemblyReference.cache
+F:\权限管理-JiRi\DotNet.CommonV3.7_20120724\DotNet.Business\obj\Release\DotNet.Business.dll
+F:\权限管理-JiRi\DotNet.CommonV3.7_20120724\DotNet.Business\obj\Release\DotNet.Business.pdb

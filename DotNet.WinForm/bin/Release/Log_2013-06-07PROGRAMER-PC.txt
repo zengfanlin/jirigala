@@ -1,0 +1,30 @@
+2013-06-07 10:29:17 无法打开登录所请求的数据库 "UserCenterV37"。登录失败。
+用户 'Programer-PC\Programer' 登录失败。
+2013-06-07 10:35:09 无法打开登录所请求的数据库 "UserCenterV37"。登录失败。
+用户 'Programer-PC\Programer' 登录失败。
+2013-06-07 10:36:05 无法打开登录所请求的数据库 "UserCenterV37"。登录失败。
+用户 'Programer-PC\Programer' 登录失败。
+2013-06-07 10:37:29 无法打开登录所请求的数据库 "UserCenterV37"。登录失败。
+用户 'Programer-PC\Programer' 登录失败。
+2013-06-07 10:38:27 无法打开登录所请求的数据库 "UserCenterV37"。登录失败。
+用户 'Programer-PC\Programer' 登录失败。
+2013-06-07 10:39:37 无法打开登录所请求的数据库 "UserCenterV37"。登录失败。
+用户 'Programer-PC\Programer' 登录失败。
+2013-06-07 10:40:54 无法打开登录所请求的数据库 "UserCenterV37"。登录失败。
+用户 'Programer-PC\Programer' 登录失败。
+2013-06-07 10:54:04 无法打开登录所请求的数据库 "UserCenterV37"。登录失败。
+用户 'Programer-PC\Programer' 登录失败。
+2013-06-07 10:54:15 无法打开登录所请求的数据库 "UserCenterV37"。登录失败。
+用户 'Programer-PC\Programer' 登录失败。
+2013-06-07 10:54:48 无法打开登录所请求的数据库 "UserCenterV37"。登录失败。
+用户 'Programer-PC\Programer' 登录失败。
+2013-06-07 10:55:40 无法打开登录所请求的数据库 "UserCenterV37"。登录失败。
+用户 'Programer-PC\Programer' 登录失败。
+2013-06-07 10:57:23 无法打开登录所请求的数据库 "UserCenterV37"。登录失败。
+用户 'Programer-PC\Programer' 登录失败。
+2013-06-07 11:00:30 无法打开登录所请求的数据库 "UserCenterV37"。登录失败。
+用户 'Programer-PC\Programer' 登录失败。
+2013-06-07 11:04:45 无法打开登录所请求的数据库 "UserCenterV37"。登录失败。
+用户 'Programer-PC\Programer' 登录失败。
+2013-06-07 11:05:07 无法打开登录所请求的数据库 "UserCenterV37"。登录失败。
+用户 'Programer-PC\Programer' 登录失败。

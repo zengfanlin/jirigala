@@ -1,0 +1,500 @@
+﻿//-----------------------------------------------------------------
+// All Rights Reserved , Copyright (C) 2012 , Hairihan TECH, Ltd .
+//-----------------------------------------------------------------
+
+using System;
+using System.Data;
+using System.Collections.Generic;
+using System.Web.UI;
+using System.Web.UI.WebControls;
+
+using DotNet.Business;
+using DotNet.Utilities;
+
+/// <remarks>
+/// #ClassName#List
+/// #Description#管理
+///
+/// #DateCreated# 版本：1.0  #Author# 创建代码。
+///
+/// 版本：1.0
+///
+/// <author>
+///	<name>#Author#</name>
+///	<date>#DateCreated#</date>
+/// </author>
+/// </remarks>
+public partial class #ClassName#List : BasePage
+{
+	/// <summary>
+    /// 是否按工作流方式运行
+    /// </summary>
+    bool UseWorkFlow = true;
+
+    protected void Page_Load(object sender, EventArgs e)
+    {
+        // 判断是否登录
+        Utilities.CheckIsLogOn("../../../" + Utilities.UserNotLogOn);
+        if (!Page.IsPostBack)
+        {
+            this.DoPageLoad();
+        }
+    }
+
+    #region private void DoPageLoad() 页面初次加载时的动作
+    /// <summary>
+    /// 页面初次加载时的动作
+    /// </summary>
+    private void DoPageLoad()
+    {
+        try
+        {
+            this.DbHelper.Open();
+            // 从数据库读取参数，每页显示几条
+            this.GetDataBaseParamter();
+            // 获得页面的权限
+            this.GetPermission();
+            // 获取列表
+            this.DoSearch();
+        }
+        catch (Exception exception)
+        {
+            this.LogException(exception);
+            throw exception;
+        }
+        finally
+        {
+            this.DbHelper.Close();
+        }
+    }
+    #endregion
+
+    #region private void GetPermission() 获得页面的权限
+    /// <summary>
+    /// 获得页面的权限
+    /// </summary>
+    private void GetPermission()
+    {
+		// this.permissionDelete = false;
+		// this.permissionAdmin = true;
+        // 每个人都可以管理自己的页面，不需要判断权限
+        /*
+        this.permissionDelete = this.IsAuthorized("#ClassName#.Delete", "#Description#.删除权限");
+        */
+    }
+    #endregion
+
+    #region private void Search() 查询
+    /// <summary>
+    /// 查询
+    /// </summary>
+    private void Search()
+    {
+        this.gridView.PageIndex = 0;
+		this.myNavigator.PageIndex = 0;
+        try
+        {
+            this.DbHelper.Open();
+            this.DoSearch();
+        }
+        catch (Exception ex)
+        {
+            this.LogException(ex);
+            throw ex;
+        }
+        finally
+        {
+            this.DbHelper.Close();
+        }
+        // 是否显示提示信息
+        if ((Utilities.ShowInformation) && (this.gridView.Rows.Count == 0))
+        {
+            this.ClientScript.RegisterStartupScript(this.GetType(), "searchFailure", "<script>alert('提示信息： 未找到查询内容。');</script>");
+        }
+    }
+    #endregion
+
+    #region private void DoSearch() 获取列表
+    /// <summary>
+    /// 获取列表
+    /// </summary>
+    private void DoSearch()
+    {
+		string searchValue = this.txtSearch.Text.Trim();
+        // 总记录数量
+        int recordCount = 0;
+        #ClassName#Manager manager = new #ClassName#Manager(this.UserInfo);
+        DataTable dataTable = manager.GetDataTableByPage(this.UserInfo.Id, this.cmbAuditStatus.SelectedItem.Value, this.txtSearch.Text, out recordCount, this.myNavigator.PageIndex, this.PageSize, this.SortExpression, this.SortDire);
+        /*
+        foreach (DataRow dataRow in dataTable.Rows)
+        {
+            dataRow[BaseBusinessLogic.FieldAuditStatus] = BaseBusinessLogic.GetAuditStatus(dataRow[BaseBusinessLogic.FieldAuditStatus].ToString());
+        }
+        */
+		dataTable.DefaultView.Sort = this.SortExpression + " " + this.SortDire;
+        // 绑定分页控件
+        this.myNavigator.RowCount = recordCount;
+        this.myNavigator.BindData(this.gridView, dataTable);
+        this.SetControlState();
+    }
+    #endregion
+
+    #region private void SetControlState() 设置控件状态
+    /// <summary>
+    /// 设置控件状态
+    /// </summary>
+    private void SetControlState()
+    {
+		// 是否采用了提交功能
+		this.btnSend.Visible = false;
+        // this.btnSend.Enabled = this.gridView.Rows.Count > 0;
+        this.btnCheckAll.Enabled = this.gridView.Rows.Count > 0;
+		// 有数据并且有删除权限的，才可以有删除按钮
+        this.btnDelete.Enabled = this.gridView.Rows.Count > 0 && this.permissionDelete;
+		// 没有删除就没编辑，就不用显示这个列
+        this.gridView.Columns[3].Visible = this.permissionDelete;
+        // 没有删除权限，就不要显示这个列
+        this.gridView.Columns[4].Visible = this.permissionDelete;
+        this.myNavigator.Visible = this.gridView.Rows.Count > 0;
+    }
+    #endregion
+
+    #region private void GetDataBaseParamter() 从数据库读取参数
+    /// <summary>
+    /// 从数据库读取参数，每页显示几条
+    /// </summary>
+    private void GetDataBaseParamter()
+    {
+        BaseParameterManager manager = new BaseParameterManager(this.DbHelper, this.UserInfo);
+        string pageSize = manager.GetParameter("User", this.UserInfo.Id, "#ClassName#.PageSize");
+        if (pageSize.Length > 0)
+        {
+            this.myNavigator.PageSize = int.Parse(pageSize);
+        }
+    }
+    #endregion
+
+    #region private void SaveDataBaseParamter() 参数保存到数据库，每页显示几条
+    /// <summary>
+    /// 参数保存到数据库，每页显示几条
+    /// </summary>
+    private void SaveDataBaseParamter()
+    {
+        BaseParameterManager manager = new BaseParameterManager(this.DbHelper, this.UserInfo);
+        manager.SetParameter("User", this.UserInfo.Id, "#ClassName#.PageSize", this.myNavigator.PageSize.ToString());
+    }
+    #endregion
+
+	protected void cmbAuditStatus_SelectedIndexChanged(object sender, EventArgs e)
+    {
+        this.Search();
+    }
+
+    protected void btnSearch_Click(object sender, EventArgs e)
+    {
+        this.Search();
+    }
+
+    protected void gridView_ItemDataBound(object sender, GridViewRowEventArgs e)
+    {
+        if (e.Row.RowType == DataControlRowType.DataRow || e.Row.RowState == DataControlRowState.Normal && e.Row.RowState == DataControlRowState.Alternate)
+        {
+            e.Row.Attributes.Add("onmouseover", "color =this.style.backgroundColor;this.style.backgroundColor='LemonChiffon';");
+            e.Row.Attributes.Add("onmouseout", "this.style.backgroundColor = color;");
+			if (this.permissionDelete)
+            {
+				LinkButton btnLinkDelete = null;
+				if (e.Row.Cells[4].Controls.Count > 0)
+				{
+					btnLinkDelete = (LinkButton)e.Row.Cells[4].Controls[0];
+				}
+				if (btnLinkDelete != null)
+				{
+					string strScript = "return confirm('您确定要删除此数据行吗？');";
+					btnLinkDelete.Attributes.Add("onclick", strScript);
+				}
+			}
+			if (!this.permissionAdmin)
+            {
+				// 没有删除权限的情况下才进行删除按钮的处理
+				if (e.Row.RowState == (DataControlRowState.Normal)
+					|| e.Row.RowState == (DataControlRowState.Alternate))
+				{
+					// 已经生效的数据不允许操作了
+					DataRowView dataRowView = (DataRowView)e.Row.DataItem;
+					string enabled = dataRowView[#ClassName#Entity.FieldEnabled].ToString();
+					bool allowEdit = true;
+					if (!string.IsNullOrEmpty(enabled) && enabled.Equals("1"))
+					{
+						allowEdit = false;
+					}
+					else
+					{
+						string auditStatus = dataRowView[BaseBusinessLogic.FieldAuditStatus].ToString();
+						if (!string.IsNullOrEmpty(auditStatus))
+						{
+							if (auditStatus.Equals(AuditStatus.StartAudit.ToString())
+							|| auditStatus.Equals(AuditStatus.AuditPass.ToString())
+							|| auditStatus.Equals(AuditStatus.WaitForAudit.ToString()))
+							{
+								// 已经进入审批流程的，不可以修改
+								// 在提交过程中的单据也不能被修改才对
+								allowEdit = false;
+							}
+						}
+					}
+					if (!allowEdit)
+					{
+						e.Row.Cells[1].Text = String.Empty;
+						e.Row.Cells[3].Text = String.Empty;
+						e.Row.Cells[4].Text = String.Empty;
+					}
+				}
+			}
+		}
+    }
+
+    protected void gridView_Sorting(object sender, GridViewSortEventArgs e)
+    {
+        if (this.SortDire == "ASC")
+        {
+            this.SortDire = "DESC";
+        }
+        else
+        {
+            this.SortDire = "ASC";
+        }
+        this.SortExpression = e.SortExpression;
+        this.DoSearch();
+    }
+
+    #region private void GetList(PageChangeEventArgs e)
+    /// <summary>
+    /// 绑定信息
+    /// </summary>
+    /// <param name="e">事件</param>
+    private void GetList(PageChangeEventArgs e)
+    {
+        this.DoSearch();
+        if (e.Action == "PageSizeChanged")
+        {
+            try
+            {
+                this.DbHelper.Open();
+                // 保存分页参数
+                this.SaveDataBaseParamter();
+            }
+            catch (Exception ex)
+            {
+                this.LogException(ex);
+                throw ex;
+            }
+            finally
+            {
+                this.DbHelper.Close();
+            }
+        }
+    }
+    #endregion
+
+    protected void myNavigator_PageChange(object sender, PageChangeEventArgs e)
+    {
+        this.GetList(e);
+    }
+
+    #region private void ShowEdit(string id) 编辑信息
+    /// <summary>
+    /// 编辑信息
+    /// </summary>
+    /// <param name="id">主键</param>
+    private void ShowEdit(string id)
+    {
+        // 这个是为了防止网页缓存用的
+        string ticks = DateTime.Now.Ticks.ToString();
+        if (!string.IsNullOrEmpty(id))
+        {
+			// string url = "#ClassName#Edit.aspx?Id=" + id + "&ticks=" + ticks;
+            // this.ClientScript.RegisterStartupScript(this.GetType(), "OPEN_WINDOW", "<script>window.open('" + url + "');</script>");
+			string url = "#ClassName#Edit.aspx?Id=" + id + "&ReturnURL=#ClassName#List.aspx&ticks=" + ticks;
+            Page.Response.Redirect(url);
+        }
+    }
+    #endregion
+
+    protected void gridView_EditCommand(object source, GridViewEditEventArgs e)
+    {
+        string id = this.gridView.DataKeys[e.NewEditIndex].Values["Id"].ToString();
+        e.NewEditIndex = -1;
+        this.ShowEdit(id);
+		this.DoSearch();
+    }
+
+    #region private void DeleteMark(string id) 删除事件
+    /// <summary>
+    /// 删除事件
+    /// </summary>
+    /// <param name="id">主键</param>
+    private void DeleteMark(string id)
+    {
+        int returnValue = 0;
+        try
+        {
+            this.DbHelper.Open();
+            #ClassName#Manager manager = new #ClassName#Manager(this.UserInfo);
+            returnValue = manager.SetDeleted(id);
+			if (this.gridView.Rows.Count - 1 == 0)
+			{
+                this.myNavigator.PageIndex = 0;
+			}
+            this.DoSearch();
+        }
+        catch (Exception ex)
+        {
+            this.LogException(ex);
+            throw ex;
+        }
+        finally
+        {
+            this.DbHelper.Close();
+        }
+        // 是否显示提示信息
+        if (Utilities.ShowInformation)
+        {
+            if (returnValue > 0)
+            {
+                this.ClientScript.RegisterStartupScript(this.GetType(), "deleteSucceed", "<script>alert('提示信息：删除成功。');</script>");
+            }
+            else
+            {
+                this.ClientScript.RegisterStartupScript(this.GetType(), "deleteFailure", "<script>alert('提示信息：删除失败。');</script>");
+            }
+        }
+    }
+    #endregion
+
+    #region private void ShowDetail(string id) 显示明细
+    /// <summary>
+    /// 显示明细
+    /// </summary>
+    /// <param name="id">主键</param>
+    private void ShowDetail(string id)
+    {
+        // 这个是为了防止网页缓存用的
+        string ticks = DateTime.Now.Ticks.ToString();
+        if (!string.IsNullOrEmpty(id))
+        {
+            // string url = "#ClassName#Show.aspx?Id=" + id + "&ticks=" + ticks;
+			// this.ClientScript.RegisterStartupScript(this.GetType(), "OPEN_WINDOW", "<script>window.open('" + url + "');</script>");
+			string url = "#ClassName#Show.aspx?Id=" + id + "&ReturnURL=#ClassName#List.aspx&ticks=" + ticks;
+			Page.Response.Redirect(url);
+        }
+    }
+    #endregion
+
+    protected void gridView_ItemCommand(object source, GridViewCommandEventArgs e)
+    {
+        if (e.CommandName == "ShowDetail")
+        {
+            string id = e.CommandArgument.ToString();
+            this.ShowDetail(id);
+			this.DoSearch();
+        }
+    }
+
+    protected void gridView_RowDeleting(object sender, GridViewDeleteEventArgs e)
+    {
+        string id = this.gridView.DataKeys[e.RowIndex].Value.ToString();
+        // 删除事件
+        this.DeleteMark(id);
+    }
+
+    protected void btnAdd_Click(object sender, EventArgs e)
+    {
+	    string url = "#ClassName#Edit.aspx?ReturnURL=#ClassName#List.aspx";
+		// this.ClientScript.RegisterStartupScript(this.GetType(), "OPEN_WINDOW", "<script>window.open('" + url + "');</script>");
+        Page.Response.Redirect(url);
+    }
+
+    #region private int BatchSend() 批量提交
+    /// <summary>
+    /// 批量提交
+    /// </summary>
+    /// <returns>影响的行数</returns>
+    private int BatchSend()
+    {
+        int returnValue = 0;
+		if (this.UseWorkFlow)
+		{
+			this.DoSearch();
+		}
+		else
+		{
+			this.DbHelper.Open();
+			string[] ids = Utilities.GetSelecteIds(this.gridView);
+			#ClassName#Manager manager = new #ClassName#Manager(this.UserInfo);
+            returnValue = manager.BatchSend(ids);
+			this.DoSearch();
+			this.DbHelper.Close();
+		}
+        return returnValue;
+    }
+    #endregion
+
+    protected void btnSend_Click(object sender, EventArgs e)
+    {
+        // 批量提交
+        this.BatchSend();
+    }
+
+    #region private int BathDelete() 批量删除
+    /// <summary>
+    /// 批量删除
+    /// </summary>
+    /// <returns>影响的行数</returns>
+    private int BathDelete()
+    {
+        int returnValue = 0;
+        string[] ids = Utilities.GetSelecteIds(this.gridView);
+        try
+        {
+            this.DbHelper.Open();
+            // this.DbHelper.BeginTransaction();
+            #ClassName#Manager manager = new #ClassName#Manager(this.UserInfo);
+            returnValue = manager.SetDeleted(ids);
+			if (this.gridView.Rows.Count - ids.Length == 0)
+                this.myNavigator.PageIndex = 0;
+            // this.DbHelper.CommitTransaction();
+        }
+        catch (Exception ex)
+        {
+            // this.DbHelper.RollbackTransaction();
+            this.LogException(ex);
+            throw ex;
+        }
+        finally
+        {
+            this.DbHelper.Close();
+            this.DoSearch();
+        }
+        // 是否显示提示信息
+        if (Utilities.ShowInformation)
+        {
+            if (returnValue > 0)
+            {
+                this.ClientScript.RegisterStartupScript(this.GetType(), "deleteSucceed", "<script>alert('提示信息：批量删除成功。');</script>");
+            }
+            else
+            {
+                this.ClientScript.RegisterStartupScript(this.GetType(), "deleteFailure", "<script>alert('提示信息：批量删除失败。');</script>");
+            }
+        }
+        return returnValue;
+    }
+    #endregion
+
+    protected void btnDelete_Click(object sender, EventArgs e)
+    {
+        // 批量删除
+        this.BathDelete();
+    }
+}

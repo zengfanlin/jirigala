@@ -1,0 +1,173 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="4.0">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{2FB4C4A9-F14C-4CDD-9D0E-7C4E7CEBEBDD}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>DotNet.Utilities</RootNamespace>
+    <AssemblyName>DotNet.Utilities</AssemblyName>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <OldToolsVersion>3.5</OldToolsVersion>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+    <TargetFrameworkProfile>
+    </TargetFrameworkProfile>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <CodeAnalysisIgnoreGeneratedCode>true</CodeAnalysisIgnoreGeneratedCode>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>
+    </DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>App.ico</ApplicationIcon>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="ChnCharInfo">
+      <HintPath>..\External\Simplified Chinese Pin-Yin Conversion Library\ChnCharInfo.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="NPOI">
+      <HintPath>..\External\NPOI.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.configuration" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Management" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.XML" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Configuration\IConfiguration.cs" />
+    <Compile Include="DbUtilities\DbHelper.cs" />
+    <Compile Include="DbUtilities\DbHelperFactory.cs" />
+    <Compile Include="DbUtilities\DbProvider\BaseDbHelper.cs" />
+    <Compile Include="DbUtilities\DbProvider\IDbHelper.cs" />
+    <Compile Include="DbUtilities\DbProvider\IDbHelper.Expand.cs" />
+    <Compile Include="DbUtilities\DbProvider\OleDbHelper.cs" />
+    <Compile Include="DbUtilities\DbProvider\SqlHelper.cs" />
+    <Compile Include="Extension\DataTaleExtension.cs" />
+    <Compile Include="ResourceManager\AppMessage.Service.cs" />
+    <Compile Include="ResourceManager\AppMessage.Message.cs" />
+    <Compile Include="Utilities\AuditStatus.cs" />
+    <Compile Include="Utilities\BaseExportCSV.cs" />
+    <Compile Include="DbUtilities\CurrentDbType.cs" />
+    <Compile Include="Configuration\TableConfigHelper.cs" />
+    <Compile Include="Configuration\BaseConfiguration.cs" />
+    <Compile Include="Configuration\RegistryHelper.cs" />
+    <Compile Include="Utilities\BaseSortLogic.cs" />
+    <Compile Include="Configuration\UserConfigHelper.cs" />
+    <Compile Include="BaseUserInfo.cs" />
+    <Compile Include="BaseSystemInfo.cs" />
+    <Compile Include="Utilities\BaseRandom.cs" />
+    <Compile Include="Configuration\ConfigurationHelper.cs" />
+    <Compile Include="Utilities\DownloadTemplate.cs" />
+    <Compile Include="Utilities\EnumDescription.cs" />
+    <Compile Include="Utilities\EnumExtensions.cs" />
+    <Compile Include="Utilities\ImportUtil.cs" />
+    <Compile Include="Utilities\MachineInfo.cs" />
+    <Compile Include="Utilities\DateUtil.cs" />
+    <Compile Include="Utilities\FileUtil.cs" />
+    <Compile Include="Utilities\LogUtil.cs" />
+    <Compile Include="Utilities\MessageCategory.cs" />
+    <Compile Include="Utilities\MessageFunction.cs" />
+    <Compile Include="Utilities\MessageStateCode.cs" />
+    <Compile Include="Utilities\PermissionScope.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="ResourceManager\AppMessage.cs" />
+    <Compile Include="ResourceManager\ResourceManager.cs" />
+    <Compile Include="ResourceManager\ResourceManagerWrapper.cs" />
+    <Compile Include="ResourceManager\Resources.cs" />
+    <Compile Include="Utilities\BaseBusinessLogic.cs" />
+    <Compile Include="Configuration\ConfigurationCategory.cs" />
+    <Compile Include="DbUtilities\DbOperation.cs" />
+    <Compile Include="Utilities\DefaultRole.cs" />
+    <Compile Include="Utilities\OrganizeCategory.cs" />
+    <Compile Include="Utilities\OperationCode.cs" />
+    <Compile Include="Utilities\ReflectionUtil.cs" />
+    <Compile Include="Utilities\RegexCollection.cs" />
+    <Compile Include="Utilities\SecretUtil.cs" />
+    <Compile Include="Utilities\StatusCode.cs" />
+    <Compile Include="Utilities\StringUtil.cs" />
+    <Compile Include="Utilities\ValidateUtil.cs" />
+    <Compile Include="Utilities\VerifyCodeImage.cs" />
+    <Compile Include="Utilities\BaseBusinessLogic.Field.cs" />
+    <Compile Include="Utilities\BaseBusinessLogic.DataTable.cs" />
+    <Compile Include="BaseSystemInfo.Database.cs" />
+    <Compile Include="BaseSystemInfo.Secret.cs" />
+    <Compile Include="BaseSystemInfo.Permission.cs" />
+    <Compile Include="BaseSystemInfo.UserInfo.cs" />
+    <Compile Include="BaseSystemInfo.Company.cs" />
+    <Compile Include="BaseSystemInfo.Client.cs" />
+    <Compile Include="BaseSystemInfo.Server.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="App.ico" />
+    <Content Include="ResourceManager\Sample.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Windows.Installer.3.1">
+      <Visible>False</Visible>
+      <ProductName>Windows Installer 3.1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
